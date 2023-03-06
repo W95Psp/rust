@@ -288,6 +288,7 @@ fn mir_const<'tcx>(
     // has_ffi_unwind_calls query uses the raw mir, so make sure it is run.
     tcx.ensure().has_ffi_unwind_calls(def.did);
 
+    println!("[STEALING] {def:?} ({}:{})", line!(), file!());
     let mut body = tcx.mir_built(def).steal();
 
     pass_manager::dump_mir_for_phase_change(tcx, &body);
@@ -322,6 +323,7 @@ fn mir_promoted<'tcx>(
     // this point, before we steal the mir-const result.
     // Also this means promotion can rely on all const checks having been done.
     let const_qualifs = tcx.mir_const_qualif_opt_const_arg(def);
+    println!("[STEALING] {def:?} ({}:{})", line!(), file!());
     let mut body = tcx.mir_const(def).steal();
     if let Some(error_reported) = const_qualifs.tainted_by_errors {
         body.tainted_by_errors = Some(error_reported);
@@ -448,6 +450,7 @@ fn mir_drops_elaborated_and_const_checked<'tcx>(
     }
 
     let (body, _) = tcx.mir_promoted(def);
+    println!("[STEALING] {def:?} ({}:{})", line!(), file!());
     let mut body = body.steal();
     if let Some(error_reported) = mir_borrowck.tainted_by_errors {
         body.tainted_by_errors = Some(error_reported);
@@ -624,6 +627,7 @@ fn inner_optimized_mir(tcx: TyCtxt<'_>, did: LocalDefId) -> Body<'_> {
         Some(other) => panic!("do not use `optimized_mir` for constants: {:?}", other),
     }
     debug!("about to call mir_drops_elaborated...");
+    println!("[STEALING] {did:?} ({}:{})", line!(), file!());
     let body =
         tcx.mir_drops_elaborated_and_const_checked(ty::WithOptConstParam::unknown(did)).steal();
     let mut body = remap_mir_for_const_eval_select(tcx, body, hir::Constness::NotConst);
@@ -646,6 +650,7 @@ fn promoted_mir<'tcx>(
     }
 
     let tainted_by_errors = tcx.mir_borrowck_opt_const_arg(def).tainted_by_errors;
+    println!("[STEALING] {def:?} ({}:{})", line!(), file!());
     let mut promoted = tcx.mir_promoted(def).1.steal();
 
     for body in &mut promoted {

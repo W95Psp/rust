@@ -67,6 +67,7 @@ fn mir_build(tcx: TyCtxt<'_>, def: ty::WithOptConstParam<LocalDefId>) -> Body<'_
     let body = match tcx.thir_body(def) {
         Err(error_reported) => construct_error(tcx, def.did, body_owner_kind, error_reported),
         Ok((thir, expr)) => {
+            println!("[STEALING] {def:?} ({}:{})", line!(), file!());
             // We ran all queries that depended on THIR at the beginning
             // of `mir_build`, so now we can steal it
             let thir = thir.steal();
