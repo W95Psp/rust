@@ -54,7 +54,10 @@ pub(crate) fn thir_body(
 
 pub(crate) fn thir_tree(tcx: TyCtxt<'_>, owner_def: ty::WithOptConstParam<LocalDefId>) -> String {
     match thir_body(tcx, owner_def) {
-        Ok((thir, _)) => format!("{:#?}", thir.steal()),
+        Ok((thir, _)) => {
+            println!("[STEALING] {owner_def:?} ({}:{})", line!(), file!());
+            format!("{:#?}", thir.steal())
+        },
         Err(_) => "error".into(),
     }
 }
