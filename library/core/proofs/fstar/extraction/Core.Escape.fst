@@ -25,12 +25,12 @@ type t_EscapeIterInner = {
   f_alive:Core.Ops.Range.t_Range u8
 }
 
-let impl (#n: usize) : Core.Clone.t_Clone (t_EscapeIterInner v_N) =
-  { clone = fun (#n: usize) (self: t_EscapeIterInner v_N) -> () }
+let impl_28861196 (#n: usize) : Core.Clone.t_Clone (t_EscapeIterInner v_N) =
+  { f_clone_under_impl_1 = fun (#n: usize) (self: t_EscapeIterInner v_N) -> () }
 
-let impl (#n: usize) : Core.Fmt.t_Debug (t_EscapeIterInner v_N) =
+let impl_902497337 (#n: usize) : Core.Fmt.t_Debug (t_EscapeIterInner v_N) =
   {
-    fmt
+    f_fmt_under_impl_2
     =
     fun (#n: usize) (self: t_EscapeIterInner v_N) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

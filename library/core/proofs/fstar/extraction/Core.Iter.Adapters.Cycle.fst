@@ -7,13 +7,13 @@ type t_Cycle = {
   f_iter:i
 }
 
-let impl
+let impl_395042264
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone i)
     : Core.Clone.t_Clone (t_Cycle i) =
   {
-    clone
+    f_clone_under_impl_3
     =
     fun
       (#i: Type)
@@ -24,13 +24,13 @@ let impl
       ()
   }
 
-let impl
+let impl_4238132
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug i)
     : Core.Fmt.t_Debug (t_Cycle i) =
   {
-    fmt
+    f_fmt_under_impl_4
     =
     fun
       (#i: Type)
@@ -50,15 +50,15 @@ let new_under_impl
       (iter: i)
     : t_Cycle i = ()
 
-let impl
+let impl_792888399
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Iter.Traits.Iterator.t_Iterator i)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Cycle i) =
   {
-    item = _;
-    next
+    f_Item_under_impl_1 = _;
+    f_next_under_impl_1
     =
     (fun
         (#i: Type)
@@ -69,7 +69,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_1
     =
     (fun
         (#i: Type)
@@ -79,7 +79,7 @@ let impl
         (self: t_Cycle i)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_1
     =
     (fun
         (#i: Type)
@@ -92,7 +92,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    advance_by
+    f_advance_by_under_impl_1
     =
     fun
       (#i: Type)
@@ -106,9 +106,9 @@ let impl
       self, output
   }
 
-let impl
+let impl_615045447
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Iter.Traits.Iterator.t_Iterator i)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_Cycle i) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_Cycle i) = { __marker_trait = () }

@@ -7,69 +7,74 @@ type t_Alignment =
   | Alignment_Right : t_Alignment
   | Alignment_Center : t_Alignment
 
-let impl: Core.Marker.t_Copy t_Alignment = {  }
+let impl_1031765050: Core.Marker.t_Copy t_Alignment = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Alignment = { clone = fun (self: t_Alignment) -> () }
+let impl_378132702: Core.Clone.t_Clone t_Alignment =
+  { f_clone_under_impl_34 = fun (self: t_Alignment) -> () }
 
-let impl: t_Debug t_Alignment =
+let impl_244387588: t_Debug t_Alignment =
   {
-    fmt
+    f_fmt_under_impl_35
     =
     fun (self: t_Alignment) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Alignment = {  }
+let impl_431610132: Core.Marker.t_StructuralPartialEq t_Alignment = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Alignment t_Alignment =
-  { eq = fun (self: t_Alignment) (other: t_Alignment) -> () }
+let impl_232750897: Core.Cmp.t_PartialEq t_Alignment t_Alignment =
+  { f_eq_under_impl_37 = fun (self: t_Alignment) (other: t_Alignment) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_Alignment = {  }
+let impl_391788326: Core.Marker.t_StructuralEq t_Alignment = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Alignment =
-  { assert_receiver_is_total_eq = fun (self: t_Alignment) -> () }
+let impl_264205621: Core.Cmp.t_Eq t_Alignment =
+  { f_assert_receiver_is_total_eq_under_impl_39 = fun (self: t_Alignment) -> () }
 
 let t_Result = Core.Result.t_Result Prims.unit t_Error
 
 type t_Error = | Error : t_Error
 
-let impl: Core.Marker.t_Copy t_Error = {  }
+let impl_547346806: Core.Marker.t_Copy t_Error = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Error = { clone = fun (self: t_Error) -> () }
+let impl_325322725: Core.Clone.t_Clone t_Error =
+  { f_clone_under_impl_41 = fun (self: t_Error) -> () }
 
-let impl: t_Debug t_Error =
+let impl_596585508: t_Debug t_Error =
   {
-    fmt
+    f_fmt_under_impl_42
     =
     fun (self: t_Error) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl: Core.Default.t_Default t_Error = { default = fun  -> () }
+let impl_871052680: Core.Default.t_Default t_Error = { f_default_under_impl_43 = () }
 
-let impl: Core.Marker.t_StructuralEq t_Error = {  }
+let impl_14475380: Core.Marker.t_StructuralEq t_Error = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Error = { assert_receiver_is_total_eq = fun (self: t_Error) -> () }
+let impl_229125102: Core.Cmp.t_Eq t_Error =
+  { f_assert_receiver_is_total_eq_under_impl_45 = fun (self: t_Error) -> () }
 
-let impl: Core.Hash.t_Hash t_Error =
+let impl_747397679: Core.Hash.t_Hash t_Error =
   {
-    hash
+    f_hash_under_impl_46
     =
     fun (self: t_Error) (state: v___h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Cmp.t_Ord t_Error = { cmp = fun (self: t_Error) (other: t_Error) -> () }
+let impl_8338136: Core.Cmp.t_Ord t_Error =
+  { f_cmp_under_impl_47 = fun (self: t_Error) (other: t_Error) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Error = {  }
+let impl_245025328: Core.Marker.t_StructuralPartialEq t_Error = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Error t_Error = { eq = fun (self: t_Error) (other: t_Error) -> () }
+let impl_763849383: Core.Cmp.t_PartialEq t_Error t_Error =
+  { f_eq_under_impl_49 = fun (self: t_Error) (other: t_Error) -> () }
 
-let impl: Core.Cmp.t_PartialOrd t_Error t_Error =
-  { partial_cmp = fun (self: t_Error) (other: t_Error) -> () }
+let impl_400602266: Core.Cmp.t_PartialOrd t_Error t_Error =
+  { f_partial_cmp_under_impl_50 = fun (self: t_Error) (other: t_Error) -> () }
 
 (* (RefMut) The mutation of this &mut is not allowed here.
 
@@ -83,9 +88,10 @@ type t_Arguments = {
   f_args:slice Core.Fmt.Rt.t_Argument
 }
 
-let impl: Core.Marker.t_Copy t_Arguments = {  }
+let impl_811767840: Core.Marker.t_Copy t_Arguments = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Arguments = { clone = fun (self: t_Arguments) -> () }
+let impl_877467735: Core.Clone.t_Clone t_Arguments =
+  { f_clone_under_impl_52 = fun (self: t_Arguments) -> () }
 
 let new_const_under_impl_2 (pieces: slice string) : t_Arguments = ()
 
@@ -103,18 +109,18 @@ let estimated_capacity_under_impl_2 (self: t_Arguments) : usize = ()
 
 let as_str_under_impl_3 (self: t_Arguments) : Core.Option.t_Option string = ()
 
-let impl: t_Debug t_Arguments =
+let impl_1016966454: t_Debug t_Arguments =
   {
-    fmt
+    f_fmt_under_impl_4
     =
     fun (self: t_Arguments) (fmt: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       fmt, output
   }
 
-let impl: t_Display t_Arguments =
+let impl_669915308: t_Display t_Arguments =
   {
-    fmt
+    f_fmt_under_impl_5
     =
     fun (self: t_Arguments) (fmt: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
@@ -122,39 +128,39 @@ let impl: t_Display t_Arguments =
   }
 
 class t_Debug (v_Self: Type) = {
-  fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
+  f_fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
 }
 
 class t_Display (v_Self: Type) = {
-  fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
+  f_fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
 }
 
 class t_Octal (v_Self: Type) = {
-  fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
+  f_fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
 }
 
 class t_Binary (v_Self: Type) = {
-  fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
+  f_fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
 }
 
 class t_LowerHex (v_Self: Type) = {
-  fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
+  f_fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
 }
 
 class t_UpperHex (v_Self: Type) = {
-  fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
+  f_fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
 }
 
 class t_Pointer (v_Self: Type) = {
-  fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
+  f_fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
 }
 
 class t_LowerExp (v_Self: Type) = {
-  fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
+  f_fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
 }
 
 class t_UpperExp (v_Self: Type) = {
-  fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
+  f_fmt:self -> t_Formatter -> (t_Formatter & Core.Result.t_Result Prims.unit t_Error)
 }
 
 let run (fmt: t_Formatter) (arg: Core.Fmt.Rt.t_Placeholder) (args: slice Core.Fmt.Rt.t_Argument)
@@ -187,37 +193,37 @@ let write_prefix_under_pad_integral_under_impl_7
 
 let v_ZEROES_under_write_formatted_parts_under_impl_7: string = ()
 
-let impl: t_Write t_Formatter =
+let impl_379597067: t_Write t_Formatter =
   {
-    write_str
+    f_write_str_under_impl_8
     =
     (fun (self: t_Formatter) (s: string) ->
         let output:Core.Result.t_Result Prims.unit t_Error = () in
         self, output);
-    write_char
+    f_write_char_under_impl_8
     =
     (fun (self: t_Formatter) (c: char) ->
         let output:Core.Result.t_Result Prims.unit t_Error = () in
         self, output);
-    write_fmt
+    f_write_fmt_under_impl_8
     =
     fun (self: t_Formatter) (args: t_Arguments) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       self, output
   }
 
-let impl: t_Display t_Error =
+let impl_641421914: t_Display t_Error =
   {
-    fmt
+    f_fmt_under_impl_9
     =
     fun (self: t_Error) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t) : t_Debug t =
+let impl_359657044 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t) : t_Debug t =
   {
-    fmt
+    f_fmt_under_impl_53
     =
     fun
       (#t: Type)
@@ -235,9 +241,10 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Display t) : t_Display t =
+let impl_128724292 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Display t)
+    : t_Display t =
   {
-    fmt
+    f_fmt_under_impl_55
     =
     fun
       (#t: Type)
@@ -255,9 +262,9 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Octal t) : t_Octal t =
+let impl_17231223 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Octal t) : t_Octal t =
   {
-    fmt
+    f_fmt_under_impl_57
     =
     fun
       (#t: Type)
@@ -275,9 +282,10 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Binary t) : t_Binary t =
+let impl_858538931 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Binary t)
+    : t_Binary t =
   {
-    fmt
+    f_fmt_under_impl_59
     =
     fun
       (#t: Type)
@@ -295,9 +303,10 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_LowerHex t) : t_LowerHex t =
+let impl_1011324826 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_LowerHex t)
+    : t_LowerHex t =
   {
-    fmt
+    f_fmt_under_impl_61
     =
     fun
       (#t: Type)
@@ -315,9 +324,10 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_UpperHex t) : t_UpperHex t =
+let impl_411022526 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_UpperHex t)
+    : t_UpperHex t =
   {
-    fmt
+    f_fmt_under_impl_63
     =
     fun
       (#t: Type)
@@ -335,9 +345,10 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_LowerExp t) : t_LowerExp t =
+let impl_994625698 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_LowerExp t)
+    : t_LowerExp t =
   {
-    fmt
+    f_fmt_under_impl_65
     =
     fun
       (#t: Type)
@@ -355,9 +366,10 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_UpperExp t) : t_UpperExp t =
+let impl_1003345715 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_UpperExp t)
+    : t_UpperExp t =
   {
-    fmt
+    f_fmt_under_impl_67
     =
     fun
       (#t: Type)
@@ -389,54 +401,54 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl: t_Debug bool =
+let impl_284918916: t_Debug bool =
   {
-    fmt
+    f_fmt_under_impl_12
     =
     fun (self: bool) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl: t_Display bool =
+let impl_260813556: t_Display bool =
   {
-    fmt
+    f_fmt_under_impl_13
     =
     fun (self: bool) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl: t_Debug string =
+let impl_735985285: t_Debug string =
   {
-    fmt
+    f_fmt_under_impl_14
     =
     fun (self: string) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl: t_Display string =
+let impl_474612804: t_Display string =
   {
-    fmt
+    f_fmt_under_impl_15
     =
     fun (self: string) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl: t_Debug char =
+let impl_706519856: t_Debug char =
   {
-    fmt
+    f_fmt_under_impl_16
     =
     fun (self: char) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl: t_Display char =
+let impl_78785293: t_Display char =
   {
-    fmt
+    f_fmt_under_impl_17
     =
     fun (self: char) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
@@ -460,9 +472,9 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) : t_Pointer t =
+let impl_769698265 (#t: Type) : t_Pointer t =
   {
-    fmt
+    f_fmt_under_impl_20
     =
     fun (#t: Type) (self: t) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
@@ -487,7 +499,7 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl
+let impl_452930799
       (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized e)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized d)
@@ -767,7 +779,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __275: t_Debug t)
     : t_Debug (e & d & c & b & a & z & y & x & w & v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_69
     =
     fun
       (#e: Type)
@@ -1065,7 +1077,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_1036875302
       (#d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized d)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized c)
@@ -1300,7 +1312,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __230: t_Debug t)
     : t_Debug (d & c & b & a & z & y & x & w & v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_70
     =
     fun
       (#d: Type)
@@ -1552,7 +1564,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_907754238
       (#c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -1746,7 +1758,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __189: t_Debug t)
     : t_Debug (c & b & a & z & y & x & w & v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_71
     =
     fun
       (#c: Type)
@@ -1956,7 +1968,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_577408781
       (#b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized a)
@@ -2113,7 +2125,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __152: t_Debug t)
     : t_Debug (b & a & z & y & x & w & v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_72
     =
     fun
       (#b: Type)
@@ -2285,7 +2297,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_477243023
       (#a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized z)
@@ -2409,7 +2421,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __119: t_Debug t)
     : t_Debug (a & z & y & x & w & v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_73
     =
     fun
       (#a: Type)
@@ -2547,7 +2559,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_61047569
       (#z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized z)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized y)
@@ -2642,7 +2654,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __90: t_Debug t)
     : t_Debug (z & y & x & w & v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_74
     =
     fun
       (#z: Type)
@@ -2750,7 +2762,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_1048815801
       (#y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized x)
@@ -2820,7 +2832,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __65: t_Debug t)
     : t_Debug (y & x & w & v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_75
     =
     fun
       (#y: Type)
@@ -2902,7 +2914,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_615719036
       (#x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized x)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized w)
@@ -2951,7 +2963,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __44: t_Debug t)
     : t_Debug (x & w & v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_76
     =
     fun
       (#x: Type)
@@ -3011,7 +3023,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_371937759
       (#w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized w)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized v)
@@ -3043,7 +3055,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __27: t_Debug t)
     : t_Debug (w & v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_77
     =
     fun
       (#w: Type)
@@ -3085,7 +3097,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_433724738
       (#v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -3104,7 +3116,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __14: t_Debug t)
     : t_Debug (v & u & t) =
   {
-    fmt
+    f_fmt_under_impl_78
     =
     fun
       (#v: Type)
@@ -3132,7 +3144,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_856602591
       (#u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Debug u)
@@ -3142,7 +3154,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_Debug t)
     : t_Debug (u & t) =
   {
-    fmt
+    f_fmt_under_impl_79
     =
     fun
       (#u: Type)
@@ -3160,9 +3172,9 @@ let impl
       f, output
   }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t) : t_Debug t =
+let impl_838038386 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t) : t_Debug t =
   {
-    fmt
+    f_fmt_under_impl_80
     =
     fun
       (#t: Type)
@@ -3174,13 +3186,13 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t) :
       f, output
   }
 
-let impl
+let impl_182999925
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Debug t)
     : t_Debug (slice t) =
   {
-    fmt
+    f_fmt_under_impl_24
     =
     fun
       (#t: Type)
@@ -3193,32 +3205,32 @@ let impl
       f, output
   }
 
-let impl: t_Debug Prims.unit =
+let impl_915143749: t_Debug Prims.unit =
   {
-    fmt
+    f_fmt_under_impl_25
     =
     fun (self: Prims.unit) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl (#t: Type) : t_Debug (Core.Marker.t_PhantomData t) =
+let impl_506299864 (#t: Type) : t_Debug (Core.Marker.t_PhantomData t) =
   {
-    fmt
+    f_fmt_under_impl_26
     =
     fun (#t: Type) (self: Core.Marker.t_PhantomData t) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl
+let impl_823928297
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Copy t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: t_Debug t)
     : t_Debug (Core.Cell.t_Cell t) =
   {
-    fmt
+    f_fmt_under_impl_27
     =
     fun
       (#t: Type)
@@ -3232,10 +3244,10 @@ let impl
       f, output
   }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t)
+let impl_1031098207 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t)
     : t_Debug (Core.Cell.t_RefCell t) =
   {
-    fmt
+    f_fmt_under_impl_28
     =
     fun
       (#t: Type)
@@ -3250,19 +3262,19 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t)
 type t_BorrowedPlaceholder_under_fmt_under_impl_28 =
   | BorrowedPlaceholder_under_fmt_under_impl_28 : t_BorrowedPlaceholder_under_fmt_under_impl_28
 
-let impl: t_Debug t_BorrowedPlaceholder_under_fmt_under_impl_28 =
+let impl_623644961: t_Debug t_BorrowedPlaceholder_under_fmt_under_impl_28 =
   {
-    fmt
+    f_fmt_under_impl_under_fmt_under_impl_28
     =
     fun (self: t_BorrowedPlaceholder_under_fmt_under_impl_28) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t)
+let impl_471859172 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t)
     : t_Debug (Core.Cell.t_Ref t) =
   {
-    fmt
+    f_fmt_under_impl_29
     =
     fun
       (#t: Type)
@@ -3274,10 +3286,10 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t)
       f, output
   }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t)
+let impl_501275648 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t)
     : t_Debug (Core.Cell.t_RefMut t) =
   {
-    fmt
+    f_fmt_under_impl_30
     =
     fun
       (#t: Type)
@@ -3289,18 +3301,18 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: t_Debug t)
       f, output
   }
 
-let impl (#t: Type) : t_Debug (Core.Cell.t_UnsafeCell t) =
+let impl_418771710 (#t: Type) : t_Debug (Core.Cell.t_UnsafeCell t) =
   {
-    fmt
+    f_fmt_under_impl_31
     =
     fun (#t: Type) (self: Core.Cell.t_UnsafeCell t) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in
       f, output
   }
 
-let impl (#t: Type) : t_Debug (Core.Cell.t_SyncUnsafeCell t) =
+let impl_146653456 (#t: Type) : t_Debug (Core.Cell.t_SyncUnsafeCell t) =
   {
-    fmt
+    f_fmt_under_impl_32
     =
     fun (#t: Type) (self: Core.Cell.t_SyncUnsafeCell t) (f: t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit t_Error = () in

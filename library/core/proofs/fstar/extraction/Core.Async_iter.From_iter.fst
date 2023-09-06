@@ -4,13 +4,13 @@ open Core
 
 type t_FromIter = { f_iter:i }
 
-let impl
+let impl_723813481
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone i)
     : Core.Clone.t_Clone (t_FromIter i) =
   {
-    clone
+    f_clone_under_impl_2
     =
     fun
       (#i: Type)
@@ -21,13 +21,13 @@ let impl
       ()
   }
 
-let impl
+let impl_453826971
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug i)
     : Core.Fmt.t_Debug (t_FromIter i) =
   {
-    fmt
+    f_fmt_under_impl_3
     =
     fun
       (#i: Type)
@@ -40,7 +40,7 @@ let impl
       f, output
   }
 
-let impl (#i: Type) : Core.Marker.t_Unpin (t_FromIter i) = {  }
+let impl_700698182 (#i: Type) : Core.Marker.t_Unpin (t_FromIter i) = { __marker_trait = () }
 
 let from_iter
       (#i: Type)

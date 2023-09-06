@@ -7,26 +7,27 @@ type t_IndexRange = {
   f_end:usize
 }
 
-let impl: Core.Clone.t_Clone t_IndexRange = { clone = fun (self: t_IndexRange) -> () }
+let impl_610397016: Core.Clone.t_Clone t_IndexRange =
+  { f_clone_under_impl_6 = fun (self: t_IndexRange) -> () }
 
-let impl: Core.Fmt.t_Debug t_IndexRange =
+let impl_679793653: Core.Fmt.t_Debug t_IndexRange =
   {
-    fmt
+    f_fmt_under_impl_7
     =
     fun (self: t_IndexRange) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_IndexRange = {  }
+let impl_212446809: Core.Marker.t_StructuralPartialEq t_IndexRange = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_IndexRange t_IndexRange =
-  { eq = fun (self: t_IndexRange) (other: t_IndexRange) -> () }
+let impl_186064505: Core.Cmp.t_PartialEq t_IndexRange t_IndexRange =
+  { f_eq_under_impl_9 = fun (self: t_IndexRange) (other: t_IndexRange) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_IndexRange = {  }
+let impl_417496785: Core.Marker.t_StructuralEq t_IndexRange = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_IndexRange =
-  { assert_receiver_is_total_eq = fun (self: t_IndexRange) -> () }
+let impl_104395762: Core.Cmp.t_Eq t_IndexRange =
+  { f_assert_receiver_is_total_eq_under_impl_11 = fun (self: t_IndexRange) -> () }
 
 let new_unchecked_under_impl (start v_end: usize) : t_IndexRange = ()
 
@@ -58,37 +59,37 @@ let runtime_under_new_unchecked_under_impl (start v_end: usize) : Prims.unit = (
 
 let comptime_under_new_unchecked_under_impl (_: usize) (_: usize) : Prims.unit = ()
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_IndexRange =
+let impl_66060840: Core.Iter.Traits.Iterator.t_Iterator t_IndexRange =
   {
-    item = usize;
-    next
+    f_Item_under_impl_1 = usize;
+    f_next_under_impl_1
     =
     (fun (self: t_IndexRange) ->
         let output:Core.Option.t_Option usize = () in
         self, output);
-    size_hint = (fun (self: t_IndexRange) -> ());
-    advance_by
+    f_size_hint_under_impl_1 = (fun (self: t_IndexRange) -> ());
+    f_advance_by_under_impl_1
     =
     fun (self: t_IndexRange) (n: usize) ->
       let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_IndexRange =
+let impl_658908617: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_IndexRange =
   {
-    next_back
+    f_next_back_under_impl_2
     =
     (fun (self: t_IndexRange) ->
         let output:Core.Option.t_Option usize = () in
         self, output);
-    advance_back_by
+    f_advance_back_by_under_impl_2
     =
     fun (self: t_IndexRange) (n: usize) ->
       let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator t_IndexRange =
-  { len = fun (self: t_IndexRange) -> () }
+let impl_52606539: Core.Iter.Traits.Exact_size.t_ExactSizeIterator t_IndexRange =
+  { f_len_under_impl_3 = fun (self: t_IndexRange) -> () }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_IndexRange = {  }
+let impl_425329158: Core.Iter.Traits.Marker.t_FusedIterator t_IndexRange = { __marker_trait = () }

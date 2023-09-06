@@ -2,49 +2,49 @@ module Core.Core_simd.Masks
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-let impl: Core.Core_simd.Masks.Sealed.t_Sealed i8 =
+let impl_940823874: Core.Core_simd.Masks.Sealed.t_Sealed i8 =
   {
-    valid = (fun (value: Core.Core_simd.Vector.t_Simd i8 v_LANES) -> ());
-    eq = (fun (self: i8) (other: i8) -> ());
-    tRUE = (fun  -> ());
-    fALSE = fun  -> ()
+    f_valid_under_impl_25 = (fun (value: Core.Core_simd.Vector.t_Simd i8 v_LANES) -> ());
+    f_eq_under_impl_25 = (fun (self: i8) (other: i8) -> ());
+    f_TRUE_under_impl_25 = ();
+    f_FALSE_under_impl_25 = ()
   }
 
-let impl: Core.Core_simd.Masks.Sealed.t_Sealed i16 =
+let impl_645688967: Core.Core_simd.Masks.Sealed.t_Sealed i16 =
   {
-    valid = (fun (value: Core.Core_simd.Vector.t_Simd i16 v_LANES) -> ());
-    eq = (fun (self: i16) (other: i16) -> ());
-    tRUE = (fun  -> ());
-    fALSE = fun  -> ()
+    f_valid_under_impl_27 = (fun (value: Core.Core_simd.Vector.t_Simd i16 v_LANES) -> ());
+    f_eq_under_impl_27 = (fun (self: i16) (other: i16) -> ());
+    f_TRUE_under_impl_27 = ();
+    f_FALSE_under_impl_27 = ()
   }
 
-let impl: Core.Core_simd.Masks.Sealed.t_Sealed i32 =
+let impl_734448448: Core.Core_simd.Masks.Sealed.t_Sealed i32 =
   {
-    valid = (fun (value: Core.Core_simd.Vector.t_Simd i32 v_LANES) -> ());
-    eq = (fun (self: i32) (other: i32) -> ());
-    tRUE = (fun  -> ());
-    fALSE = fun  -> ()
+    f_valid_under_impl_29 = (fun (value: Core.Core_simd.Vector.t_Simd i32 v_LANES) -> ());
+    f_eq_under_impl_29 = (fun (self: i32) (other: i32) -> ());
+    f_TRUE_under_impl_29 = ();
+    f_FALSE_under_impl_29 = ()
   }
 
-let impl: Core.Core_simd.Masks.Sealed.t_Sealed i64 =
+let impl_459849824: Core.Core_simd.Masks.Sealed.t_Sealed i64 =
   {
-    valid = (fun (value: Core.Core_simd.Vector.t_Simd i64 v_LANES) -> ());
-    eq = (fun (self: i64) (other: i64) -> ());
-    tRUE = (fun  -> ());
-    fALSE = fun  -> ()
+    f_valid_under_impl_31 = (fun (value: Core.Core_simd.Vector.t_Simd i64 v_LANES) -> ());
+    f_eq_under_impl_31 = (fun (self: i64) (other: i64) -> ());
+    f_TRUE_under_impl_31 = ();
+    f_FALSE_under_impl_31 = ()
   }
 
-let impl: Core.Core_simd.Masks.Sealed.t_Sealed isize =
+let impl_1070200774: Core.Core_simd.Masks.Sealed.t_Sealed isize =
   {
-    valid = (fun (value: Core.Core_simd.Vector.t_Simd isize v_LANES) -> ());
-    eq = (fun (self: isize) (other: isize) -> ());
-    tRUE = (fun  -> ());
-    fALSE = fun  -> ()
+    f_valid_under_impl_33 = (fun (value: Core.Core_simd.Vector.t_Simd isize v_LANES) -> ());
+    f_eq_under_impl_33 = (fun (self: isize) (other: isize) -> ());
+    f_TRUE_under_impl_33 = ();
+    f_FALSE_under_impl_33 = ()
   }
 
 type t_Mask = | Mask : Core.Core_simd.Masks.Mask_impl.t_Mask t v_LANES -> t_Mask
 
-let impl
+let impl_389504793
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -59,9 +59,9 @@ let impl
           __5:
           Core.Core_simd.Lane_count.t_SupportedLaneCount
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
-    : Core.Marker.t_Copy (t_Mask t v_LANES) = {  }
+    : Core.Marker.t_Copy (t_Mask t v_LANES) = { __marker_trait = () }
 
-let impl
+let impl_651390654
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -78,7 +78,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Clone.t_Clone (t_Mask t v_LANES) =
   {
-    clone
+    f_clone_under_impl_1
     =
     fun
       (#t: Type)
@@ -344,7 +344,7 @@ let all_under_impl_2
       (self: t_Mask t v_LANES)
     : bool = ()
 
-let impl
+let impl_805159901
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -361,7 +361,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask t v_LANES) (array bool v_LANES) =
   {
-    from
+    f_from_under_impl_3
     =
     fun
       (#t: Type)
@@ -383,7 +383,7 @@ let impl
       ()
   }
 
-let impl
+let impl_746079122
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -400,7 +400,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (array bool v_LANES) (t_Mask t v_LANES) =
   {
-    from
+    f_from_under_impl_4
     =
     fun
       (#t: Type)
@@ -422,7 +422,7 @@ let impl
       ()
   }
 
-let impl
+let impl_189471655
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -439,7 +439,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Default.t_Default (t_Mask t v_LANES) =
   {
-    default
+    f_default_under_impl_5
     =
     fun
       (#t: Type)
@@ -460,7 +460,7 @@ let impl
       ()
   }
 
-let impl
+let impl_32908805
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -479,7 +479,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Cmp.t_PartialEq (t_Mask t v_LANES) (t_Mask t v_LANES) =
   {
-    eq
+    f_eq_under_impl_6
     =
     fun
       (#t: Type)
@@ -504,7 +504,7 @@ let impl
       ()
   }
 
-let impl
+let impl_708704616
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -523,7 +523,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Cmp.t_PartialOrd (t_Mask t v_LANES) (t_Mask t v_LANES) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_7
     =
     fun
       (#t: Type)
@@ -548,7 +548,7 @@ let impl
       ()
   }
 
-let impl
+let impl_584690132
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -567,7 +567,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Fmt.t_Debug (t_Mask t v_LANES) =
   {
-    fmt
+    f_fmt_under_impl_8
     =
     fun
       (#t: Type)
@@ -593,7 +593,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_675941891
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -610,8 +610,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitAnd (t_Mask t v_LANES) (t_Mask t v_LANES) =
   {
-    output = t_Mask t v_LANES;
-    bitand
+    f_Output_under_impl_9 = t_Mask t v_LANES;
+    f_bitand_under_impl_9
     =
     fun
       (#t: Type)
@@ -634,7 +634,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1015203283
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -651,8 +651,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitAnd (t_Mask t v_LANES) bool =
   {
-    output = t_Mask t v_LANES;
-    bitand
+    f_Output_under_impl_10 = t_Mask t v_LANES;
+    f_bitand_under_impl_10
     =
     fun
       (#t: Type)
@@ -675,7 +675,7 @@ let impl
       ()
   }
 
-let impl
+let impl_118456394
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -692,8 +692,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitAnd bool (t_Mask t v_LANES) =
   {
-    output = t_Mask t v_LANES;
-    bitand
+    f_Output_under_impl_11 = t_Mask t v_LANES;
+    f_bitand_under_impl_11
     =
     fun
       (#t: Type)
@@ -716,7 +716,7 @@ let impl
       ()
   }
 
-let impl
+let impl_250199763
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -733,8 +733,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitOr (t_Mask t v_LANES) (t_Mask t v_LANES) =
   {
-    output = t_Mask t v_LANES;
-    bitor
+    f_Output_under_impl_12 = t_Mask t v_LANES;
+    f_bitor_under_impl_12
     =
     fun
       (#t: Type)
@@ -757,7 +757,7 @@ let impl
       ()
   }
 
-let impl
+let impl_97106850
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -774,8 +774,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitOr (t_Mask t v_LANES) bool =
   {
-    output = t_Mask t v_LANES;
-    bitor
+    f_Output_under_impl_13 = t_Mask t v_LANES;
+    f_bitor_under_impl_13
     =
     fun
       (#t: Type)
@@ -798,7 +798,7 @@ let impl
       ()
   }
 
-let impl
+let impl_648298993
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -815,8 +815,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitOr bool (t_Mask t v_LANES) =
   {
-    output = t_Mask t v_LANES;
-    bitor
+    f_Output_under_impl_14 = t_Mask t v_LANES;
+    f_bitor_under_impl_14
     =
     fun
       (#t: Type)
@@ -839,7 +839,7 @@ let impl
       ()
   }
 
-let impl
+let impl_971658385
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -856,8 +856,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitXor (t_Mask t v_LANES) (t_Mask t v_LANES) =
   {
-    output = t_Mask t v_LANES;
-    bitxor
+    f_Output_under_impl_15 = t_Mask t v_LANES;
+    f_bitxor_under_impl_15
     =
     fun
       (#t: Type)
@@ -880,7 +880,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1057756452
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -897,8 +897,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitXor (t_Mask t v_LANES) bool =
   {
-    output = t_Mask t v_LANES;
-    bitxor
+    f_Output_under_impl_16 = t_Mask t v_LANES;
+    f_bitxor_under_impl_16
     =
     fun
       (#t: Type)
@@ -921,7 +921,7 @@ let impl
       ()
   }
 
-let impl
+let impl_80000904
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -938,8 +938,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitXor bool (t_Mask t v_LANES) =
   {
-    output = t_Mask t v_LANES;
-    bitxor
+    f_Output_under_impl_17 = t_Mask t v_LANES;
+    f_bitxor_under_impl_17
     =
     fun
       (#t: Type)
@@ -962,7 +962,7 @@ let impl
       ()
   }
 
-let impl
+let impl_37973909
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -979,8 +979,8 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_Not (t_Mask t v_LANES) =
   {
-    output = t_Mask t v_LANES;
-    not
+    f_Output_under_impl_18 = t_Mask t v_LANES;
+    f_not_under_impl_18
     =
     fun
       (#t: Type)
@@ -1002,7 +1002,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1073379705
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -1019,7 +1019,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitAndAssign (t_Mask t v_LANES) (t_Mask t v_LANES) =
   {
-    bitand_assign
+    f_bitand_assign_under_impl_19
     =
     fun
       (#t: Type)
@@ -1043,7 +1043,7 @@ let impl
       self
   }
 
-let impl
+let impl_213282246
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -1060,7 +1060,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitAndAssign (t_Mask t v_LANES) bool =
   {
-    bitand_assign
+    f_bitand_assign_under_impl_20
     =
     fun
       (#t: Type)
@@ -1084,7 +1084,7 @@ let impl
       self
   }
 
-let impl
+let impl_461128989
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -1101,7 +1101,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitOrAssign (t_Mask t v_LANES) (t_Mask t v_LANES) =
   {
-    bitor_assign
+    f_bitor_assign_under_impl_21
     =
     fun
       (#t: Type)
@@ -1125,7 +1125,7 @@ let impl
       self
   }
 
-let impl
+let impl_343885416
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -1142,7 +1142,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitOrAssign (t_Mask t v_LANES) bool =
   {
-    bitor_assign
+    f_bitor_assign_under_impl_22
     =
     fun
       (#t: Type)
@@ -1166,7 +1166,7 @@ let impl
       self
   }
 
-let impl
+let impl_291672071
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -1183,7 +1183,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitXorAssign (t_Mask t v_LANES) (t_Mask t v_LANES) =
   {
-    bitxor_assign
+    f_bitxor_assign_under_impl_23
     =
     fun
       (#t: Type)
@@ -1207,7 +1207,7 @@ let impl
       self
   }
 
-let impl
+let impl_1010019372
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -1224,7 +1224,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitXorAssign (t_Mask t v_LANES) bool =
   {
-    bitxor_assign
+    f_bitxor_assign_under_impl_24
     =
     fun
       (#t: Type)
@@ -1248,7 +1248,7 @@ let impl
       self
   }
 
-let impl
+let impl_681866824
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1256,7 +1256,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i16 v_LANES) (t_Mask i8 v_LANES) =
   {
-    from
+    f_from_under_impl_35
     =
     fun
       (#lanes: usize)
@@ -1269,7 +1269,7 @@ let impl
       ()
   }
 
-let impl
+let impl_289334957
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1277,7 +1277,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i32 v_LANES) (t_Mask i8 v_LANES) =
   {
-    from
+    f_from_under_impl_36
     =
     fun
       (#lanes: usize)
@@ -1290,7 +1290,7 @@ let impl
       ()
   }
 
-let impl
+let impl_470826093
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1298,7 +1298,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i64 v_LANES) (t_Mask i8 v_LANES) =
   {
-    from
+    f_from_under_impl_37
     =
     fun
       (#lanes: usize)
@@ -1311,7 +1311,7 @@ let impl
       ()
   }
 
-let impl
+let impl_619006178
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1319,7 +1319,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask isize v_LANES) (t_Mask i8 v_LANES) =
   {
-    from
+    f_from_under_impl_38
     =
     fun
       (#lanes: usize)
@@ -1332,7 +1332,7 @@ let impl
       ()
   }
 
-let impl
+let impl_825727176
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1340,7 +1340,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i32 v_LANES) (t_Mask i16 v_LANES) =
   {
-    from
+    f_from_under_impl_39
     =
     fun
       (#lanes: usize)
@@ -1353,7 +1353,7 @@ let impl
       ()
   }
 
-let impl
+let impl_713350687
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1361,7 +1361,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i64 v_LANES) (t_Mask i16 v_LANES) =
   {
-    from
+    f_from_under_impl_40
     =
     fun
       (#lanes: usize)
@@ -1374,7 +1374,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1056090168
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1382,7 +1382,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask isize v_LANES) (t_Mask i16 v_LANES) =
   {
-    from
+    f_from_under_impl_41
     =
     fun
       (#lanes: usize)
@@ -1395,7 +1395,7 @@ let impl
       ()
   }
 
-let impl
+let impl_980344941
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1403,7 +1403,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i8 v_LANES) (t_Mask i16 v_LANES) =
   {
-    from
+    f_from_under_impl_42
     =
     fun
       (#lanes: usize)
@@ -1416,7 +1416,7 @@ let impl
       ()
   }
 
-let impl
+let impl_715992923
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1424,7 +1424,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i64 v_LANES) (t_Mask i32 v_LANES) =
   {
-    from
+    f_from_under_impl_43
     =
     fun
       (#lanes: usize)
@@ -1437,7 +1437,7 @@ let impl
       ()
   }
 
-let impl
+let impl_794225107
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1445,7 +1445,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask isize v_LANES) (t_Mask i32 v_LANES) =
   {
-    from
+    f_from_under_impl_44
     =
     fun
       (#lanes: usize)
@@ -1458,7 +1458,7 @@ let impl
       ()
   }
 
-let impl
+let impl_246107467
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1466,7 +1466,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i8 v_LANES) (t_Mask i32 v_LANES) =
   {
-    from
+    f_from_under_impl_45
     =
     fun
       (#lanes: usize)
@@ -1479,7 +1479,7 @@ let impl
       ()
   }
 
-let impl
+let impl_797501206
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1487,7 +1487,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i16 v_LANES) (t_Mask i32 v_LANES) =
   {
-    from
+    f_from_under_impl_46
     =
     fun
       (#lanes: usize)
@@ -1500,7 +1500,7 @@ let impl
       ()
   }
 
-let impl
+let impl_144323307
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1508,7 +1508,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask isize v_LANES) (t_Mask i64 v_LANES) =
   {
-    from
+    f_from_under_impl_47
     =
     fun
       (#lanes: usize)
@@ -1521,7 +1521,7 @@ let impl
       ()
   }
 
-let impl
+let impl_937667607
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1529,7 +1529,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i8 v_LANES) (t_Mask i64 v_LANES) =
   {
-    from
+    f_from_under_impl_48
     =
     fun
       (#lanes: usize)
@@ -1542,7 +1542,7 @@ let impl
       ()
   }
 
-let impl
+let impl_44377717
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1550,7 +1550,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i16 v_LANES) (t_Mask i64 v_LANES) =
   {
-    from
+    f_from_under_impl_49
     =
     fun
       (#lanes: usize)
@@ -1563,7 +1563,7 @@ let impl
       ()
   }
 
-let impl
+let impl_155645705
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1571,7 +1571,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i32 v_LANES) (t_Mask i64 v_LANES) =
   {
-    from
+    f_from_under_impl_50
     =
     fun
       (#lanes: usize)
@@ -1584,7 +1584,7 @@ let impl
       ()
   }
 
-let impl
+let impl_489035182
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1592,7 +1592,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i8 v_LANES) (t_Mask isize v_LANES) =
   {
-    from
+    f_from_under_impl_51
     =
     fun
       (#lanes: usize)
@@ -1605,7 +1605,7 @@ let impl
       ()
   }
 
-let impl
+let impl_492248040
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1613,7 +1613,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i16 v_LANES) (t_Mask isize v_LANES) =
   {
-    from
+    f_from_under_impl_52
     =
     fun
       (#lanes: usize)
@@ -1626,7 +1626,7 @@ let impl
       ()
   }
 
-let impl
+let impl_78383749
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1634,7 +1634,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i32 v_LANES) (t_Mask isize v_LANES) =
   {
-    from
+    f_from_under_impl_53
     =
     fun
       (#lanes: usize)
@@ -1647,7 +1647,7 @@ let impl
       ()
   }
 
-let impl
+let impl_713134699
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1655,7 +1655,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Convert.t_From (t_Mask i64 v_LANES) (t_Mask isize v_LANES) =
   {
-    from
+    f_from_under_impl_54
     =
     fun
       (#lanes: usize)

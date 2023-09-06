@@ -10,7 +10,7 @@ type t_Zip = {
   f_a_len:usize
 }
 
-let impl
+let impl_1069418772
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -22,7 +22,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone b)
     : Core.Clone.t_Clone (t_Zip a b) =
   {
-    clone
+    f_clone_under_impl_19
     =
     fun
       (#a: Type)
@@ -84,7 +84,7 @@ let zip
       (b: b)
     : t_Zip _ _ = ()
 
-let impl
+let impl_325167461
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -96,8 +96,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Iter.Traits.Iterator.t_Iterator b)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Zip a b) =
   {
-    item = (_ & _);
-    next
+    f_Item_under_impl_1 = (_ & _);
+    f_next_under_impl_1
     =
     (fun
         (#a: Type)
@@ -114,7 +114,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_1
     =
     (fun
         (#a: Type)
@@ -130,7 +130,7 @@ let impl
         (self: t_Zip a b)
         ->
         ());
-    nth
+    f_nth_under_impl_1
     =
     (fun
         (#a: Type)
@@ -148,7 +148,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    __iterator_get_unchecked
+    f___iterator_get_unchecked_under_impl_1
     =
     fun
       (#a: Type)
@@ -168,7 +168,7 @@ let impl
       self, output
   }
 
-let impl
+let impl_895394598
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -200,7 +200,7 @@ let impl
           Core.Iter.Traits.Exact_size.t_ExactSizeIterator b)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_Zip a b) =
   {
-    next_back
+    f_next_back_under_impl_2
     =
     fun
       (#a: Type)
@@ -240,17 +240,17 @@ let impl
   }
 
 class t_ZipImpl (v_Self: Type) (v_A: Type) (v_B: Type) = {
-  item:Type;
-  item_implements_t_Sized:Core.Marker.t_Sized _;
-  new:a -> b -> self;
-  next:self -> (self & Core.Option.t_Option _);
-  size_hint:self -> (usize & Core.Option.t_Option usize);
-  nth:self -> usize -> (self & Core.Option.t_Option _);
-  next_back:self -> (self & Core.Option.t_Option _);
-  get_unchecked:self -> usize -> (self & _)
+  f_Item:Type;
+  f_Item:Core.Marker.t_Sized _;
+  f_new:a -> b -> self;
+  f_next:self -> (self & Core.Option.t_Option _);
+  f_size_hint:self -> (usize & Core.Option.t_Option usize);
+  f_nth:self -> usize -> (self & Core.Option.t_Option _);
+  f_next_back:self -> (self & Core.Option.t_Option _);
+  f_get_unchecked:self -> usize -> (self & _)
 }
 
-let impl
+let impl_760643005
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -262,8 +262,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Iter.Traits.Iterator.t_Iterator b)
     : t_ZipImpl (t_Zip a b) a b =
   {
-    item = (_ & _);
-    new_
+    f_Item_under_impl_3 = (_ & _);
+    f_new_under_impl_3
     =
     (fun
         (#a: Type)
@@ -280,7 +280,7 @@ let impl
         (b: b)
         ->
         ());
-    next
+    f_next_under_impl_3
     =
     (fun
         (#a: Type)
@@ -297,7 +297,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    nth
+    f_nth_under_impl_3
     =
     (fun
         (#a: Type)
@@ -315,7 +315,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    next_back
+    f_next_back_under_impl_3
     =
     (fun
         (#a: Type)
@@ -332,7 +332,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_3
     =
     (fun
         (#a: Type)
@@ -348,7 +348,7 @@ let impl
         (self: t_Zip a b)
         ->
         ());
-    get_unchecked
+    f_get_unchecked_under_impl_3
     =
     fun
       (#a: Type)
@@ -368,7 +368,7 @@ let impl
       self, output
   }
 
-let impl
+let impl_404994088
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -384,7 +384,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __11: Core.Iter.Traits.Iterator.t_Iterator b)
     : t_ZipImpl (t_Zip a b) a b =
   {
-    new_
+    f_new_under_impl_4
     =
     (fun
         (#a: Type)
@@ -405,7 +405,7 @@ let impl
         (b: b)
         ->
         ());
-    next
+    f_next_under_impl_4
     =
     (fun
         (#a: Type)
@@ -426,7 +426,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    nth
+    f_nth_under_impl_4
     =
     (fun
         (#a: Type)
@@ -448,7 +448,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    next_back
+    f_next_back_under_impl_4
     =
     (fun
         (#a: Type)
@@ -469,7 +469,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_4
     =
     (fun
         (#a: Type)
@@ -489,7 +489,7 @@ let impl
         (self: t_Zip a b)
         ->
         ());
-    get_unchecked
+    f_get_unchecked_under_impl_4
     =
     fun
       (#a: Type)
@@ -513,7 +513,7 @@ let impl
       self, output
   }
 
-let impl
+let impl_356562280
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -529,7 +529,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __11: Core.Iter.Traits.Iterator.t_Iterator b)
     : t_ZipImpl (t_Zip a b) a b =
   {
-    new_
+    f_new_under_impl_5
     =
     (fun
         (#a: Type)
@@ -550,7 +550,7 @@ let impl
         (b: b)
         ->
         ());
-    next
+    f_next_under_impl_5
     =
     (fun
         (#a: Type)
@@ -571,7 +571,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_5
     =
     (fun
         (#a: Type)
@@ -591,7 +591,7 @@ let impl
         (self: t_Zip a b)
         ->
         ());
-    nth
+    f_nth_under_impl_5
     =
     (fun
         (#a: Type)
@@ -613,7 +613,7 @@ let impl
         ->
         let output:Core.Option.t_Option (_ & _) = () in
         self, output);
-    next_back
+    f_next_back_under_impl_5
     =
     fun
       (#a: Type)
@@ -636,7 +636,7 @@ let impl
       self, output
   }
 
-let impl
+let impl_1031883153
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -654,9 +654,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __7:
           Core.Iter.Traits.Exact_size.t_ExactSizeIterator b)
-    : Core.Iter.Traits.Exact_size.t_ExactSizeIterator (t_Zip a b) = {  }
+    : Core.Iter.Traits.Exact_size.t_ExactSizeIterator (t_Zip a b) = { __marker_trait = () }
 
-let impl
+let impl_21385252
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -666,9 +666,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Iter.Traits.Marker.t_FusedIterator a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Iter.Traits.Marker.t_FusedIterator b)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_Zip a b) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_Zip a b) = { __marker_trait = () }
 
-let impl
+let impl_938017103
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -686,9 +686,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __7:
           Core.Iter.Traits.Unchecked_iterator.t_UncheckedIterator b)
-    : Core.Iter.Traits.Unchecked_iterator.t_UncheckedIterator (t_Zip a b) = {  }
+    : Core.Iter.Traits.Unchecked_iterator.t_UncheckedIterator (t_Zip a b) = { __marker_trait = () }
 
-let impl
+let impl_314740634
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -700,7 +700,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Fmt.t_Debug b)
     : Core.Fmt.t_Debug (t_Zip a b) =
   {
-    fmt
+    f_fmt_under_impl_14
     =
     fun
       (#a: Type)
@@ -721,11 +721,11 @@ let impl
   }
 
 class t_ZipFmt (v_Self: Type) (v_A: Type) (v_B: Type) = {
-  fmt:self -> Core.Fmt.t_Formatter
+  f_fmt:self -> Core.Fmt.t_Formatter
     -> (Core.Fmt.t_Formatter & Core.Result.t_Result Prims.unit Core.Fmt.t_Error)
 }
 
-let impl
+let impl_708305209
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -737,7 +737,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Fmt.t_Debug b)
     : t_ZipFmt (t_Zip a b) a b =
   {
-    fmt
+    f_fmt_under_impl_15
     =
     fun
       (#a: Type)
@@ -757,7 +757,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_203719788
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -773,7 +773,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __11: t_TrustedRandomAccessNoCoerce b)
     : t_ZipFmt (t_Zip a b) a b =
   {
-    fmt
+    f_fmt_under_impl_16
     =
     fun
       (#a: Type)

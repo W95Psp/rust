@@ -2,7 +2,7 @@ module Core.Array.Equality
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-let impl
+let impl_1053272420
       (#a #b: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
@@ -10,7 +10,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Cmp.t_PartialEq a b)
     : Core.Cmp.t_PartialEq (array a v_N) (array b v_N) =
   {
-    eq
+    f_eq_under_impl
     =
     (fun
         (#a: Type)
@@ -23,7 +23,7 @@ let impl
         (other: array b v_N)
         ->
         ());
-    ne
+    f_ne_under_impl
     =
     fun
       (#a: Type)
@@ -38,7 +38,7 @@ let impl
       ()
   }
 
-let impl
+let impl_631703741
       (#a #b: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
@@ -46,7 +46,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Cmp.t_PartialEq a b)
     : Core.Cmp.t_PartialEq (array a v_N) (slice b) =
   {
-    eq
+    f_eq_under_impl_1
     =
     (fun
         (#a: Type)
@@ -59,7 +59,7 @@ let impl
         (other: slice b)
         ->
         ());
-    ne
+    f_ne_under_impl_1
     =
     fun
       (#a: Type)
@@ -74,7 +74,7 @@ let impl
       ()
   }
 
-let impl
+let impl_193527586
       (#a #b: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
@@ -82,7 +82,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Cmp.t_PartialEq b a)
     : Core.Cmp.t_PartialEq (slice b) (array a v_N) =
   {
-    eq
+    f_eq_under_impl_2
     =
     (fun
         (#a: Type)
@@ -95,7 +95,7 @@ let impl
         (other: array a v_N)
         ->
         ());
-    ne
+    f_ne_under_impl_2
     =
     fun
       (#a: Type)
@@ -110,7 +110,7 @@ let impl
       ()
   }
 
-let impl
+let impl_815797577
       (#a #b: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
@@ -118,7 +118,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Cmp.t_PartialEq a b)
     : Core.Cmp.t_PartialEq (array a v_N) (slice b) =
   {
-    eq
+    f_eq_under_impl_3
     =
     (fun
         (#a: Type)
@@ -131,7 +131,7 @@ let impl
         (other: slice b)
         ->
         ());
-    ne
+    f_ne_under_impl_3
     =
     fun
       (#a: Type)
@@ -146,7 +146,7 @@ let impl
       ()
   }
 
-let impl
+let impl_406754906
       (#a #b: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
@@ -154,7 +154,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Cmp.t_PartialEq b a)
     : Core.Cmp.t_PartialEq (slice b) (array a v_N) =
   {
-    eq
+    f_eq_under_impl_4
     =
     (fun
         (#a: Type)
@@ -167,7 +167,7 @@ let impl
         (other: array a v_N)
         ->
         ());
-    ne
+    f_ne_under_impl_4
     =
     fun
       (#a: Type)
@@ -194,16 +194,16 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl
+let impl_306463776
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (array t v_N) = {  }
+    : Core.Cmp.t_Eq (array t v_N) = { __marker_trait = () }
 
 (* item error backend *)
 
-let impl
+let impl_24855729
       (#t #other: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -211,7 +211,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Cmp.t_PartialEq t other)
     : t_SpecArrayEq t other v_N =
   {
-    spec_eq
+    f_spec_eq_under_impl_8
     =
     (fun
         (#t: Type)
@@ -224,7 +224,7 @@ let impl
         (b: array other v_N)
         ->
         ());
-    spec_ne
+    f_spec_ne_under_impl_8
     =
     fun
       (#t: Type)
@@ -239,7 +239,7 @@ let impl
       ()
   }
 
-let impl
+let impl_963899293
       (#t #u: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -247,7 +247,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Cmp.Bytewise.t_BytewiseEq t u)
     : t_SpecArrayEq t u v_N =
   {
-    spec_eq
+    f_spec_eq_under_impl_9
     =
     (fun
         (#t: Type)
@@ -260,7 +260,7 @@ let impl
         (b: array u v_N)
         ->
         ());
-    spec_ne
+    f_spec_ne_under_impl_9
     =
     fun
       (#t: Type)

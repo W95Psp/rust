@@ -7,13 +7,13 @@ type t_Fp = {
   f_e:i16
 }
 
-let impl: Core.Marker.t_Copy t_Fp = {  }
+let impl_448810741: Core.Marker.t_Copy t_Fp = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Fp = { clone = fun (self: t_Fp) -> () }
+let impl_326546003: Core.Clone.t_Clone t_Fp = { f_clone_under_impl_2 = fun (self: t_Fp) -> () }
 
-let impl: Core.Fmt.t_Debug t_Fp =
+let impl_196947814: Core.Fmt.t_Debug t_Fp =
   {
-    fmt
+    f_fmt_under_impl_3
     =
     fun (self: t_Fp) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

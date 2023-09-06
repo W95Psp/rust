@@ -5,10 +5,12 @@ open Core
 let ordering_is_some (c: Core.Option.t_Option Core.Cmp.t_Ordering) (x: Core.Cmp.t_Ordering) : bool =
   ()
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_PartialEq t t)
+let impl_900635203
+      (#t: Type)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq t t =
   {
-    eq
+    f_eq_under_impl_2
     =
     (fun
         (#t: Type)
@@ -17,7 +19,7 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_P
         (other: t)
         ->
         ());
-    ne
+    f_ne_under_impl_2
     =
     fun
       (#t: Type)
@@ -28,23 +30,25 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_P
       ()
   }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq t = {  }
+let impl_996496547 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_Eq t)
+    : Core.Cmp.t_Eq t = { __marker_trait = () }
 
-let impl
+let impl_938066181
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy t = {  }
+    : Core.Marker.t_ConstParamTy t = { __marker_trait = () }
 
-let impl (#t: Type) : Core.Marker.t_StructuralPartialEq t = {  }
+let impl_150329016 (#t: Type) : Core.Marker.t_StructuralPartialEq t = { __marker_trait = () }
 
-let impl (#t: Type) : Core.Marker.t_StructuralEq t = {  }
+let impl_911769439 (#t: Type) : Core.Marker.t_StructuralEq t = { __marker_trait = () }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_PartialOrd t t)
+let impl_868949917
+      (#t: Type)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd t t =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_7
     =
     (fun
         (#t: Type)
@@ -53,7 +57,7 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_P
         (other: t)
         ->
         ());
-    lt
+    f_lt_under_impl_7
     =
     (fun
         (#t: Type)
@@ -62,7 +66,7 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_P
         (other: t)
         ->
         ());
-    le
+    f_le_under_impl_7
     =
     (fun
         (#t: Type)
@@ -71,7 +75,7 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_P
         (other: t)
         ->
         ());
-    ge
+    f_ge_under_impl_7
     =
     (fun
         (#t: Type)
@@ -80,7 +84,7 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_P
         (other: t)
         ->
         ());
-    gt
+    f_gt_under_impl_7
     =
     fun
       (#t: Type)
@@ -91,10 +95,10 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_P
       ()
   }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_Ord t)
+let impl_409610144 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord t =
   {
-    cmp
+    f_cmp_under_impl_8
     =
     fun
       (#t: Type)
@@ -105,13 +109,13 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Cmp.t_O
       ()
   }
 
-let impl
+let impl_216976938
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Default.t_Default t)
     : Core.Default.t_Default t =
   {
-    default
+    f_default_under_impl_9
     =
     fun
       (#t: Type)
@@ -121,13 +125,13 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From t (array t 1sz) =
-  { from = fun (#t: Type) (array: array t 1sz) -> () }
+let impl_1006212315 (#t: Type) : Core.Convert.t_From t (array t 1sz) =
+  { f_from_under_impl = fun (#t: Type) (array: array t 1sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 1sz) t =
-  { from = fun (#t: Type) (tuple: t) -> () }
+let impl_711609171 (#t: Type) : Core.Convert.t_From (array t 1sz) t =
+  { f_from_under_impl_1 = fun (#t: Type) (tuple: t) -> () }
 
-let impl
+let impl_432404016
       (#u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_PartialEq u u)
@@ -137,7 +141,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (u & t) (u & t) =
   {
-    eq
+    f_eq_under_impl_12
     =
     (fun
         (#u: Type)
@@ -152,7 +156,7 @@ let impl
         (other: (u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_12
     =
     fun
       (#u: Type)
@@ -169,7 +173,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1058186604
       (#u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_Eq u)
@@ -177,9 +181,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __4: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (u & t) = {  }
+    : Core.Cmp.t_Eq (u & t) = { __marker_trait = () }
 
-let impl
+let impl_346672355
       (#u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized t)
@@ -189,13 +193,14 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (u & t) = {  }
+    : Core.Marker.t_ConstParamTy (u & t) = { __marker_trait = () }
 
-let impl (#u #t: Type) : Core.Marker.t_StructuralPartialEq (u & t) = {  }
+let impl_787960966 (#u #t: Type) : Core.Marker.t_StructuralPartialEq (u & t) =
+  { __marker_trait = () }
 
-let impl (#u #t: Type) : Core.Marker.t_StructuralEq (u & t) = {  }
+let impl_174057393 (#u #t: Type) : Core.Marker.t_StructuralEq (u & t) = { __marker_trait = () }
 
-let impl
+let impl_396300860
       (#u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_PartialOrd u u)
@@ -205,7 +210,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (u & t) (u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_17
     =
     (fun
         (#u: Type)
@@ -220,7 +225,7 @@ let impl
         (other: (u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_17
     =
     (fun
         (#u: Type)
@@ -235,7 +240,7 @@ let impl
         (other: (u & t))
         ->
         ());
-    le
+    f_le_under_impl_17
     =
     (fun
         (#u: Type)
@@ -250,7 +255,7 @@ let impl
         (other: (u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_17
     =
     (fun
         (#u: Type)
@@ -265,7 +270,7 @@ let impl
         (other: (u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_17
     =
     fun
       (#u: Type)
@@ -282,7 +287,7 @@ let impl
       ()
   }
 
-let impl
+let impl_982932498
       (#u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_Ord u)
@@ -292,7 +297,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (u & t) =
   {
-    cmp
+    f_cmp_under_impl_18
     =
     fun
       (#u: Type)
@@ -309,7 +314,7 @@ let impl
       ()
   }
 
-let impl
+let impl_707538602
       (#u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized t)
@@ -321,7 +326,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Default.t_Default t)
     : Core.Default.t_Default (u & t) =
   {
-    default
+    f_default_under_impl_19
     =
     fun
       (#u: Type)
@@ -338,13 +343,13 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t) (array t 2sz) =
-  { from = fun (#t: Type) (array: array t 2sz) -> () }
+let impl_174154616 (#t: Type) : Core.Convert.t_From (t & t) (array t 2sz) =
+  { f_from_under_impl_10 = fun (#t: Type) (array: array t 2sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 2sz) (t & t) =
-  { from = fun (#t: Type) (tuple: (t & t)) -> () }
+let impl_336802676 (#t: Type) : Core.Convert.t_From (array t 2sz) (t & t) =
+  { f_from_under_impl_11 = fun (#t: Type) (tuple: (t & t)) -> () }
 
-let impl
+let impl_874663240
       (#v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -363,7 +368,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __14: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (v & u & t) (v & u & t) =
   {
-    eq
+    f_eq_under_impl_22
     =
     (fun
         (#v: Type)
@@ -388,7 +393,7 @@ let impl
         (other: (v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_22
     =
     fun
       (#v: Type)
@@ -415,7 +420,7 @@ let impl
       ()
   }
 
-let impl
+let impl_628896649
       (#v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -432,9 +437,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __12: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __13: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __14: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (v & u & t) = {  }
+    : Core.Cmp.t_Eq (v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_765201589
       (#v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -454,13 +459,15 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __15: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __16: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __17: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (v & u & t) = { __marker_trait = () }
 
-let impl (#v #u #t: Type) : Core.Marker.t_StructuralPartialEq (v & u & t) = {  }
+let impl_820537582 (#v #u #t: Type) : Core.Marker.t_StructuralPartialEq (v & u & t) =
+  { __marker_trait = () }
 
-let impl (#v #u #t: Type) : Core.Marker.t_StructuralEq (v & u & t) = {  }
+let impl_614835907 (#v #u #t: Type) : Core.Marker.t_StructuralEq (v & u & t) =
+  { __marker_trait = () }
 
-let impl
+let impl_222783553
       (#v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -479,7 +486,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __14: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (v & u & t) (v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_27
     =
     (fun
         (#v: Type)
@@ -504,7 +511,7 @@ let impl
         (other: (v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_27
     =
     (fun
         (#v: Type)
@@ -529,7 +536,7 @@ let impl
         (other: (v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_27
     =
     (fun
         (#v: Type)
@@ -554,7 +561,7 @@ let impl
         (other: (v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_27
     =
     (fun
         (#v: Type)
@@ -579,7 +586,7 @@ let impl
         (other: (v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_27
     =
     fun
       (#v: Type)
@@ -606,7 +613,7 @@ let impl
       ()
   }
 
-let impl
+let impl_212494346
       (#v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -625,7 +632,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __14: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_28
     =
     fun
       (#v: Type)
@@ -652,7 +659,7 @@ let impl
       ()
   }
 
-let impl
+let impl_296212747
       (#v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -674,7 +681,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __17: Core.Default.t_Default t)
     : Core.Default.t_Default (v & u & t) =
   {
-    default
+    f_default_under_impl_29
     =
     fun
       (#v: Type)
@@ -702,13 +709,13 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t & t) (array t 3sz) =
-  { from = fun (#t: Type) (array: array t 3sz) -> () }
+let impl_5809451 (#t: Type) : Core.Convert.t_From (t & t & t) (array t 3sz) =
+  { f_from_under_impl_20 = fun (#t: Type) (array: array t 3sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 3sz) (t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t)) -> () }
+let impl_214588899 (#t: Type) : Core.Convert.t_From (array t 3sz) (t & t & t) =
+  { f_from_under_impl_21 = fun (#t: Type) (tuple: (t & t & t)) -> () }
 
-let impl
+let impl_106264546
       (#w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized w)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized v)
@@ -740,7 +747,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __27: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (w & v & u & t) (w & v & u & t) =
   {
-    eq
+    f_eq_under_impl_32
     =
     (fun
         (#w: Type)
@@ -779,7 +786,7 @@ let impl
         (other: (w & v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_32
     =
     fun
       (#w: Type)
@@ -820,7 +827,7 @@ let impl
       ()
   }
 
-let impl
+let impl_551384194
       (#w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized w)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized v)
@@ -850,9 +857,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __25: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __26: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __27: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (w & v & u & t) = {  }
+    : Core.Cmp.t_Eq (w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_794336528
       (#w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized w)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized v)
@@ -886,13 +893,15 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __29: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __30: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __31: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (w & v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (w & v & u & t) = { __marker_trait = () }
 
-let impl (#w #v #u #t: Type) : Core.Marker.t_StructuralPartialEq (w & v & u & t) = {  }
+let impl_1000268521 (#w #v #u #t: Type) : Core.Marker.t_StructuralPartialEq (w & v & u & t) =
+  { __marker_trait = () }
 
-let impl (#w #v #u #t: Type) : Core.Marker.t_StructuralEq (w & v & u & t) = {  }
+let impl_276191077 (#w #v #u #t: Type) : Core.Marker.t_StructuralEq (w & v & u & t) =
+  { __marker_trait = () }
 
-let impl
+let impl_328979593
       (#w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized w)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized v)
@@ -924,7 +933,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __27: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (w & v & u & t) (w & v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_37
     =
     (fun
         (#w: Type)
@@ -963,7 +972,7 @@ let impl
         (other: (w & v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_37
     =
     (fun
         (#w: Type)
@@ -1002,7 +1011,7 @@ let impl
         (other: (w & v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_37
     =
     (fun
         (#w: Type)
@@ -1041,7 +1050,7 @@ let impl
         (other: (w & v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_37
     =
     (fun
         (#w: Type)
@@ -1080,7 +1089,7 @@ let impl
         (other: (w & v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_37
     =
     fun
       (#w: Type)
@@ -1121,7 +1130,7 @@ let impl
       ()
   }
 
-let impl
+let impl_968449417
       (#w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized w)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized v)
@@ -1153,7 +1162,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __27: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (w & v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_38
     =
     fun
       (#w: Type)
@@ -1194,7 +1203,7 @@ let impl
       ()
   }
 
-let impl
+let impl_960161609
       (#w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized w)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized v)
@@ -1230,7 +1239,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __31: Core.Default.t_Default t)
     : Core.Default.t_Default (w & v & u & t) =
   {
-    default
+    f_default_under_impl_39
     =
     fun
       (#w: Type)
@@ -1273,13 +1282,13 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t & t & t) (array t 4sz) =
-  { from = fun (#t: Type) (array: array t 4sz) -> () }
+let impl_879338754 (#t: Type) : Core.Convert.t_From (t & t & t & t) (array t 4sz) =
+  { f_from_under_impl_30 = fun (#t: Type) (array: array t 4sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 4sz) (t & t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t & t)) -> () }
+let impl_216286119 (#t: Type) : Core.Convert.t_From (array t 4sz) (t & t & t & t) =
+  { f_from_under_impl_31 = fun (#t: Type) (tuple: (t & t & t & t)) -> () }
 
-let impl
+let impl_855852197
       (#x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized x)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized w)
@@ -1328,7 +1337,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __44: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (x & w & v & u & t) (x & w & v & u & t) =
   {
-    eq
+    f_eq_under_impl_42
     =
     (fun
         (#x: Type)
@@ -1385,7 +1394,7 @@ let impl
         (other: (x & w & v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_42
     =
     fun
       (#x: Type)
@@ -1444,7 +1453,7 @@ let impl
       ()
   }
 
-let impl
+let impl_663623604
       (#x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized x)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized w)
@@ -1491,9 +1500,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __42: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __43: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __44: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (x & w & v & u & t) = {  }
+    : Core.Cmp.t_Eq (x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_455484603
       (#x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized x)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized w)
@@ -1545,13 +1554,15 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __47: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __48: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __49: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (x & w & v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (x & w & v & u & t) = { __marker_trait = () }
 
-let impl (#x #w #v #u #t: Type) : Core.Marker.t_StructuralPartialEq (x & w & v & u & t) = {  }
+let impl_240359494 (#x #w #v #u #t: Type) : Core.Marker.t_StructuralPartialEq (x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl (#x #w #v #u #t: Type) : Core.Marker.t_StructuralEq (x & w & v & u & t) = {  }
+let impl_588615893 (#x #w #v #u #t: Type) : Core.Marker.t_StructuralEq (x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl
+let impl_315586633
       (#x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized x)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized w)
@@ -1600,7 +1611,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __44: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (x & w & v & u & t) (x & w & v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_47
     =
     (fun
         (#x: Type)
@@ -1657,7 +1668,7 @@ let impl
         (other: (x & w & v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_47
     =
     (fun
         (#x: Type)
@@ -1714,7 +1725,7 @@ let impl
         (other: (x & w & v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_47
     =
     (fun
         (#x: Type)
@@ -1771,7 +1782,7 @@ let impl
         (other: (x & w & v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_47
     =
     (fun
         (#x: Type)
@@ -1828,7 +1839,7 @@ let impl
         (other: (x & w & v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_47
     =
     fun
       (#x: Type)
@@ -1887,7 +1898,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1062576403
       (#x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized x)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized w)
@@ -1936,7 +1947,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __44: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (x & w & v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_48
     =
     fun
       (#x: Type)
@@ -1995,7 +2006,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1045182712
       (#x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized x)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized w)
@@ -2049,7 +2060,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __49: Core.Default.t_Default t)
     : Core.Default.t_Default (x & w & v & u & t) =
   {
-    default
+    f_default_under_impl_49
     =
     fun
       (#x: Type)
@@ -2111,13 +2122,13 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t & t & t & t) (array t 5sz) =
-  { from = fun (#t: Type) (array: array t 5sz) -> () }
+let impl_694208697 (#t: Type) : Core.Convert.t_From (t & t & t & t & t) (array t 5sz) =
+  { f_from_under_impl_40 = fun (#t: Type) (array: array t 5sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 5sz) (t & t & t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t & t & t)) -> () }
+let impl_347775270 (#t: Type) : Core.Convert.t_From (array t 5sz) (t & t & t & t & t) =
+  { f_from_under_impl_41 = fun (#t: Type) (tuple: (t & t & t & t & t)) -> () }
 
-let impl
+let impl_626215553
       (#y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized x)
@@ -2187,7 +2198,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __65: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (y & x & w & v & u & t) (y & x & w & v & u & t) =
   {
-    eq
+    f_eq_under_impl_52
     =
     (fun
         (#y: Type)
@@ -2266,7 +2277,7 @@ let impl
         (other: (y & x & w & v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_52
     =
     fun
       (#y: Type)
@@ -2347,7 +2358,7 @@ let impl
       ()
   }
 
-let impl
+let impl_938746295
       (#y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized x)
@@ -2415,9 +2426,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __63: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __64: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __65: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (y & x & w & v & u & t) = {  }
+    : Core.Cmp.t_Eq (y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_904270631
       (#y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized x)
@@ -2491,14 +2502,15 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __69: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __70: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __71: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (y & x & w & v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl (#y #x #w #v #u #t: Type) : Core.Marker.t_StructuralPartialEq (y & x & w & v & u & t) =
-  {  }
+let impl_987923624 (#y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralPartialEq (y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl (#y #x #w #v #u #t: Type) : Core.Marker.t_StructuralEq (y & x & w & v & u & t) = {  }
+let impl_215124215 (#y #x #w #v #u #t: Type) : Core.Marker.t_StructuralEq (y & x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl
+let impl_557017260
       (#y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized x)
@@ -2568,7 +2580,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __65: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (y & x & w & v & u & t) (y & x & w & v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_57
     =
     (fun
         (#y: Type)
@@ -2647,7 +2659,7 @@ let impl
         (other: (y & x & w & v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_57
     =
     (fun
         (#y: Type)
@@ -2726,7 +2738,7 @@ let impl
         (other: (y & x & w & v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_57
     =
     (fun
         (#y: Type)
@@ -2805,7 +2817,7 @@ let impl
         (other: (y & x & w & v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_57
     =
     (fun
         (#y: Type)
@@ -2884,7 +2896,7 @@ let impl
         (other: (y & x & w & v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_57
     =
     fun
       (#y: Type)
@@ -2965,7 +2977,7 @@ let impl
       ()
   }
 
-let impl
+let impl_514077982
       (#y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized x)
@@ -3035,7 +3047,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __65: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (y & x & w & v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_58
     =
     fun
       (#y: Type)
@@ -3116,7 +3128,7 @@ let impl
       ()
   }
 
-let impl
+let impl_802628146
       (#y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized x)
@@ -3192,7 +3204,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __71: Core.Default.t_Default t)
     : Core.Default.t_Default (y & x & w & v & u & t) =
   {
-    default
+    f_default_under_impl_59
     =
     fun
       (#y: Type)
@@ -3277,13 +3289,13 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t & t & t & t & t) (array t 6sz) =
-  { from = fun (#t: Type) (array: array t 6sz) -> () }
+let impl_221482030 (#t: Type) : Core.Convert.t_From (t & t & t & t & t & t) (array t 6sz) =
+  { f_from_under_impl_50 = fun (#t: Type) (array: array t 6sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 6sz) (t & t & t & t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t & t & t & t)) -> () }
+let impl_918543895 (#t: Type) : Core.Convert.t_From (array t 6sz) (t & t & t & t & t & t) =
+  { f_from_under_impl_51 = fun (#t: Type) (tuple: (t & t & t & t & t & t)) -> () }
 
-let impl
+let impl_191308539
       (#z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized z)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized y)
@@ -3378,7 +3390,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __90: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (z & y & x & w & v & u & t) (z & y & x & w & v & u & t) =
   {
-    eq
+    f_eq_under_impl_62
     =
     (fun
         (#z: Type)
@@ -3483,7 +3495,7 @@ let impl
         (other: (z & y & x & w & v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_62
     =
     fun
       (#z: Type)
@@ -3590,7 +3602,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1001300536
       (#z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized z)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized y)
@@ -3683,9 +3695,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __88: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __89: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __90: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (z & y & x & w & v & u & t) = {  }
+    : Core.Cmp.t_Eq (z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_48694413
       (#z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized z)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized y)
@@ -3785,15 +3797,15 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __95: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __96: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __97: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (z & y & x & w & v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl (#z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralPartialEq (z & y & x & w & v & u & t) = {  }
+let impl_453926056 (#z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralPartialEq (z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl (#z #y #x #w #v #u #t: Type) : Core.Marker.t_StructuralEq (z & y & x & w & v & u & t) =
-  {  }
+let impl_600586829 (#z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralEq (z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_618114976
       (#z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized z)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized y)
@@ -3888,7 +3900,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __90: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (z & y & x & w & v & u & t) (z & y & x & w & v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_67
     =
     (fun
         (#z: Type)
@@ -3993,7 +4005,7 @@ let impl
         (other: (z & y & x & w & v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_67
     =
     (fun
         (#z: Type)
@@ -4098,7 +4110,7 @@ let impl
         (other: (z & y & x & w & v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_67
     =
     (fun
         (#z: Type)
@@ -4203,7 +4215,7 @@ let impl
         (other: (z & y & x & w & v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_67
     =
     (fun
         (#z: Type)
@@ -4308,7 +4320,7 @@ let impl
         (other: (z & y & x & w & v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_67
     =
     fun
       (#z: Type)
@@ -4415,7 +4427,7 @@ let impl
       ()
   }
 
-let impl
+let impl_641676469
       (#z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized z)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized y)
@@ -4510,7 +4522,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __90: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (z & y & x & w & v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_68
     =
     fun
       (#z: Type)
@@ -4617,7 +4629,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1043509588
       (#z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized z)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized y)
@@ -4719,7 +4731,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __97: Core.Default.t_Default t)
     : Core.Default.t_Default (z & y & x & w & v & u & t) =
   {
-    default
+    f_default_under_impl_69
     =
     fun
       (#z: Type)
@@ -4831,13 +4843,13 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t & t & t & t & t & t) (array t 7sz) =
-  { from = fun (#t: Type) (array: array t 7sz) -> () }
+let impl_1062519578 (#t: Type) : Core.Convert.t_From (t & t & t & t & t & t & t) (array t 7sz) =
+  { f_from_under_impl_60 = fun (#t: Type) (array: array t 7sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 7sz) (t & t & t & t & t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t & t & t & t & t)) -> () }
+let impl_453314665 (#t: Type) : Core.Convert.t_From (array t 7sz) (t & t & t & t & t & t & t) =
+  { f_from_under_impl_61 = fun (#t: Type) (tuple: (t & t & t & t & t & t & t)) -> () }
 
-let impl
+let impl_765533284
       (#a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized z)
@@ -4961,7 +4973,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __119: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (a & z & y & x & w & v & u & t) (a & z & y & x & w & v & u & t) =
   {
-    eq
+    f_eq_under_impl_72
     =
     (fun
         (#a: Type)
@@ -5096,7 +5108,7 @@ let impl
         (other: (a & z & y & x & w & v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_72
     =
     fun
       (#a: Type)
@@ -5233,7 +5245,7 @@ let impl
       ()
   }
 
-let impl
+let impl_233665558
       (#a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized z)
@@ -5355,9 +5367,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __117: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __118: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __119: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (a & z & y & x & w & v & u & t) = {  }
+    : Core.Cmp.t_Eq (a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_305015643
       (#a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized z)
@@ -5487,15 +5499,15 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __125: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __126: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __127: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (a & z & y & x & w & v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl (#a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralPartialEq (a & z & y & x & w & v & u & t) = {  }
+let impl_785276728 (#a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralPartialEq (a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl (#a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralEq (a & z & y & x & w & v & u & t) = {  }
+let impl_634044361 (#a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralEq (a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_130269758
       (#a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized z)
@@ -5619,7 +5631,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __119: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (a & z & y & x & w & v & u & t) (a & z & y & x & w & v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_77
     =
     (fun
         (#a: Type)
@@ -5754,7 +5766,7 @@ let impl
         (other: (a & z & y & x & w & v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_77
     =
     (fun
         (#a: Type)
@@ -5889,7 +5901,7 @@ let impl
         (other: (a & z & y & x & w & v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_77
     =
     (fun
         (#a: Type)
@@ -6024,7 +6036,7 @@ let impl
         (other: (a & z & y & x & w & v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_77
     =
     (fun
         (#a: Type)
@@ -6159,7 +6171,7 @@ let impl
         (other: (a & z & y & x & w & v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_77
     =
     fun
       (#a: Type)
@@ -6296,7 +6308,7 @@ let impl
       ()
   }
 
-let impl
+let impl_994859832
       (#a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized z)
@@ -6420,7 +6432,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __119: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (a & z & y & x & w & v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_78
     =
     fun
       (#a: Type)
@@ -6557,7 +6569,7 @@ let impl
       ()
   }
 
-let impl
+let impl_830637429
       (#a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized z)
@@ -6689,7 +6701,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __127: Core.Default.t_Default t)
     : Core.Default.t_Default (a & z & y & x & w & v & u & t) =
   {
-    default
+    f_default_under_impl_79
     =
     fun
       (#a: Type)
@@ -6832,13 +6844,13 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t & t & t & t & t & t & t) (array t 8sz) =
-  { from = fun (#t: Type) (array: array t 8sz) -> () }
+let impl_54123930 (#t: Type) : Core.Convert.t_From (t & t & t & t & t & t & t & t) (array t 8sz) =
+  { f_from_under_impl_70 = fun (#t: Type) (array: array t 8sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 8sz) (t & t & t & t & t & t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t)) -> () }
+let impl_267278731 (#t: Type) : Core.Convert.t_From (array t 8sz) (t & t & t & t & t & t & t & t) =
+  { f_from_under_impl_71 = fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t)) -> () }
 
-let impl
+let impl_872603717
       (#b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized a)
@@ -6995,7 +7007,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __152: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (b & a & z & y & x & w & v & u & t) (b & a & z & y & x & w & v & u & t) =
   {
-    eq
+    f_eq_under_impl_82
     =
     (fun
         (#b: Type)
@@ -7164,7 +7176,7 @@ let impl
         (other: (b & a & z & y & x & w & v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_82
     =
     fun
       (#b: Type)
@@ -7335,7 +7347,7 @@ let impl
       ()
   }
 
-let impl
+let impl_884999405
       (#b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized a)
@@ -7490,9 +7502,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __150: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __151: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __152: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (b & a & z & y & x & w & v & u & t) = {  }
+    : Core.Cmp.t_Eq (b & a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_737094650
       (#b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized a)
@@ -7656,15 +7668,16 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __159: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __160: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __161: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (b & a & z & y & x & w & v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (b & a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl (#b #a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralPartialEq (b & a & z & y & x & w & v & u & t) = {  }
+let impl_833721057 (#b #a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralPartialEq (b & a & z & y & x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl (#b #a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralEq (b & a & z & y & x & w & v & u & t) = {  }
+let impl_601697849 (#b #a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralEq (b & a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_528343560
       (#b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized a)
@@ -7821,7 +7834,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __152: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (b & a & z & y & x & w & v & u & t) (b & a & z & y & x & w & v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_87
     =
     (fun
         (#b: Type)
@@ -7990,7 +8003,7 @@ let impl
         (other: (b & a & z & y & x & w & v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_87
     =
     (fun
         (#b: Type)
@@ -8159,7 +8172,7 @@ let impl
         (other: (b & a & z & y & x & w & v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_87
     =
     (fun
         (#b: Type)
@@ -8328,7 +8341,7 @@ let impl
         (other: (b & a & z & y & x & w & v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_87
     =
     (fun
         (#b: Type)
@@ -8497,7 +8510,7 @@ let impl
         (other: (b & a & z & y & x & w & v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_87
     =
     fun
       (#b: Type)
@@ -8668,7 +8681,7 @@ let impl
       ()
   }
 
-let impl
+let impl_745363545
       (#b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized a)
@@ -8825,7 +8838,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __152: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (b & a & z & y & x & w & v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_88
     =
     fun
       (#b: Type)
@@ -8996,7 +9009,7 @@ let impl
       ()
   }
 
-let impl
+let impl_772300087
       (#b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized a)
@@ -9162,7 +9175,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __161: Core.Default.t_Default t)
     : Core.Default.t_Default (b & a & z & y & x & w & v & u & t) =
   {
-    default
+    f_default_under_impl_89
     =
     fun
       (#b: Type)
@@ -9340,13 +9353,15 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t & t & t & t & t & t & t & t) (array t 9sz) =
-  { from = fun (#t: Type) (array: array t 9sz) -> () }
+let impl_755987775 (#t: Type)
+    : Core.Convert.t_From (t & t & t & t & t & t & t & t & t) (array t 9sz) =
+  { f_from_under_impl_80 = fun (#t: Type) (array: array t 9sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 9sz) (t & t & t & t & t & t & t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t & t)) -> () }
+let impl_641981422 (#t: Type)
+    : Core.Convert.t_From (array t 9sz) (t & t & t & t & t & t & t & t & t) =
+  { f_from_under_impl_81 = fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t & t)) -> () }
 
-let impl
+let impl_456272698
       (#c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -9541,7 +9556,7 @@ let impl
     : Core.Cmp.t_PartialEq (c & b & a & z & y & x & w & v & u & t)
       (c & b & a & z & y & x & w & v & u & t) =
   {
-    eq
+    f_eq_under_impl_92
     =
     (fun
         (#c: Type)
@@ -9748,7 +9763,7 @@ let impl
         (other: (c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_92
     =
     fun
       (#c: Type)
@@ -9957,7 +9972,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1059387835
       (#c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -10149,9 +10164,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __187: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __188: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __189: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (c & b & a & z & y & x & w & v & u & t) = {  }
+    : Core.Cmp.t_Eq (c & b & a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_535954881
       (#c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -10353,15 +10368,16 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __197: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __198: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __199: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (c & b & a & z & y & x & w & v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (c & b & a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl (#c #b #a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralPartialEq (c & b & a & z & y & x & w & v & u & t) = {  }
+let impl_396925791 (#c #b #a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralPartialEq (c & b & a & z & y & x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl (#c #b #a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralEq (c & b & a & z & y & x & w & v & u & t) = {  }
+let impl_362103020 (#c #b #a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralEq (c & b & a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_185008395
       (#c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -10556,7 +10572,7 @@ let impl
     : Core.Cmp.t_PartialOrd (c & b & a & z & y & x & w & v & u & t)
       (c & b & a & z & y & x & w & v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_97
     =
     (fun
         (#c: Type)
@@ -10763,7 +10779,7 @@ let impl
         (other: (c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_97
     =
     (fun
         (#c: Type)
@@ -10970,7 +10986,7 @@ let impl
         (other: (c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_97
     =
     (fun
         (#c: Type)
@@ -11177,7 +11193,7 @@ let impl
         (other: (c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_97
     =
     (fun
         (#c: Type)
@@ -11384,7 +11400,7 @@ let impl
         (other: (c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_97
     =
     fun
       (#c: Type)
@@ -11593,7 +11609,7 @@ let impl
       ()
   }
 
-let impl
+let impl_604344299
       (#c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -11787,7 +11803,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __189: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (c & b & a & z & y & x & w & v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_98
     =
     fun
       (#c: Type)
@@ -11996,7 +12012,7 @@ let impl
       ()
   }
 
-let impl
+let impl_112224870
       (#c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -12200,7 +12216,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __199: Core.Default.t_Default t)
     : Core.Default.t_Default (c & b & a & z & y & x & w & v & u & t) =
   {
-    default
+    f_default_under_impl_99
     =
     fun
       (#c: Type)
@@ -12417,13 +12433,15 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t & t & t & t & t & t & t & t & t) (array t 10sz) =
-  { from = fun (#t: Type) (array: array t 10sz) -> () }
+let impl_274014404 (#t: Type)
+    : Core.Convert.t_From (t & t & t & t & t & t & t & t & t & t) (array t 10sz) =
+  { f_from_under_impl_90 = fun (#t: Type) (array: array t 10sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 10sz) (t & t & t & t & t & t & t & t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t & t & t)) -> () }
+let impl_524023960 (#t: Type)
+    : Core.Convert.t_From (array t 10sz) (t & t & t & t & t & t & t & t & t & t) =
+  { f_from_under_impl_91 = fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t & t & t)) -> () }
 
-let impl
+let impl_757363063
       (#d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized d)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized c)
@@ -12659,7 +12677,7 @@ let impl
     : Core.Cmp.t_PartialEq (d & c & b & a & z & y & x & w & v & u & t)
       (d & c & b & a & z & y & x & w & v & u & t) =
   {
-    eq
+    f_eq_under_impl_102
     =
     (fun
         (#d: Type)
@@ -12908,7 +12926,7 @@ let impl
         (other: (d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_102
     =
     fun
       (#d: Type)
@@ -13159,7 +13177,7 @@ let impl
       ()
   }
 
-let impl
+let impl_924686654
       (#d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized d)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized c)
@@ -13392,9 +13410,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __228: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __229: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __230: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (d & c & b & a & z & y & x & w & v & u & t) = {  }
+    : Core.Cmp.t_Eq (d & c & b & a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_730462148
       (#d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized d)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized c)
@@ -13638,15 +13656,18 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __239: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __240: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __241: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (d & c & b & a & z & y & x & w & v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (d & c & b & a & z & y & x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl (#d #c #b #a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralPartialEq (d & c & b & a & z & y & x & w & v & u & t) = {  }
+let impl_321264093 (#d #c #b #a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralPartialEq (d & c & b & a & z & y & x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl (#d #c #b #a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralEq (d & c & b & a & z & y & x & w & v & u & t) = {  }
+let impl_36933905 (#d #c #b #a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralEq (d & c & b & a & z & y & x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl
+let impl_423770742
       (#d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized d)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized c)
@@ -13882,7 +13903,7 @@ let impl
     : Core.Cmp.t_PartialOrd (d & c & b & a & z & y & x & w & v & u & t)
       (d & c & b & a & z & y & x & w & v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_107
     =
     (fun
         (#d: Type)
@@ -14131,7 +14152,7 @@ let impl
         (other: (d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_107
     =
     (fun
         (#d: Type)
@@ -14380,7 +14401,7 @@ let impl
         (other: (d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_107
     =
     (fun
         (#d: Type)
@@ -14629,7 +14650,7 @@ let impl
         (other: (d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_107
     =
     (fun
         (#d: Type)
@@ -14878,7 +14899,7 @@ let impl
         (other: (d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_107
     =
     fun
       (#d: Type)
@@ -15129,7 +15150,7 @@ let impl
       ()
   }
 
-let impl
+let impl_264055900
       (#d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized d)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized c)
@@ -15364,7 +15385,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __230: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (d & c & b & a & z & y & x & w & v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_108
     =
     fun
       (#d: Type)
@@ -15615,7 +15636,7 @@ let impl
       ()
   }
 
-let impl
+let impl_313989859
       (#d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized d)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized c)
@@ -15861,7 +15882,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __241: Core.Default.t_Default t)
     : Core.Default.t_Default (d & c & b & a & z & y & x & w & v & u & t) =
   {
-    default
+    f_default_under_impl_109
     =
     fun
       (#d: Type)
@@ -16121,13 +16142,19 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t & t & t & t & t & t & t & t & t & t & t) (array t 11sz) =
-  { from = fun (#t: Type) (array: array t 11sz) -> () }
+let impl_808577850 (#t: Type)
+    : Core.Convert.t_From (t & t & t & t & t & t & t & t & t & t & t) (array t 11sz) =
+  { f_from_under_impl_100 = fun (#t: Type) (array: array t 11sz) -> () }
 
-let impl (#t: Type) : Core.Convert.t_From (array t 11sz) (t & t & t & t & t & t & t & t & t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t & t & t & t)) -> () }
+let impl_710720352 (#t: Type)
+    : Core.Convert.t_From (array t 11sz) (t & t & t & t & t & t & t & t & t & t & t) =
+  {
+    f_from_under_impl_101
+    =
+    fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t & t & t & t)) -> ()
+  }
 
-let impl
+let impl_986495699
       (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized e)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized d)
@@ -16408,7 +16435,7 @@ let impl
     : Core.Cmp.t_PartialEq (e & d & c & b & a & z & y & x & w & v & u & t)
       (e & d & c & b & a & z & y & x & w & v & u & t) =
   {
-    eq
+    f_eq_under_impl_112
     =
     (fun
         (#e: Type)
@@ -16703,7 +16730,7 @@ let impl
         (other: (e & d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    ne
+    f_ne_under_impl_112
     =
     fun
       (#e: Type)
@@ -17000,7 +17027,7 @@ let impl
       ()
   }
 
-let impl
+let impl_709776241
       (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized e)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized d)
@@ -17278,9 +17305,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __273: Core.Cmp.t_Eq v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __274: Core.Cmp.t_Eq u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __275: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (e & d & c & b & a & z & y & x & w & v & u & t) = {  }
+    : Core.Cmp.t_Eq (e & d & c & b & a & z & y & x & w & v & u & t) = { __marker_trait = () }
 
-let impl
+let impl_750979020
       (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized e)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized d)
@@ -17570,15 +17597,18 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __285: Core.Marker.t_ConstParamTy v)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __286: Core.Marker.t_ConstParamTy u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __287: Core.Marker.t_ConstParamTy t)
-    : Core.Marker.t_ConstParamTy (e & d & c & b & a & z & y & x & w & v & u & t) = {  }
+    : Core.Marker.t_ConstParamTy (e & d & c & b & a & z & y & x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralPartialEq (e & d & c & b & a & z & y & x & w & v & u & t) = {  }
+let impl_812893331 (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralPartialEq (e & d & c & b & a & z & y & x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
-    : Core.Marker.t_StructuralEq (e & d & c & b & a & z & y & x & w & v & u & t) = {  }
+let impl_59816429 (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
+    : Core.Marker.t_StructuralEq (e & d & c & b & a & z & y & x & w & v & u & t) =
+  { __marker_trait = () }
 
-let impl
+let impl_829074721
       (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized e)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized d)
@@ -17859,7 +17889,7 @@ let impl
     : Core.Cmp.t_PartialOrd (e & d & c & b & a & z & y & x & w & v & u & t)
       (e & d & c & b & a & z & y & x & w & v & u & t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_117
     =
     (fun
         (#e: Type)
@@ -18154,7 +18184,7 @@ let impl
         (other: (e & d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    lt
+    f_lt_under_impl_117
     =
     (fun
         (#e: Type)
@@ -18449,7 +18479,7 @@ let impl
         (other: (e & d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    le
+    f_le_under_impl_117
     =
     (fun
         (#e: Type)
@@ -18744,7 +18774,7 @@ let impl
         (other: (e & d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    ge
+    f_ge_under_impl_117
     =
     (fun
         (#e: Type)
@@ -19039,7 +19069,7 @@ let impl
         (other: (e & d & c & b & a & z & y & x & w & v & u & t))
         ->
         ());
-    gt
+    f_gt_under_impl_117
     =
     fun
       (#e: Type)
@@ -19336,7 +19366,7 @@ let impl
       ()
   }
 
-let impl
+let impl_720808017
       (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized e)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized d)
@@ -19616,7 +19646,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __275: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (e & d & c & b & a & z & y & x & w & v & u & t) =
   {
-    cmp
+    f_cmp_under_impl_118
     =
     fun
       (#e: Type)
@@ -19913,7 +19943,7 @@ let impl
       ()
   }
 
-let impl
+let impl_892758770
       (#e #d #c #b #a #z #y #x #w #v #u #t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized e)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized d)
@@ -20205,7 +20235,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __287: Core.Default.t_Default t)
     : Core.Default.t_Default (e & d & c & b & a & z & y & x & w & v & u & t) =
   {
-    default
+    f_default_under_impl_119
     =
     fun
       (#e: Type)
@@ -20512,10 +20542,14 @@ let impl
       ()
   }
 
-let impl (#t: Type)
+let impl_834402541 (#t: Type)
     : Core.Convert.t_From (t & t & t & t & t & t & t & t & t & t & t & t) (array t 12sz) =
-  { from = fun (#t: Type) (array: array t 12sz) -> () }
+  { f_from_under_impl_110 = fun (#t: Type) (array: array t 12sz) -> () }
 
-let impl (#t: Type)
+let impl_659032097 (#t: Type)
     : Core.Convert.t_From (array t 12sz) (t & t & t & t & t & t & t & t & t & t & t & t) =
-  { from = fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t & t & t & t & t)) -> () }
+  {
+    f_from_under_impl_111
+    =
+    fun (#t: Type) (tuple: (t & t & t & t & t & t & t & t & t & t & t & t)) -> ()
+  }

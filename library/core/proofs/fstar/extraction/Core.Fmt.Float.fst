@@ -2,7 +2,9 @@ module Core.Fmt.Float
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-class t_GeneralFormat (v_Self: Type) = { already_rounded_value_should_use_exponential:self -> bool }
+class t_GeneralFormat (v_Self: Type) = {
+  f_already_rounded_value_should_use_exponential:self -> bool
+}
 
 (* item error backend *)
 

@@ -29,22 +29,26 @@ let trim_ascii_under_impl (self: slice u8) : slice u8 = ()
 
 type t_EscapeByte = | EscapeByte : t_EscapeByte
 
-let impl: Core.Clone.t_Clone t_EscapeByte = { clone = fun (self: t_EscapeByte) -> () }
+let impl_145506541: Core.Clone.t_Clone t_EscapeByte =
+  { f_clone_under_impl_9 = fun (self: t_EscapeByte) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_EscapeByte u8 =
-  { call = fun (self: t_EscapeByte) (byte: u8) -> () }
+let impl_307076988: Core.Ops.Function.t_Fn t_EscapeByte u8 =
+  { f_call_under_impl_6 = fun (self: t_EscapeByte) (byte: u8) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_EscapeByte u8 =
+let impl_591868864: Core.Ops.Function.t_FnMut t_EscapeByte u8 =
   {
-    call_mut
+    f_call_mut_under_impl_7
     =
     fun (self: t_EscapeByte) (byte: u8) ->
       let output:Core.Ascii.t_EscapeDefault = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_EscapeByte u8 =
-  { output = Core.Ascii.t_EscapeDefault; call_once = fun (self: t_EscapeByte) (byte: u8) -> () }
+let impl_669228378: Core.Ops.Function.t_FnOnce t_EscapeByte u8 =
+  {
+    f_Output_under_impl_8 = Core.Ascii.t_EscapeDefault;
+    f_call_once_under_impl_8 = fun (self: t_EscapeByte) (byte: u8) -> ()
+  }
 
 type t_EscapeAscii = {
   f_inner:Core.Iter.Adapters.Flatten.t_FlatMap (Core.Slice.Iter.t_Iter u8)
@@ -52,49 +56,50 @@ type t_EscapeAscii = {
     t_EscapeByte
 }
 
-let impl: Core.Clone.t_Clone t_EscapeAscii = { clone = fun (self: t_EscapeAscii) -> () }
+let impl_614659886: Core.Clone.t_Clone t_EscapeAscii =
+  { f_clone_under_impl_10 = fun (self: t_EscapeAscii) -> () }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_EscapeAscii =
+let impl_921461965: Core.Iter.Traits.Iterator.t_Iterator t_EscapeAscii =
   {
-    item = u8;
-    next
+    f_Item_under_impl_1 = u8;
+    f_next_under_impl_1
     =
     (fun (self: t_EscapeAscii) ->
         let output:Core.Option.t_Option u8 = () in
         self, output);
-    size_hint = (fun (self: t_EscapeAscii) -> ());
-    try_fold
+    f_size_hint_under_impl_1 = (fun (self: t_EscapeAscii) -> ());
+    f_try_fold_under_impl_1
     =
     (fun (self: t_EscapeAscii) (init: acc) (fold: fold) ->
         let output:r = () in
         self, output);
-    fold = (fun (self: t_EscapeAscii) (init: acc) (fold: fold) -> ());
-    last = fun (self: t_EscapeAscii) -> ()
+    f_fold_under_impl_1 = (fun (self: t_EscapeAscii) (init: acc) (fold: fold) -> ());
+    f_last_under_impl_1 = fun (self: t_EscapeAscii) -> ()
   }
 
-let impl: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_EscapeAscii =
+let impl_1030070233: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_EscapeAscii =
   {
-    next_back
+    f_next_back_under_impl_2
     =
     fun (self: t_EscapeAscii) ->
       let output:Core.Option.t_Option u8 = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_EscapeAscii = {  }
+let impl_24785191: Core.Iter.Traits.Marker.t_FusedIterator t_EscapeAscii = { __marker_trait = () }
 
-let impl: Core.Fmt.t_Display t_EscapeAscii =
+let impl_416512205: Core.Fmt.t_Display t_EscapeAscii =
   {
-    fmt
+    f_fmt_under_impl_4
     =
     fun (self: t_EscapeAscii) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Fmt.t_Debug t_EscapeAscii =
+let impl_23563159: Core.Fmt.t_Debug t_EscapeAscii =
   {
-    fmt
+    f_fmt_under_impl_5
     =
     fun (self: t_EscapeAscii) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

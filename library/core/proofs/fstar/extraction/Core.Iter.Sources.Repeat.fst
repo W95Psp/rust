@@ -11,13 +11,13 @@ let repeat
 
 type t_Repeat = { f_element:a }
 
-let impl
+let impl_667055683
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone a)
     : Core.Clone.t_Clone (t_Repeat a) =
   {
-    clone
+    f_clone_under_impl_4
     =
     fun
       (#a: Type)
@@ -28,13 +28,13 @@ let impl
       ()
   }
 
-let impl
+let impl_56694534
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug a)
     : Core.Fmt.t_Debug (t_Repeat a) =
   {
-    fmt
+    f_fmt_under_impl_5
     =
     fun
       (#a: Type)
@@ -47,14 +47,14 @@ let impl
       f, output
   }
 
-let impl
+let impl_170320350
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone a)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Repeat a) =
   {
-    item = a;
-    next
+    f_Item_under_impl = a;
+    f_next_under_impl
     =
     (fun
         (#a: Type)
@@ -64,7 +64,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl
     =
     (fun
         (#a: Type)
@@ -73,7 +73,7 @@ let impl
         (self: t_Repeat a)
         ->
         ());
-    advance_by
+    f_advance_by_under_impl
     =
     (fun
         (#a: Type)
@@ -84,7 +84,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    nth
+    f_nth_under_impl
     =
     (fun
         (#a: Type)
@@ -95,7 +95,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    last
+    f_last_under_impl
     =
     (fun
         (#a: Type)
@@ -104,7 +104,7 @@ let impl
         (self: t_Repeat a)
         ->
         ());
-    count
+    f_count_under_impl
     =
     fun
       (#a: Type)
@@ -115,13 +115,13 @@ let impl
       ()
   }
 
-let impl
+let impl_253392035
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone a)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_Repeat a) =
   {
-    next_back
+    f_next_back_under_impl_1
     =
     (fun
         (#a: Type)
@@ -131,7 +131,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    advance_back_by
+    f_advance_back_by_under_impl_1
     =
     (fun
         (#a: Type)
@@ -142,7 +142,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    nth_back
+    f_nth_back_under_impl_1
     =
     fun
       (#a: Type)
@@ -155,8 +155,8 @@ let impl
       self, output
   }
 
-let impl
+let impl_283256325
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone a)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_Repeat a) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_Repeat a) = { __marker_trait = () }

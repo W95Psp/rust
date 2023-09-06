@@ -7,7 +7,7 @@ type t_Peekable = {
   f_peeked:Core.Option.t_Option (Core.Option.t_Option _)
 }
 
-let impl
+let impl_392441804
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone i)
@@ -19,7 +19,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_Peekable i) =
   {
-    clone
+    f_clone_under_impl_8
     =
     fun
       (#i: Type)
@@ -36,7 +36,7 @@ let impl
       ()
   }
 
-let impl
+let impl_891265159
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug i)
@@ -48,7 +48,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_Peekable i) =
   {
-    fmt
+    f_fmt_under_impl_9
     =
     fun
       (#i: Type)
@@ -74,14 +74,14 @@ let new_under_impl
       (iter: i)
     : t_Peekable i = ()
 
-let impl
+let impl_54500315
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Peekable i) =
   {
-    item = _;
-    next
+    f_Item_under_impl_1 = _;
+    f_next_under_impl_1
     =
     (fun
         (#i: Type)
@@ -91,7 +91,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    count
+    f_count_under_impl_1
     =
     (fun
         (#i: Type)
@@ -100,7 +100,7 @@ let impl
         (self: t_Peekable i)
         ->
         ());
-    nth
+    f_nth_under_impl_1
     =
     (fun
         (#i: Type)
@@ -111,7 +111,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    last
+    f_last_under_impl_1
     =
     (fun
         (#i: Type)
@@ -120,7 +120,7 @@ let impl
         (self: t_Peekable i)
         ->
         ());
-    size_hint
+    f_size_hint_under_impl_1
     =
     (fun
         (#i: Type)
@@ -129,7 +129,7 @@ let impl
         (self: t_Peekable i)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_1
     =
     (fun
         (#i: Type)
@@ -141,7 +141,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_1
     =
     fun
       (#i: Type)
@@ -154,7 +154,7 @@ let impl
       ()
   }
 
-let impl
+let impl_212389274
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
@@ -162,7 +162,7 @@ let impl
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator i)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_Peekable i) =
   {
-    next_back
+    f_next_back_under_impl_2
     =
     (fun
         (#i: Type)
@@ -174,7 +174,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    try_rfold
+    f_try_rfold_under_impl_2
     =
     (fun
         (#i: Type)
@@ -188,7 +188,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    rfold
+    f_rfold_under_impl_2
     =
     fun
       (#i: Type)
@@ -203,19 +203,19 @@ let impl
       ()
   }
 
-let impl
+let impl_678550924
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __1:
           Core.Iter.Traits.Exact_size.t_ExactSizeIterator i)
-    : Core.Iter.Traits.Exact_size.t_ExactSizeIterator (t_Peekable i) = {  }
+    : Core.Iter.Traits.Exact_size.t_ExactSizeIterator (t_Peekable i) = { __marker_trait = () }
 
-let impl
+let impl_759517661
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Marker.t_FusedIterator i)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_Peekable i) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_Peekable i) = { __marker_trait = () }
 
 let peek_under_impl_5
       (#i: Type)
@@ -240,7 +240,7 @@ let next_if_under_impl_5
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
       (self: t_Peekable i)
-      (func: impl fnonce(&i::item) -> bool)
+      (func: impl_428626975_)
     : (t_Peekable i & Core.Option.t_Option _) =
   let output:Core.Option.t_Option _ = () in
   self, output

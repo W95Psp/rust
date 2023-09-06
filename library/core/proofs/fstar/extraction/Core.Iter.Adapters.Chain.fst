@@ -7,7 +7,7 @@ type t_Chain = {
   f_b:Core.Option.t_Option b
 }
 
-let impl
+let impl_618789608
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -19,7 +19,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone b)
     : Core.Clone.t_Clone (t_Chain a b) =
   {
-    clone
+    f_clone_under_impl_6
     =
     fun
       (#a: Type)
@@ -37,7 +37,7 @@ let impl
       ()
   }
 
-let impl
+let impl_17284758
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -49,7 +49,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Fmt.t_Debug b)
     : Core.Fmt.t_Debug (t_Chain a b) =
   {
-    fmt
+    f_fmt_under_impl_7
     =
     fun
       (#a: Type)
@@ -71,7 +71,7 @@ let impl
 
 let new_under_impl (#a #b: Type) (a: a) (b: b) : t_Chain a b = ()
 
-let impl
+let impl_889862753
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator a)
@@ -83,8 +83,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized a)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Chain a b) =
   {
-    item = _;
-    next
+    f_Item_under_impl_1 = _;
+    f_next_under_impl_1
     =
     (fun
         (#a: Type)
@@ -101,7 +101,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    count
+    f_count_under_impl_1
     =
     (fun
         (#a: Type)
@@ -117,7 +117,7 @@ let impl
         (self: t_Chain a b)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_1
     =
     (fun
         (#a: Type)
@@ -136,7 +136,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_1
     =
     (fun
         (#a: Type)
@@ -154,7 +154,7 @@ let impl
         (f: f)
         ->
         ());
-    advance_by
+    f_advance_by_under_impl_1
     =
     (fun
         (#a: Type)
@@ -172,7 +172,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    nth
+    f_nth_under_impl_1
     =
     (fun
         (#a: Type)
@@ -190,7 +190,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    find
+    f_find_under_impl_1
     =
     (fun
         (#a: Type)
@@ -208,7 +208,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    last
+    f_last_under_impl_1
     =
     (fun
         (#a: Type)
@@ -224,7 +224,7 @@ let impl
         (self: t_Chain a b)
         ->
         ());
-    size_hint
+    f_size_hint_under_impl_1
     =
     fun
       (#a: Type)
@@ -242,7 +242,7 @@ let impl
       ()
   }
 
-let impl
+let impl_722269228
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
@@ -262,7 +262,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized a)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_Chain a b) =
   {
-    next_back
+    f_next_back_under_impl_2
     =
     (fun
         (#a: Type)
@@ -287,7 +287,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    advance_back_by
+    f_advance_back_by_under_impl_2
     =
     (fun
         (#a: Type)
@@ -313,7 +313,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    nth_back
+    f_nth_back_under_impl_2
     =
     (fun
         (#a: Type)
@@ -339,7 +339,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    rfind
+    f_rfind_under_impl_2
     =
     (fun
         (#a: Type)
@@ -365,7 +365,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    try_rfold
+    f_try_rfold_under_impl_2
     =
     (fun
         (#a: Type)
@@ -392,7 +392,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    rfold
+    f_rfold_under_impl_2
     =
     fun
       (#a: Type)
@@ -420,7 +420,7 @@ let impl
       ()
   }
 
-let impl
+let impl_295000533
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Marker.t_FusedIterator a)
@@ -430,9 +430,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Iter.Traits.Marker.t_FusedIterator a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Iter.Traits.Marker.t_FusedIterator b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized a)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_Chain a b) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_Chain a b) = { __marker_trait = () }
 
-let impl
+let impl_692106560
       (#a #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -444,7 +444,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Default.t_Default b)
     : Core.Default.t_Default (t_Chain a b) =
   {
-    default
+    f_default_under_impl_5
     =
     fun
       (#a: Type)

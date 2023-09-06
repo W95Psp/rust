@@ -7,7 +7,7 @@ type t_ArrayChunks = {
   f_remainder:Core.Option.t_Option (Core.Array.Iter.t_IntoIter _ v_N)
 }
 
-let impl
+let impl_449588932
       (#i: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
@@ -20,7 +20,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_ArrayChunks i v_N) =
   {
-    fmt
+    f_fmt_under_impl_8
     =
     fun
       (#i: Type)
@@ -40,7 +40,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_688571997
       (#i: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
@@ -53,7 +53,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_ArrayChunks i v_N) =
   {
-    clone
+    f_clone_under_impl_9
     =
     fun
       (#i: Type)
@@ -87,15 +87,15 @@ let into_remainder_under_impl
       (self: t_ArrayChunks i v_N)
     : Core.Option.t_Option (Core.Array.Iter.t_IntoIter _ v_N) = ()
 
-let impl
+let impl_777375656
       (#i: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
     : Core.Iter.Traits.Iterator.t_Iterator (t_ArrayChunks i v_N) =
   {
-    item = array _ v_N;
-    next
+    f_Item_under_impl_1 = array _ v_N;
+    f_next_under_impl_1
     =
     (fun
         (#i: Type)
@@ -106,7 +106,7 @@ let impl
         ->
         let output:Core.Option.t_Option (array _ v_N) = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_1
     =
     (fun
         (#i: Type)
@@ -116,7 +116,7 @@ let impl
         (self: t_ArrayChunks i v_N)
         ->
         ());
-    count
+    f_count_under_impl_1
     =
     (fun
         (#i: Type)
@@ -126,7 +126,7 @@ let impl
         (self: t_ArrayChunks i v_N)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_1
     =
     (fun
         (#i: Type)
@@ -139,7 +139,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_1
     =
     fun
       (#i: Type)
@@ -153,7 +153,7 @@ let impl
       ()
   }
 
-let impl
+let impl_759646540
       (#i: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
@@ -165,7 +165,7 @@ let impl
           Core.Iter.Traits.Exact_size.t_ExactSizeIterator i)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_ArrayChunks i v_N) =
   {
-    next_back
+    f_next_back_under_impl_2
     =
     (fun
         (#i: Type)
@@ -181,7 +181,7 @@ let impl
         ->
         let output:Core.Option.t_Option (array _ v_N) = () in
         self, output);
-    try_rfold
+    f_try_rfold_under_impl_2
     =
     (fun
         (#i: Type)
@@ -199,7 +199,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    rfold
+    f_rfold_under_impl_2
     =
     fun
       (#i: Type)
@@ -233,14 +233,14 @@ let next_back_remainder_under_impl_3
   let output:Prims.unit = () in
   self
 
-let impl
+let impl_914098856
       (#i: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Marker.t_FusedIterator i)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_ArrayChunks i v_N) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_ArrayChunks i v_N) = { __marker_trait = () }
 
-let impl
+let impl_764390093
       (#i: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
@@ -249,7 +249,7 @@ let impl
           Core.Iter.Traits.Exact_size.t_ExactSizeIterator i)
     : Core.Iter.Traits.Exact_size.t_ExactSizeIterator (t_ArrayChunks i v_N) =
   {
-    len
+    f_len_under_impl_5
     =
     (fun
         (#i: Type)
@@ -261,7 +261,7 @@ let impl
         (self: t_ArrayChunks i v_N)
         ->
         ());
-    is_empty
+    f_is_empty_under_impl_5
     =
     fun
       (#i: Type)
@@ -275,16 +275,16 @@ let impl
       ()
   }
 
-class t_SpecFold (v_Self: Type) = { fold:self -> b -> f -> b }
+class t_SpecFold (v_Self: Type) = { f_fold:self -> b -> f -> b }
 
-let impl
+let impl_292961853
       (#i: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
     : t_SpecFold (t_ArrayChunks i v_N) =
   {
-    fold
+    f_fold_under_impl_6
     =
     fun
       (#i: Type)
@@ -298,7 +298,7 @@ let impl
       ()
   }
 
-let impl
+let impl_607242578
       (#i: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
@@ -308,7 +308,7 @@ let impl
           Core.Iter.Adapters.Zip.t_TrustedRandomAccessNoCoerce i)
     : t_SpecFold (t_ArrayChunks i v_N) =
   {
-    fold
+    f_fold_under_impl_7
     =
     fun
       (#i: Type)

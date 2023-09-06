@@ -9,9 +9,10 @@ type t_Decimal = {
   f_digits:array u8 768sz
 }
 
-let impl: Core.Clone.t_Clone t_Decimal = { clone = fun (self: t_Decimal) -> () }
+let impl_455834511: Core.Clone.t_Clone t_Decimal =
+  { f_clone_under_impl_2 = fun (self: t_Decimal) -> () }
 
-let impl: Core.Default.t_Default t_Decimal = { default = fun  -> () }
+let impl_378251894: Core.Default.t_Default t_Decimal = { f_default_under_impl = () }
 
 let v_MAX_DIGITS_under_impl_1: usize = ()
 

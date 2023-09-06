@@ -2,15 +2,15 @@ module Core.Slice.Index
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-let impl
+let impl_842724049
       (#t #i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: t_SliceIndex i (slice t))
     : Core.Ops.Index.t_Index (slice t) i =
   {
-    output = _;
-    index
+    f_Output_under_impl = _;
+    f_index_under_impl
     =
     fun
       (#t: Type)
@@ -24,14 +24,14 @@ let impl
       ()
   }
 
-let impl
+let impl_320279855
       (#t #i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: t_SliceIndex i (slice t))
     : Core.Ops.Index.t_IndexMut (slice t) i =
   {
-    index_mut
+    f_index_mut_under_impl_1
     =
     fun
       (#t: Type)

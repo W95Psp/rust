@@ -4,40 +4,41 @@ open Core
 
 type t_Chars = { f_iter:Core.Slice.Iter.t_Iter u8 }
 
-let impl: Core.Clone.t_Clone t_Chars = { clone = fun (self: t_Chars) -> () }
+let impl_995197287: Core.Clone.t_Clone t_Chars =
+  { f_clone_under_impl_53 = fun (self: t_Chars) -> () }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_Chars =
+let impl_81439794: Core.Iter.Traits.Iterator.t_Iterator t_Chars =
   {
-    item = char;
-    next
+    f_Item_under_impl = char;
+    f_next_under_impl
     =
     (fun (self: t_Chars) ->
         let output:Core.Option.t_Option char = () in
         self, output);
-    count = (fun (self: t_Chars) -> ());
-    size_hint = (fun (self: t_Chars) -> ());
-    last = fun (self: t_Chars) -> ()
+    f_count_under_impl = (fun (self: t_Chars) -> ());
+    f_size_hint_under_impl = (fun (self: t_Chars) -> ());
+    f_last_under_impl = fun (self: t_Chars) -> ()
   }
 
-let impl: Core.Fmt.t_Debug t_Chars =
+let impl_1025210633: Core.Fmt.t_Debug t_Chars =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun (self: t_Chars) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_Chars =
+let impl_515062663: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_Chars =
   {
-    next_back
+    f_next_back_under_impl_2
     =
     fun (self: t_Chars) ->
       let output:Core.Option.t_Option char = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_Chars = {  }
+let impl_571561375: Core.Iter.Traits.Marker.t_FusedIterator t_Chars = { __marker_trait = () }
 
 let as_str_under_impl_4 (self: t_Chars) : string = ()
 
@@ -46,40 +47,41 @@ type t_CharIndices = {
   f_iter:t_Chars
 }
 
-let impl: Core.Clone.t_Clone t_CharIndices = { clone = fun (self: t_CharIndices) -> () }
+let impl_216411274: Core.Clone.t_Clone t_CharIndices =
+  { f_clone_under_impl_54 = fun (self: t_CharIndices) -> () }
 
-let impl: Core.Fmt.t_Debug t_CharIndices =
+let impl_1043109746: Core.Fmt.t_Debug t_CharIndices =
   {
-    fmt
+    f_fmt_under_impl_55
     =
     fun (self: t_CharIndices) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_CharIndices =
+let impl_625693165: Core.Iter.Traits.Iterator.t_Iterator t_CharIndices =
   {
-    item = (usize & char);
-    next
+    f_Item_under_impl_5 = (usize & char);
+    f_next_under_impl_5
     =
     (fun (self: t_CharIndices) ->
         let output:Core.Option.t_Option (usize & char) = () in
         self, output);
-    count = (fun (self: t_CharIndices) -> ());
-    size_hint = (fun (self: t_CharIndices) -> ());
-    last = fun (self: t_CharIndices) -> ()
+    f_count_under_impl_5 = (fun (self: t_CharIndices) -> ());
+    f_size_hint_under_impl_5 = (fun (self: t_CharIndices) -> ());
+    f_last_under_impl_5 = fun (self: t_CharIndices) -> ()
   }
 
-let impl: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_CharIndices =
+let impl_930083161: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_CharIndices =
   {
-    next_back
+    f_next_back_under_impl_6
     =
     fun (self: t_CharIndices) ->
       let output:Core.Option.t_Option (usize & char) = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_CharIndices = {  }
+let impl_508458996: Core.Iter.Traits.Marker.t_FusedIterator t_CharIndices = { __marker_trait = () }
 
 let as_str_under_impl_8 (self: t_CharIndices) : string = ()
 
@@ -87,97 +89,101 @@ let offset_under_impl_8 (self: t_CharIndices) : usize = ()
 
 type t_Bytes = | Bytes : Core.Iter.Adapters.Copied.t_Copied (Core.Slice.Iter.t_Iter u8) -> t_Bytes
 
-let impl: Core.Clone.t_Clone t_Bytes = { clone = fun (self: t_Bytes) -> () }
+let impl_448309980: Core.Clone.t_Clone t_Bytes =
+  { f_clone_under_impl_56 = fun (self: t_Bytes) -> () }
 
-let impl: Core.Fmt.t_Debug t_Bytes =
+let impl_282136565: Core.Fmt.t_Debug t_Bytes =
   {
-    fmt
+    f_fmt_under_impl_57
     =
     fun (self: t_Bytes) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_Bytes =
+let impl_819869046: Core.Iter.Traits.Iterator.t_Iterator t_Bytes =
   {
-    item = u8;
-    next
+    f_Item_under_impl_9 = u8;
+    f_next_under_impl_9
     =
     (fun (self: t_Bytes) ->
         let output:Core.Option.t_Option u8 = () in
         self, output);
-    size_hint = (fun (self: t_Bytes) -> ());
-    count = (fun (self: t_Bytes) -> ());
-    last = (fun (self: t_Bytes) -> ());
-    nth
+    f_size_hint_under_impl_9 = (fun (self: t_Bytes) -> ());
+    f_count_under_impl_9 = (fun (self: t_Bytes) -> ());
+    f_last_under_impl_9 = (fun (self: t_Bytes) -> ());
+    f_nth_under_impl_9
     =
     (fun (self: t_Bytes) (n: usize) ->
         let output:Core.Option.t_Option u8 = () in
         self, output);
-    all
+    f_all_under_impl_9
     =
     (fun (self: t_Bytes) (f: f) ->
         let output:bool = () in
         self, output);
-    any
+    f_any_under_impl_9
     =
     (fun (self: t_Bytes) (f: f) ->
         let output:bool = () in
         self, output);
-    find
+    f_find_under_impl_9
     =
     (fun (self: t_Bytes) (predicate: p) ->
         let output:Core.Option.t_Option u8 = () in
         self, output);
-    position
+    f_position_under_impl_9
     =
     (fun (self: t_Bytes) (predicate: p) ->
         let output:Core.Option.t_Option usize = () in
         self, output);
-    rposition
+    f_rposition_under_impl_9
     =
     (fun (self: t_Bytes) (predicate: p) ->
         let output:Core.Option.t_Option usize = () in
         self, output);
-    __iterator_get_unchecked
+    f___iterator_get_unchecked_under_impl_9
     =
     fun (self: t_Bytes) (idx: usize) ->
       let output:u8 = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_Bytes =
+let impl_311071575: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_Bytes =
   {
-    next_back
+    f_next_back_under_impl_10
     =
     (fun (self: t_Bytes) ->
         let output:Core.Option.t_Option u8 = () in
         self, output);
-    nth_back
+    f_nth_back_under_impl_10
     =
     (fun (self: t_Bytes) (n: usize) ->
         let output:Core.Option.t_Option u8 = () in
         self, output);
-    rfind
+    f_rfind_under_impl_10
     =
     fun (self: t_Bytes) (predicate: p) ->
       let output:Core.Option.t_Option u8 = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator t_Bytes =
-  { len = (fun (self: t_Bytes) -> ()); is_empty = fun (self: t_Bytes) -> () }
+let impl_462289194: Core.Iter.Traits.Exact_size.t_ExactSizeIterator t_Bytes =
+  {
+    f_len_under_impl_11 = (fun (self: t_Bytes) -> ());
+    f_is_empty_under_impl_11 = fun (self: t_Bytes) -> ()
+  }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_Bytes = {  }
+let impl_229651102: Core.Iter.Traits.Marker.t_FusedIterator t_Bytes = { __marker_trait = () }
 
-let impl
+let impl_386140080
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_SplitInternal p) =
   {
-    clone
+    f_clone_under_impl_58
     =
     fun
       (#p: Type)
@@ -197,14 +203,14 @@ type t_SplitInternal = {
   f_finished:bool
 }
 
-let impl
+let impl_1051177530
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_SplitInternal p) =
   {
-    fmt
+    f_fmt_under_impl_16
     =
     fun
       (#p: Type)
@@ -272,14 +278,14 @@ let remainder_under_impl_17
 
 type t_Split = | Split : t_SplitInternal p -> t_Split
 
-let impl
+let impl_332203141
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_Split p) =
   {
-    fmt
+    f_fmt_under_impl_59
     =
     fun
       (#p: Type)
@@ -293,14 +299,14 @@ let impl
       f, output
   }
 
-let impl
+let impl_498070540
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Split p) =
   {
-    item = string;
-    next
+    f_Item_under_impl_60 = string;
+    f_next_under_impl_60
     =
     fun
       (#p: Type)
@@ -312,14 +318,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_1053150278
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_Split p) =
   {
-    clone
+    f_clone_under_impl_61
     =
     fun
       (#p: Type)
@@ -333,14 +339,14 @@ let impl
 
 type t_RSplit = | RSplit : t_SplitInternal p -> t_RSplit
 
-let impl
+let impl_282372381
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_RSplit p) =
   {
-    fmt
+    f_fmt_under_impl_62
     =
     fun
       (#p: Type)
@@ -354,15 +360,15 @@ let impl
       f, output
   }
 
-let impl
+let impl_820234957
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
     : Core.Iter.Traits.Iterator.t_Iterator (t_RSplit p) =
   {
-    item = string;
-    next
+    f_Item_under_impl_63 = string;
+    f_next_under_impl_63
     =
     fun
       (#p: Type)
@@ -375,14 +381,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_768443601
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_RSplit p) =
   {
-    clone
+    f_clone_under_impl_64
     =
     fun
       (#p: Type)
@@ -394,27 +400,27 @@ let impl
       ()
   }
 
-let impl
+let impl_906625181
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_Split p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_Split p) = { __marker_trait = () }
 
-let impl
+let impl_1035224619
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_RSplit p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_RSplit p) = { __marker_trait = () }
 
-let impl
+let impl_105128740
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_DoubleEndedSearcher _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_Split p) =
   {
-    next_back
+    f_next_back_under_impl_67
     =
     fun
       (#p: Type)
@@ -427,14 +433,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_851807272
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_DoubleEndedSearcher _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_RSplit p) =
   {
-    next_back
+    f_next_back_under_impl_68
     =
     fun
       (#p: Type)
@@ -463,14 +469,14 @@ let remainder_under_impl_19
 
 type t_SplitTerminator = | SplitTerminator : t_SplitInternal p -> t_SplitTerminator
 
-let impl
+let impl_84836095
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_SplitTerminator p) =
   {
-    fmt
+    f_fmt_under_impl_69
     =
     fun
       (#p: Type)
@@ -484,14 +490,14 @@ let impl
       f, output
   }
 
-let impl
+let impl_53612846
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
     : Core.Iter.Traits.Iterator.t_Iterator (t_SplitTerminator p) =
   {
-    item = string;
-    next
+    f_Item_under_impl_70 = string;
+    f_next_under_impl_70
     =
     fun
       (#p: Type)
@@ -503,14 +509,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_259713772
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_SplitTerminator p) =
   {
-    clone
+    f_clone_under_impl_71
     =
     fun
       (#p: Type)
@@ -524,14 +530,14 @@ let impl
 
 type t_RSplitTerminator = | RSplitTerminator : t_SplitInternal p -> t_RSplitTerminator
 
-let impl
+let impl_973990194
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_RSplitTerminator p) =
   {
-    fmt
+    f_fmt_under_impl_72
     =
     fun
       (#p: Type)
@@ -545,15 +551,15 @@ let impl
       f, output
   }
 
-let impl
+let impl_582704494
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
     : Core.Iter.Traits.Iterator.t_Iterator (t_RSplitTerminator p) =
   {
-    item = string;
-    next
+    f_Item_under_impl_73 = string;
+    f_next_under_impl_73
     =
     fun
       (#p: Type)
@@ -566,14 +572,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_778961214
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_RSplitTerminator p) =
   {
-    clone
+    f_clone_under_impl_74
     =
     fun
       (#p: Type)
@@ -585,27 +591,27 @@ let impl
       ()
   }
 
-let impl
+let impl_382655758
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_SplitTerminator p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_SplitTerminator p) = { __marker_trait = () }
 
-let impl
+let impl_654501191
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_RSplitTerminator p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_RSplitTerminator p) = { __marker_trait = () }
 
-let impl
+let impl_860039146
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_DoubleEndedSearcher _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_SplitTerminator p) =
   {
-    next_back
+    f_next_back_under_impl_77
     =
     fun
       (#p: Type)
@@ -618,14 +624,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_907636259
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_DoubleEndedSearcher _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_RSplitTerminator p) =
   {
-    next_back
+    f_next_back_under_impl_78
     =
     fun
       (#p: Type)
@@ -652,14 +658,14 @@ let remainder_under_impl_21
       (self: t_RSplitTerminator p)
     : Core.Option.t_Option string = ()
 
-let impl
+let impl_799512654
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_SplitNInternal p) =
   {
-    clone
+    f_clone_under_impl_79
     =
     fun
       (#p: Type)
@@ -676,14 +682,14 @@ type t_SplitNInternal = {
   f_count:usize
 }
 
-let impl
+let impl_428377115
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_SplitNInternal p) =
   {
-    fmt
+    f_fmt_under_impl_22
     =
     fun
       (#p: Type)
@@ -724,14 +730,14 @@ let remainder_under_impl_23
 
 type t_SplitN = | SplitN : t_SplitNInternal p -> t_SplitN
 
-let impl
+let impl_404468975
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_SplitN p) =
   {
-    fmt
+    f_fmt_under_impl_80
     =
     fun
       (#p: Type)
@@ -745,14 +751,14 @@ let impl
       f, output
   }
 
-let impl
+let impl_421852213
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
     : Core.Iter.Traits.Iterator.t_Iterator (t_SplitN p) =
   {
-    item = string;
-    next
+    f_Item_under_impl_81 = string;
+    f_next_under_impl_81
     =
     fun
       (#p: Type)
@@ -764,14 +770,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_1038344524
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_SplitN p) =
   {
-    clone
+    f_clone_under_impl_82
     =
     fun
       (#p: Type)
@@ -785,14 +791,14 @@ let impl
 
 type t_RSplitN = | RSplitN : t_SplitNInternal p -> t_RSplitN
 
-let impl
+let impl_817043229
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_RSplitN p) =
   {
-    fmt
+    f_fmt_under_impl_83
     =
     fun
       (#p: Type)
@@ -806,15 +812,15 @@ let impl
       f, output
   }
 
-let impl
+let impl_288964029
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
     : Core.Iter.Traits.Iterator.t_Iterator (t_RSplitN p) =
   {
-    item = string;
-    next
+    f_Item_under_impl_84 = string;
+    f_next_under_impl_84
     =
     fun
       (#p: Type)
@@ -827,14 +833,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_897054428
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_RSplitN p) =
   {
-    clone
+    f_clone_under_impl_85
     =
     fun
       (#p: Type)
@@ -846,18 +852,18 @@ let impl
       ()
   }
 
-let impl
+let impl_600265852
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_SplitN p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_SplitN p) = { __marker_trait = () }
 
-let impl
+let impl_192762957
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_RSplitN p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_RSplitN p) = { __marker_trait = () }
 
 let remainder_under_impl_24
       (#p: Type)
@@ -873,14 +879,14 @@ let remainder_under_impl_25
       (self: t_RSplitN p)
     : Core.Option.t_Option string = ()
 
-let impl
+let impl_668500142
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_MatchIndicesInternal p) =
   {
-    clone
+    f_clone_under_impl_88
     =
     fun
       (#p: Type)
@@ -894,14 +900,14 @@ let impl
 
 type t_MatchIndicesInternal = | MatchIndicesInternal : _ -> t_MatchIndicesInternal
 
-let impl
+let impl_577526823
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_MatchIndicesInternal p) =
   {
-    fmt
+    f_fmt_under_impl_26
     =
     fun
       (#p: Type)
@@ -935,14 +941,14 @@ let next_back_under_impl_27
 
 type t_MatchIndices = | MatchIndices : t_MatchIndicesInternal p -> t_MatchIndices
 
-let impl
+let impl_880782948
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_MatchIndices p) =
   {
-    fmt
+    f_fmt_under_impl_89
     =
     fun
       (#p: Type)
@@ -956,14 +962,14 @@ let impl
       f, output
   }
 
-let impl
+let impl_224648752
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
     : Core.Iter.Traits.Iterator.t_Iterator (t_MatchIndices p) =
   {
-    item = (usize & string);
-    next
+    f_Item_under_impl_90 = (usize & string);
+    f_next_under_impl_90
     =
     fun
       (#p: Type)
@@ -975,14 +981,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_270818333
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_MatchIndices p) =
   {
-    clone
+    f_clone_under_impl_91
     =
     fun
       (#p: Type)
@@ -996,14 +1002,14 @@ let impl
 
 type t_RMatchIndices = | RMatchIndices : t_MatchIndicesInternal p -> t_RMatchIndices
 
-let impl
+let impl_898711813
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_RMatchIndices p) =
   {
-    fmt
+    f_fmt_under_impl_92
     =
     fun
       (#p: Type)
@@ -1017,15 +1023,15 @@ let impl
       f, output
   }
 
-let impl
+let impl_133057565
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
     : Core.Iter.Traits.Iterator.t_Iterator (t_RMatchIndices p) =
   {
-    item = (usize & string);
-    next
+    f_Item_under_impl_93 = (usize & string);
+    f_next_under_impl_93
     =
     fun
       (#p: Type)
@@ -1038,14 +1044,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_101900116
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_RMatchIndices p) =
   {
-    clone
+    f_clone_under_impl_94
     =
     fun
       (#p: Type)
@@ -1057,27 +1063,27 @@ let impl
       ()
   }
 
-let impl
+let impl_355463651
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_MatchIndices p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_MatchIndices p) = { __marker_trait = () }
 
-let impl
+let impl_1007786313
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_RMatchIndices p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_RMatchIndices p) = { __marker_trait = () }
 
-let impl
+let impl_134546926
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_DoubleEndedSearcher _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_MatchIndices p) =
   {
-    next_back
+    f_next_back_under_impl_97
     =
     fun
       (#p: Type)
@@ -1090,14 +1096,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_953083828
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_DoubleEndedSearcher _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_RMatchIndices p) =
   {
-    next_back
+    f_next_back_under_impl_98
     =
     fun
       (#p: Type)
@@ -1110,14 +1116,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_395454039
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_MatchesInternal p) =
   {
-    clone
+    f_clone_under_impl_99
     =
     fun
       (#p: Type)
@@ -1131,14 +1137,14 @@ let impl
 
 type t_MatchesInternal = | MatchesInternal : _ -> t_MatchesInternal
 
-let impl
+let impl_449840041
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_MatchesInternal p) =
   {
-    fmt
+    f_fmt_under_impl_28
     =
     fun
       (#p: Type)
@@ -1172,14 +1178,14 @@ let next_back_under_impl_29
 
 type t_Matches = | Matches : t_MatchesInternal p -> t_Matches
 
-let impl
+let impl_57537242
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_Matches p) =
   {
-    fmt
+    f_fmt_under_impl_100
     =
     fun
       (#p: Type)
@@ -1193,14 +1199,14 @@ let impl
       f, output
   }
 
-let impl
+let impl_1073109825
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Matches p) =
   {
-    item = string;
-    next
+    f_Item_under_impl_101 = string;
+    f_next_under_impl_101
     =
     fun
       (#p: Type)
@@ -1212,14 +1218,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_761198745
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_Matches p) =
   {
-    clone
+    f_clone_under_impl_102
     =
     fun
       (#p: Type)
@@ -1233,14 +1239,14 @@ let impl
 
 type t_RMatches = | RMatches : t_MatchesInternal p -> t_RMatches
 
-let impl
+let impl_733857246
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_RMatches p) =
   {
-    fmt
+    f_fmt_under_impl_103
     =
     fun
       (#p: Type)
@@ -1254,15 +1260,15 @@ let impl
       f, output
   }
 
-let impl
+let impl_32373505
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
     : Core.Iter.Traits.Iterator.t_Iterator (t_RMatches p) =
   {
-    item = string;
-    next
+    f_Item_under_impl_104 = string;
+    f_next_under_impl_104
     =
     fun
       (#p: Type)
@@ -1275,14 +1281,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_924736929
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_RMatches p) =
   {
-    clone
+    f_clone_under_impl_105
     =
     fun
       (#p: Type)
@@ -1294,27 +1300,27 @@ let impl
       ()
   }
 
-let impl
+let impl_59608135
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_Matches p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_Matches p) = { __marker_trait = () }
 
-let impl
+let impl_214797452
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_RMatches p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_RMatches p) = { __marker_trait = () }
 
-let impl
+let impl_48717800
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_DoubleEndedSearcher _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_Matches p) =
   {
-    next_back
+    f_next_back_under_impl_108
     =
     fun
       (#p: Type)
@@ -1327,14 +1333,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_691774312
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_DoubleEndedSearcher _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_RMatches p) =
   {
-    next_back
+    f_next_back_under_impl_109
     =
     fun
       (#p: Type)
@@ -1350,84 +1356,87 @@ let impl
 type t_Lines =
   | Lines : Core.Iter.Adapters.Map.t_Map (t_SplitInclusive char) Core.Str.t_LinesMap -> t_Lines
 
-let impl: Core.Clone.t_Clone t_Lines = { clone = fun (self: t_Lines) -> () }
+let impl_106123916: Core.Clone.t_Clone t_Lines =
+  { f_clone_under_impl_110 = fun (self: t_Lines) -> () }
 
-let impl: Core.Fmt.t_Debug t_Lines =
+let impl_430209205: Core.Fmt.t_Debug t_Lines =
   {
-    fmt
+    f_fmt_under_impl_111
     =
     fun (self: t_Lines) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_Lines =
+let impl_136137842: Core.Iter.Traits.Iterator.t_Iterator t_Lines =
   {
-    item = string;
-    next
+    f_Item_under_impl_30 = string;
+    f_next_under_impl_30
     =
     (fun (self: t_Lines) ->
         let output:Core.Option.t_Option string = () in
         self, output);
-    size_hint = (fun (self: t_Lines) -> ());
-    last = fun (self: t_Lines) -> ()
+    f_size_hint_under_impl_30 = (fun (self: t_Lines) -> ());
+    f_last_under_impl_30 = fun (self: t_Lines) -> ()
   }
 
-let impl: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_Lines =
+let impl_1030417037: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_Lines =
   {
-    next_back
+    f_next_back_under_impl_31
     =
     fun (self: t_Lines) ->
       let output:Core.Option.t_Option string = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_Lines = {  }
+let impl_987605880: Core.Iter.Traits.Marker.t_FusedIterator t_Lines = { __marker_trait = () }
 
 type t_LinesAny = | LinesAny : t_Lines -> t_LinesAny
 
-let impl: Core.Clone.t_Clone t_LinesAny = { clone = fun (self: t_LinesAny) -> () }
+let impl_543123744: Core.Clone.t_Clone t_LinesAny =
+  { f_clone_under_impl_112 = fun (self: t_LinesAny) -> () }
 
-let impl: Core.Fmt.t_Debug t_LinesAny =
+let impl_170192417: Core.Fmt.t_Debug t_LinesAny =
   {
-    fmt
+    f_fmt_under_impl_113
     =
     fun (self: t_LinesAny) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_LinesAny =
+let impl_955379139: Core.Iter.Traits.Iterator.t_Iterator t_LinesAny =
   {
-    item = string;
-    next
+    f_Item_under_impl_33 = string;
+    f_next_under_impl_33
     =
     (fun (self: t_LinesAny) ->
         let output:Core.Option.t_Option string = () in
         self, output);
-    size_hint = fun (self: t_LinesAny) -> ()
+    f_size_hint_under_impl_33 = fun (self: t_LinesAny) -> ()
   }
 
-let impl: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_LinesAny =
+let impl_1016525860: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_LinesAny =
   {
-    next_back
+    f_next_back_under_impl_34
     =
     fun (self: t_LinesAny) ->
       let output:Core.Option.t_Option string = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_LinesAny = {  }
+let impl_437266737: Core.Iter.Traits.Marker.t_FusedIterator t_LinesAny = { __marker_trait = () }
 
 type t_SplitWhitespace = {
   f_inner:Core.Iter.Adapters.Filter.t_Filter (t_Split Core.Str.t_IsWhitespace) Core.Str.t_IsNotEmpty
 }
 
-let impl: Core.Clone.t_Clone t_SplitWhitespace = { clone = fun (self: t_SplitWhitespace) -> () }
+let impl_37796716: Core.Clone.t_Clone t_SplitWhitespace =
+  { f_clone_under_impl_114 = fun (self: t_SplitWhitespace) -> () }
 
-let impl: Core.Fmt.t_Debug t_SplitWhitespace =
+let impl_397342310: Core.Fmt.t_Debug t_SplitWhitespace =
   {
-    fmt
+    f_fmt_under_impl_115
     =
     fun (self: t_SplitWhitespace) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -1440,12 +1449,12 @@ type t_SplitAsciiWhitespace = {
         Core.Str.t_BytesIsNotEmpty) Core.Str.t_UnsafeBytesToStr
 }
 
-let impl: Core.Clone.t_Clone t_SplitAsciiWhitespace =
-  { clone = fun (self: t_SplitAsciiWhitespace) -> () }
+let impl_63280739: Core.Clone.t_Clone t_SplitAsciiWhitespace =
+  { f_clone_under_impl_116 = fun (self: t_SplitAsciiWhitespace) -> () }
 
-let impl: Core.Fmt.t_Debug t_SplitAsciiWhitespace =
+let impl_963929017: Core.Fmt.t_Debug t_SplitAsciiWhitespace =
   {
-    fmt
+    f_fmt_under_impl_117
     =
     fun (self: t_SplitAsciiWhitespace) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -1454,64 +1463,66 @@ let impl: Core.Fmt.t_Debug t_SplitAsciiWhitespace =
 
 type t_SplitInclusive = | SplitInclusive : t_SplitInternal p -> t_SplitInclusive
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_SplitWhitespace =
+let impl_958792136: Core.Iter.Traits.Iterator.t_Iterator t_SplitWhitespace =
   {
-    item = string;
-    next
+    f_Item_under_impl_36 = string;
+    f_next_under_impl_36
     =
     (fun (self: t_SplitWhitespace) ->
         let output:Core.Option.t_Option string = () in
         self, output);
-    size_hint = (fun (self: t_SplitWhitespace) -> ());
-    last = fun (self: t_SplitWhitespace) -> ()
+    f_size_hint_under_impl_36 = (fun (self: t_SplitWhitespace) -> ());
+    f_last_under_impl_36 = fun (self: t_SplitWhitespace) -> ()
   }
 
-let impl: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_SplitWhitespace =
+let impl_638327149: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_SplitWhitespace =
   {
-    next_back
+    f_next_back_under_impl_37
     =
     fun (self: t_SplitWhitespace) ->
       let output:Core.Option.t_Option string = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_SplitWhitespace = {  }
+let impl_783469922: Core.Iter.Traits.Marker.t_FusedIterator t_SplitWhitespace =
+  { __marker_trait = () }
 
 let remainder_under_impl_39 (self: t_SplitWhitespace) : Core.Option.t_Option string = ()
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_SplitAsciiWhitespace =
+let impl_920076966: Core.Iter.Traits.Iterator.t_Iterator t_SplitAsciiWhitespace =
   {
-    item = string;
-    next
+    f_Item_under_impl_40 = string;
+    f_next_under_impl_40
     =
     (fun (self: t_SplitAsciiWhitespace) ->
         let output:Core.Option.t_Option string = () in
         self, output);
-    size_hint = (fun (self: t_SplitAsciiWhitespace) -> ());
-    last = fun (self: t_SplitAsciiWhitespace) -> ()
+    f_size_hint_under_impl_40 = (fun (self: t_SplitAsciiWhitespace) -> ());
+    f_last_under_impl_40 = fun (self: t_SplitAsciiWhitespace) -> ()
   }
 
-let impl: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_SplitAsciiWhitespace =
+let impl_756106811: Core.Iter.Traits.Double_ended.t_DoubleEndedIterator t_SplitAsciiWhitespace =
   {
-    next_back
+    f_next_back_under_impl_41
     =
     fun (self: t_SplitAsciiWhitespace) ->
       let output:Core.Option.t_Option string = () in
       self, output
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_SplitAsciiWhitespace = {  }
+let impl_1025722878: Core.Iter.Traits.Marker.t_FusedIterator t_SplitAsciiWhitespace =
+  { __marker_trait = () }
 
 let remainder_under_impl_43 (self: t_SplitAsciiWhitespace) : Core.Option.t_Option string = ()
 
-let impl
+let impl_326547918
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
     : Core.Iter.Traits.Iterator.t_Iterator (t_SplitInclusive p) =
   {
-    item = string;
-    next
+    f_Item_under_impl_44 = string;
+    f_next_under_impl_44
     =
     fun
       (#p: Type)
@@ -1523,14 +1534,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_554581011
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_SplitInclusive p) =
   {
-    fmt
+    f_fmt_under_impl_45
     =
     fun
       (#p: Type)
@@ -1544,14 +1555,14 @@ let impl
       f, output
   }
 
-let impl
+let impl_826651649
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_SplitInclusive p) =
   {
-    clone
+    f_clone_under_impl_46
     =
     fun
       (#p: Type)
@@ -1563,14 +1574,14 @@ let impl
       ()
   }
 
-let impl
+let impl_586818232
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Str.Pattern.t_ReverseSearcher _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_SplitInclusive p) =
   {
-    next_back
+    f_next_back_under_impl_47
     =
     fun
       (#p: Type)
@@ -1583,11 +1594,11 @@ let impl
       self, output
   }
 
-let impl
+let impl_519221560
       (#p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Str.Pattern.t_Pattern p)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_SplitInclusive p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_SplitInclusive p) = { __marker_trait = () }
 
 let remainder_under_impl_49
       (#p: Type)
@@ -1601,29 +1612,30 @@ type t_EncodeUtf16 = {
   f_extra:u16
 }
 
-let impl: Core.Clone.t_Clone t_EncodeUtf16 = { clone = fun (self: t_EncodeUtf16) -> () }
+let impl_1036565898: Core.Clone.t_Clone t_EncodeUtf16 =
+  { f_clone_under_impl_118 = fun (self: t_EncodeUtf16) -> () }
 
-let impl: Core.Fmt.t_Debug t_EncodeUtf16 =
+let impl_242362585: Core.Fmt.t_Debug t_EncodeUtf16 =
   {
-    fmt
+    f_fmt_under_impl_50
     =
     fun (self: t_EncodeUtf16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_EncodeUtf16 =
+let impl_261254719: Core.Iter.Traits.Iterator.t_Iterator t_EncodeUtf16 =
   {
-    item = u16;
-    next
+    f_Item_under_impl_51 = u16;
+    f_next_under_impl_51
     =
     (fun (self: t_EncodeUtf16) ->
         let output:Core.Option.t_Option u16 = () in
         self, output);
-    size_hint = fun (self: t_EncodeUtf16) -> ()
+    f_size_hint_under_impl_51 = fun (self: t_EncodeUtf16) -> ()
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_EncodeUtf16 = {  }
+let impl_1055103761: Core.Iter.Traits.Marker.t_FusedIterator t_EncodeUtf16 = { __marker_trait = () }
 
 type t_EscapeDebug = {
   f_inner:Core.Iter.Adapters.Chain.t_Chain
@@ -1633,11 +1645,12 @@ type t_EscapeDebug = {
         Core.Str.t_CharEscapeDebugContinue)
 }
 
-let impl: Core.Clone.t_Clone t_EscapeDebug = { clone = fun (self: t_EscapeDebug) -> () }
+let impl_857433390: Core.Clone.t_Clone t_EscapeDebug =
+  { f_clone_under_impl_119 = fun (self: t_EscapeDebug) -> () }
 
-let impl: Core.Fmt.t_Debug t_EscapeDebug =
+let impl_15811951: Core.Fmt.t_Debug t_EscapeDebug =
   {
-    fmt
+    f_fmt_under_impl_120
     =
     fun (self: t_EscapeDebug) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -1650,11 +1663,12 @@ type t_EscapeDefault = {
     Core.Str.t_CharEscapeDefault
 }
 
-let impl: Core.Clone.t_Clone t_EscapeDefault = { clone = fun (self: t_EscapeDefault) -> () }
+let impl_698174045: Core.Clone.t_Clone t_EscapeDefault =
+  { f_clone_under_impl_121 = fun (self: t_EscapeDefault) -> () }
 
-let impl: Core.Fmt.t_Debug t_EscapeDefault =
+let impl_213635078: Core.Fmt.t_Debug t_EscapeDefault =
   {
-    fmt
+    f_fmt_under_impl_122
     =
     fun (self: t_EscapeDefault) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -1667,97 +1681,100 @@ type t_EscapeUnicode = {
     Core.Str.t_CharEscapeUnicode
 }
 
-let impl: Core.Clone.t_Clone t_EscapeUnicode = { clone = fun (self: t_EscapeUnicode) -> () }
+let impl_714987731: Core.Clone.t_Clone t_EscapeUnicode =
+  { f_clone_under_impl_123 = fun (self: t_EscapeUnicode) -> () }
 
-let impl: Core.Fmt.t_Debug t_EscapeUnicode =
+let impl_559754572: Core.Fmt.t_Debug t_EscapeUnicode =
   {
-    fmt
+    f_fmt_under_impl_124
     =
     fun (self: t_EscapeUnicode) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Fmt.t_Display t_EscapeDebug =
+let impl_316781009: Core.Fmt.t_Display t_EscapeDebug =
   {
-    fmt
+    f_fmt_under_impl_125
     =
     fun (self: t_EscapeDebug) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_EscapeDebug =
+let impl_701490278: Core.Iter.Traits.Iterator.t_Iterator t_EscapeDebug =
   {
-    item = char;
-    next
+    f_Item_under_impl_126 = char;
+    f_next_under_impl_126
     =
     (fun (self: t_EscapeDebug) ->
         let output:Core.Option.t_Option char = () in
         self, output);
-    size_hint = (fun (self: t_EscapeDebug) -> ());
-    try_fold
+    f_size_hint_under_impl_126 = (fun (self: t_EscapeDebug) -> ());
+    f_try_fold_under_impl_126
     =
     (fun (self: t_EscapeDebug) (init: acc) (fold: fold) ->
         let output:r = () in
         self, output);
-    fold = fun (self: t_EscapeDebug) (init: acc) (fold: fold) -> ()
+    f_fold_under_impl_126 = fun (self: t_EscapeDebug) (init: acc) (fold: fold) -> ()
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_EscapeDebug = {  }
+let impl_767156244: Core.Iter.Traits.Marker.t_FusedIterator t_EscapeDebug = { __marker_trait = () }
 
-let impl: Core.Fmt.t_Display t_EscapeDefault =
+let impl_1039860438: Core.Fmt.t_Display t_EscapeDefault =
   {
-    fmt
+    f_fmt_under_impl_128
     =
     fun (self: t_EscapeDefault) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_EscapeDefault =
+let impl_432694734: Core.Iter.Traits.Iterator.t_Iterator t_EscapeDefault =
   {
-    item = char;
-    next
+    f_Item_under_impl_129 = char;
+    f_next_under_impl_129
     =
     (fun (self: t_EscapeDefault) ->
         let output:Core.Option.t_Option char = () in
         self, output);
-    size_hint = (fun (self: t_EscapeDefault) -> ());
-    try_fold
+    f_size_hint_under_impl_129 = (fun (self: t_EscapeDefault) -> ());
+    f_try_fold_under_impl_129
     =
     (fun (self: t_EscapeDefault) (init: acc) (fold: fold) ->
         let output:r = () in
         self, output);
-    fold = fun (self: t_EscapeDefault) (init: acc) (fold: fold) -> ()
+    f_fold_under_impl_129 = fun (self: t_EscapeDefault) (init: acc) (fold: fold) -> ()
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_EscapeDefault = {  }
+let impl_533431345: Core.Iter.Traits.Marker.t_FusedIterator t_EscapeDefault =
+  { __marker_trait = () }
 
-let impl: Core.Fmt.t_Display t_EscapeUnicode =
+let impl_103337982: Core.Fmt.t_Display t_EscapeUnicode =
   {
-    fmt
+    f_fmt_under_impl_131
     =
     fun (self: t_EscapeUnicode) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Iter.Traits.Iterator.t_Iterator t_EscapeUnicode =
+let impl_996524605: Core.Iter.Traits.Iterator.t_Iterator t_EscapeUnicode =
   {
-    item = char;
-    next
+    f_Item_under_impl_132 = char;
+    f_next_under_impl_132
     =
     (fun (self: t_EscapeUnicode) ->
         let output:Core.Option.t_Option char = () in
         self, output);
-    size_hint = (fun (self: t_EscapeUnicode) -> ());
-    try_fold
+    f_size_hint_under_impl_132 = (fun (self: t_EscapeUnicode) -> ());
+    f_try_fold_under_impl_132
     =
     (fun (self: t_EscapeUnicode) (init: acc) (fold: fold) ->
         let output:r = () in
         self, output);
-    fold = fun (self: t_EscapeUnicode) (init: acc) (fold: fold) -> ()
+    f_fold_under_impl_132 = fun (self: t_EscapeUnicode) (init: acc) (fold: fold) -> ()
   }
 
-let impl: Core.Iter.Traits.Marker.t_FusedIterator t_EscapeUnicode = {  }
+let impl_880797421: Core.Iter.Traits.Marker.t_FusedIterator t_EscapeUnicode =
+  { __marker_trait = () }

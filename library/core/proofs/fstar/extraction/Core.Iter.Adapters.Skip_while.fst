@@ -8,7 +8,7 @@ type t_SkipWhile = {
   f_predicate:p
 }
 
-let impl
+let impl_943027185
       (#i #p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized p)
@@ -20,7 +20,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone p)
     : Core.Clone.t_Clone (t_SkipWhile i p) =
   {
-    clone
+    f_clone_under_impl_6
     =
     fun
       (#i: Type)
@@ -40,14 +40,14 @@ let impl
 
 let new_under_impl (#i #p: Type) (iter: i) (predicate: p) : t_SkipWhile i p = ()
 
-let impl
+let impl_67737368
       (#i #p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug i)
     : Core.Fmt.t_Debug (t_SkipWhile i p) =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun
       (#i: Type)
@@ -62,7 +62,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_895349996
       (#i #p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
@@ -74,8 +74,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized i)
     : Core.Iter.Traits.Iterator.t_Iterator (t_SkipWhile i p) =
   {
-    item = _;
-    next
+    f_Item_under_impl_2 = _;
+    f_next_under_impl_2
     =
     (fun
         (#i: Type)
@@ -92,7 +92,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_2
     =
     (fun
         (#i: Type)
@@ -108,7 +108,7 @@ let impl
         (self: t_SkipWhile i p)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_2
     =
     (fun
         (#i: Type)
@@ -127,7 +127,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_2
     =
     fun
       (#i: Type)
@@ -148,19 +148,17 @@ let impl
   }
 
 let check_under_next_under_impl_2
-      (#t #impl fnmut(&t) -> bool: Type)
+      (#t #impl_956964036_: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized impl fnmut(&t) -> bool)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __2:
-          Core.Ops.Function.t_FnMut impl fnmut(&t) -> bool t)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized impl_956964036_)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Ops.Function.t_FnMut impl_956964036_ t)
       (flag: bool)
-      (pred: impl fnmut(&t) -> bool)
-    : (bool & impl fnmut(&t) -> bool & (t -> bool)) =
+      (pred: impl_956964036_)
+    : (bool & impl_956964036_ & (t -> bool)) =
   let output: t -> bool = () in
   flag, pred, output
 
-let impl
+let impl_1014728731
       (#i #p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Marker.t_FusedIterator i)
@@ -170,4 +168,4 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Iter.Traits.Marker.t_FusedIterator i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Ops.Function.t_FnMut p _)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized i)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_SkipWhile i p) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_SkipWhile i p) = { __marker_trait = () }

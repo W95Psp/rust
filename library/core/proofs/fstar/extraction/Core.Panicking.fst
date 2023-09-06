@@ -39,9 +39,9 @@ type t_AssertKind =
   | AssertKind_Ne : t_AssertKind
   | AssertKind_Match : t_AssertKind
 
-let impl: Core.Fmt.t_Debug t_AssertKind =
+let impl_47406223: Core.Fmt.t_Debug t_AssertKind =
   {
-    fmt
+    f_fmt_under_impl
     =
     fun (self: t_AssertKind) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -71,9 +71,9 @@ let assert_matches_failed
 type t_Pattern_under_assert_matches_failed =
   | Pattern_under_assert_matches_failed : string -> t_Pattern_under_assert_matches_failed
 
-let impl: Core.Fmt.t_Debug t_Pattern_under_assert_matches_failed =
+let impl_172017087: Core.Fmt.t_Debug t_Pattern_under_assert_matches_failed =
   {
-    fmt
+    f_fmt_under_impl_under_assert_matches_failed
     =
     fun (self: t_Pattern_under_assert_matches_failed) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

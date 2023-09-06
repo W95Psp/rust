@@ -132,37 +132,39 @@ type t_AsciiChar =
   | AsciiChar_Tilde : t_AsciiChar
   | AsciiChar_Delete : t_AsciiChar
 
-let impl: Core.Fmt.t_Debug t_AsciiChar =
+let impl_759360929: Core.Fmt.t_Debug t_AsciiChar =
   {
-    fmt
+    f_fmt_under_impl_3
     =
     fun (self: t_AsciiChar) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_Copy t_AsciiChar = {  }
+let impl_262879530: Core.Marker.t_Copy t_AsciiChar = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_AsciiChar = { clone = fun (self: t_AsciiChar) -> () }
+let impl_1058514535: Core.Clone.t_Clone t_AsciiChar =
+  { f_clone_under_impl_5 = fun (self: t_AsciiChar) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_AsciiChar = {  }
+let impl_900734530: Core.Marker.t_StructuralEq t_AsciiChar = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_AsciiChar =
-  { assert_receiver_is_total_eq = fun (self: t_AsciiChar) -> () }
+let impl_329075559: Core.Cmp.t_Eq t_AsciiChar =
+  { f_assert_receiver_is_total_eq_under_impl_7 = fun (self: t_AsciiChar) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_AsciiChar = {  }
+let impl_1037205896: Core.Marker.t_StructuralPartialEq t_AsciiChar = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_AsciiChar t_AsciiChar =
-  { eq = fun (self: t_AsciiChar) (other: t_AsciiChar) -> () }
+let impl_332277338: Core.Cmp.t_PartialEq t_AsciiChar t_AsciiChar =
+  { f_eq_under_impl_9 = fun (self: t_AsciiChar) (other: t_AsciiChar) -> () }
 
-let impl: Core.Cmp.t_Ord t_AsciiChar = { cmp = fun (self: t_AsciiChar) (other: t_AsciiChar) -> () }
+let impl_794708640: Core.Cmp.t_Ord t_AsciiChar =
+  { f_cmp_under_impl_10 = fun (self: t_AsciiChar) (other: t_AsciiChar) -> () }
 
-let impl: Core.Cmp.t_PartialOrd t_AsciiChar t_AsciiChar =
-  { partial_cmp = fun (self: t_AsciiChar) (other: t_AsciiChar) -> () }
+let impl_1008813940: Core.Cmp.t_PartialOrd t_AsciiChar t_AsciiChar =
+  { f_partial_cmp_under_impl_11 = fun (self: t_AsciiChar) (other: t_AsciiChar) -> () }
 
-let impl: Core.Hash.t_Hash t_AsciiChar =
+let impl_751423004: Core.Hash.t_Hash t_AsciiChar =
   {
-    hash
+    f_hash_under_impl_12
     =
     fun (self: t_AsciiChar) (state: v___h) ->
       let output:Prims.unit = () in
@@ -187,9 +189,9 @@ let as_str_under_impl_1 (self: slice t_AsciiChar) : string = ()
 
 let as_bytes_under_impl_1 (self: slice t_AsciiChar) : slice u8 = ()
 
-let impl: Core.Fmt.t_Display t_AsciiChar =
+let impl_753607658: Core.Fmt.t_Display t_AsciiChar =
   {
-    fmt
+    f_fmt_under_impl_2
     =
     fun (self: t_AsciiChar) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

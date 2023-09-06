@@ -11,9 +11,9 @@ let new_under_impl (#size: usize) : t_DisplayBuffer v_SIZE = ()
 
 let as_str_under_impl (#size: usize) (self: t_DisplayBuffer v_SIZE) : string = ()
 
-let impl (#size: usize) : Core.Fmt.t_Write (t_DisplayBuffer v_SIZE) =
+let impl_84054436 (#size: usize) : Core.Fmt.t_Write (t_DisplayBuffer v_SIZE) =
   {
-    write_str
+    f_write_str_under_impl_1
     =
     fun (#size: usize) (self: t_DisplayBuffer v_SIZE) (s: string) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

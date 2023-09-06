@@ -163,9 +163,10 @@ let escape_default_under_impl (self: string) : Core.Str.Iter.t_EscapeDefault = (
 
 let escape_unicode_under_impl (self: string) : Core.Str.Iter.t_EscapeUnicode = ()
 
-let impl: Core.Convert.t_AsRef string (slice u8) = { as_ref = fun (self: string) -> () }
+let impl_511000133: Core.Convert.t_AsRef string (slice u8) =
+  { f_as_ref_under_impl_1 = fun (self: string) -> () }
 
-let impl: Core.Default.t_Default string = { default = fun  -> () }
+let impl_18268812: Core.Default.t_Default string = { f_default_under_impl_2 = () }
 
 (* (RefMut) The mutation of this &mut is not allowed here.
 
@@ -175,183 +176,209 @@ Last available AST for this item:
 
 type t_LinesMap = | LinesMap : t_LinesMap
 
-let impl: Core.Clone.t_Clone t_LinesMap = { clone = fun (self: t_LinesMap) -> () }
+let impl_799784208: Core.Clone.t_Clone t_LinesMap =
+  { f_clone_under_impl_32 = fun (self: t_LinesMap) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_LinesMap string =
-  { call = fun (self: t_LinesMap) (line: string) -> () }
+let impl_412177087: Core.Ops.Function.t_Fn t_LinesMap string =
+  { f_call_under_impl_5 = fun (self: t_LinesMap) (line: string) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_LinesMap string =
+let impl_470439291: Core.Ops.Function.t_FnMut t_LinesMap string =
   {
-    call_mut
+    f_call_mut_under_impl_6
     =
     fun (self: t_LinesMap) (line: string) ->
       let output:string = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_LinesMap string =
-  { output = string; call_once = fun (self: t_LinesMap) (line: string) -> () }
+let impl_28364378: Core.Ops.Function.t_FnOnce t_LinesMap string =
+  {
+    f_Output_under_impl_7 = string;
+    f_call_once_under_impl_7 = fun (self: t_LinesMap) (line: string) -> ()
+  }
 
 type t_CharEscapeDebugContinue = | CharEscapeDebugContinue : t_CharEscapeDebugContinue
 
-let impl: Core.Clone.t_Clone t_CharEscapeDebugContinue =
-  { clone = fun (self: t_CharEscapeDebugContinue) -> () }
+let impl_46651316: Core.Clone.t_Clone t_CharEscapeDebugContinue =
+  { f_clone_under_impl_33 = fun (self: t_CharEscapeDebugContinue) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_CharEscapeDebugContinue char =
-  { call = fun (self: t_CharEscapeDebugContinue) (c: char) -> () }
+let impl_795684626: Core.Ops.Function.t_Fn t_CharEscapeDebugContinue char =
+  { f_call_under_impl_8 = fun (self: t_CharEscapeDebugContinue) (c: char) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_CharEscapeDebugContinue char =
+let impl_438805286: Core.Ops.Function.t_FnMut t_CharEscapeDebugContinue char =
   {
-    call_mut
+    f_call_mut_under_impl_9
     =
     fun (self: t_CharEscapeDebugContinue) (c: char) ->
       let output:Core.Char.t_EscapeDebug = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_CharEscapeDebugContinue char =
+let impl_898118003: Core.Ops.Function.t_FnOnce t_CharEscapeDebugContinue char =
   {
-    output = Core.Char.t_EscapeDebug;
-    call_once = fun (self: t_CharEscapeDebugContinue) (c: char) -> ()
+    f_Output_under_impl_10 = Core.Char.t_EscapeDebug;
+    f_call_once_under_impl_10 = fun (self: t_CharEscapeDebugContinue) (c: char) -> ()
   }
 
 type t_CharEscapeUnicode = | CharEscapeUnicode : t_CharEscapeUnicode
 
-let impl: Core.Clone.t_Clone t_CharEscapeUnicode = { clone = fun (self: t_CharEscapeUnicode) -> () }
+let impl_726915518: Core.Clone.t_Clone t_CharEscapeUnicode =
+  { f_clone_under_impl_34 = fun (self: t_CharEscapeUnicode) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_CharEscapeUnicode char =
-  { call = fun (self: t_CharEscapeUnicode) (c: char) -> () }
+let impl_172545761: Core.Ops.Function.t_Fn t_CharEscapeUnicode char =
+  { f_call_under_impl_11 = fun (self: t_CharEscapeUnicode) (c: char) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_CharEscapeUnicode char =
+let impl_379668578: Core.Ops.Function.t_FnMut t_CharEscapeUnicode char =
   {
-    call_mut
+    f_call_mut_under_impl_12
     =
     fun (self: t_CharEscapeUnicode) (c: char) ->
       let output:Core.Char.t_EscapeUnicode = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_CharEscapeUnicode char =
+let impl_171051341: Core.Ops.Function.t_FnOnce t_CharEscapeUnicode char =
   {
-    output = Core.Char.t_EscapeUnicode;
-    call_once = fun (self: t_CharEscapeUnicode) (c: char) -> ()
+    f_Output_under_impl_13 = Core.Char.t_EscapeUnicode;
+    f_call_once_under_impl_13 = fun (self: t_CharEscapeUnicode) (c: char) -> ()
   }
 
 type t_CharEscapeDefault = | CharEscapeDefault : t_CharEscapeDefault
 
-let impl: Core.Clone.t_Clone t_CharEscapeDefault = { clone = fun (self: t_CharEscapeDefault) -> () }
+let impl_338773175: Core.Clone.t_Clone t_CharEscapeDefault =
+  { f_clone_under_impl_35 = fun (self: t_CharEscapeDefault) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_CharEscapeDefault char =
-  { call = fun (self: t_CharEscapeDefault) (c: char) -> () }
+let impl_555814417: Core.Ops.Function.t_Fn t_CharEscapeDefault char =
+  { f_call_under_impl_14 = fun (self: t_CharEscapeDefault) (c: char) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_CharEscapeDefault char =
+let impl_658855435: Core.Ops.Function.t_FnMut t_CharEscapeDefault char =
   {
-    call_mut
+    f_call_mut_under_impl_15
     =
     fun (self: t_CharEscapeDefault) (c: char) ->
       let output:Core.Char.t_EscapeDefault = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_CharEscapeDefault char =
+let impl_930224223: Core.Ops.Function.t_FnOnce t_CharEscapeDefault char =
   {
-    output = Core.Char.t_EscapeDefault;
-    call_once = fun (self: t_CharEscapeDefault) (c: char) -> ()
+    f_Output_under_impl_16 = Core.Char.t_EscapeDefault;
+    f_call_once_under_impl_16 = fun (self: t_CharEscapeDefault) (c: char) -> ()
   }
 
 type t_IsWhitespace = | IsWhitespace : t_IsWhitespace
 
-let impl: Core.Clone.t_Clone t_IsWhitespace = { clone = fun (self: t_IsWhitespace) -> () }
+let impl_737350606: Core.Clone.t_Clone t_IsWhitespace =
+  { f_clone_under_impl_36 = fun (self: t_IsWhitespace) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_IsWhitespace char =
-  { call = fun (self: t_IsWhitespace) (c: char) -> () }
+let impl_139393042: Core.Ops.Function.t_Fn t_IsWhitespace char =
+  { f_call_under_impl_17 = fun (self: t_IsWhitespace) (c: char) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_IsWhitespace char =
+let impl_611790195: Core.Ops.Function.t_FnMut t_IsWhitespace char =
   {
-    call_mut
+    f_call_mut_under_impl_18
     =
     fun (self: t_IsWhitespace) (c: char) ->
       let output:bool = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_IsWhitespace char =
-  { output = bool; call_once = fun (self: t_IsWhitespace) (c: char) -> () }
+let impl_852794204: Core.Ops.Function.t_FnOnce t_IsWhitespace char =
+  {
+    f_Output_under_impl_19 = bool;
+    f_call_once_under_impl_19 = fun (self: t_IsWhitespace) (c: char) -> ()
+  }
 
 type t_IsAsciiWhitespace = | IsAsciiWhitespace : t_IsAsciiWhitespace
 
-let impl: Core.Clone.t_Clone t_IsAsciiWhitespace = { clone = fun (self: t_IsAsciiWhitespace) -> () }
+let impl_908679347: Core.Clone.t_Clone t_IsAsciiWhitespace =
+  { f_clone_under_impl_37 = fun (self: t_IsAsciiWhitespace) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_IsAsciiWhitespace u8 =
-  { call = fun (self: t_IsAsciiWhitespace) (byte: u8) -> () }
+let impl_710689710: Core.Ops.Function.t_Fn t_IsAsciiWhitespace u8 =
+  { f_call_under_impl_20 = fun (self: t_IsAsciiWhitespace) (byte: u8) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_IsAsciiWhitespace u8 =
+let impl_108097500: Core.Ops.Function.t_FnMut t_IsAsciiWhitespace u8 =
   {
-    call_mut
+    f_call_mut_under_impl_21
     =
     fun (self: t_IsAsciiWhitespace) (byte: u8) ->
       let output:bool = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_IsAsciiWhitespace u8 =
-  { output = bool; call_once = fun (self: t_IsAsciiWhitespace) (byte: u8) -> () }
+let impl_362968413: Core.Ops.Function.t_FnOnce t_IsAsciiWhitespace u8 =
+  {
+    f_Output_under_impl_22 = bool;
+    f_call_once_under_impl_22 = fun (self: t_IsAsciiWhitespace) (byte: u8) -> ()
+  }
 
 type t_IsNotEmpty = | IsNotEmpty : t_IsNotEmpty
 
-let impl: Core.Clone.t_Clone t_IsNotEmpty = { clone = fun (self: t_IsNotEmpty) -> () }
+let impl_384380713: Core.Clone.t_Clone t_IsNotEmpty =
+  { f_clone_under_impl_38 = fun (self: t_IsNotEmpty) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_IsNotEmpty string =
-  { call = fun (self: t_IsNotEmpty) (s: string) -> () }
+let impl_368390738: Core.Ops.Function.t_Fn t_IsNotEmpty string =
+  { f_call_under_impl_23 = fun (self: t_IsNotEmpty) (s: string) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_IsNotEmpty string =
+let impl_44852251: Core.Ops.Function.t_FnMut t_IsNotEmpty string =
   {
-    call_mut
+    f_call_mut_under_impl_24
     =
     fun (self: t_IsNotEmpty) (s: string) ->
       let output:bool = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_IsNotEmpty string =
-  { output = bool; call_once = fun (self: t_IsNotEmpty) (s: string) -> () }
+let impl_409542146: Core.Ops.Function.t_FnOnce t_IsNotEmpty string =
+  {
+    f_Output_under_impl_25 = bool;
+    f_call_once_under_impl_25 = fun (self: t_IsNotEmpty) (s: string) -> ()
+  }
 
 type t_BytesIsNotEmpty = | BytesIsNotEmpty : t_BytesIsNotEmpty
 
-let impl: Core.Clone.t_Clone t_BytesIsNotEmpty = { clone = fun (self: t_BytesIsNotEmpty) -> () }
+let impl_931949211: Core.Clone.t_Clone t_BytesIsNotEmpty =
+  { f_clone_under_impl_39 = fun (self: t_BytesIsNotEmpty) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_BytesIsNotEmpty (slice u8) =
-  { call = fun (self: t_BytesIsNotEmpty) (s: slice u8) -> () }
+let impl_164034728: Core.Ops.Function.t_Fn t_BytesIsNotEmpty (slice u8) =
+  { f_call_under_impl_26 = fun (self: t_BytesIsNotEmpty) (s: slice u8) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_BytesIsNotEmpty (slice u8) =
+let impl_934487193: Core.Ops.Function.t_FnMut t_BytesIsNotEmpty (slice u8) =
   {
-    call_mut
+    f_call_mut_under_impl_27
     =
     fun (self: t_BytesIsNotEmpty) (s: slice u8) ->
       let output:bool = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_BytesIsNotEmpty (slice u8) =
-  { output = bool; call_once = fun (self: t_BytesIsNotEmpty) (s: slice u8) -> () }
+let impl_379435418: Core.Ops.Function.t_FnOnce t_BytesIsNotEmpty (slice u8) =
+  {
+    f_Output_under_impl_28 = bool;
+    f_call_once_under_impl_28 = fun (self: t_BytesIsNotEmpty) (s: slice u8) -> ()
+  }
 
 type t_UnsafeBytesToStr = | UnsafeBytesToStr : t_UnsafeBytesToStr
 
-let impl: Core.Clone.t_Clone t_UnsafeBytesToStr = { clone = fun (self: t_UnsafeBytesToStr) -> () }
+let impl_747493329: Core.Clone.t_Clone t_UnsafeBytesToStr =
+  { f_clone_under_impl_40 = fun (self: t_UnsafeBytesToStr) -> () }
 
-let impl: Core.Ops.Function.t_Fn t_UnsafeBytesToStr (slice u8) =
-  { call = fun (self: t_UnsafeBytesToStr) (bytes: slice u8) -> () }
+let impl_523354190: Core.Ops.Function.t_Fn t_UnsafeBytesToStr (slice u8) =
+  { f_call_under_impl_29 = fun (self: t_UnsafeBytesToStr) (bytes: slice u8) -> () }
 
-let impl: Core.Ops.Function.t_FnMut t_UnsafeBytesToStr (slice u8) =
+let impl_675981204: Core.Ops.Function.t_FnMut t_UnsafeBytesToStr (slice u8) =
   {
-    call_mut
+    f_call_mut_under_impl_30
     =
     fun (self: t_UnsafeBytesToStr) (bytes: slice u8) ->
       let output:string = () in
       self, output
   }
 
-let impl: Core.Ops.Function.t_FnOnce t_UnsafeBytesToStr (slice u8) =
-  { output = string; call_once = fun (self: t_UnsafeBytesToStr) (bytes: slice u8) -> () }
+let impl_356954373: Core.Ops.Function.t_FnOnce t_UnsafeBytesToStr (slice u8) =
+  {
+    f_Output_under_impl_31 = string;
+    f_call_once_under_impl_31 = fun (self: t_UnsafeBytesToStr) (bytes: slice u8) -> ()
+  }
 
-let impl: Core.Error.t_Error string = {  }
+let impl_413679848: Core.Error.t_Error string = { __marker_trait = () }

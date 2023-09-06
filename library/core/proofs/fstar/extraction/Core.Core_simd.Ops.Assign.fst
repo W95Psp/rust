@@ -2,7 +2,7 @@ module Core.Core_simd.Ops.Assign
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-let impl
+let impl_485137602
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -37,7 +37,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Arith.t_AddAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    add_assign
+    f_add_assign_under_impl
     =
     fun
       (#t: Type)
@@ -80,7 +80,7 @@ let impl
       self
   }
 
-let impl
+let impl_753919447
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -115,7 +115,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Arith.t_MulAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    mul_assign
+    f_mul_assign_under_impl_1
     =
     fun
       (#t: Type)
@@ -158,7 +158,7 @@ let impl
       self
   }
 
-let impl
+let impl_871552429
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -193,7 +193,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Arith.t_SubAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    sub_assign
+    f_sub_assign_under_impl_2
     =
     fun
       (#t: Type)
@@ -236,7 +236,7 @@ let impl
       self
   }
 
-let impl
+let impl_139317634
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -271,7 +271,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Arith.t_DivAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    div_assign
+    f_div_assign_under_impl_3
     =
     fun
       (#t: Type)
@@ -314,7 +314,7 @@ let impl
       self
   }
 
-let impl
+let impl_906052794
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -349,7 +349,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Arith.t_RemAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    rem_assign
+    f_rem_assign_under_impl_4
     =
     fun
       (#t: Type)
@@ -392,7 +392,7 @@ let impl
       self
   }
 
-let impl
+let impl_399882139
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -427,7 +427,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitAndAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    bitand_assign
+    f_bitand_assign_under_impl_5
     =
     fun
       (#t: Type)
@@ -470,7 +470,7 @@ let impl
       self
   }
 
-let impl
+let impl_985777055
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -505,7 +505,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitOrAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    bitor_assign
+    f_bitor_assign_under_impl_6
     =
     fun
       (#t: Type)
@@ -548,7 +548,7 @@ let impl
       self
   }
 
-let impl
+let impl_32631142
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -583,7 +583,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_BitXorAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    bitxor_assign
+    f_bitxor_assign_under_impl_7
     =
     fun
       (#t: Type)
@@ -626,7 +626,7 @@ let impl
       self
   }
 
-let impl
+let impl_944445687
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -661,7 +661,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_ShlAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    shl_assign
+    f_shl_assign_under_impl_8
     =
     fun
       (#t: Type)
@@ -704,7 +704,7 @@ let impl
       self
   }
 
-let impl
+let impl_389714442
       (#t #u: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
@@ -739,7 +739,7 @@ let impl
           (Core.Core_simd.Lane_count.t_LaneCount v_LANES))
     : Core.Ops.Bit.t_ShrAssign (Core.Core_simd.Vector.t_Simd t v_LANES) u =
   {
-    shr_assign
+    f_shr_assign_under_impl_9
     =
     fun
       (#t: Type)

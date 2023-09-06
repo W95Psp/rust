@@ -2,168 +2,168 @@ module Core.Iter.Range
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-let impl: t_Step u8 =
+let impl_800697728: t_Step u8 =
   {
-    forward_unchecked = (fun (start: u8) (n: usize) -> ());
-    backward_unchecked = (fun (start: u8) (n: usize) -> ());
-    forward = (fun (start: u8) (n: usize) -> ());
-    backward = (fun (start: u8) (n: usize) -> ());
-    steps_between = (fun (start: u8) (v_end: u8) -> ());
-    forward_checked = (fun (start: u8) (n: usize) -> ());
-    backward_checked = fun (start: u8) (n: usize) -> ()
+    f_forward_unchecked_under_impl_29 = (fun (start: u8) (n: usize) -> ());
+    f_backward_unchecked_under_impl_29 = (fun (start: u8) (n: usize) -> ());
+    f_forward_under_impl_29 = (fun (start: u8) (n: usize) -> ());
+    f_backward_under_impl_29 = (fun (start: u8) (n: usize) -> ());
+    f_steps_between_under_impl_29 = (fun (start: u8) (v_end: u8) -> ());
+    f_forward_checked_under_impl_29 = (fun (start: u8) (n: usize) -> ());
+    f_backward_checked_under_impl_29 = fun (start: u8) (n: usize) -> ()
   }
 
-let impl: t_Step i8 =
+let impl_421117204: t_Step i8 =
   {
-    forward_unchecked = (fun (start: i8) (n: usize) -> ());
-    backward_unchecked = (fun (start: i8) (n: usize) -> ());
-    forward = (fun (start: i8) (n: usize) -> ());
-    backward = (fun (start: i8) (n: usize) -> ());
-    steps_between = (fun (start: i8) (v_end: i8) -> ());
-    forward_checked = (fun (start: i8) (n: usize) -> ());
-    backward_checked = fun (start: i8) (n: usize) -> ()
+    f_forward_unchecked_under_impl_30 = (fun (start: i8) (n: usize) -> ());
+    f_backward_unchecked_under_impl_30 = (fun (start: i8) (n: usize) -> ());
+    f_forward_under_impl_30 = (fun (start: i8) (n: usize) -> ());
+    f_backward_under_impl_30 = (fun (start: i8) (n: usize) -> ());
+    f_steps_between_under_impl_30 = (fun (start: i8) (v_end: i8) -> ());
+    f_forward_checked_under_impl_30 = (fun (start: i8) (n: usize) -> ());
+    f_backward_checked_under_impl_30 = fun (start: i8) (n: usize) -> ()
   }
 
-let impl: t_Step u16 =
+let impl_205954214: t_Step u16 =
   {
-    forward_unchecked = (fun (start: u16) (n: usize) -> ());
-    backward_unchecked = (fun (start: u16) (n: usize) -> ());
-    forward = (fun (start: u16) (n: usize) -> ());
-    backward = (fun (start: u16) (n: usize) -> ());
-    steps_between = (fun (start: u16) (v_end: u16) -> ());
-    forward_checked = (fun (start: u16) (n: usize) -> ());
-    backward_checked = fun (start: u16) (n: usize) -> ()
+    f_forward_unchecked_under_impl_31 = (fun (start: u16) (n: usize) -> ());
+    f_backward_unchecked_under_impl_31 = (fun (start: u16) (n: usize) -> ());
+    f_forward_under_impl_31 = (fun (start: u16) (n: usize) -> ());
+    f_backward_under_impl_31 = (fun (start: u16) (n: usize) -> ());
+    f_steps_between_under_impl_31 = (fun (start: u16) (v_end: u16) -> ());
+    f_forward_checked_under_impl_31 = (fun (start: u16) (n: usize) -> ());
+    f_backward_checked_under_impl_31 = fun (start: u16) (n: usize) -> ()
   }
 
-let impl: t_Step i16 =
+let impl_660783755: t_Step i16 =
   {
-    forward_unchecked = (fun (start: i16) (n: usize) -> ());
-    backward_unchecked = (fun (start: i16) (n: usize) -> ());
-    forward = (fun (start: i16) (n: usize) -> ());
-    backward = (fun (start: i16) (n: usize) -> ());
-    steps_between = (fun (start: i16) (v_end: i16) -> ());
-    forward_checked = (fun (start: i16) (n: usize) -> ());
-    backward_checked = fun (start: i16) (n: usize) -> ()
+    f_forward_unchecked_under_impl_32 = (fun (start: i16) (n: usize) -> ());
+    f_backward_unchecked_under_impl_32 = (fun (start: i16) (n: usize) -> ());
+    f_forward_under_impl_32 = (fun (start: i16) (n: usize) -> ());
+    f_backward_under_impl_32 = (fun (start: i16) (n: usize) -> ());
+    f_steps_between_under_impl_32 = (fun (start: i16) (v_end: i16) -> ());
+    f_forward_checked_under_impl_32 = (fun (start: i16) (n: usize) -> ());
+    f_backward_checked_under_impl_32 = fun (start: i16) (n: usize) -> ()
   }
 
-let impl: t_Step u32 =
+let impl_787422252: t_Step u32 =
   {
-    forward_unchecked = (fun (start: u32) (n: usize) -> ());
-    backward_unchecked = (fun (start: u32) (n: usize) -> ());
-    forward = (fun (start: u32) (n: usize) -> ());
-    backward = (fun (start: u32) (n: usize) -> ());
-    steps_between = (fun (start: u32) (v_end: u32) -> ());
-    forward_checked = (fun (start: u32) (n: usize) -> ());
-    backward_checked = fun (start: u32) (n: usize) -> ()
+    f_forward_unchecked_under_impl_33 = (fun (start: u32) (n: usize) -> ());
+    f_backward_unchecked_under_impl_33 = (fun (start: u32) (n: usize) -> ());
+    f_forward_under_impl_33 = (fun (start: u32) (n: usize) -> ());
+    f_backward_under_impl_33 = (fun (start: u32) (n: usize) -> ());
+    f_steps_between_under_impl_33 = (fun (start: u32) (v_end: u32) -> ());
+    f_forward_checked_under_impl_33 = (fun (start: u32) (n: usize) -> ());
+    f_backward_checked_under_impl_33 = fun (start: u32) (n: usize) -> ()
   }
 
-let impl: t_Step i32 =
+let impl_486775515: t_Step i32 =
   {
-    forward_unchecked = (fun (start: i32) (n: usize) -> ());
-    backward_unchecked = (fun (start: i32) (n: usize) -> ());
-    forward = (fun (start: i32) (n: usize) -> ());
-    backward = (fun (start: i32) (n: usize) -> ());
-    steps_between = (fun (start: i32) (v_end: i32) -> ());
-    forward_checked = (fun (start: i32) (n: usize) -> ());
-    backward_checked = fun (start: i32) (n: usize) -> ()
+    f_forward_unchecked_under_impl_34 = (fun (start: i32) (n: usize) -> ());
+    f_backward_unchecked_under_impl_34 = (fun (start: i32) (n: usize) -> ());
+    f_forward_under_impl_34 = (fun (start: i32) (n: usize) -> ());
+    f_backward_under_impl_34 = (fun (start: i32) (n: usize) -> ());
+    f_steps_between_under_impl_34 = (fun (start: i32) (v_end: i32) -> ());
+    f_forward_checked_under_impl_34 = (fun (start: i32) (n: usize) -> ());
+    f_backward_checked_under_impl_34 = fun (start: i32) (n: usize) -> ()
   }
 
-let impl: t_Step u64 =
+let impl_361781189: t_Step u64 =
   {
-    forward_unchecked = (fun (start: u64) (n: usize) -> ());
-    backward_unchecked = (fun (start: u64) (n: usize) -> ());
-    forward = (fun (start: u64) (n: usize) -> ());
-    backward = (fun (start: u64) (n: usize) -> ());
-    steps_between = (fun (start: u64) (v_end: u64) -> ());
-    forward_checked = (fun (start: u64) (n: usize) -> ());
-    backward_checked = fun (start: u64) (n: usize) -> ()
+    f_forward_unchecked_under_impl_35 = (fun (start: u64) (n: usize) -> ());
+    f_backward_unchecked_under_impl_35 = (fun (start: u64) (n: usize) -> ());
+    f_forward_under_impl_35 = (fun (start: u64) (n: usize) -> ());
+    f_backward_under_impl_35 = (fun (start: u64) (n: usize) -> ());
+    f_steps_between_under_impl_35 = (fun (start: u64) (v_end: u64) -> ());
+    f_forward_checked_under_impl_35 = (fun (start: u64) (n: usize) -> ());
+    f_backward_checked_under_impl_35 = fun (start: u64) (n: usize) -> ()
   }
 
-let impl: t_Step i64 =
+let impl_545859920: t_Step i64 =
   {
-    forward_unchecked = (fun (start: i64) (n: usize) -> ());
-    backward_unchecked = (fun (start: i64) (n: usize) -> ());
-    forward = (fun (start: i64) (n: usize) -> ());
-    backward = (fun (start: i64) (n: usize) -> ());
-    steps_between = (fun (start: i64) (v_end: i64) -> ());
-    forward_checked = (fun (start: i64) (n: usize) -> ());
-    backward_checked = fun (start: i64) (n: usize) -> ()
+    f_forward_unchecked_under_impl_36 = (fun (start: i64) (n: usize) -> ());
+    f_backward_unchecked_under_impl_36 = (fun (start: i64) (n: usize) -> ());
+    f_forward_under_impl_36 = (fun (start: i64) (n: usize) -> ());
+    f_backward_under_impl_36 = (fun (start: i64) (n: usize) -> ());
+    f_steps_between_under_impl_36 = (fun (start: i64) (v_end: i64) -> ());
+    f_forward_checked_under_impl_36 = (fun (start: i64) (n: usize) -> ());
+    f_backward_checked_under_impl_36 = fun (start: i64) (n: usize) -> ()
   }
 
-let impl: t_Step usize =
+let impl_643251520: t_Step usize =
   {
-    forward_unchecked = (fun (start: usize) (n: usize) -> ());
-    backward_unchecked = (fun (start: usize) (n: usize) -> ());
-    forward = (fun (start: usize) (n: usize) -> ());
-    backward = (fun (start: usize) (n: usize) -> ());
-    steps_between = (fun (start: usize) (v_end: usize) -> ());
-    forward_checked = (fun (start: usize) (n: usize) -> ());
-    backward_checked = fun (start: usize) (n: usize) -> ()
+    f_forward_unchecked_under_impl_37 = (fun (start: usize) (n: usize) -> ());
+    f_backward_unchecked_under_impl_37 = (fun (start: usize) (n: usize) -> ());
+    f_forward_under_impl_37 = (fun (start: usize) (n: usize) -> ());
+    f_backward_under_impl_37 = (fun (start: usize) (n: usize) -> ());
+    f_steps_between_under_impl_37 = (fun (start: usize) (v_end: usize) -> ());
+    f_forward_checked_under_impl_37 = (fun (start: usize) (n: usize) -> ());
+    f_backward_checked_under_impl_37 = fun (start: usize) (n: usize) -> ()
   }
 
-let impl: t_Step isize =
+let impl_60697095: t_Step isize =
   {
-    forward_unchecked = (fun (start: isize) (n: usize) -> ());
-    backward_unchecked = (fun (start: isize) (n: usize) -> ());
-    forward = (fun (start: isize) (n: usize) -> ());
-    backward = (fun (start: isize) (n: usize) -> ());
-    steps_between = (fun (start: isize) (v_end: isize) -> ());
-    forward_checked = (fun (start: isize) (n: usize) -> ());
-    backward_checked = fun (start: isize) (n: usize) -> ()
+    f_forward_unchecked_under_impl_38 = (fun (start: isize) (n: usize) -> ());
+    f_backward_unchecked_under_impl_38 = (fun (start: isize) (n: usize) -> ());
+    f_forward_under_impl_38 = (fun (start: isize) (n: usize) -> ());
+    f_backward_under_impl_38 = (fun (start: isize) (n: usize) -> ());
+    f_steps_between_under_impl_38 = (fun (start: isize) (v_end: isize) -> ());
+    f_forward_checked_under_impl_38 = (fun (start: isize) (n: usize) -> ());
+    f_backward_checked_under_impl_38 = fun (start: isize) (n: usize) -> ()
   }
 
-let impl: t_Step u128 =
+let impl_132527715: t_Step u128 =
   {
-    forward_unchecked = (fun (start: u128) (n: usize) -> ());
-    backward_unchecked = (fun (start: u128) (n: usize) -> ());
-    forward = (fun (start: u128) (n: usize) -> ());
-    backward = (fun (start: u128) (n: usize) -> ());
-    steps_between = (fun (start: u128) (v_end: u128) -> ());
-    forward_checked = (fun (start: u128) (n: usize) -> ());
-    backward_checked = fun (start: u128) (n: usize) -> ()
+    f_forward_unchecked_under_impl_39 = (fun (start: u128) (n: usize) -> ());
+    f_backward_unchecked_under_impl_39 = (fun (start: u128) (n: usize) -> ());
+    f_forward_under_impl_39 = (fun (start: u128) (n: usize) -> ());
+    f_backward_under_impl_39 = (fun (start: u128) (n: usize) -> ());
+    f_steps_between_under_impl_39 = (fun (start: u128) (v_end: u128) -> ());
+    f_forward_checked_under_impl_39 = (fun (start: u128) (n: usize) -> ());
+    f_backward_checked_under_impl_39 = fun (start: u128) (n: usize) -> ()
   }
 
-let impl: t_Step i128 =
+let impl_788909533: t_Step i128 =
   {
-    forward_unchecked = (fun (start: i128) (n: usize) -> ());
-    backward_unchecked = (fun (start: i128) (n: usize) -> ());
-    forward = (fun (start: i128) (n: usize) -> ());
-    backward = (fun (start: i128) (n: usize) -> ());
-    steps_between = (fun (start: i128) (v_end: i128) -> ());
-    forward_checked = (fun (start: i128) (n: usize) -> ());
-    backward_checked = fun (start: i128) (n: usize) -> ()
+    f_forward_unchecked_under_impl_40 = (fun (start: i128) (n: usize) -> ());
+    f_backward_unchecked_under_impl_40 = (fun (start: i128) (n: usize) -> ());
+    f_forward_under_impl_40 = (fun (start: i128) (n: usize) -> ());
+    f_backward_under_impl_40 = (fun (start: i128) (n: usize) -> ());
+    f_steps_between_under_impl_40 = (fun (start: i128) (v_end: i128) -> ());
+    f_forward_checked_under_impl_40 = (fun (start: i128) (n: usize) -> ());
+    f_backward_checked_under_impl_40 = fun (start: i128) (n: usize) -> ()
   }
 
-let impl: t_Step char =
+let impl_371605736: t_Step char =
   {
-    steps_between = (fun (start: char) (v_end: char) -> ());
-    forward_checked = (fun (start: char) (count: usize) -> ());
-    backward_checked = (fun (start: char) (count: usize) -> ());
-    forward_unchecked = (fun (start: char) (count: usize) -> ());
-    backward_unchecked = fun (start: char) (count: usize) -> ()
+    f_steps_between_under_impl = (fun (start: char) (v_end: char) -> ());
+    f_forward_checked_under_impl = (fun (start: char) (count: usize) -> ());
+    f_backward_checked_under_impl = (fun (start: char) (count: usize) -> ());
+    f_forward_unchecked_under_impl = (fun (start: char) (count: usize) -> ());
+    f_backward_unchecked_under_impl = fun (start: char) (count: usize) -> ()
   }
 
 class t_RangeIteratorImpl (v_Self: Type) = {
-  item:Type;
-  item_implements_t_Sized:Core.Marker.t_Sized _;
-  spec_next:self -> (self & Core.Option.t_Option _);
-  spec_nth:self -> usize -> (self & Core.Option.t_Option _);
-  spec_advance_by:self -> usize
+  f_Item:Type;
+  f_Item:Core.Marker.t_Sized _;
+  f_spec_next:self -> (self & Core.Option.t_Option _);
+  f_spec_nth:self -> usize -> (self & Core.Option.t_Option _);
+  f_spec_advance_by:self -> usize
     -> (self & Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize);
-  spec_next_back:self -> (self & Core.Option.t_Option _);
-  spec_nth_back:self -> usize -> (self & Core.Option.t_Option _);
-  spec_advance_back_by:self -> usize
+  f_spec_next_back:self -> (self & Core.Option.t_Option _);
+  f_spec_nth_back:self -> usize -> (self & Core.Option.t_Option _);
+  f_spec_advance_back_by:self -> usize
     -> (self & Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize)
 }
 
-let impl
+let impl_700327265
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
     : t_RangeIteratorImpl (Core.Ops.Range.t_Range a) =
   {
-    item = a;
-    spec_next
+    f_Item_under_impl_1 = a;
+    f_spec_next_under_impl_1
     =
     (fun
         (#a: Type)
@@ -173,7 +173,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    spec_nth
+    f_spec_nth_under_impl_1
     =
     (fun
         (#a: Type)
@@ -184,7 +184,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    spec_advance_by
+    f_spec_advance_by_under_impl_1
     =
     (fun
         (#a: Type)
@@ -195,7 +195,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    spec_next_back
+    f_spec_next_back_under_impl_1
     =
     (fun
         (#a: Type)
@@ -205,7 +205,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    spec_nth_back
+    f_spec_nth_back_under_impl_1
     =
     (fun
         (#a: Type)
@@ -216,7 +216,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    spec_advance_back_by
+    f_spec_advance_back_by_under_impl_1
     =
     fun
       (#a: Type)
@@ -229,13 +229,13 @@ let impl
       self, output
   }
 
-let impl
+let impl_203440379
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Marker.t_TrustedStep t)
     : t_RangeIteratorImpl (Core.Ops.Range.t_Range t) =
   {
-    spec_next
+    f_spec_next_under_impl_2
     =
     (fun
         (#t: Type)
@@ -245,7 +245,7 @@ let impl
         ->
         let output:Core.Option.t_Option t = () in
         self, output);
-    spec_nth
+    f_spec_nth_under_impl_2
     =
     (fun
         (#t: Type)
@@ -256,7 +256,7 @@ let impl
         ->
         let output:Core.Option.t_Option t = () in
         self, output);
-    spec_advance_by
+    f_spec_advance_by_under_impl_2
     =
     (fun
         (#t: Type)
@@ -267,7 +267,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    spec_next_back
+    f_spec_next_back_under_impl_2
     =
     (fun
         (#t: Type)
@@ -277,7 +277,7 @@ let impl
         ->
         let output:Core.Option.t_Option t = () in
         self, output);
-    spec_nth_back
+    f_spec_nth_back_under_impl_2
     =
     (fun
         (#t: Type)
@@ -288,7 +288,7 @@ let impl
         ->
         let output:Core.Option.t_Option t = () in
         self, output);
-    spec_advance_back_by
+    f_spec_advance_back_by_under_impl_2
     =
     fun
       (#t: Type)
@@ -301,14 +301,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_554521195
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
     : Core.Iter.Traits.Iterator.t_Iterator (Core.Ops.Range.t_Range a) =
   {
-    item = a;
-    next
+    f_Item_under_impl_3 = a;
+    f_next_under_impl_3
     =
     (fun
         (#a: Type)
@@ -318,7 +318,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_3
     =
     (fun
         (#a: Type)
@@ -327,7 +327,7 @@ let impl
         (self: Core.Ops.Range.t_Range a)
         ->
         ());
-    nth
+    f_nth_under_impl_3
     =
     (fun
         (#a: Type)
@@ -338,7 +338,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    last
+    f_last_under_impl_3
     =
     (fun
         (#a: Type)
@@ -347,7 +347,7 @@ let impl
         (self: Core.Ops.Range.t_Range a)
         ->
         ());
-    min
+    f_min_under_impl_3
     =
     (fun
         (#a: Type)
@@ -356,7 +356,7 @@ let impl
         (self: Core.Ops.Range.t_Range a)
         ->
         ());
-    max
+    f_max_under_impl_3
     =
     (fun
         (#a: Type)
@@ -365,7 +365,7 @@ let impl
         (self: Core.Ops.Range.t_Range a)
         ->
         ());
-    is_sorted
+    f_is_sorted_under_impl_3
     =
     (fun
         (#a: Type)
@@ -374,7 +374,7 @@ let impl
         (self: Core.Ops.Range.t_Range a)
         ->
         ());
-    advance_by
+    f_advance_by_under_impl_3
     =
     (fun
         (#a: Type)
@@ -385,7 +385,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    __iterator_get_unchecked
+    f___iterator_get_unchecked_under_impl_3
     =
     fun
       (#a: Type)
@@ -398,41 +398,49 @@ let impl
       self, output
   }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range usize) = {  }
+let impl_134628595: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range usize) =
+  { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range u8) = {  }
+let impl_324910781: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range u8) =
+  { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range u16) = {  }
+let impl_11500305: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range u16) =
+  { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range isize) = {  }
+let impl_787776812: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range isize) =
+  { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range i8) = {  }
+let impl_106838981: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range i8) =
+  { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range i16) = {  }
+let impl_145036981: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range i16) =
+  { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range u32) = {  }
+let impl_570445558: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range u32) =
+  { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range i32) = {  }
+let impl_340844936: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_Range i32) =
+  { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_RangeInclusive u8) =
-  {  }
+let impl_328148243: Core.Iter.Traits.Exact_size.t_ExactSizeIterator
+(Core.Ops.Range.t_RangeInclusive u8) = { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_RangeInclusive i8) =
-  {  }
+let impl_604962332: Core.Iter.Traits.Exact_size.t_ExactSizeIterator
+(Core.Ops.Range.t_RangeInclusive i8) = { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_RangeInclusive u16) =
-  {  }
+let impl_904185917: Core.Iter.Traits.Exact_size.t_ExactSizeIterator
+(Core.Ops.Range.t_RangeInclusive u16) = { __marker_trait = () }
 
-let impl: Core.Iter.Traits.Exact_size.t_ExactSizeIterator (Core.Ops.Range.t_RangeInclusive i16) =
-  {  }
+let impl_26985458: Core.Iter.Traits.Exact_size.t_ExactSizeIterator
+(Core.Ops.Range.t_RangeInclusive i16) = { __marker_trait = () }
 
-let impl
+let impl_121737409
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (Core.Ops.Range.t_Range a) =
   {
-    next_back
+    f_next_back_under_impl_4
     =
     (fun
         (#a: Type)
@@ -442,7 +450,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    nth_back
+    f_nth_back_under_impl_4
     =
     (fun
         (#a: Type)
@@ -453,7 +461,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    advance_back_by
+    f_advance_back_by_under_impl_4
     =
     fun
       (#a: Type)
@@ -466,20 +474,20 @@ let impl
       self, output
   }
 
-let impl
+let impl_297955716
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
-    : Core.Iter.Traits.Marker.t_FusedIterator (Core.Ops.Range.t_Range a) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (Core.Ops.Range.t_Range a) = { __marker_trait = () }
 
-let impl
+let impl_745470472
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
     : Core.Iter.Traits.Iterator.t_Iterator (Core.Ops.Range.t_RangeFrom a) =
   {
-    item = a;
-    next
+    f_Item_under_impl_7 = a;
+    f_next_under_impl_7
     =
     (fun
         (#a: Type)
@@ -489,7 +497,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_7
     =
     (fun
         (#a: Type)
@@ -498,7 +506,7 @@ let impl
         (self: Core.Ops.Range.t_RangeFrom a)
         ->
         ());
-    nth
+    f_nth_under_impl_7
     =
     fun
       (#a: Type)
@@ -511,29 +519,30 @@ let impl
       self, output
   }
 
-let impl
+let impl_939989288
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
-    : Core.Iter.Traits.Marker.t_FusedIterator (Core.Ops.Range.t_RangeFrom a) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (Core.Ops.Range.t_RangeFrom a) =
+  { __marker_trait = () }
 
 class t_RangeInclusiveIteratorImpl (v_Self: Type) = {
-  item:Type;
-  item_implements_t_Sized:Core.Marker.t_Sized _;
-  spec_next:self -> (self & Core.Option.t_Option _);
-  spec_try_fold:self -> b -> f -> (self & r);
-  spec_next_back:self -> (self & Core.Option.t_Option _);
-  spec_try_rfold:self -> b -> f -> (self & r)
+  f_Item:Type;
+  f_Item:Core.Marker.t_Sized _;
+  f_spec_next:self -> (self & Core.Option.t_Option _);
+  f_spec_try_fold:self -> b -> f -> (self & r);
+  f_spec_next_back:self -> (self & Core.Option.t_Option _);
+  f_spec_try_rfold:self -> b -> f -> (self & r)
 }
 
-let impl
+let impl_939951243
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
     : t_RangeInclusiveIteratorImpl (Core.Ops.Range.t_RangeInclusive a) =
   {
-    item = a;
-    spec_next
+    f_Item_under_impl_10 = a;
+    f_spec_next_under_impl_10
     =
     (fun
         (#a: Type)
@@ -543,7 +552,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    spec_try_fold
+    f_spec_try_fold_under_impl_10
     =
     (fun
         (#a: Type)
@@ -555,7 +564,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    spec_next_back
+    f_spec_next_back_under_impl_10
     =
     (fun
         (#a: Type)
@@ -565,7 +574,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    spec_try_rfold
+    f_spec_try_rfold_under_impl_10
     =
     fun
       (#a: Type)
@@ -579,13 +588,13 @@ let impl
       self, output
   }
 
-let impl
+let impl_239381026
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Marker.t_TrustedStep t)
     : t_RangeInclusiveIteratorImpl (Core.Ops.Range.t_RangeInclusive t) =
   {
-    spec_next
+    f_spec_next_under_impl_11
     =
     (fun
         (#t: Type)
@@ -595,7 +604,7 @@ let impl
         ->
         let output:Core.Option.t_Option t = () in
         self, output);
-    spec_try_fold
+    f_spec_try_fold_under_impl_11
     =
     (fun
         (#t: Type)
@@ -607,7 +616,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    spec_next_back
+    f_spec_next_back_under_impl_11
     =
     (fun
         (#t: Type)
@@ -617,7 +626,7 @@ let impl
         ->
         let output:Core.Option.t_Option t = () in
         self, output);
-    spec_try_rfold
+    f_spec_try_rfold_under_impl_11
     =
     fun
       (#t: Type)
@@ -631,14 +640,14 @@ let impl
       self, output
   }
 
-let impl
+let impl_835076222
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
     : Core.Iter.Traits.Iterator.t_Iterator (Core.Ops.Range.t_RangeInclusive a) =
   {
-    item = a;
-    next
+    f_Item_under_impl_12 = a;
+    f_next_under_impl_12
     =
     (fun
         (#a: Type)
@@ -648,7 +657,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_12
     =
     (fun
         (#a: Type)
@@ -657,7 +666,7 @@ let impl
         (self: Core.Ops.Range.t_RangeInclusive a)
         ->
         ());
-    nth
+    f_nth_under_impl_12
     =
     (fun
         (#a: Type)
@@ -668,7 +677,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    try_fold
+    f_try_fold_under_impl_12
     =
     (fun
         (#a: Type)
@@ -680,7 +689,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_12
     =
     (fun
         (#a: Type)
@@ -691,7 +700,7 @@ let impl
         (fold: fff)
         ->
         ());
-    last
+    f_last_under_impl_12
     =
     (fun
         (#a: Type)
@@ -700,7 +709,7 @@ let impl
         (self: Core.Ops.Range.t_RangeInclusive a)
         ->
         ());
-    min
+    f_min_under_impl_12
     =
     (fun
         (#a: Type)
@@ -709,7 +718,7 @@ let impl
         (self: Core.Ops.Range.t_RangeInclusive a)
         ->
         ());
-    max
+    f_max_under_impl_12
     =
     (fun
         (#a: Type)
@@ -718,7 +727,7 @@ let impl
         (self: Core.Ops.Range.t_RangeInclusive a)
         ->
         ());
-    is_sorted
+    f_is_sorted_under_impl_12
     =
     fun
       (#a: Type)
@@ -729,13 +738,13 @@ let impl
       ()
   }
 
-let impl
+let impl_965594918
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (Core.Ops.Range.t_RangeInclusive a) =
   {
-    next_back
+    f_next_back_under_impl_13
     =
     (fun
         (#a: Type)
@@ -745,7 +754,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    nth_back
+    f_nth_back_under_impl_13
     =
     (fun
         (#a: Type)
@@ -756,7 +765,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    try_rfold
+    f_try_rfold_under_impl_13
     =
     (fun
         (#a: Type)
@@ -768,7 +777,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    rfold
+    f_rfold_under_impl_13
     =
     fun
       (#a: Type)
@@ -781,8 +790,9 @@ let impl
       ()
   }
 
-let impl
+let impl_942998810
       (#a: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_Step a)
-    : Core.Iter.Traits.Marker.t_FusedIterator (Core.Ops.Range.t_RangeInclusive a) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (Core.Ops.Range.t_RangeInclusive a) =
+  { __marker_trait = () }

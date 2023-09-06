@@ -28,7 +28,7 @@ let new_under_impl
       (f: f)
     : t_FlatMap i u f = ()
 
-let impl
+let impl_376768894
       (#i #u #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -56,7 +56,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __23: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_FlatMap i u f) =
   {
-    clone
+    f_clone_under_impl_1
     =
     fun
       (#i: Type)
@@ -91,7 +91,7 @@ let impl
       ()
   }
 
-let impl
+let impl_227111815
       (#i #u #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -107,7 +107,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __11: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_FlatMap i u f) =
   {
-    fmt
+    f_fmt_under_impl_2
     =
     fun
       (#i: Type)
@@ -132,7 +132,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_7459670
       (#i #u #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
@@ -154,8 +154,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __17: Core.Marker.t_Sized i)
     : Core.Iter.Traits.Iterator.t_Iterator (t_FlatMap i u f) =
   {
-    item = _;
-    next
+    f_Item_under_impl_3 = _;
+    f_next_under_impl_3
     =
     (fun
         (#i: Type)
@@ -183,7 +183,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_3
     =
     (fun
         (#i: Type)
@@ -210,7 +210,7 @@ let impl
         (self: t_FlatMap i u f)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_3
     =
     (fun
         (#i: Type)
@@ -240,7 +240,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_3
     =
     (fun
         (#i: Type)
@@ -269,7 +269,7 @@ let impl
         (fold: fold)
         ->
         ());
-    advance_by
+    f_advance_by_under_impl_3
     =
     (fun
         (#i: Type)
@@ -298,7 +298,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    count
+    f_count_under_impl_3
     =
     (fun
         (#i: Type)
@@ -325,7 +325,7 @@ let impl
         (self: t_FlatMap i u f)
         ->
         ());
-    last
+    f_last_under_impl_3
     =
     fun
       (#i: Type)
@@ -354,7 +354,7 @@ let impl
       ()
   }
 
-let impl
+let impl_1001674600
       (#i #u #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
@@ -391,7 +391,7 @@ let impl
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator _)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_FlatMap i u f) =
   {
-    next_back
+    f_next_back_under_impl_4
     =
     (fun
         (#i: Type)
@@ -434,7 +434,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    try_rfold
+    f_try_rfold_under_impl_4
     =
     (fun
         (#i: Type)
@@ -479,7 +479,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    rfold
+    f_rfold_under_impl_4
     =
     (fun
         (#i: Type)
@@ -523,7 +523,7 @@ let impl
         (fold: fold)
         ->
         ());
-    advance_back_by
+    f_advance_back_by_under_impl_4
     =
     fun
       (#i: Type)
@@ -569,7 +569,7 @@ let impl
       self, output
   }
 
-let impl
+let impl_1056521491
       (#i #u #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
@@ -589,7 +589,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __15: Core.Iter.Traits.Collect.t_IntoIterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __16: Core.Ops.Function.t_FnMut f _)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __17: Core.Marker.t_Sized i)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_FlatMap i u f) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_FlatMap i u f) = { __marker_trait = () }
 
 type t_Flatten = { f_inner:t_FlattenCompat i _ }
 
@@ -601,7 +601,7 @@ let new_under_impl_7
       (iter: i)
     : t_Flatten i = ()
 
-let impl
+let impl_254487123
       (#i #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Fmt.t_Debug i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
@@ -619,7 +619,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __13: Core.Iter.Traits.Iterator.t_Iterator u)
     : Core.Fmt.t_Debug (t_Flatten i) =
   {
-    fmt
+    f_fmt_under_impl_8
     =
     fun
       (#i: Type)
@@ -645,7 +645,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_19511646
       (#i #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Clone.t_Clone i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
@@ -663,7 +663,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __13: Core.Iter.Traits.Iterator.t_Iterator u)
     : Core.Clone.t_Clone (t_Flatten i) =
   {
-    clone
+    f_clone_under_impl_9
     =
     fun
       (#i: Type)
@@ -687,7 +687,7 @@ let impl
       ()
   }
 
-let impl
+let impl_217816689
       (#i #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Iter.Traits.Iterator.t_Iterator i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Collect.t_IntoIterator _)
@@ -701,8 +701,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Iter.Traits.Iterator.t_Iterator u)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Flatten i) =
   {
-    item = _;
-    next
+    f_Item_under_impl_10 = _;
+    f_next_under_impl_10
     =
     (fun
         (#i: Type)
@@ -721,7 +721,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_10
     =
     (fun
         (#i: Type)
@@ -739,7 +739,7 @@ let impl
         (self: t_Flatten i)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_10
     =
     (fun
         (#i: Type)
@@ -760,7 +760,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_10
     =
     (fun
         (#i: Type)
@@ -780,7 +780,7 @@ let impl
         (fold: fold)
         ->
         ());
-    advance_by
+    f_advance_by_under_impl_10
     =
     (fun
         (#i: Type)
@@ -800,7 +800,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    count
+    f_count_under_impl_10
     =
     (fun
         (#i: Type)
@@ -818,7 +818,7 @@ let impl
         (self: t_Flatten i)
         ->
         ());
-    last
+    f_last_under_impl_10
     =
     fun
       (#i: Type)
@@ -838,7 +838,7 @@ let impl
       ()
   }
 
-let impl
+let impl_970476438
       (#i #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -860,7 +860,7 @@ let impl
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator u)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_Flatten i) =
   {
-    next_back
+    f_next_back_under_impl_11
     =
     (fun
         (#i: Type)
@@ -887,7 +887,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    try_rfold
+    f_try_rfold_under_impl_11
     =
     (fun
         (#i: Type)
@@ -916,7 +916,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    rfold
+    f_rfold_under_impl_11
     =
     (fun
         (#i: Type)
@@ -944,7 +944,7 @@ let impl
         (fold: fold)
         ->
         ());
-    advance_back_by
+    f_advance_back_by_under_impl_11
     =
     fun
       (#i: Type)
@@ -974,7 +974,7 @@ let impl
       self, output
   }
 
-let impl
+let impl_665340151
       (#i #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Iter.Traits.Marker.t_FusedIterator i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Collect.t_IntoIterator _)
@@ -986,9 +986,9 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __8: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Iter.Traits.Iterator.t_Iterator u)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_Flatten i) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_Flatten i) = { __marker_trait = () }
 
-let impl
+let impl_1053109732
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Default.t_Default i)
@@ -996,7 +996,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Iter.Traits.Collect.t_IntoIterator _)
     : Core.Default.t_Default (t_Flatten i) =
   {
-    default
+    f_default_under_impl_14
     =
     fun
       (#i: Type)
@@ -1014,7 +1014,7 @@ type t_FlattenCompat = {
   f_backiter:Core.Option.t_Option u
 }
 
-let impl
+let impl_74490313
       (#i #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -1026,7 +1026,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone u)
     : Core.Clone.t_Clone (t_FlattenCompat i u) =
   {
-    clone
+    f_clone_under_impl_27
     =
     fun
       (#i: Type)
@@ -1044,7 +1044,7 @@ let impl
       ()
   }
 
-let impl
+let impl_259243970
       (#i #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized u)
@@ -1056,7 +1056,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Fmt.t_Debug u)
     : Core.Fmt.t_Debug (t_FlattenCompat i u) =
   {
-    fmt
+    f_fmt_under_impl_28
     =
     fun
       (#i: Type)
@@ -1109,27 +1109,23 @@ let iter_try_fold_under_impl_16
   self, output
 
 let flatten_under_iter_fold_under_impl_16
-      (#t #acc #impl fnmut(acc, t::intoiter) -> acc: Type)
+      (#t #acc #impl_213916112_: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized acc)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __2:
-          Core.Marker.t_Sized impl fnmut(acc, t::intoiter) -> acc)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized impl_213916112_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Iter.Traits.Collect.t_IntoIterator t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __4:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, t::intoiter) -> acc (acc & _))
+          Core.Ops.Function.t_FnMut impl_213916112_ (acc & _))
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Marker.t_Sized acc)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __7:
-          Core.Marker.t_Sized impl fnmut(acc, t::intoiter) -> acc)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized impl_213916112_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __8: Core.Iter.Traits.Collect.t_IntoIterator t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __9:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, t::intoiter) -> acc (acc & _))
-      (fold: impl fnmut(acc, t::intoiter) -> acc)
-    : (impl fnmut(acc, t::intoiter) -> acc & (acc -> t -> acc)) =
+          Core.Ops.Function.t_FnMut impl_213916112_ (acc & _))
+      (fold: impl_213916112_)
+    : (impl_213916112_ & (acc -> t -> acc)) =
   let output: acc -> t -> acc = () in
   fold, output
 
@@ -1168,27 +1164,23 @@ let iter_try_rfold_under_impl_17
   self, output
 
 let flatten_under_iter_rfold_under_impl_17
-      (#t #acc #impl fnmut(acc, t::intoiter) -> acc: Type)
+      (#t #acc #impl_213916112_: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized acc)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __2:
-          Core.Marker.t_Sized impl fnmut(acc, t::intoiter) -> acc)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized impl_213916112_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Iter.Traits.Collect.t_IntoIterator t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __4:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, t::intoiter) -> acc (acc & _))
+          Core.Ops.Function.t_FnMut impl_213916112_ (acc & _))
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Marker.t_Sized acc)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __7:
-          Core.Marker.t_Sized impl fnmut(acc, t::intoiter) -> acc)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized impl_213916112_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __8: Core.Iter.Traits.Collect.t_IntoIterator t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __9:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, t::intoiter) -> acc (acc & _))
-      (fold: impl fnmut(acc, t::intoiter) -> acc)
-    : (impl fnmut(acc, t::intoiter) -> acc & (acc -> t -> acc)) =
+          Core.Ops.Function.t_FnMut impl_213916112_ (acc & _))
+      (fold: impl_213916112_)
+    : (impl_213916112_ & (acc -> t -> acc)) =
   let output: acc -> t -> acc = () in
   fold, output
 
@@ -1198,7 +1190,7 @@ Last available AST for this item:
 
 fn flatten_under_iter_try_rfold_under_impl_17<'a: 'unk, T, Acc, R, impl FnMut(Acc, &mut T::IntoIter) -> R>(mut backiter: core::option::t_Option<proj_asso_type!()>,mut fold: impl FnMut(Acc, &mut T::IntoIter) -> R) -> arrow!(Acc -> T -> R) where T:core::marker::t_Sized<T>,T:core::marker::t_Sized<Acc>,T:core::marker::t_Sized<R>,T:core::marker::t_Sized<impl FnMut(Acc, &mut T::IntoIter) -> R>,T:core::iter::traits::collect::t_IntoIterator<T>,T:core::ops::try_trait::t_Try<R>,T:core::ops::function::t_FnMut<impl FnMut(Acc, &mut T::IntoIter) -> R, tuple2<Acc, &mut proj_asso_type!()>>,R:core::marker::t_Sized<T>,R:core::marker::t_Sized<Acc>,R:core::marker::t_Sized<R>,R:core::marker::t_Sized<impl FnMut(Acc, &mut T::IntoIter) -> R>,R:core::iter::traits::collect::t_IntoIterator<T>,R:core::ops::try_trait::t_Try<R>,R:core::ops::function::t_FnMut<impl FnMut(Acc, &mut T::IntoIter) -> R, tuple2<Acc, &mut proj_asso_type!()>>,impl FnMut(Acc, &mut T::IntoIter) -> R:core::marker::t_Sized<T>,impl FnMut(Acc, &mut T::IntoIter) -> R:core::marker::t_Sized<Acc>,impl FnMut(Acc, &mut T::IntoIter) -> R:core::marker::t_Sized<R>,impl FnMut(Acc, &mut T::IntoIter) -> R:core::marker::t_Sized<impl FnMut(Acc, &mut T::IntoIter) -> R>,impl FnMut(Acc, &mut T::IntoIter) -> R:core::iter::traits::collect::t_IntoIterator<T>,impl FnMut(Acc, &mut T::IntoIter) -> R:core::ops::try_trait::t_Try<R>,impl FnMut(Acc, &mut T::IntoIter) -> R:core::ops::function::t_FnMut<impl FnMut(Acc, &mut T::IntoIter) -> R, tuple2<Acc, &mut proj_asso_type!()>>{{let output: arrow!(Acc -> T -> R) = {Tuple0()};Tuple3(backiter,fold,output)}} *)
 
-let impl
+let impl_685966586
       (#i #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Iter.Traits.Iterator.t_Iterator i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Collect.t_IntoIterator _)
@@ -1212,8 +1204,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Iter.Traits.Iterator.t_Iterator u)
     : Core.Iter.Traits.Iterator.t_Iterator (t_FlattenCompat i u) =
   {
-    item = _;
-    next
+    f_Item_under_impl_18 = _;
+    f_next_under_impl_18
     =
     (fun
         (#i: Type)
@@ -1232,7 +1224,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_18
     =
     (fun
         (#i: Type)
@@ -1250,7 +1242,7 @@ let impl
         (self: t_FlattenCompat i u)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_18
     =
     (fun
         (#i: Type)
@@ -1271,7 +1263,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_18
     =
     (fun
         (#i: Type)
@@ -1291,7 +1283,7 @@ let impl
         (fold: fold)
         ->
         ());
-    advance_by
+    f_advance_by_under_impl_18
     =
     (fun
         (#i: Type)
@@ -1311,7 +1303,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    count
+    f_count_under_impl_18
     =
     (fun
         (#i: Type)
@@ -1329,7 +1321,7 @@ let impl
         (self: t_FlattenCompat i u)
         ->
         ());
-    last
+    f_last_under_impl_18
     =
     fun
       (#i: Type)
@@ -1350,65 +1342,55 @@ let impl
   }
 
 let flatten_under_try_fold_under_impl_18
-      (#u #acc #r #impl fnmut(acc, u::item) -> r: Type)
+      (#u #acc #r #impl_1043523726_: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized acc)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized r)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __3:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> r)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Marker.t_Sized impl_1043523726_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __4: Core.Iter.Traits.Iterator.t_Iterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Ops.Try_trait.t_Try r)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __6:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> r (acc & _))
+          Core.Ops.Function.t_FnMut impl_1043523726_ (acc & _))
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __8: Core.Marker.t_Sized acc)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Marker.t_Sized r)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __10:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> r)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __10: Core.Marker.t_Sized impl_1043523726_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __11: Core.Iter.Traits.Iterator.t_Iterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __12: Core.Ops.Try_trait.t_Try r)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __13:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> r (acc & _))
+          Core.Ops.Function.t_FnMut impl_1043523726_ (acc & _))
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __14: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __15: Core.Marker.t_Sized acc)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __16: Core.Marker.t_Sized r)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __17:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> r)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __17: Core.Marker.t_Sized impl_1043523726_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __18: Core.Iter.Traits.Iterator.t_Iterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __19: Core.Ops.Try_trait.t_Try r)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __20:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> r (acc & _))
-      (fold: impl fnmut(acc, u::item) -> r)
+          Core.Ops.Function.t_FnMut impl_1043523726_ (acc & _))
+      (fold: impl_1043523726_)
     : Rust_primitives.Hax.t_failure =
   Rust_primitives.Hax.failure "(RefMut) The mutation of this &mut is not allowed here.\n" "Tuple0()"
 
 let flatten_under_fold_under_impl_18
-      (#u #acc #impl fnmut(acc, u::item) -> acc: Type)
+      (#u #acc #impl_300266598_: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized acc)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __2:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> acc)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized impl_300266598_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Iter.Traits.Iterator.t_Iterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __4:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> acc (acc & _))
+          Core.Ops.Function.t_FnMut impl_300266598_ (acc & _))
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Marker.t_Sized acc)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __7:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> acc)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized impl_300266598_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __8: Core.Iter.Traits.Iterator.t_Iterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __9:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> acc (acc & _))
-      (fold: impl fnmut(acc, u::item) -> acc)
+          Core.Ops.Function.t_FnMut impl_300266598_ (acc & _))
+      (fold: impl_300266598_)
     :  acc -> u -> acc = ()
 
 let advance_under_advance_by_under_impl_18
@@ -1437,7 +1419,7 @@ let last_under_last_under_impl_18
       (iter: u)
     : Core.Option.t_Option _ = ()
 
-let impl
+let impl_266204780
       (#i #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __0:
@@ -1459,7 +1441,7 @@ let impl
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator u)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_FlattenCompat i u) =
   {
-    next_back
+    f_next_back_under_impl_19
     =
     (fun
         (#i: Type)
@@ -1486,7 +1468,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    try_rfold
+    f_try_rfold_under_impl_19
     =
     (fun
         (#i: Type)
@@ -1515,7 +1497,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    rfold
+    f_rfold_under_impl_19
     =
     (fun
         (#i: Type)
@@ -1543,7 +1525,7 @@ let impl
         (fold: fold)
         ->
         ());
-    advance_back_by
+    f_advance_back_by_under_impl_19
     =
     fun
       (#i: Type)
@@ -1574,75 +1556,65 @@ let impl
   }
 
 let flatten_under_try_rfold_under_impl_19
-      (#u #acc #r #impl fnmut(acc, u::item) -> r: Type)
+      (#u #acc #r #impl_1043523726_: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized acc)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized r)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __3:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> r)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Marker.t_Sized impl_1043523726_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __4:
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Ops.Try_trait.t_Try r)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __6:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> r (acc & _))
+          Core.Ops.Function.t_FnMut impl_1043523726_ (acc & _))
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __8: Core.Marker.t_Sized acc)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Marker.t_Sized r)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __10:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> r)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __10: Core.Marker.t_Sized impl_1043523726_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __11:
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __12: Core.Ops.Try_trait.t_Try r)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __13:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> r (acc & _))
+          Core.Ops.Function.t_FnMut impl_1043523726_ (acc & _))
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __14: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __15: Core.Marker.t_Sized acc)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __16: Core.Marker.t_Sized r)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __17:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> r)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __17: Core.Marker.t_Sized impl_1043523726_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __18:
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __19: Core.Ops.Try_trait.t_Try r)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __20:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> r (acc & _))
-      (fold: impl fnmut(acc, u::item) -> r)
+          Core.Ops.Function.t_FnMut impl_1043523726_ (acc & _))
+      (fold: impl_1043523726_)
     : Rust_primitives.Hax.t_failure =
   Rust_primitives.Hax.failure "(RefMut) The mutation of this &mut is not allowed here.\n" "Tuple0()"
 
 let flatten_under_rfold_under_impl_19
-      (#u #acc #impl fnmut(acc, u::item) -> acc: Type)
+      (#u #acc #impl_300266598_: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized acc)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __2:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> acc)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized impl_300266598_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __3:
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __4:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> acc (acc & _))
+          Core.Ops.Function.t_FnMut impl_300266598_ (acc & _))
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Marker.t_Sized u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Marker.t_Sized acc)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __7:
-          Core.Marker.t_Sized impl fnmut(acc, u::item) -> acc)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized impl_300266598_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __8:
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __9:
-          Core.Ops.Function.t_FnMut impl fnmut(acc, u::item) -> acc (acc & _))
-      (fold: impl fnmut(acc, u::item) -> acc)
+          Core.Ops.Function.t_FnMut impl_300266598_ (acc & _))
+      (fold: impl_300266598_)
     :  acc -> u -> acc = ()
 
 let advance_under_advance_back_by_under_impl_19
@@ -1657,15 +1629,15 @@ let advance_under_advance_back_by_under_impl_19
   let output:Core.Ops.Control_flow.t_ControlFlow Prims.unit usize = () in
   iter, output
 
-class t_ConstSizeIntoIterator (v_Self: Type) = { size:Core.Option.t_Option usize }
+class t_ConstSizeIntoIterator (v_Self: Type) = { f_size:Core.Option.t_Option usize }
 
-let impl
+let impl_596210580
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Collect.t_IntoIterator t)
     : t_ConstSizeIntoIterator t =
   {
-    size
+    f_size_under_impl_23
     =
     fun
       (#t: Type)
@@ -1675,11 +1647,11 @@ let impl
       ()
   }
 
-let impl (#t: Type) (#n: usize) : t_ConstSizeIntoIterator (array t v_N) =
-  { size = fun (#t: Type) (#n: usize) -> () }
+let impl_815333217 (#t: Type) (#n: usize) : t_ConstSizeIntoIterator (array t v_N) =
+  { f_size_under_impl_24 = fun (#t: Type) (#n: usize) -> () }
 
-let impl (#t: Type) (#n: usize) : t_ConstSizeIntoIterator (array t v_N) =
-  { size = fun (#t: Type) (#n: usize) -> () }
+let impl_570073420 (#t: Type) (#n: usize) : t_ConstSizeIntoIterator (array t v_N) =
+  { f_size_under_impl_25 = fun (#t: Type) (#n: usize) -> () }
 
 (* (RefMut) The mutation of this &mut is not allowed here.
 

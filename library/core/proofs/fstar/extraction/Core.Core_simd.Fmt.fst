@@ -2,7 +2,7 @@ module Core.Core_simd.Fmt
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-let impl
+let impl_836643519
       (#t: Type)
       (#lanes: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -21,7 +21,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Fmt.t_Debug t)
     : Core.Fmt.t_Debug (Core.Core_simd.Vector.t_Simd t v_LANES) =
   {
-    fmt
+    f_fmt_under_impl
     =
     fun
       (#t: Type)

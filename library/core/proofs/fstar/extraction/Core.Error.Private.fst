@@ -4,9 +4,9 @@ open Core
 
 type t_Internal = | Internal : t_Internal
 
-let impl: Core.Fmt.t_Debug t_Internal =
+let impl_193356761: Core.Fmt.t_Debug t_Internal =
   {
-    fmt
+    f_fmt_under_impl
     =
     fun (self: t_Internal) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

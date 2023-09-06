@@ -12,13 +12,13 @@ let from_fn
 
 type t_FromFn = | FromFn : f -> t_FromFn
 
-let impl
+let impl_393196412
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone f)
     : Core.Clone.t_Clone (t_FromFn f) =
   {
-    clone
+    f_clone_under_impl_2
     =
     fun
       (#f: Type)
@@ -29,15 +29,15 @@ let impl
       ()
   }
 
-let impl
+let impl_381964089
       (#t #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Ops.Function.t_FnMut f Prims.unit)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized t)
     : Core.Iter.Traits.Iterator.t_Iterator (t_FromFn f) =
   {
-    item = t;
-    next
+    f_Item_under_impl = t;
+    f_next_under_impl
     =
     fun
       (#t: Type)
@@ -51,9 +51,9 @@ let impl
       self, output
   }
 
-let impl (#f: Type) : Core.Fmt.t_Debug (t_FromFn f) =
+let impl_758538060 (#f: Type) : Core.Fmt.t_Debug (t_FromFn f) =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun (#f: Type) (self: t_FromFn f) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

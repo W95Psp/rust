@@ -8,13 +8,13 @@ Last available AST for this item:
 
 struct t_ByRefSized<'a: 'unk, I>(&mut I); *)
 
-let impl
+let impl_1025229200
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug i)
     : Core.Fmt.t_Debug (t_ByRefSized i) =
   {
-    fmt
+    f_fmt_under_impl_2
     =
     fun
       (#i: Type)
@@ -27,14 +27,14 @@ let impl
       f, output
   }
 
-let impl
+let impl_13951913
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
     : Core.Iter.Traits.Iterator.t_Iterator (t_ByRefSized i) =
   {
-    item = _;
-    next
+    f_Item_under_impl = _;
+    f_next_under_impl
     =
     (fun
         (#i: Type)
@@ -44,7 +44,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl
     =
     (fun
         (#i: Type)
@@ -53,7 +53,7 @@ let impl
         (self: t_ByRefSized i)
         ->
         ());
-    advance_by
+    f_advance_by_under_impl
     =
     (fun
         (#i: Type)
@@ -64,7 +64,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    nth
+    f_nth_under_impl
     =
     (fun
         (#i: Type)
@@ -75,7 +75,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    fold
+    f_fold_under_impl
     =
     (fun
         (#i: Type)
@@ -86,7 +86,7 @@ let impl
         (f: f)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl
     =
     fun
       (#i: Type)
@@ -100,7 +100,7 @@ let impl
       self, output
   }
 
-let impl
+let impl_145071414
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
@@ -108,7 +108,7 @@ let impl
           Core.Iter.Traits.Double_ended.t_DoubleEndedIterator i)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_ByRefSized i) =
   {
-    next_back
+    f_next_back_under_impl_1
     =
     (fun
         (#i: Type)
@@ -120,7 +120,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    advance_back_by
+    f_advance_back_by_under_impl_1
     =
     (fun
         (#i: Type)
@@ -133,7 +133,7 @@ let impl
         ->
         let output:Core.Result.t_Result Prims.unit Core.Num.Nonzero.t_NonZeroUsize = () in
         self, output);
-    nth_back
+    f_nth_back_under_impl_1
     =
     (fun
         (#i: Type)
@@ -146,7 +146,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    rfold
+    f_rfold_under_impl_1
     =
     (fun
         (#i: Type)
@@ -159,7 +159,7 @@ let impl
         (f: f)
         ->
         ());
-    try_rfold
+    f_try_rfold_under_impl_1
     =
     fun
       (#i: Type)

@@ -4,17 +4,19 @@ open Core
 
 type t_Exclusive = { f_inner:t }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Default.t_Default t)
+let impl_377452646
+      (#t: Type)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Default.t_Default t)
     : Core.Default.t_Default (t_Exclusive t) =
   {
-    default
+    f_default_under_impl_6
     =
     fun (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Default.t_Default t) -> ()
   }
 
-let impl (#t: Type) : Core.Fmt.t_Debug (t_Exclusive t) =
+let impl_442560918 (#t: Type) : Core.Fmt.t_Debug (t_Exclusive t) =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun (#t: Type) (self: t_Exclusive t) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -53,7 +55,8 @@ Last available AST for this item:
 
 fn from_pin_mut_under_impl_3<T>(r: core::pin::t_Pin<&mut T>) -> core::pin::t_Pin<&mut core::sync::exclusive::t_Exclusive<T>>{Tuple0()} *)
 
-let impl (#t: Type) : Core.Convert.t_From (t_Exclusive t) t = { from = fun (#t: Type) (t: t) -> () }
+let impl_256472753 (#t: Type) : Core.Convert.t_From (t_Exclusive t) t =
+  { f_from_under_impl_4 = fun (#t: Type) (t: t) -> () }
 
 (* (RefMut) The mutation of this &mut is not allowed here.
 

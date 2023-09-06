@@ -4,22 +4,23 @@ open Core
 
 type t_u8x2 = | C_u8x2 : u8 -> u8 -> t_u8x2
 
-let impl: Core.Marker.t_Copy t_u8x2 = {  }
+let impl_345190989: Core.Marker.t_Copy t_u8x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u8x2 = { clone = fun (self: t_u8x2) -> () }
+let impl_573015215: Core.Clone.t_Clone t_u8x2 = { f_clone_under_impl_2 = fun (self: t_u8x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_u8x2 =
+let impl_413562216: Core.Fmt.t_Debug t_u8x2 =
   {
-    fmt
+    f_fmt_under_impl_3
     =
     fun (self: t_u8x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u8x2 = {  }
+let impl_679800626: Core.Marker.t_StructuralPartialEq t_u8x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u8x2 t_u8x2 = { eq = fun (self: t_u8x2) (other: t_u8x2) -> () }
+let impl_547895525: Core.Cmp.t_PartialEq t_u8x2 t_u8x2 =
+  { f_eq_under_impl_5 = fun (self: t_u8x2) (other: t_u8x2) -> () }
 
 let new_under_impl (x0 x1: u8) : t_u8x2 = ()
 
@@ -33,22 +34,23 @@ type t_x1_under_splat_under_impl = | C_x1_under_splat_under_impl : t_x1_under_sp
 
 type t_i8x2 = | C_i8x2 : i8 -> i8 -> t_i8x2
 
-let impl: Core.Marker.t_Copy t_i8x2 = {  }
+let impl_479906091: Core.Marker.t_Copy t_i8x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i8x2 = { clone = fun (self: t_i8x2) -> () }
+let impl_470021931: Core.Clone.t_Clone t_i8x2 = { f_clone_under_impl_8 = fun (self: t_i8x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_i8x2 =
+let impl_334714813: Core.Fmt.t_Debug t_i8x2 =
   {
-    fmt
+    f_fmt_under_impl_9
     =
     fun (self: t_i8x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i8x2 = {  }
+let impl_857293968: Core.Marker.t_StructuralPartialEq t_i8x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i8x2 t_i8x2 = { eq = fun (self: t_i8x2) (other: t_i8x2) -> () }
+let impl_688492239: Core.Cmp.t_PartialEq t_i8x2 t_i8x2 =
+  { f_eq_under_impl_11 = fun (self: t_i8x2) (other: t_i8x2) -> () }
 
 let new_under_impl_6 (x0 x1: i8) : t_i8x2 = ()
 
@@ -62,22 +64,23 @@ type t_x1_under_splat_under_impl_6 = | C_x1_under_splat_under_impl_6 : t_x1_unde
 
 type t_u8x4 = | C_u8x4 : u8 -> u8 -> u8 -> u8 -> t_u8x4
 
-let impl: Core.Marker.t_Copy t_u8x4 = {  }
+let impl_555261233: Core.Marker.t_Copy t_u8x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u8x4 = { clone = fun (self: t_u8x4) -> () }
+let impl_74181601: Core.Clone.t_Clone t_u8x4 = { f_clone_under_impl_14 = fun (self: t_u8x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_u8x4 =
+let impl_66224566: Core.Fmt.t_Debug t_u8x4 =
   {
-    fmt
+    f_fmt_under_impl_15
     =
     fun (self: t_u8x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u8x4 = {  }
+let impl_684945410: Core.Marker.t_StructuralPartialEq t_u8x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u8x4 t_u8x4 = { eq = fun (self: t_u8x4) (other: t_u8x4) -> () }
+let impl_643759868: Core.Cmp.t_PartialEq t_u8x4 t_u8x4 =
+  { f_eq_under_impl_17 = fun (self: t_u8x4) (other: t_u8x4) -> () }
 
 let new_under_impl_12 (x0 x1 x2 x3: u8) : t_u8x4 = ()
 
@@ -99,22 +102,24 @@ type t_x3_under_splat_under_impl_12 =
 
 type t_u16x2 = | C_u16x2 : u16 -> u16 -> t_u16x2
 
-let impl: Core.Marker.t_Copy t_u16x2 = {  }
+let impl_685333489: Core.Marker.t_Copy t_u16x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u16x2 = { clone = fun (self: t_u16x2) -> () }
+let impl_714943033: Core.Clone.t_Clone t_u16x2 =
+  { f_clone_under_impl_20 = fun (self: t_u16x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_u16x2 =
+let impl_583136951: Core.Fmt.t_Debug t_u16x2 =
   {
-    fmt
+    f_fmt_under_impl_21
     =
     fun (self: t_u16x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u16x2 = {  }
+let impl_291369938: Core.Marker.t_StructuralPartialEq t_u16x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u16x2 t_u16x2 = { eq = fun (self: t_u16x2) (other: t_u16x2) -> () }
+let impl_311459723: Core.Cmp.t_PartialEq t_u16x2 t_u16x2 =
+  { f_eq_under_impl_23 = fun (self: t_u16x2) (other: t_u16x2) -> () }
 
 let new_under_impl_18 (x0 x1: u16) : t_u16x2 = ()
 
@@ -130,22 +135,23 @@ type t_x1_under_splat_under_impl_18 =
 
 type t_i8x4 = | C_i8x4 : i8 -> i8 -> i8 -> i8 -> t_i8x4
 
-let impl: Core.Marker.t_Copy t_i8x4 = {  }
+let impl_73021724: Core.Marker.t_Copy t_i8x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i8x4 = { clone = fun (self: t_i8x4) -> () }
+let impl_10575562: Core.Clone.t_Clone t_i8x4 = { f_clone_under_impl_26 = fun (self: t_i8x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_i8x4 =
+let impl_38801926: Core.Fmt.t_Debug t_i8x4 =
   {
-    fmt
+    f_fmt_under_impl_27
     =
     fun (self: t_i8x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i8x4 = {  }
+let impl_876939229: Core.Marker.t_StructuralPartialEq t_i8x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i8x4 t_i8x4 = { eq = fun (self: t_i8x4) (other: t_i8x4) -> () }
+let impl_698369785: Core.Cmp.t_PartialEq t_i8x4 t_i8x4 =
+  { f_eq_under_impl_29 = fun (self: t_i8x4) (other: t_i8x4) -> () }
 
 let new_under_impl_24 (x0 x1 x2 x3: i8) : t_i8x4 = ()
 
@@ -167,22 +173,24 @@ type t_x3_under_splat_under_impl_24 =
 
 type t_i16x2 = | C_i16x2 : i16 -> i16 -> t_i16x2
 
-let impl: Core.Marker.t_Copy t_i16x2 = {  }
+let impl_499579136: Core.Marker.t_Copy t_i16x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i16x2 = { clone = fun (self: t_i16x2) -> () }
+let impl_795713571: Core.Clone.t_Clone t_i16x2 =
+  { f_clone_under_impl_32 = fun (self: t_i16x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_i16x2 =
+let impl_76079997: Core.Fmt.t_Debug t_i16x2 =
   {
-    fmt
+    f_fmt_under_impl_33
     =
     fun (self: t_i16x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i16x2 = {  }
+let impl_678067931: Core.Marker.t_StructuralPartialEq t_i16x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i16x2 t_i16x2 = { eq = fun (self: t_i16x2) (other: t_i16x2) -> () }
+let impl_413807969: Core.Cmp.t_PartialEq t_i16x2 t_i16x2 =
+  { f_eq_under_impl_35 = fun (self: t_i16x2) (other: t_i16x2) -> () }
 
 let new_under_impl_30 (x0 x1: i16) : t_i16x2 = ()
 
@@ -198,22 +206,23 @@ type t_x1_under_splat_under_impl_30 =
 
 type t_u8x8 = | C_u8x8 : u8 -> u8 -> u8 -> u8 -> u8 -> u8 -> u8 -> u8 -> t_u8x8
 
-let impl: Core.Marker.t_Copy t_u8x8 = {  }
+let impl_332275384: Core.Marker.t_Copy t_u8x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u8x8 = { clone = fun (self: t_u8x8) -> () }
+let impl_930178246: Core.Clone.t_Clone t_u8x8 = { f_clone_under_impl_38 = fun (self: t_u8x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_u8x8 =
+let impl_483123198: Core.Fmt.t_Debug t_u8x8 =
   {
-    fmt
+    f_fmt_under_impl_39
     =
     fun (self: t_u8x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u8x8 = {  }
+let impl_876640222: Core.Marker.t_StructuralPartialEq t_u8x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u8x8 t_u8x8 = { eq = fun (self: t_u8x8) (other: t_u8x8) -> () }
+let impl_486944404: Core.Cmp.t_PartialEq t_u8x8 t_u8x8 =
+  { f_eq_under_impl_41 = fun (self: t_u8x8) (other: t_u8x8) -> () }
 
 let new_under_impl_36 (x0 x1 x2 x3 x4 x5 x6 x7: u8) : t_u8x8 = ()
 
@@ -247,22 +256,24 @@ type t_x7_under_splat_under_impl_36 =
 
 type t_u16x4 = | C_u16x4 : u16 -> u16 -> u16 -> u16 -> t_u16x4
 
-let impl: Core.Marker.t_Copy t_u16x4 = {  }
+let impl_409010177: Core.Marker.t_Copy t_u16x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u16x4 = { clone = fun (self: t_u16x4) -> () }
+let impl_659574761: Core.Clone.t_Clone t_u16x4 =
+  { f_clone_under_impl_44 = fun (self: t_u16x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_u16x4 =
+let impl_361017479: Core.Fmt.t_Debug t_u16x4 =
   {
-    fmt
+    f_fmt_under_impl_45
     =
     fun (self: t_u16x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u16x4 = {  }
+let impl_1018827528: Core.Marker.t_StructuralPartialEq t_u16x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u16x4 t_u16x4 = { eq = fun (self: t_u16x4) (other: t_u16x4) -> () }
+let impl_136387414: Core.Cmp.t_PartialEq t_u16x4 t_u16x4 =
+  { f_eq_under_impl_47 = fun (self: t_u16x4) (other: t_u16x4) -> () }
 
 let new_under_impl_42 (x0 x1 x2 x3: u16) : t_u16x4 = ()
 
@@ -284,22 +295,24 @@ type t_x3_under_splat_under_impl_42 =
 
 type t_u32x2 = | C_u32x2 : u32 -> u32 -> t_u32x2
 
-let impl: Core.Marker.t_Copy t_u32x2 = {  }
+let impl_579582510: Core.Marker.t_Copy t_u32x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u32x2 = { clone = fun (self: t_u32x2) -> () }
+let impl_925358190: Core.Clone.t_Clone t_u32x2 =
+  { f_clone_under_impl_50 = fun (self: t_u32x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_u32x2 =
+let impl_153284810: Core.Fmt.t_Debug t_u32x2 =
   {
-    fmt
+    f_fmt_under_impl_51
     =
     fun (self: t_u32x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u32x2 = {  }
+let impl_325997163: Core.Marker.t_StructuralPartialEq t_u32x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u32x2 t_u32x2 = { eq = fun (self: t_u32x2) (other: t_u32x2) -> () }
+let impl_78739874: Core.Cmp.t_PartialEq t_u32x2 t_u32x2 =
+  { f_eq_under_impl_53 = fun (self: t_u32x2) (other: t_u32x2) -> () }
 
 let new_under_impl_48 (x0 x1: u32) : t_u32x2 = ()
 
@@ -315,22 +328,24 @@ type t_x1_under_splat_under_impl_48 =
 
 type t_u64x1 = | C_u64x1 : u64 -> t_u64x1
 
-let impl: Core.Marker.t_Copy t_u64x1 = {  }
+let impl_702947452: Core.Marker.t_Copy t_u64x1 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u64x1 = { clone = fun (self: t_u64x1) -> () }
+let impl_913029647: Core.Clone.t_Clone t_u64x1 =
+  { f_clone_under_impl_56 = fun (self: t_u64x1) -> () }
 
-let impl: Core.Fmt.t_Debug t_u64x1 =
+let impl_176039179: Core.Fmt.t_Debug t_u64x1 =
   {
-    fmt
+    f_fmt_under_impl_57
     =
     fun (self: t_u64x1) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u64x1 = {  }
+let impl_267301069: Core.Marker.t_StructuralPartialEq t_u64x1 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u64x1 t_u64x1 = { eq = fun (self: t_u64x1) (other: t_u64x1) -> () }
+let impl_583972638: Core.Cmp.t_PartialEq t_u64x1 t_u64x1 =
+  { f_eq_under_impl_59 = fun (self: t_u64x1) (other: t_u64x1) -> () }
 
 let new_under_impl_54 (x1: u64) : t_u64x1 = ()
 
@@ -343,22 +358,23 @@ type t_x1_under_splat_under_impl_54 =
 
 type t_i8x8 = | C_i8x8 : i8 -> i8 -> i8 -> i8 -> i8 -> i8 -> i8 -> i8 -> t_i8x8
 
-let impl: Core.Marker.t_Copy t_i8x8 = {  }
+let impl_721239026: Core.Marker.t_Copy t_i8x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i8x8 = { clone = fun (self: t_i8x8) -> () }
+let impl_355140634: Core.Clone.t_Clone t_i8x8 = { f_clone_under_impl_62 = fun (self: t_i8x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_i8x8 =
+let impl_726827699: Core.Fmt.t_Debug t_i8x8 =
   {
-    fmt
+    f_fmt_under_impl_63
     =
     fun (self: t_i8x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i8x8 = {  }
+let impl_321598903: Core.Marker.t_StructuralPartialEq t_i8x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i8x8 t_i8x8 = { eq = fun (self: t_i8x8) (other: t_i8x8) -> () }
+let impl_413652270: Core.Cmp.t_PartialEq t_i8x8 t_i8x8 =
+  { f_eq_under_impl_65 = fun (self: t_i8x8) (other: t_i8x8) -> () }
 
 let new_under_impl_60 (x0 x1 x2 x3 x4 x5 x6 x7: i8) : t_i8x8 = ()
 
@@ -392,22 +408,24 @@ type t_x7_under_splat_under_impl_60 =
 
 type t_i16x4 = | C_i16x4 : i16 -> i16 -> i16 -> i16 -> t_i16x4
 
-let impl: Core.Marker.t_Copy t_i16x4 = {  }
+let impl_159935161: Core.Marker.t_Copy t_i16x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i16x4 = { clone = fun (self: t_i16x4) -> () }
+let impl_45642173: Core.Clone.t_Clone t_i16x4 =
+  { f_clone_under_impl_68 = fun (self: t_i16x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_i16x4 =
+let impl_173278349: Core.Fmt.t_Debug t_i16x4 =
   {
-    fmt
+    f_fmt_under_impl_69
     =
     fun (self: t_i16x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i16x4 = {  }
+let impl_385384758: Core.Marker.t_StructuralPartialEq t_i16x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i16x4 t_i16x4 = { eq = fun (self: t_i16x4) (other: t_i16x4) -> () }
+let impl_272429006: Core.Cmp.t_PartialEq t_i16x4 t_i16x4 =
+  { f_eq_under_impl_71 = fun (self: t_i16x4) (other: t_i16x4) -> () }
 
 let new_under_impl_66 (x0 x1 x2 x3: i16) : t_i16x4 = ()
 
@@ -429,22 +447,24 @@ type t_x3_under_splat_under_impl_66 =
 
 type t_i32x2 = | C_i32x2 : i32 -> i32 -> t_i32x2
 
-let impl: Core.Marker.t_Copy t_i32x2 = {  }
+let impl_387665234: Core.Marker.t_Copy t_i32x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i32x2 = { clone = fun (self: t_i32x2) -> () }
+let impl_899279528: Core.Clone.t_Clone t_i32x2 =
+  { f_clone_under_impl_74 = fun (self: t_i32x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_i32x2 =
+let impl_919776713: Core.Fmt.t_Debug t_i32x2 =
   {
-    fmt
+    f_fmt_under_impl_75
     =
     fun (self: t_i32x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i32x2 = {  }
+let impl_493440238: Core.Marker.t_StructuralPartialEq t_i32x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i32x2 t_i32x2 = { eq = fun (self: t_i32x2) (other: t_i32x2) -> () }
+let impl_791097632: Core.Cmp.t_PartialEq t_i32x2 t_i32x2 =
+  { f_eq_under_impl_77 = fun (self: t_i32x2) (other: t_i32x2) -> () }
 
 let new_under_impl_72 (x0 x1: i32) : t_i32x2 = ()
 
@@ -460,22 +480,24 @@ type t_x1_under_splat_under_impl_72 =
 
 type t_i64x1 = | C_i64x1 : i64 -> t_i64x1
 
-let impl: Core.Marker.t_Copy t_i64x1 = {  }
+let impl_519318768: Core.Marker.t_Copy t_i64x1 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i64x1 = { clone = fun (self: t_i64x1) -> () }
+let impl_833379395: Core.Clone.t_Clone t_i64x1 =
+  { f_clone_under_impl_80 = fun (self: t_i64x1) -> () }
 
-let impl: Core.Fmt.t_Debug t_i64x1 =
+let impl_778930690: Core.Fmt.t_Debug t_i64x1 =
   {
-    fmt
+    f_fmt_under_impl_81
     =
     fun (self: t_i64x1) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i64x1 = {  }
+let impl_892061918: Core.Marker.t_StructuralPartialEq t_i64x1 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i64x1 t_i64x1 = { eq = fun (self: t_i64x1) (other: t_i64x1) -> () }
+let impl_801682926: Core.Cmp.t_PartialEq t_i64x1 t_i64x1 =
+  { f_eq_under_impl_83 = fun (self: t_i64x1) (other: t_i64x1) -> () }
 
 let new_under_impl_78 (x1: i64) : t_i64x1 = ()
 
@@ -488,22 +510,24 @@ type t_x1_under_splat_under_impl_78 =
 
 (* item error backend *)
 
-let impl: Core.Marker.t_Copy t_f32x2 = {  }
+let impl_96937879: Core.Marker.t_Copy t_f32x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_f32x2 = { clone = fun (self: t_f32x2) -> () }
+let impl_272916880: Core.Clone.t_Clone t_f32x2 =
+  { f_clone_under_impl_86 = fun (self: t_f32x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_f32x2 =
+let impl_701648802: Core.Fmt.t_Debug t_f32x2 =
   {
-    fmt
+    f_fmt_under_impl_87
     =
     fun (self: t_f32x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_f32x2 = {  }
+let impl_439363947: Core.Marker.t_StructuralPartialEq t_f32x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_f32x2 t_f32x2 = { eq = fun (self: t_f32x2) (other: t_f32x2) -> () }
+let impl_756919231: Core.Cmp.t_PartialEq t_f32x2 t_f32x2 =
+  { f_eq_under_impl_89 = fun (self: t_f32x2) (other: t_f32x2) -> () }
 
 (* item error backend *)
 
@@ -519,22 +543,24 @@ type t_x1_under_splat_under_impl_84 =
 
 (* item error backend *)
 
-let impl: Core.Marker.t_Copy t_f64x1 = {  }
+let impl_1058104506: Core.Marker.t_Copy t_f64x1 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_f64x1 = { clone = fun (self: t_f64x1) -> () }
+let impl_614560020: Core.Clone.t_Clone t_f64x1 =
+  { f_clone_under_impl_92 = fun (self: t_f64x1) -> () }
 
-let impl: Core.Fmt.t_Debug t_f64x1 =
+let impl_254516973: Core.Fmt.t_Debug t_f64x1 =
   {
-    fmt
+    f_fmt_under_impl_93
     =
     fun (self: t_f64x1) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_f64x1 = {  }
+let impl_811132597: Core.Marker.t_StructuralPartialEq t_f64x1 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_f64x1 t_f64x1 = { eq = fun (self: t_f64x1) (other: t_f64x1) -> () }
+let impl_83604564: Core.Cmp.t_PartialEq t_f64x1 t_f64x1 =
+  { f_eq_under_impl_95 = fun (self: t_f64x1) (other: t_f64x1) -> () }
 
 (* item error backend *)
 
@@ -565,22 +591,24 @@ type t_u8x16 =
       u8
     -> t_u8x16
 
-let impl: Core.Marker.t_Copy t_u8x16 = {  }
+let impl_932572094: Core.Marker.t_Copy t_u8x16 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u8x16 = { clone = fun (self: t_u8x16) -> () }
+let impl_754203506: Core.Clone.t_Clone t_u8x16 =
+  { f_clone_under_impl_98 = fun (self: t_u8x16) -> () }
 
-let impl: Core.Fmt.t_Debug t_u8x16 =
+let impl_624803170: Core.Fmt.t_Debug t_u8x16 =
   {
-    fmt
+    f_fmt_under_impl_99
     =
     fun (self: t_u8x16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u8x16 = {  }
+let impl_203189205: Core.Marker.t_StructuralPartialEq t_u8x16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u8x16 t_u8x16 = { eq = fun (self: t_u8x16) (other: t_u8x16) -> () }
+let impl_49066976: Core.Cmp.t_PartialEq t_u8x16 t_u8x16 =
+  { f_eq_under_impl_101 = fun (self: t_u8x16) (other: t_u8x16) -> () }
 
 let new_under_impl_96 (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15: u8) : t_u8x16 = ()
 
@@ -638,22 +666,24 @@ type t_x15_under_splat_under_impl_96 =
 
 type t_u16x8 = | C_u16x8 : u16 -> u16 -> u16 -> u16 -> u16 -> u16 -> u16 -> u16 -> t_u16x8
 
-let impl: Core.Marker.t_Copy t_u16x8 = {  }
+let impl_812887951: Core.Marker.t_Copy t_u16x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u16x8 = { clone = fun (self: t_u16x8) -> () }
+let impl_610069757: Core.Clone.t_Clone t_u16x8 =
+  { f_clone_under_impl_104 = fun (self: t_u16x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_u16x8 =
+let impl_1070762647: Core.Fmt.t_Debug t_u16x8 =
   {
-    fmt
+    f_fmt_under_impl_105
     =
     fun (self: t_u16x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u16x8 = {  }
+let impl_204815775: Core.Marker.t_StructuralPartialEq t_u16x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u16x8 t_u16x8 = { eq = fun (self: t_u16x8) (other: t_u16x8) -> () }
+let impl_2546990: Core.Cmp.t_PartialEq t_u16x8 t_u16x8 =
+  { f_eq_under_impl_107 = fun (self: t_u16x8) (other: t_u16x8) -> () }
 
 let new_under_impl_102 (x0 x1 x2 x3 x4 x5 x6 x7: u16) : t_u16x8 = ()
 
@@ -687,22 +717,24 @@ type t_x7_under_splat_under_impl_102 =
 
 type t_u32x4 = | C_u32x4 : u32 -> u32 -> u32 -> u32 -> t_u32x4
 
-let impl: Core.Marker.t_Copy t_u32x4 = {  }
+let impl_284484796: Core.Marker.t_Copy t_u32x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u32x4 = { clone = fun (self: t_u32x4) -> () }
+let impl_1006543747: Core.Clone.t_Clone t_u32x4 =
+  { f_clone_under_impl_110 = fun (self: t_u32x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_u32x4 =
+let impl_1017570175: Core.Fmt.t_Debug t_u32x4 =
   {
-    fmt
+    f_fmt_under_impl_111
     =
     fun (self: t_u32x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u32x4 = {  }
+let impl_466488837: Core.Marker.t_StructuralPartialEq t_u32x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u32x4 t_u32x4 = { eq = fun (self: t_u32x4) (other: t_u32x4) -> () }
+let impl_65354545: Core.Cmp.t_PartialEq t_u32x4 t_u32x4 =
+  { f_eq_under_impl_113 = fun (self: t_u32x4) (other: t_u32x4) -> () }
 
 let new_under_impl_108 (x0 x1 x2 x3: u32) : t_u32x4 = ()
 
@@ -724,22 +756,24 @@ type t_x3_under_splat_under_impl_108 =
 
 type t_u64x2 = | C_u64x2 : u64 -> u64 -> t_u64x2
 
-let impl: Core.Marker.t_Copy t_u64x2 = {  }
+let impl_219706063: Core.Marker.t_Copy t_u64x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u64x2 = { clone = fun (self: t_u64x2) -> () }
+let impl_677541092: Core.Clone.t_Clone t_u64x2 =
+  { f_clone_under_impl_116 = fun (self: t_u64x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_u64x2 =
+let impl_809529273: Core.Fmt.t_Debug t_u64x2 =
   {
-    fmt
+    f_fmt_under_impl_117
     =
     fun (self: t_u64x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u64x2 = {  }
+let impl_181454783: Core.Marker.t_StructuralPartialEq t_u64x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u64x2 t_u64x2 = { eq = fun (self: t_u64x2) (other: t_u64x2) -> () }
+let impl_252187600: Core.Cmp.t_PartialEq t_u64x2 t_u64x2 =
+  { f_eq_under_impl_119 = fun (self: t_u64x2) (other: t_u64x2) -> () }
 
 let new_under_impl_114 (x0 x1: u64) : t_u64x2 = ()
 
@@ -773,22 +807,24 @@ type t_i8x16 =
       i8
     -> t_i8x16
 
-let impl: Core.Marker.t_Copy t_i8x16 = {  }
+let impl_908907819: Core.Marker.t_Copy t_i8x16 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i8x16 = { clone = fun (self: t_i8x16) -> () }
+let impl_517552956: Core.Clone.t_Clone t_i8x16 =
+  { f_clone_under_impl_122 = fun (self: t_i8x16) -> () }
 
-let impl: Core.Fmt.t_Debug t_i8x16 =
+let impl_756903903: Core.Fmt.t_Debug t_i8x16 =
   {
-    fmt
+    f_fmt_under_impl_123
     =
     fun (self: t_i8x16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i8x16 = {  }
+let impl_515094119: Core.Marker.t_StructuralPartialEq t_i8x16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i8x16 t_i8x16 = { eq = fun (self: t_i8x16) (other: t_i8x16) -> () }
+let impl_507175662: Core.Cmp.t_PartialEq t_i8x16 t_i8x16 =
+  { f_eq_under_impl_125 = fun (self: t_i8x16) (other: t_i8x16) -> () }
 
 let new_under_impl_120 (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15: i8) : t_i8x16 = ()
 
@@ -846,22 +882,24 @@ type t_x15_under_splat_under_impl_120 =
 
 type t_i16x8 = | C_i16x8 : i16 -> i16 -> i16 -> i16 -> i16 -> i16 -> i16 -> i16 -> t_i16x8
 
-let impl: Core.Marker.t_Copy t_i16x8 = {  }
+let impl_698689317: Core.Marker.t_Copy t_i16x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i16x8 = { clone = fun (self: t_i16x8) -> () }
+let impl_18046225: Core.Clone.t_Clone t_i16x8 =
+  { f_clone_under_impl_128 = fun (self: t_i16x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_i16x8 =
+let impl_608987591: Core.Fmt.t_Debug t_i16x8 =
   {
-    fmt
+    f_fmt_under_impl_129
     =
     fun (self: t_i16x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i16x8 = {  }
+let impl_643319238: Core.Marker.t_StructuralPartialEq t_i16x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i16x8 t_i16x8 = { eq = fun (self: t_i16x8) (other: t_i16x8) -> () }
+let impl_986143006: Core.Cmp.t_PartialEq t_i16x8 t_i16x8 =
+  { f_eq_under_impl_131 = fun (self: t_i16x8) (other: t_i16x8) -> () }
 
 let new_under_impl_126 (x0 x1 x2 x3 x4 x5 x6 x7: i16) : t_i16x8 = ()
 
@@ -895,22 +933,24 @@ type t_x7_under_splat_under_impl_126 =
 
 type t_i32x4 = | C_i32x4 : i32 -> i32 -> i32 -> i32 -> t_i32x4
 
-let impl: Core.Marker.t_Copy t_i32x4 = {  }
+let impl_211742444: Core.Marker.t_Copy t_i32x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i32x4 = { clone = fun (self: t_i32x4) -> () }
+let impl_871472670: Core.Clone.t_Clone t_i32x4 =
+  { f_clone_under_impl_134 = fun (self: t_i32x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_i32x4 =
+let impl_819736030: Core.Fmt.t_Debug t_i32x4 =
   {
-    fmt
+    f_fmt_under_impl_135
     =
     fun (self: t_i32x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i32x4 = {  }
+let impl_281816525: Core.Marker.t_StructuralPartialEq t_i32x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i32x4 t_i32x4 = { eq = fun (self: t_i32x4) (other: t_i32x4) -> () }
+let impl_590127756: Core.Cmp.t_PartialEq t_i32x4 t_i32x4 =
+  { f_eq_under_impl_137 = fun (self: t_i32x4) (other: t_i32x4) -> () }
 
 let new_under_impl_132 (x0 x1 x2 x3: i32) : t_i32x4 = ()
 
@@ -932,22 +972,24 @@ type t_x3_under_splat_under_impl_132 =
 
 type t_i64x2 = | C_i64x2 : i64 -> i64 -> t_i64x2
 
-let impl: Core.Marker.t_Copy t_i64x2 = {  }
+let impl_844340170: Core.Marker.t_Copy t_i64x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i64x2 = { clone = fun (self: t_i64x2) -> () }
+let impl_418331786: Core.Clone.t_Clone t_i64x2 =
+  { f_clone_under_impl_140 = fun (self: t_i64x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_i64x2 =
+let impl_959065689: Core.Fmt.t_Debug t_i64x2 =
   {
-    fmt
+    f_fmt_under_impl_141
     =
     fun (self: t_i64x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i64x2 = {  }
+let impl_335311763: Core.Marker.t_StructuralPartialEq t_i64x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i64x2 t_i64x2 = { eq = fun (self: t_i64x2) (other: t_i64x2) -> () }
+let impl_916732646: Core.Cmp.t_PartialEq t_i64x2 t_i64x2 =
+  { f_eq_under_impl_143 = fun (self: t_i64x2) (other: t_i64x2) -> () }
 
 let new_under_impl_138 (x0 x1: i64) : t_i64x2 = ()
 
@@ -963,22 +1005,24 @@ type t_x1_under_splat_under_impl_138 =
 
 (* item error backend *)
 
-let impl: Core.Marker.t_Copy t_f32x4 = {  }
+let impl_972059750: Core.Marker.t_Copy t_f32x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_f32x4 = { clone = fun (self: t_f32x4) -> () }
+let impl_184302264: Core.Clone.t_Clone t_f32x4 =
+  { f_clone_under_impl_146 = fun (self: t_f32x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_f32x4 =
+let impl_78223115: Core.Fmt.t_Debug t_f32x4 =
   {
-    fmt
+    f_fmt_under_impl_147
     =
     fun (self: t_f32x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_f32x4 = {  }
+let impl_582207201: Core.Marker.t_StructuralPartialEq t_f32x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_f32x4 t_f32x4 = { eq = fun (self: t_f32x4) (other: t_f32x4) -> () }
+let impl_691516840: Core.Cmp.t_PartialEq t_f32x4 t_f32x4 =
+  { f_eq_under_impl_149 = fun (self: t_f32x4) (other: t_f32x4) -> () }
 
 (* item error backend *)
 
@@ -1000,22 +1044,24 @@ type t_x3_under_splat_under_impl_144 =
 
 (* item error backend *)
 
-let impl: Core.Marker.t_Copy t_f64x2 = {  }
+let impl_442907454: Core.Marker.t_Copy t_f64x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_f64x2 = { clone = fun (self: t_f64x2) -> () }
+let impl_58918269: Core.Clone.t_Clone t_f64x2 =
+  { f_clone_under_impl_152 = fun (self: t_f64x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_f64x2 =
+let impl_795062872: Core.Fmt.t_Debug t_f64x2 =
   {
-    fmt
+    f_fmt_under_impl_153
     =
     fun (self: t_f64x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_f64x2 = {  }
+let impl_885757563: Core.Marker.t_StructuralPartialEq t_f64x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_f64x2 t_f64x2 = { eq = fun (self: t_f64x2) (other: t_f64x2) -> () }
+let impl_297611701: Core.Cmp.t_PartialEq t_f64x2 t_f64x2 =
+  { f_eq_under_impl_155 = fun (self: t_f64x2) (other: t_f64x2) -> () }
 
 (* item error backend *)
 
@@ -1031,22 +1077,24 @@ type t_x1_under_splat_under_impl_150 =
 
 (* item error backend *)
 
-let impl: Core.Marker.t_Copy t_f64x4 = {  }
+let impl_1018943884: Core.Marker.t_Copy t_f64x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_f64x4 = { clone = fun (self: t_f64x4) -> () }
+let impl_950251849: Core.Clone.t_Clone t_f64x4 =
+  { f_clone_under_impl_158 = fun (self: t_f64x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_f64x4 =
+let impl_356228610: Core.Fmt.t_Debug t_f64x4 =
   {
-    fmt
+    f_fmt_under_impl_159
     =
     fun (self: t_f64x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_f64x4 = {  }
+let impl_309678549: Core.Marker.t_StructuralPartialEq t_f64x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_f64x4 t_f64x4 = { eq = fun (self: t_f64x4) (other: t_f64x4) -> () }
+let impl_923838624: Core.Cmp.t_PartialEq t_f64x4 t_f64x4 =
+  { f_eq_under_impl_161 = fun (self: t_f64x4) (other: t_f64x4) -> () }
 
 (* item error backend *)
 
@@ -1086,22 +1134,24 @@ type t_m8x16 =
       i8
     -> t_m8x16
 
-let impl: Core.Marker.t_Copy t_m8x16 = {  }
+let impl_108911124: Core.Marker.t_Copy t_m8x16 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_m8x16 = { clone = fun (self: t_m8x16) -> () }
+let impl_859626811: Core.Clone.t_Clone t_m8x16 =
+  { f_clone_under_impl_164 = fun (self: t_m8x16) -> () }
 
-let impl: Core.Fmt.t_Debug t_m8x16 =
+let impl_243990380: Core.Fmt.t_Debug t_m8x16 =
   {
-    fmt
+    f_fmt_under_impl_165
     =
     fun (self: t_m8x16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_m8x16 = {  }
+let impl_354968098: Core.Marker.t_StructuralPartialEq t_m8x16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_m8x16 t_m8x16 = { eq = fun (self: t_m8x16) (other: t_m8x16) -> () }
+let impl_645884585: Core.Cmp.t_PartialEq t_m8x16 t_m8x16 =
+  { f_eq_under_impl_167 = fun (self: t_m8x16) (other: t_m8x16) -> () }
 
 let bool_to_internal_under_impl_162 (x: bool) : i8 = ()
 
@@ -1161,22 +1211,24 @@ type t_x15_under_splat_under_impl_162 =
 
 type t_m16x8 = | C_m16x8 : i16 -> i16 -> i16 -> i16 -> i16 -> i16 -> i16 -> i16 -> t_m16x8
 
-let impl: Core.Marker.t_Copy t_m16x8 = {  }
+let impl_137729218: Core.Marker.t_Copy t_m16x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_m16x8 = { clone = fun (self: t_m16x8) -> () }
+let impl_930851260: Core.Clone.t_Clone t_m16x8 =
+  { f_clone_under_impl_170 = fun (self: t_m16x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_m16x8 =
+let impl_384989027: Core.Fmt.t_Debug t_m16x8 =
   {
-    fmt
+    f_fmt_under_impl_171
     =
     fun (self: t_m16x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_m16x8 = {  }
+let impl_372482377: Core.Marker.t_StructuralPartialEq t_m16x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_m16x8 t_m16x8 = { eq = fun (self: t_m16x8) (other: t_m16x8) -> () }
+let impl_314667745: Core.Cmp.t_PartialEq t_m16x8 t_m16x8 =
+  { f_eq_under_impl_173 = fun (self: t_m16x8) (other: t_m16x8) -> () }
 
 let bool_to_internal_under_impl_168 (x: bool) : i16 = ()
 
@@ -1212,22 +1264,24 @@ type t_x7_under_splat_under_impl_168 =
 
 type t_m32x4 = | C_m32x4 : i32 -> i32 -> i32 -> i32 -> t_m32x4
 
-let impl: Core.Marker.t_Copy t_m32x4 = {  }
+let impl_552356253: Core.Marker.t_Copy t_m32x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_m32x4 = { clone = fun (self: t_m32x4) -> () }
+let impl_748442377: Core.Clone.t_Clone t_m32x4 =
+  { f_clone_under_impl_176 = fun (self: t_m32x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_m32x4 =
+let impl_589398202: Core.Fmt.t_Debug t_m32x4 =
   {
-    fmt
+    f_fmt_under_impl_177
     =
     fun (self: t_m32x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_m32x4 = {  }
+let impl_174479342: Core.Marker.t_StructuralPartialEq t_m32x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_m32x4 t_m32x4 = { eq = fun (self: t_m32x4) (other: t_m32x4) -> () }
+let impl_1030109421: Core.Cmp.t_PartialEq t_m32x4 t_m32x4 =
+  { f_eq_under_impl_179 = fun (self: t_m32x4) (other: t_m32x4) -> () }
 
 let bool_to_internal_under_impl_174 (x: bool) : i32 = ()
 
@@ -1251,22 +1305,24 @@ type t_x3_under_splat_under_impl_174 =
 
 type t_m64x2 = | C_m64x2 : i64 -> i64 -> t_m64x2
 
-let impl: Core.Marker.t_Copy t_m64x2 = {  }
+let impl_267620409: Core.Marker.t_Copy t_m64x2 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_m64x2 = { clone = fun (self: t_m64x2) -> () }
+let impl_848411624: Core.Clone.t_Clone t_m64x2 =
+  { f_clone_under_impl_182 = fun (self: t_m64x2) -> () }
 
-let impl: Core.Fmt.t_Debug t_m64x2 =
+let impl_952325066: Core.Fmt.t_Debug t_m64x2 =
   {
-    fmt
+    f_fmt_under_impl_183
     =
     fun (self: t_m64x2) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_m64x2 = {  }
+let impl_803850429: Core.Marker.t_StructuralPartialEq t_m64x2 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_m64x2 t_m64x2 = { eq = fun (self: t_m64x2) (other: t_m64x2) -> () }
+let impl_217562927: Core.Cmp.t_PartialEq t_m64x2 t_m64x2 =
+  { f_eq_under_impl_185 = fun (self: t_m64x2) (other: t_m64x2) -> () }
 
 let bool_to_internal_under_impl_180 (x: bool) : i64 = ()
 
@@ -1318,22 +1374,24 @@ type t_u8x32 =
       u8
     -> t_u8x32
 
-let impl: Core.Marker.t_Copy t_u8x32 = {  }
+let impl_253313508: Core.Marker.t_Copy t_u8x32 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u8x32 = { clone = fun (self: t_u8x32) -> () }
+let impl_671225276: Core.Clone.t_Clone t_u8x32 =
+  { f_clone_under_impl_188 = fun (self: t_u8x32) -> () }
 
-let impl: Core.Fmt.t_Debug t_u8x32 =
+let impl_557956882: Core.Fmt.t_Debug t_u8x32 =
   {
-    fmt
+    f_fmt_under_impl_189
     =
     fun (self: t_u8x32) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u8x32 = {  }
+let impl_284843631: Core.Marker.t_StructuralPartialEq t_u8x32 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u8x32 t_u8x32 = { eq = fun (self: t_u8x32) (other: t_u8x32) -> () }
+let impl_140206581: Core.Cmp.t_PartialEq t_u8x32 t_u8x32 =
+  { f_eq_under_impl_191 = fun (self: t_u8x32) (other: t_u8x32) -> () }
 
 let new_under_impl_186
       (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31:
@@ -1460,23 +1518,24 @@ type t_u16x16 =
       u16
     -> t_u16x16
 
-let impl: Core.Marker.t_Copy t_u16x16 = {  }
+let impl_461531548: Core.Marker.t_Copy t_u16x16 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u16x16 = { clone = fun (self: t_u16x16) -> () }
+let impl_490813648: Core.Clone.t_Clone t_u16x16 =
+  { f_clone_under_impl_194 = fun (self: t_u16x16) -> () }
 
-let impl: Core.Fmt.t_Debug t_u16x16 =
+let impl_837298548: Core.Fmt.t_Debug t_u16x16 =
   {
-    fmt
+    f_fmt_under_impl_195
     =
     fun (self: t_u16x16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u16x16 = {  }
+let impl_160622024: Core.Marker.t_StructuralPartialEq t_u16x16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u16x16 t_u16x16 =
-  { eq = fun (self: t_u16x16) (other: t_u16x16) -> () }
+let impl_6567579: Core.Cmp.t_PartialEq t_u16x16 t_u16x16 =
+  { f_eq_under_impl_197 = fun (self: t_u16x16) (other: t_u16x16) -> () }
 
 let new_under_impl_192 (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15: u16) : t_u16x16 = ()
 
@@ -1534,22 +1593,24 @@ type t_x15_under_splat_under_impl_192 =
 
 type t_u32x8 = | C_u32x8 : u32 -> u32 -> u32 -> u32 -> u32 -> u32 -> u32 -> u32 -> t_u32x8
 
-let impl: Core.Marker.t_Copy t_u32x8 = {  }
+let impl_790301103: Core.Marker.t_Copy t_u32x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u32x8 = { clone = fun (self: t_u32x8) -> () }
+let impl_225426346: Core.Clone.t_Clone t_u32x8 =
+  { f_clone_under_impl_200 = fun (self: t_u32x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_u32x8 =
+let impl_50222889: Core.Fmt.t_Debug t_u32x8 =
   {
-    fmt
+    f_fmt_under_impl_201
     =
     fun (self: t_u32x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u32x8 = {  }
+let impl_712519374: Core.Marker.t_StructuralPartialEq t_u32x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u32x8 t_u32x8 = { eq = fun (self: t_u32x8) (other: t_u32x8) -> () }
+let impl_1022612483: Core.Cmp.t_PartialEq t_u32x8 t_u32x8 =
+  { f_eq_under_impl_203 = fun (self: t_u32x8) (other: t_u32x8) -> () }
 
 let new_under_impl_198 (x0 x1 x2 x3 x4 x5 x6 x7: u32) : t_u32x8 = ()
 
@@ -1583,22 +1644,24 @@ type t_x7_under_splat_under_impl_198 =
 
 type t_u64x4 = | C_u64x4 : u64 -> u64 -> u64 -> u64 -> t_u64x4
 
-let impl: Core.Marker.t_Copy t_u64x4 = {  }
+let impl_919137629: Core.Marker.t_Copy t_u64x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u64x4 = { clone = fun (self: t_u64x4) -> () }
+let impl_671842547: Core.Clone.t_Clone t_u64x4 =
+  { f_clone_under_impl_206 = fun (self: t_u64x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_u64x4 =
+let impl_212378145: Core.Fmt.t_Debug t_u64x4 =
   {
-    fmt
+    f_fmt_under_impl_207
     =
     fun (self: t_u64x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u64x4 = {  }
+let impl_838091010: Core.Marker.t_StructuralPartialEq t_u64x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u64x4 t_u64x4 = { eq = fun (self: t_u64x4) (other: t_u64x4) -> () }
+let impl_58541954: Core.Cmp.t_PartialEq t_u64x4 t_u64x4 =
+  { f_eq_under_impl_209 = fun (self: t_u64x4) (other: t_u64x4) -> () }
 
 let new_under_impl_204 (x0 x1 x2 x3: u64) : t_u64x4 = ()
 
@@ -1654,22 +1717,24 @@ type t_i8x32 =
       i8
     -> t_i8x32
 
-let impl: Core.Marker.t_Copy t_i8x32 = {  }
+let impl_890971251: Core.Marker.t_Copy t_i8x32 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i8x32 = { clone = fun (self: t_i8x32) -> () }
+let impl_471278289: Core.Clone.t_Clone t_i8x32 =
+  { f_clone_under_impl_212 = fun (self: t_i8x32) -> () }
 
-let impl: Core.Fmt.t_Debug t_i8x32 =
+let impl_777878189: Core.Fmt.t_Debug t_i8x32 =
   {
-    fmt
+    f_fmt_under_impl_213
     =
     fun (self: t_i8x32) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i8x32 = {  }
+let impl_26566477: Core.Marker.t_StructuralPartialEq t_i8x32 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i8x32 t_i8x32 = { eq = fun (self: t_i8x32) (other: t_i8x32) -> () }
+let impl_350898438: Core.Cmp.t_PartialEq t_i8x32 t_i8x32 =
+  { f_eq_under_impl_215 = fun (self: t_i8x32) (other: t_i8x32) -> () }
 
 let new_under_impl_210
       (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31:
@@ -1796,23 +1861,24 @@ type t_i16x16 =
       i16
     -> t_i16x16
 
-let impl: Core.Marker.t_Copy t_i16x16 = {  }
+let impl_955063868: Core.Marker.t_Copy t_i16x16 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i16x16 = { clone = fun (self: t_i16x16) -> () }
+let impl_493705317: Core.Clone.t_Clone t_i16x16 =
+  { f_clone_under_impl_218 = fun (self: t_i16x16) -> () }
 
-let impl: Core.Fmt.t_Debug t_i16x16 =
+let impl_400295914: Core.Fmt.t_Debug t_i16x16 =
   {
-    fmt
+    f_fmt_under_impl_219
     =
     fun (self: t_i16x16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i16x16 = {  }
+let impl_320565803: Core.Marker.t_StructuralPartialEq t_i16x16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i16x16 t_i16x16 =
-  { eq = fun (self: t_i16x16) (other: t_i16x16) -> () }
+let impl_281558674: Core.Cmp.t_PartialEq t_i16x16 t_i16x16 =
+  { f_eq_under_impl_221 = fun (self: t_i16x16) (other: t_i16x16) -> () }
 
 let new_under_impl_216 (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15: i16) : t_i16x16 = ()
 
@@ -1870,22 +1936,24 @@ type t_x15_under_splat_under_impl_216 =
 
 type t_i32x8 = | C_i32x8 : i32 -> i32 -> i32 -> i32 -> i32 -> i32 -> i32 -> i32 -> t_i32x8
 
-let impl: Core.Marker.t_Copy t_i32x8 = {  }
+let impl_140880386: Core.Marker.t_Copy t_i32x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i32x8 = { clone = fun (self: t_i32x8) -> () }
+let impl_404325218: Core.Clone.t_Clone t_i32x8 =
+  { f_clone_under_impl_224 = fun (self: t_i32x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_i32x8 =
+let impl_57031578: Core.Fmt.t_Debug t_i32x8 =
   {
-    fmt
+    f_fmt_under_impl_225
     =
     fun (self: t_i32x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i32x8 = {  }
+let impl_152786723: Core.Marker.t_StructuralPartialEq t_i32x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i32x8 t_i32x8 = { eq = fun (self: t_i32x8) (other: t_i32x8) -> () }
+let impl_1038713908: Core.Cmp.t_PartialEq t_i32x8 t_i32x8 =
+  { f_eq_under_impl_227 = fun (self: t_i32x8) (other: t_i32x8) -> () }
 
 let new_under_impl_222 (x0 x1 x2 x3 x4 x5 x6 x7: i32) : t_i32x8 = ()
 
@@ -1919,22 +1987,24 @@ type t_x7_under_splat_under_impl_222 =
 
 type t_i64x4 = | C_i64x4 : i64 -> i64 -> i64 -> i64 -> t_i64x4
 
-let impl: Core.Marker.t_Copy t_i64x4 = {  }
+let impl_785179590: Core.Marker.t_Copy t_i64x4 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i64x4 = { clone = fun (self: t_i64x4) -> () }
+let impl_309244384: Core.Clone.t_Clone t_i64x4 =
+  { f_clone_under_impl_230 = fun (self: t_i64x4) -> () }
 
-let impl: Core.Fmt.t_Debug t_i64x4 =
+let impl_530271863: Core.Fmt.t_Debug t_i64x4 =
   {
-    fmt
+    f_fmt_under_impl_231
     =
     fun (self: t_i64x4) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i64x4 = {  }
+let impl_459336289: Core.Marker.t_StructuralPartialEq t_i64x4 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i64x4 t_i64x4 = { eq = fun (self: t_i64x4) (other: t_i64x4) -> () }
+let impl_757505146: Core.Cmp.t_PartialEq t_i64x4 t_i64x4 =
+  { f_eq_under_impl_233 = fun (self: t_i64x4) (other: t_i64x4) -> () }
 
 let new_under_impl_228 (x0 x1 x2 x3: i64) : t_i64x4 = ()
 
@@ -1956,22 +2026,24 @@ type t_x3_under_splat_under_impl_228 =
 
 (* item error backend *)
 
-let impl: Core.Marker.t_Copy t_f32x8 = {  }
+let impl_1027553368: Core.Marker.t_Copy t_f32x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_f32x8 = { clone = fun (self: t_f32x8) -> () }
+let impl_345322656: Core.Clone.t_Clone t_f32x8 =
+  { f_clone_under_impl_236 = fun (self: t_f32x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_f32x8 =
+let impl_810786193: Core.Fmt.t_Debug t_f32x8 =
   {
-    fmt
+    f_fmt_under_impl_237
     =
     fun (self: t_f32x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_f32x8 = {  }
+let impl_12681158: Core.Marker.t_StructuralPartialEq t_f32x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_f32x8 t_f32x8 = { eq = fun (self: t_f32x8) (other: t_f32x8) -> () }
+let impl_871943566: Core.Cmp.t_PartialEq t_f32x8 t_f32x8 =
+  { f_eq_under_impl_239 = fun (self: t_f32x8) (other: t_f32x8) -> () }
 
 (* item error backend *)
 
@@ -2071,22 +2143,24 @@ type t_i8x64 =
       i8
     -> t_i8x64
 
-let impl: Core.Marker.t_Copy t_i8x64 = {  }
+let impl_414799146: Core.Marker.t_Copy t_i8x64 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i8x64 = { clone = fun (self: t_i8x64) -> () }
+let impl_490399279: Core.Clone.t_Clone t_i8x64 =
+  { f_clone_under_impl_242 = fun (self: t_i8x64) -> () }
 
-let impl: Core.Fmt.t_Debug t_i8x64 =
+let impl_697187635: Core.Fmt.t_Debug t_i8x64 =
   {
-    fmt
+    f_fmt_under_impl_243
     =
     fun (self: t_i8x64) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i8x64 = {  }
+let impl_628710906: Core.Marker.t_StructuralPartialEq t_i8x64 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i8x64 t_i8x64 = { eq = fun (self: t_i8x64) (other: t_i8x64) -> () }
+let impl_689633760: Core.Cmp.t_PartialEq t_i8x64 t_i8x64 =
+  { f_eq_under_impl_245 = fun (self: t_i8x64) (other: t_i8x64) -> () }
 
 let new_under_impl_240
       (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31 x32 x33 x34 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47 x48 x49 x50 x51 x52 x53 x54 x55 x56 x57 x58 x59 x60 x61 x62 x63:
@@ -2357,22 +2431,24 @@ type t_u8x64 =
       u8
     -> t_u8x64
 
-let impl: Core.Marker.t_Copy t_u8x64 = {  }
+let impl_671713901: Core.Marker.t_Copy t_u8x64 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u8x64 = { clone = fun (self: t_u8x64) -> () }
+let impl_619362367: Core.Clone.t_Clone t_u8x64 =
+  { f_clone_under_impl_248 = fun (self: t_u8x64) -> () }
 
-let impl: Core.Fmt.t_Debug t_u8x64 =
+let impl_639456787: Core.Fmt.t_Debug t_u8x64 =
   {
-    fmt
+    f_fmt_under_impl_249
     =
     fun (self: t_u8x64) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u8x64 = {  }
+let impl_1021745278: Core.Marker.t_StructuralPartialEq t_u8x64 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u8x64 t_u8x64 = { eq = fun (self: t_u8x64) (other: t_u8x64) -> () }
+let impl_246449860: Core.Cmp.t_PartialEq t_u8x64 t_u8x64 =
+  { f_eq_under_impl_251 = fun (self: t_u8x64) (other: t_u8x64) -> () }
 
 let new_under_impl_246
       (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31 x32 x33 x34 x35 x36 x37 x38 x39 x40 x41 x42 x43 x44 x45 x46 x47 x48 x49 x50 x51 x52 x53 x54 x55 x56 x57 x58 x59 x60 x61 x62 x63:
@@ -2611,23 +2687,24 @@ type t_i16x32 =
       i16
     -> t_i16x32
 
-let impl: Core.Marker.t_Copy t_i16x32 = {  }
+let impl_887727940: Core.Marker.t_Copy t_i16x32 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i16x32 = { clone = fun (self: t_i16x32) -> () }
+let impl_188472808: Core.Clone.t_Clone t_i16x32 =
+  { f_clone_under_impl_254 = fun (self: t_i16x32) -> () }
 
-let impl: Core.Fmt.t_Debug t_i16x32 =
+let impl_681009542: Core.Fmt.t_Debug t_i16x32 =
   {
-    fmt
+    f_fmt_under_impl_255
     =
     fun (self: t_i16x32) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i16x32 = {  }
+let impl_567863639: Core.Marker.t_StructuralPartialEq t_i16x32 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i16x32 t_i16x32 =
-  { eq = fun (self: t_i16x32) (other: t_i16x32) -> () }
+let impl_108314874: Core.Cmp.t_PartialEq t_i16x32 t_i16x32 =
+  { f_eq_under_impl_257 = fun (self: t_i16x32) (other: t_i16x32) -> () }
 
 let new_under_impl_252
       (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31:
@@ -2770,23 +2847,24 @@ type t_u16x32 =
       u16
     -> t_u16x32
 
-let impl: Core.Marker.t_Copy t_u16x32 = {  }
+let impl_810505052: Core.Marker.t_Copy t_u16x32 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u16x32 = { clone = fun (self: t_u16x32) -> () }
+let impl_991463994: Core.Clone.t_Clone t_u16x32 =
+  { f_clone_under_impl_260 = fun (self: t_u16x32) -> () }
 
-let impl: Core.Fmt.t_Debug t_u16x32 =
+let impl_620784061: Core.Fmt.t_Debug t_u16x32 =
   {
-    fmt
+    f_fmt_under_impl_261
     =
     fun (self: t_u16x32) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u16x32 = {  }
+let impl_831787512: Core.Marker.t_StructuralPartialEq t_u16x32 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u16x32 t_u16x32 =
-  { eq = fun (self: t_u16x32) (other: t_u16x32) -> () }
+let impl_957006804: Core.Cmp.t_PartialEq t_u16x32 t_u16x32 =
+  { f_eq_under_impl_263 = fun (self: t_u16x32) (other: t_u16x32) -> () }
 
 let new_under_impl_258
       (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15 x16 x17 x18 x19 x20 x21 x22 x23 x24 x25 x26 x27 x28 x29 x30 x31:
@@ -2913,23 +2991,24 @@ type t_i32x16 =
       i32
     -> t_i32x16
 
-let impl: Core.Marker.t_Copy t_i32x16 = {  }
+let impl_438518962: Core.Marker.t_Copy t_i32x16 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i32x16 = { clone = fun (self: t_i32x16) -> () }
+let impl_336940930: Core.Clone.t_Clone t_i32x16 =
+  { f_clone_under_impl_266 = fun (self: t_i32x16) -> () }
 
-let impl: Core.Fmt.t_Debug t_i32x16 =
+let impl_813794040: Core.Fmt.t_Debug t_i32x16 =
   {
-    fmt
+    f_fmt_under_impl_267
     =
     fun (self: t_i32x16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i32x16 = {  }
+let impl_50722607: Core.Marker.t_StructuralPartialEq t_i32x16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i32x16 t_i32x16 =
-  { eq = fun (self: t_i32x16) (other: t_i32x16) -> () }
+let impl_28742830: Core.Cmp.t_PartialEq t_i32x16 t_i32x16 =
+  { f_eq_under_impl_269 = fun (self: t_i32x16) (other: t_i32x16) -> () }
 
 let new_under_impl_264 (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15: i32) : t_i32x16 = ()
 
@@ -3005,23 +3084,24 @@ type t_u32x16 =
       u32
     -> t_u32x16
 
-let impl: Core.Marker.t_Copy t_u32x16 = {  }
+let impl_389054448: Core.Marker.t_Copy t_u32x16 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u32x16 = { clone = fun (self: t_u32x16) -> () }
+let impl_418648382: Core.Clone.t_Clone t_u32x16 =
+  { f_clone_under_impl_272 = fun (self: t_u32x16) -> () }
 
-let impl: Core.Fmt.t_Debug t_u32x16 =
+let impl_1015984682: Core.Fmt.t_Debug t_u32x16 =
   {
-    fmt
+    f_fmt_under_impl_273
     =
     fun (self: t_u32x16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u32x16 = {  }
+let impl_256798322: Core.Marker.t_StructuralPartialEq t_u32x16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u32x16 t_u32x16 =
-  { eq = fun (self: t_u32x16) (other: t_u32x16) -> () }
+let impl_189792883: Core.Cmp.t_PartialEq t_u32x16 t_u32x16 =
+  { f_eq_under_impl_275 = fun (self: t_u32x16) (other: t_u32x16) -> () }
 
 let new_under_impl_270 (x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 x10 x11 x12 x13 x14 x15: u32) : t_u32x16 = ()
 
@@ -3079,23 +3159,24 @@ type t_x15_under_splat_under_impl_270 =
 
 (* item error backend *)
 
-let impl: Core.Marker.t_Copy t_f32x16 = {  }
+let impl_469741224: Core.Marker.t_Copy t_f32x16 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_f32x16 = { clone = fun (self: t_f32x16) -> () }
+let impl_913765757: Core.Clone.t_Clone t_f32x16 =
+  { f_clone_under_impl_278 = fun (self: t_f32x16) -> () }
 
-let impl: Core.Fmt.t_Debug t_f32x16 =
+let impl_406520437: Core.Fmt.t_Debug t_f32x16 =
   {
-    fmt
+    f_fmt_under_impl_279
     =
     fun (self: t_f32x16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_f32x16 = {  }
+let impl_570103331: Core.Marker.t_StructuralPartialEq t_f32x16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_f32x16 t_f32x16 =
-  { eq = fun (self: t_f32x16) (other: t_f32x16) -> () }
+let impl_508283587: Core.Cmp.t_PartialEq t_f32x16 t_f32x16 =
+  { f_eq_under_impl_281 = fun (self: t_f32x16) (other: t_f32x16) -> () }
 
 (* item error backend *)
 
@@ -3153,22 +3234,24 @@ type t_x15_under_splat_under_impl_276 =
 
 type t_i64x8 = | C_i64x8 : i64 -> i64 -> i64 -> i64 -> i64 -> i64 -> i64 -> i64 -> t_i64x8
 
-let impl: Core.Marker.t_Copy t_i64x8 = {  }
+let impl_857539264: Core.Marker.t_Copy t_i64x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_i64x8 = { clone = fun (self: t_i64x8) -> () }
+let impl_256768646: Core.Clone.t_Clone t_i64x8 =
+  { f_clone_under_impl_284 = fun (self: t_i64x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_i64x8 =
+let impl_675480206: Core.Fmt.t_Debug t_i64x8 =
   {
-    fmt
+    f_fmt_under_impl_285
     =
     fun (self: t_i64x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_i64x8 = {  }
+let impl_660798769: Core.Marker.t_StructuralPartialEq t_i64x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_i64x8 t_i64x8 = { eq = fun (self: t_i64x8) (other: t_i64x8) -> () }
+let impl_725654787: Core.Cmp.t_PartialEq t_i64x8 t_i64x8 =
+  { f_eq_under_impl_287 = fun (self: t_i64x8) (other: t_i64x8) -> () }
 
 let new_under_impl_282 (x0 x1 x2 x3 x4 x5 x6 x7: i64) : t_i64x8 = ()
 
@@ -3202,22 +3285,24 @@ type t_x7_under_splat_under_impl_282 =
 
 type t_u64x8 = | C_u64x8 : u64 -> u64 -> u64 -> u64 -> u64 -> u64 -> u64 -> u64 -> t_u64x8
 
-let impl: Core.Marker.t_Copy t_u64x8 = {  }
+let impl_651013292: Core.Marker.t_Copy t_u64x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_u64x8 = { clone = fun (self: t_u64x8) -> () }
+let impl_958589449: Core.Clone.t_Clone t_u64x8 =
+  { f_clone_under_impl_290 = fun (self: t_u64x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_u64x8 =
+let impl_486586464: Core.Fmt.t_Debug t_u64x8 =
   {
-    fmt
+    f_fmt_under_impl_291
     =
     fun (self: t_u64x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_u64x8 = {  }
+let impl_547381457: Core.Marker.t_StructuralPartialEq t_u64x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_u64x8 t_u64x8 = { eq = fun (self: t_u64x8) (other: t_u64x8) -> () }
+let impl_352042612: Core.Cmp.t_PartialEq t_u64x8 t_u64x8 =
+  { f_eq_under_impl_293 = fun (self: t_u64x8) (other: t_u64x8) -> () }
 
 let new_under_impl_288 (x0 x1 x2 x3 x4 x5 x6 x7: u64) : t_u64x8 = ()
 
@@ -3251,22 +3336,24 @@ type t_x7_under_splat_under_impl_288 =
 
 (* item error backend *)
 
-let impl: Core.Marker.t_Copy t_f64x8 = {  }
+let impl_846949073: Core.Marker.t_Copy t_f64x8 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_f64x8 = { clone = fun (self: t_f64x8) -> () }
+let impl_850484193: Core.Clone.t_Clone t_f64x8 =
+  { f_clone_under_impl_296 = fun (self: t_f64x8) -> () }
 
-let impl: Core.Fmt.t_Debug t_f64x8 =
+let impl_1069997825: Core.Fmt.t_Debug t_f64x8 =
   {
-    fmt
+    f_fmt_under_impl_297
     =
     fun (self: t_f64x8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_f64x8 = {  }
+let impl_225344714: Core.Marker.t_StructuralPartialEq t_f64x8 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_f64x8 t_f64x8 = { eq = fun (self: t_f64x8) (other: t_f64x8) -> () }
+let impl_756931155: Core.Cmp.t_PartialEq t_f64x8 t_f64x8 =
+  { f_eq_under_impl_299 = fun (self: t_f64x8) (other: t_f64x8) -> () }
 
 (* item error backend *)
 

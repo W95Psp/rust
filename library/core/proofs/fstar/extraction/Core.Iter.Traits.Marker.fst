@@ -2,7 +2,7 @@ module Core.Iter.Traits.Marker
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-class t_FusedIterator (v_Self: Type) = {  }
+class t_FusedIterator (v_Self: Type) = { __marker_trait:Prims.unit }
 
 (* (RefMut) The mutation of this &mut is not allowed here.
 

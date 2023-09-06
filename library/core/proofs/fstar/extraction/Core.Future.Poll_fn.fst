@@ -10,15 +10,15 @@ fn poll_fn<T, F>(f: F) -> core::future::poll_fn::t_PollFn<F> where F:core::marke
 
 type t_PollFn = { f_f:f }
 
-let impl
+let impl_925304203
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Unpin f)
-    : Core.Marker.t_Unpin (t_PollFn f) = {  }
+    : Core.Marker.t_Unpin (t_PollFn f) = { __marker_trait = () }
 
-let impl (#f: Type) : Core.Fmt.t_Debug (t_PollFn f) =
+let impl_1063521439 (#f: Type) : Core.Fmt.t_Debug (t_PollFn f) =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun (#f: Type) (self: t_PollFn f) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

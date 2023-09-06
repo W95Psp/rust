@@ -9,31 +9,33 @@ type t_Layout = {
   f_align:Core.Ptr.Alignment.t_Alignment
 }
 
-let impl: Core.Marker.t_Copy t_Layout = {  }
+let impl_346470191: Core.Marker.t_Copy t_Layout = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Layout = { clone = fun (self: t_Layout) -> () }
+let impl_640615512: Core.Clone.t_Clone t_Layout =
+  { f_clone_under_impl_4 = fun (self: t_Layout) -> () }
 
-let impl: Core.Fmt.t_Debug t_Layout =
+let impl_566925916: Core.Fmt.t_Debug t_Layout =
   {
-    fmt
+    f_fmt_under_impl_5
     =
     fun (self: t_Layout) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Layout = {  }
+let impl_680291060: Core.Marker.t_StructuralPartialEq t_Layout = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Layout t_Layout =
-  { eq = fun (self: t_Layout) (other: t_Layout) -> () }
+let impl_144269319: Core.Cmp.t_PartialEq t_Layout t_Layout =
+  { f_eq_under_impl_7 = fun (self: t_Layout) (other: t_Layout) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_Layout = {  }
+let impl_1012737403: Core.Marker.t_StructuralEq t_Layout = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Layout = { assert_receiver_is_total_eq = fun (self: t_Layout) -> () }
+let impl_195294172: Core.Cmp.t_Eq t_Layout =
+  { f_assert_receiver_is_total_eq_under_impl_9 = fun (self: t_Layout) -> () }
 
-let impl: Core.Hash.t_Hash t_Layout =
+let impl_225402159: Core.Hash.t_Hash t_Layout =
   {
-    hash
+    f_hash_under_impl_10
     =
     fun (self: t_Layout) (state: v___h) ->
       let output:Prims.unit = () in
@@ -97,32 +99,33 @@ let t_LayoutErr = t_LayoutError
 
 type t_LayoutError = | LayoutError : t_LayoutError
 
-let impl: Core.Clone.t_Clone t_LayoutError = { clone = fun (self: t_LayoutError) -> () }
+let impl_967975043: Core.Clone.t_Clone t_LayoutError =
+  { f_clone_under_impl_11 = fun (self: t_LayoutError) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_LayoutError = {  }
+let impl_543808146: Core.Marker.t_StructuralPartialEq t_LayoutError = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_LayoutError t_LayoutError =
-  { eq = fun (self: t_LayoutError) (other: t_LayoutError) -> () }
+let impl_331091633: Core.Cmp.t_PartialEq t_LayoutError t_LayoutError =
+  { f_eq_under_impl_13 = fun (self: t_LayoutError) (other: t_LayoutError) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_LayoutError = {  }
+let impl_1070477152: Core.Marker.t_StructuralEq t_LayoutError = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_LayoutError =
-  { assert_receiver_is_total_eq = fun (self: t_LayoutError) -> () }
+let impl_403659306: Core.Cmp.t_Eq t_LayoutError =
+  { f_assert_receiver_is_total_eq_under_impl_15 = fun (self: t_LayoutError) -> () }
 
-let impl: Core.Fmt.t_Debug t_LayoutError =
+let impl_703620841: Core.Fmt.t_Debug t_LayoutError =
   {
-    fmt
+    f_fmt_under_impl_16
     =
     fun (self: t_LayoutError) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Error.t_Error t_LayoutError = {  }
+let impl_1011584512: Core.Error.t_Error t_LayoutError = { __marker_trait = () }
 
-let impl: Core.Fmt.t_Display t_LayoutError =
+let impl_535376087: Core.Fmt.t_Display t_LayoutError =
   {
-    fmt
+    f_fmt_under_impl_2
     =
     fun (self: t_LayoutError) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

@@ -8,7 +8,7 @@ type t_Scan = {
   f_state:st
 }
 
-let impl
+let impl_782496089
       (#i #st #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized st)
@@ -30,7 +30,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __17: Core.Clone.t_Clone f)
     : Core.Clone.t_Clone (t_Scan i st f) =
   {
-    clone
+    f_clone_under_impl_5
     =
     fun
       (#i: Type)
@@ -61,7 +61,7 @@ let impl
 
 let new_under_impl (#i #st #f: Type) (iter: i) (state: st) (f: f) : t_Scan i st f = ()
 
-let impl
+let impl_914004834
       (#i #st #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized st)
@@ -75,7 +75,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Fmt.t_Debug st)
     : Core.Fmt.t_Debug (t_Scan i st f) =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun
       (#i: Type)

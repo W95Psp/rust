@@ -8,13 +8,13 @@ type t_StepBy = {
   f_first_take:bool
 }
 
-let impl
+let impl_342819917
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone i)
     : Core.Clone.t_Clone (t_StepBy i) =
   {
-    clone
+    f_clone_under_impl_5
     =
     fun
       (#i: Type)
@@ -25,13 +25,13 @@ let impl
       ()
   }
 
-let impl
+let impl_1050362395
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug i)
     : Core.Fmt.t_Debug (t_StepBy i) =
   {
-    fmt
+    f_fmt_under_impl_6
     =
     fun
       (#i: Type)
@@ -46,14 +46,14 @@ let impl
 
 let new_under_impl (#i: Type) (iter: i) (step: usize) : t_StepBy i = ()
 
-let impl
+let impl_935913030
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
     : Core.Iter.Traits.Iterator.t_Iterator (t_StepBy i) =
   {
-    item = _;
-    next
+    f_Item_under_impl_1 = _;
+    f_next_under_impl_1
     =
     (fun
         (#i: Type)
@@ -63,7 +63,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_1
     =
     (fun
         (#i: Type)
@@ -72,7 +72,7 @@ let impl
         (self: t_StepBy i)
         ->
         ());
-    nth
+    f_nth_under_impl_1
     =
     (fun
         (#i: Type)
@@ -83,7 +83,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    try_fold
+    f_try_fold_under_impl_1
     =
     (fun
         (#i: Type)
@@ -95,7 +95,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_1
     =
     fun
       (#i: Type)
@@ -141,7 +141,7 @@ let next_back_index_under_impl_2
       (self: t_StepBy i)
     : usize = ()
 
-let impl
+let impl_282556346
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
@@ -152,7 +152,7 @@ let impl
           Core.Iter.Traits.Exact_size.t_ExactSizeIterator i)
     : Core.Iter.Traits.Double_ended.t_DoubleEndedIterator (t_StepBy i) =
   {
-    next_back
+    f_next_back_under_impl_3
     =
     (fun
         (#i: Type)
@@ -167,7 +167,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    nth_back
+    f_nth_back_under_impl_3
     =
     (fun
         (#i: Type)
@@ -183,7 +183,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    try_rfold
+    f_try_rfold_under_impl_3
     =
     (fun
         (#i: Type)
@@ -200,7 +200,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    rfold
+    f_rfold_under_impl_3
     =
     fun
       (#i: Type)
@@ -242,10 +242,10 @@ let nth_back_under_rfold_under_impl_3
   let output:Core.Option.t_Option _ = () in
   iter, output
 
-let impl
+let impl_408586571
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __1:
           Core.Iter.Traits.Exact_size.t_ExactSizeIterator i)
-    : Core.Iter.Traits.Exact_size.t_ExactSizeIterator (t_StepBy i) = {  }
+    : Core.Iter.Traits.Exact_size.t_ExactSizeIterator (t_StepBy i) = { __marker_trait = () }

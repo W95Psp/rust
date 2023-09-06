@@ -221,13 +221,13 @@ Last available AST for this item:
 
 fn hash<T, S, Anonymous: 'unk>(hashee: raw_pointer!(),into: &mut S) -> tuple0 where T:core::marker::t_Sized<S>,T:core::hash::t_Hasher<S>,S:core::marker::t_Sized<S>,S:core::hash::t_Hasher<S>{Tuple0()} *)
 
-let impl
+let impl_447612489
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_FnPtr f)
     : Core.Cmp.t_PartialEq f f =
   {
-    eq
+    f_eq_under_impl
     =
     fun
       (#f: Type)
@@ -239,19 +239,19 @@ let impl
       ()
   }
 
-let impl
+let impl_586204689
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_FnPtr f)
-    : Core.Cmp.t_Eq f = {  }
+    : Core.Cmp.t_Eq f = { __marker_trait = () }
 
-let impl
+let impl_275955236
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_FnPtr f)
     : Core.Cmp.t_PartialOrd f f =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_2
     =
     fun
       (#f: Type)
@@ -263,13 +263,13 @@ let impl
       ()
   }
 
-let impl
+let impl_675348050
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_FnPtr f)
     : Core.Cmp.t_Ord f =
   {
-    cmp
+    f_cmp_under_impl_3
     =
     fun
       (#f: Type)
@@ -281,13 +281,13 @@ let impl
       ()
   }
 
-let impl
+let impl_655654203
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_FnPtr f)
     : Core.Hash.t_Hash f =
   {
-    hash
+    f_hash_under_impl_4
     =
     fun
       (#f: Type)
@@ -300,13 +300,13 @@ let impl
       state
   }
 
-let impl
+let impl_109668074
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_FnPtr f)
     : Core.Fmt.t_Pointer f =
   {
-    fmt
+    f_fmt_under_impl_5
     =
     fun
       (#f: Type)
@@ -319,13 +319,13 @@ let impl
       f, output
   }
 
-let impl
+let impl_654514736
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_FnPtr f)
     : Core.Fmt.t_Debug f =
   {
-    fmt
+    f_fmt_under_impl_6
     =
     fun
       (#f: Type)

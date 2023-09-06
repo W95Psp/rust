@@ -7,21 +7,23 @@ type t_Part =
   | Part_Num : u16 -> t_Part
   | Part_Copy : slice u8 -> t_Part
 
-let impl: Core.Marker.t_Copy t_Part = {  }
+let impl_159194587: Core.Marker.t_Copy t_Part = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Part = { clone = fun (self: t_Part) -> () }
+let impl_8529223: Core.Clone.t_Clone t_Part = { f_clone_under_impl_3 = fun (self: t_Part) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Part = {  }
+let impl_536948365: Core.Marker.t_StructuralPartialEq t_Part = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Part t_Part = { eq = fun (self: t_Part) (other: t_Part) -> () }
+let impl_720694056: Core.Cmp.t_PartialEq t_Part t_Part =
+  { f_eq_under_impl_5 = fun (self: t_Part) (other: t_Part) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_Part = {  }
+let impl_155341944: Core.Marker.t_StructuralEq t_Part = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Part = { assert_receiver_is_total_eq = fun (self: t_Part) -> () }
+let impl_261912889: Core.Cmp.t_Eq t_Part =
+  { f_assert_receiver_is_total_eq_under_impl_7 = fun (self: t_Part) -> () }
 
-let impl: Core.Fmt.t_Debug t_Part =
+let impl_989342938: Core.Fmt.t_Debug t_Part =
   {
-    fmt
+    f_fmt_under_impl_8
     =
     fun (self: t_Part) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -39,7 +41,8 @@ type t_Formatted = {
   f_parts:slice t_Part
 }
 
-let impl: Core.Clone.t_Clone t_Formatted = { clone = fun (self: t_Formatted) -> () }
+let impl_487429591: Core.Clone.t_Clone t_Formatted =
+  { f_clone_under_impl_9 = fun (self: t_Formatted) -> () }
 
 let len_under_impl_1 (self: t_Formatted) : usize = ()
 

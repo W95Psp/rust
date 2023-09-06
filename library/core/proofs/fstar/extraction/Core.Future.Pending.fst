@@ -13,14 +13,14 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) : Core.Fmt.t_Debug (t_Pending t) =
+let impl_418151316 (#t: Type) : Core.Fmt.t_Debug (t_Pending t) =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun (#t: Type) (self: t_Pending t) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl (#t: Type) : Core.Clone.t_Clone (t_Pending t) =
-  { clone = fun (#t: Type) (self: t_Pending t) -> () }
+let impl_742198008 (#t: Type) : Core.Clone.t_Clone (t_Pending t) =
+  { f_clone_under_impl_2 = fun (#t: Type) (self: t_Pending t) -> () }

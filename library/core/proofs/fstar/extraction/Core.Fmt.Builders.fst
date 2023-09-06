@@ -4,7 +4,7 @@ open Core
 
 type t_PadAdapterState = { f_on_newline:bool }
 
-let impl: Core.Default.t_Default t_PadAdapterState = { default = fun  -> () }
+let impl_774964125: Core.Default.t_Default t_PadAdapterState = { f_default_under_impl = () }
 
 let wrap_under_impl_1
       (fmt: Core.Fmt.t_Formatter)
@@ -15,9 +15,9 @@ let wrap_under_impl_1
   let output:Core.Fmt.t_Formatter = () in
   fmt, slot, state, output
 
-let impl: Core.Fmt.t_Write t_PadAdapter =
+let impl_165183037: Core.Fmt.t_Write t_PadAdapter =
   {
-    write_str
+    f_write_str_under_impl_2
     =
     fun (self: t_PadAdapter) (s: string) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

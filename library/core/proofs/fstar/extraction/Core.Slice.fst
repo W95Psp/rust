@@ -3,12 +3,12 @@ module Core.Slice
 open Core
 
 let split_point_of
-      (#impl onesidedrange<usize>: Type)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized impl onesidedrange<usize>)
+      (#impl_113566433_: Type)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized impl_113566433_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __1:
-          Core.Ops.Range.t_OneSidedRange impl onesidedrange<usize> usize)
-      (range: impl onesidedrange<usize>)
+          Core.Ops.Range.t_OneSidedRange impl_113566433_ usize)
+      (range: impl_113566433_)
     : Core.Option.t_Option (t_Direction & usize) = ()
 
 type t_Direction =
@@ -463,15 +463,15 @@ let flatten_mut_under_impl_1 (#t: Type) (#n: usize) (self: slice (array t v_N))
 
 (* item error backend *)
 
-class t_CloneFromSpec (v_Self: Type) (v_T: Type) = { spec_clone_from:self -> slice t -> self }
+class t_CloneFromSpec (v_Self: Type) (v_T: Type) = { f_spec_clone_from:self -> slice t -> self }
 
-let impl
+let impl_447033600
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone t)
     : t_CloneFromSpec (slice t) t =
   {
-    spec_clone_from
+    f_spec_clone_from_under_impl_4
     =
     fun
       (#t: Type)
@@ -484,13 +484,13 @@ let impl
       self
   }
 
-let impl
+let impl_950287376
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Copy t)
     : t_CloneFromSpec (slice t) t =
   {
-    spec_clone_from
+    f_spec_clone_from_under_impl_5
     =
     fun
       (#t: Type)
@@ -503,7 +503,8 @@ let impl
       self
   }
 
-let impl (#t: Type) : Core.Default.t_Default (slice t) = { default = fun (#t: Type) -> () }
+let impl_93471548 (#t: Type) : Core.Default.t_Default (slice t) =
+  { f_default_under_impl_6 = fun (#t: Type) -> () }
 
 (* (RefMut) The mutation of this &mut is not allowed here.
 
@@ -512,33 +513,36 @@ Last available AST for this item:
 /* print_rust: pitem: not implemented */ *)
 
 class t_SlicePattern (v_Self: Type) = {
-  item:Type;
-  item_implements_t_Sized:Core.Marker.t_Sized _;
-  as_slice:self -> slice _
+  f_Item:Type;
+  f_Item:Core.Marker.t_Sized _;
+  f_as_slice:self -> slice _
 }
 
-let impl (#t: Type) : t_SlicePattern (slice t) =
-  { item = t; as_slice = fun (#t: Type) (self: slice t) -> () }
+let impl_684938903 (#t: Type) : t_SlicePattern (slice t) =
+  { f_Item_under_impl_8 = t; f_as_slice_under_impl_8 = fun (#t: Type) (self: slice t) -> () }
 
-let impl (#t: Type) (#n: usize) : t_SlicePattern (array t v_N) =
-  { item = t; as_slice = fun (#t: Type) (#n: usize) (self: array t v_N) -> () }
+let impl_135133363 (#t: Type) (#n: usize) : t_SlicePattern (array t v_N) =
+  {
+    f_Item_under_impl_9 = t;
+    f_as_slice_under_impl_9 = fun (#t: Type) (#n: usize) (self: array t v_N) -> ()
+  }
 
 let get_many_check_valid (#n: usize) (indices: array usize v_N) (len: usize) : bool = ()
 
 type t_GetManyMutError = { f__private:Prims.unit }
 
-let impl (#n: usize) : Core.Fmt.t_Debug (t_GetManyMutError v_N) =
+let impl_310871349 (#n: usize) : Core.Fmt.t_Debug (t_GetManyMutError v_N) =
   {
-    fmt
+    f_fmt_under_impl_10
     =
     fun (#n: usize) (self: t_GetManyMutError v_N) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl (#n: usize) : Core.Fmt.t_Display (t_GetManyMutError v_N) =
+let impl_389140370 (#n: usize) : Core.Fmt.t_Display (t_GetManyMutError v_N) =
   {
-    fmt
+    f_fmt_under_impl_11
     =
     fun (#n: usize) (self: t_GetManyMutError v_N) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

@@ -412,10 +412,11 @@ fn scatter_select_ptr_under_impl<T, const N:int>(self: core::core_simd::vector::
 type t_Splat_under_splat_under_impl =
   | Splat_under_splat_under_impl : t_Splat_under_splat_under_impl
 
-let impl (#n: usize) : Core.Core_simd.Swizzle.t_Swizzle t_Splat_under_splat_under_impl 1sz v_N =
-  { iNDEX = fun (#n: usize) -> () }
+let impl_249076877 (#n: usize)
+    : Core.Core_simd.Swizzle.t_Swizzle t_Splat_under_splat_under_impl 1sz v_N =
+  { f_INDEX_under_impl_under_splat_under_impl = fun (#n: usize) -> () }
 
-let impl
+let impl_457939012
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -430,9 +431,9 @@ let impl
           Core.Core_simd.Lane_count.t_SupportedLaneCount (Core.Core_simd.Lane_count.t_LaneCount v_N)
         )
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_SimdElement t)
-    : Core.Marker.t_Copy (t_Simd t v_N) = {  }
+    : Core.Marker.t_Copy (t_Simd t v_N) = { __marker_trait = () }
 
-let impl
+let impl_562381735
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -449,7 +450,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_SimdElement t)
     : Core.Clone.t_Clone (t_Simd t v_N) =
   {
-    clone
+    f_clone_under_impl_2
     =
     fun
       (#t: Type)
@@ -469,7 +470,7 @@ let impl
       ()
   }
 
-let impl
+let impl_199591746
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -488,7 +489,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Default.t_Default t)
     : Core.Default.t_Default (t_Simd t v_N) =
   {
-    default
+    f_default_under_impl_3
     =
     fun
       (#t: Type)
@@ -509,7 +510,7 @@ let impl
       ()
   }
 
-let impl
+let impl_329197866
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -528,7 +529,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (t_Simd t v_N) (t_Simd t v_N) =
   {
-    eq
+    f_eq_under_impl_4
     =
     (fun
         (#t: Type)
@@ -551,7 +552,7 @@ let impl
         (other: t_Simd t v_N)
         ->
         ());
-    ne
+    f_ne_under_impl_4
     =
     fun
       (#t: Type)
@@ -574,7 +575,7 @@ let impl
       ()
   }
 
-let impl
+let impl_947259539
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -593,7 +594,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (t_Simd t v_N) (t_Simd t v_N) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_5
     =
     fun
       (#t: Type)
@@ -616,7 +617,7 @@ let impl
       ()
   }
 
-let impl
+let impl_521114358
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -633,9 +634,9 @@ let impl
         )
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: t_SimdElement t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (t_Simd t v_N) = {  }
+    : Core.Cmp.t_Eq (t_Simd t v_N) = { __marker_trait = () }
 
-let impl
+let impl_737136368
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -654,7 +655,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (t_Simd t v_N) =
   {
-    cmp
+    f_cmp_under_impl_7
     =
     fun
       (#t: Type)
@@ -677,7 +678,7 @@ let impl
       ()
   }
 
-let impl
+let impl_629625430
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -696,7 +697,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Hash.t_Hash t)
     : Core.Hash.t_Hash (t_Simd t v_N) =
   {
-    hash
+    f_hash_under_impl_8
     =
     fun
       (#t: Type)
@@ -720,7 +721,7 @@ let impl
       state
   }
 
-let impl
+let impl_576181803
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -737,7 +738,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_SimdElement t)
     : Core.Convert.t_AsRef (t_Simd t v_N) (array t v_N) =
   {
-    as_ref
+    f_as_ref_under_impl_9
     =
     fun
       (#t: Type)
@@ -757,7 +758,7 @@ let impl
       ()
   }
 
-let impl
+let impl_968839868
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -774,7 +775,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_SimdElement t)
     : Core.Convert.t_AsMut (t_Simd t v_N) (array t v_N) =
   {
-    as_mut
+    f_as_mut_under_impl_10
     =
     fun
       (#t: Type)
@@ -795,7 +796,7 @@ let impl
         "{let output: &mut [T;N] = {Tuple0()};Tuple2(self,output)}"
   }
 
-let impl
+let impl_58272404
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -812,7 +813,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_SimdElement t)
     : Core.Convert.t_AsRef (t_Simd t v_N) (slice t) =
   {
-    as_ref
+    f_as_ref_under_impl_11
     =
     fun
       (#t: Type)
@@ -832,7 +833,7 @@ let impl
       ()
   }
 
-let impl
+let impl_163094016
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -849,7 +850,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_SimdElement t)
     : Core.Convert.t_AsMut (t_Simd t v_N) (slice t) =
   {
-    as_mut
+    f_as_mut_under_impl_12
     =
     fun
       (#t: Type)
@@ -870,7 +871,7 @@ let impl
         "{let output: &mut [T] = {Tuple0()};Tuple2(self,output)}"
   }
 
-let impl
+let impl_455843655
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -887,7 +888,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_SimdElement t)
     : Core.Convert.t_From (t_Simd t v_N) (array t v_N) =
   {
-    from
+    f_from_under_impl_13
     =
     fun
       (#t: Type)
@@ -907,7 +908,7 @@ let impl
       ()
   }
 
-let impl
+let impl_891896887
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -924,7 +925,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_SimdElement t)
     : Core.Convert.t_From (array t v_N) (t_Simd t v_N) =
   {
-    from
+    f_from_under_impl_14
     =
     fun
       (#t: Type)
@@ -944,7 +945,7 @@ let impl
       ()
   }
 
-let impl
+let impl_475948288
       (#t: Type)
       (#n: usize)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
@@ -961,8 +962,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_SimdElement t)
     : Core.Convert.t_TryFrom (t_Simd t v_N) (slice t) =
   {
-    error = Core.Array.t_TryFromSliceError;
-    try_from
+    f_Error_under_impl_15 = Core.Array.t_TryFromSliceError;
+    f_try_from_under_impl_15
     =
     fun
       (#t: Type)
@@ -988,25 +989,25 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed u8 = {  }
+let impl_524517967: Core.Core_simd.Vector.Sealed.t_Sealed u8 = { __marker_trait = () }
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed u16 = {  }
+let impl_36410969: Core.Core_simd.Vector.Sealed.t_Sealed u16 = { __marker_trait = () }
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed u32 = {  }
+let impl_895623217: Core.Core_simd.Vector.Sealed.t_Sealed u32 = { __marker_trait = () }
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed u64 = {  }
+let impl_100964559: Core.Core_simd.Vector.Sealed.t_Sealed u64 = { __marker_trait = () }
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed usize = {  }
+let impl_557864744: Core.Core_simd.Vector.Sealed.t_Sealed usize = { __marker_trait = () }
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed i8 = {  }
+let impl_549587066: Core.Core_simd.Vector.Sealed.t_Sealed i8 = { __marker_trait = () }
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed i16 = {  }
+let impl_62544013: Core.Core_simd.Vector.Sealed.t_Sealed i16 = { __marker_trait = () }
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed i32 = {  }
+let impl_840549698: Core.Core_simd.Vector.Sealed.t_Sealed i32 = { __marker_trait = () }
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed i64 = {  }
+let impl_20664663: Core.Core_simd.Vector.Sealed.t_Sealed i64 = { __marker_trait = () }
 
-let impl: Core.Core_simd.Vector.Sealed.t_Sealed isize = {  }
+let impl_1053029888: Core.Core_simd.Vector.Sealed.t_Sealed isize = { __marker_trait = () }
 
 (* item error backend *)
 

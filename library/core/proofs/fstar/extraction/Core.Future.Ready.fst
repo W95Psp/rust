@@ -4,13 +4,13 @@ open Core
 
 type t_Ready = | Ready : Core.Option.t_Option t -> t_Ready
 
-let impl
+let impl_55121224
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug t)
     : Core.Fmt.t_Debug (t_Ready t) =
   {
-    fmt
+    f_fmt_under_impl_3
     =
     fun
       (#t: Type)
@@ -23,13 +23,13 @@ let impl
       f, output
   }
 
-let impl
+let impl_587280425
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone t)
     : Core.Clone.t_Clone (t_Ready t) =
   {
-    clone
+    f_clone_under_impl_4
     =
     fun
       (#t: Type)
@@ -40,7 +40,7 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Marker.t_Unpin (t_Ready t) = {  }
+let impl_9929616 (#t: Type) : Core.Marker.t_Unpin (t_Ready t) = { __marker_trait = () }
 
 (* (RefMut) The mutation of this &mut is not allowed here.
 

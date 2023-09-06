@@ -35,15 +35,16 @@ let outlined_call_under_get_or_try_init_under_impl
       (f: f)
     : Core.Result.t_Result t e = ()
 
-let impl (#t: Type) : Core.Default.t_Default (t_OnceCell t) = { default = fun (#t: Type) -> () }
+let impl_540081303 (#t: Type) : Core.Default.t_Default (t_OnceCell t) =
+  { f_default_under_impl_1 = fun (#t: Type) -> () }
 
-let impl
+let impl_2728292
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug t)
     : Core.Fmt.t_Debug (t_OnceCell t) =
   {
-    fmt
+    f_fmt_under_impl_2
     =
     fun
       (#t: Type)
@@ -56,13 +57,13 @@ let impl
       f, output
   }
 
-let impl
+let impl_139339286
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone t)
     : Core.Clone.t_Clone (t_OnceCell t) =
   {
-    clone
+    f_clone_under_impl_3
     =
     fun
       (#t: Type)
@@ -73,13 +74,13 @@ let impl
       ()
   }
 
-let impl
+let impl_365100684
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (t_OnceCell t) (t_OnceCell t) =
   {
-    eq
+    f_eq_under_impl_4
     =
     fun
       (#t: Type)
@@ -91,13 +92,13 @@ let impl
       ()
   }
 
-let impl
+let impl_421918506
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_Eq t)
-    : Core.Cmp.t_Eq (t_OnceCell t) = {  }
+    : Core.Cmp.t_Eq (t_OnceCell t) = { __marker_trait = () }
 
-let impl (#t: Type) : Core.Convert.t_From (t_OnceCell t) t =
-  { from = fun (#t: Type) (value: t) -> () }
+let impl_267700201 (#t: Type) : Core.Convert.t_From (t_OnceCell t) t =
+  { f_from_under_impl_6 = fun (#t: Type) (value: t) -> () }
 
-let impl (#t: Type) : Core.Marker.t_Sync (t_OnceCell t) = {  }
+let impl_760013556 (#t: Type) : Core.Marker.t_Sync (t_OnceCell t) = { __marker_trait = () }

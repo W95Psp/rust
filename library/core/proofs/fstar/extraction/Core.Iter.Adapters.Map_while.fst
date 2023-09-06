@@ -7,7 +7,7 @@ type t_MapWhile = {
   f_predicate:p
 }
 
-let impl
+let impl_881726581
       (#i #p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized p)
@@ -19,7 +19,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone p)
     : Core.Clone.t_Clone (t_MapWhile i p) =
   {
-    clone
+    f_clone_under_impl_5
     =
     fun
       (#i: Type)
@@ -39,14 +39,14 @@ let impl
 
 let new_under_impl (#i #p: Type) (iter: i) (predicate: p) : t_MapWhile i p = ()
 
-let impl
+let impl_292405246
       (#i #p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized p)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug i)
     : Core.Fmt.t_Debug (t_MapWhile i p) =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun
       (#i: Type)
@@ -61,7 +61,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_1021568752
       (#b #i #p: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized p)
@@ -75,8 +75,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Marker.t_Sized b)
     : Core.Iter.Traits.Iterator.t_Iterator (t_MapWhile i p) =
   {
-    item = b;
-    next
+    f_Item_under_impl_2 = b;
+    f_next_under_impl_2
     =
     (fun
         (#b: Type)
@@ -96,7 +96,7 @@ let impl
         ->
         let output:Core.Option.t_Option b = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_2
     =
     (fun
         (#b: Type)
@@ -115,7 +115,7 @@ let impl
         (self: t_MapWhile i p)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_2
     =
     (fun
         (#b: Type)
@@ -137,7 +137,7 @@ let impl
         ->
         let output:r = () in
         self, output);
-    fold
+    f_fold_under_impl_2
     =
     fun
       (#b: Type)

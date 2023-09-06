@@ -3,26 +3,26 @@ module Core.Num.Bignum
 open Core
 
 class t_FullOps (v_Self: Type) = {
-  full_mul_add:self -> self -> self -> self -> (self & self);
-  full_div_rem:self -> self -> self -> (self & self)
+  f_full_mul_add:self -> self -> self -> self -> (self & self);
+  f_full_div_rem:self -> self -> self -> (self & self)
 }
 
-let impl: t_FullOps u8 =
+let impl_599771730: t_FullOps u8 =
   {
-    full_mul_add = (fun (self: u8) (other: u8) (other2: u8) (carry: u8) -> ());
-    full_div_rem = fun (self: u8) (other: u8) (borrow: u8) -> ()
+    f_full_mul_add_under_impl = (fun (self: u8) (other: u8) (other2: u8) (carry: u8) -> ());
+    f_full_div_rem_under_impl = fun (self: u8) (other: u8) (borrow: u8) -> ()
   }
 
-let impl: t_FullOps u16 =
+let impl_763109434: t_FullOps u16 =
   {
-    full_mul_add = (fun (self: u16) (other: u16) (other2: u16) (carry: u16) -> ());
-    full_div_rem = fun (self: u16) (other: u16) (borrow: u16) -> ()
+    f_full_mul_add_under_impl_1 = (fun (self: u16) (other: u16) (other2: u16) (carry: u16) -> ());
+    f_full_div_rem_under_impl_1 = fun (self: u16) (other: u16) (borrow: u16) -> ()
   }
 
-let impl: t_FullOps u32 =
+let impl_712364517: t_FullOps u32 =
   {
-    full_mul_add = (fun (self: u32) (other: u32) (other2: u32) (carry: u32) -> ());
-    full_div_rem = fun (self: u32) (other: u32) (borrow: u32) -> ()
+    f_full_mul_add_under_impl_2 = (fun (self: u32) (other: u32) (other2: u32) (carry: u32) -> ());
+    f_full_div_rem_under_impl_2 = fun (self: u32) (other: u32) (borrow: u32) -> ()
   }
 
 let v_SMALL_POW5: array (u64 & usize) 3sz = ()
@@ -87,21 +87,23 @@ let mul_inner_under_mul_digits_under_impl_3 (ret: array u32 40sz) (aa bb: slice 
   let output:usize = () in
   ret, output
 
-let impl: Core.Cmp.t_PartialEq t_Big32x40 t_Big32x40 =
-  { eq = fun (self: t_Big32x40) (other: t_Big32x40) -> () }
+let impl_438213562: Core.Cmp.t_PartialEq t_Big32x40 t_Big32x40 =
+  { f_eq_under_impl_4 = fun (self: t_Big32x40) (other: t_Big32x40) -> () }
 
-let impl: Core.Cmp.t_Eq t_Big32x40 = {  }
+let impl_14422980: Core.Cmp.t_Eq t_Big32x40 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialOrd t_Big32x40 t_Big32x40 =
-  { partial_cmp = fun (self: t_Big32x40) (other: t_Big32x40) -> () }
+let impl_893086628: Core.Cmp.t_PartialOrd t_Big32x40 t_Big32x40 =
+  { f_partial_cmp_under_impl_6 = fun (self: t_Big32x40) (other: t_Big32x40) -> () }
 
-let impl: Core.Cmp.t_Ord t_Big32x40 = { cmp = fun (self: t_Big32x40) (other: t_Big32x40) -> () }
+let impl_739731211: Core.Cmp.t_Ord t_Big32x40 =
+  { f_cmp_under_impl_7 = fun (self: t_Big32x40) (other: t_Big32x40) -> () }
 
-let impl: Core.Clone.t_Clone t_Big32x40 = { clone = fun (self: t_Big32x40) -> () }
+let impl_551577488: Core.Clone.t_Clone t_Big32x40 =
+  { f_clone_under_impl_8 = fun (self: t_Big32x40) -> () }
 
-let impl: Core.Fmt.t_Debug t_Big32x40 =
+let impl_381724358: Core.Fmt.t_Debug t_Big32x40 =
   {
-    fmt
+    f_fmt_under_impl_9
     =
     fun (self: t_Big32x40) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

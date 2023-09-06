@@ -12,19 +12,19 @@ let repeat_with
 
 type t_RepeatWith = { f_repeater:f }
 
-let impl
+let impl_42596878
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Copy f)
-    : Core.Marker.t_Copy (t_RepeatWith f) = {  }
+    : Core.Marker.t_Copy (t_RepeatWith f) = { __marker_trait = () }
 
-let impl
+let impl_835560832
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone f)
     : Core.Clone.t_Clone (t_RepeatWith f) =
   {
-    clone
+    f_clone_under_impl_5
     =
     fun
       (#f: Type)
@@ -35,24 +35,24 @@ let impl
       ()
   }
 
-let impl (#f: Type) : Core.Fmt.t_Debug (t_RepeatWith f) =
+let impl_13837303 (#f: Type) : Core.Fmt.t_Debug (t_RepeatWith f) =
   {
-    fmt
+    f_fmt_under_impl
     =
     fun (#f: Type) (self: t_RepeatWith f) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl
+let impl_560271443
       (#a #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Ops.Function.t_FnMut f Prims.unit)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized a)
     : Core.Iter.Traits.Iterator.t_Iterator (t_RepeatWith f) =
   {
-    item = a;
-    next
+    f_Item_under_impl_1 = a;
+    f_next_under_impl_1
     =
     (fun
         (#a: Type)
@@ -64,7 +64,7 @@ let impl
         ->
         let output:Core.Option.t_Option a = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl_1
     =
     (fun
         (#a: Type)
@@ -75,7 +75,7 @@ let impl
         (self: t_RepeatWith f)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl_1
     =
     fun
       (#a: Type)
@@ -91,9 +91,9 @@ let impl
       self, output
   }
 
-let impl
+let impl_829200401
       (#a #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Ops.Function.t_FnMut f Prims.unit)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized a)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_RepeatWith f) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_RepeatWith f) = { __marker_trait = () }

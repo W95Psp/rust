@@ -4,19 +4,20 @@ open Core
 
 type t_Alignment = | Alignment : t_AlignmentEnum64 -> t_Alignment
 
-let impl: Core.Marker.t_Copy t_Alignment = {  }
+let impl_1050619205: Core.Marker.t_Copy t_Alignment = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Alignment = { clone = fun (self: t_Alignment) -> () }
+let impl_985071893: Core.Clone.t_Clone t_Alignment =
+  { f_clone_under_impl_10 = fun (self: t_Alignment) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Alignment = {  }
+let impl_272329539: Core.Marker.t_StructuralPartialEq t_Alignment = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Alignment t_Alignment =
-  { eq = fun (self: t_Alignment) (other: t_Alignment) -> () }
+let impl_694068262: Core.Cmp.t_PartialEq t_Alignment t_Alignment =
+  { f_eq_under_impl_12 = fun (self: t_Alignment) (other: t_Alignment) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_Alignment = {  }
+let impl_938944304: Core.Marker.t_StructuralEq t_Alignment = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Alignment =
-  { assert_receiver_is_total_eq = fun (self: t_Alignment) -> () }
+let impl_116973312: Core.Cmp.t_Eq t_Alignment =
+  { f_assert_receiver_is_total_eq_under_impl_14 = fun (self: t_Alignment) -> () }
 
 let v___: Prims.unit = ()
 
@@ -42,37 +43,42 @@ let runtime_under_new_unchecked_under_impl (align: usize) : Prims.unit = ()
 
 let comptime_under_new_unchecked_under_impl (_: usize) : Prims.unit = ()
 
-let impl: Core.Fmt.t_Debug t_Alignment =
+let impl_794758983: Core.Fmt.t_Debug t_Alignment =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun (self: t_Alignment) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Convert.t_TryFrom t_Alignment Core.Num.Nonzero.t_NonZeroUsize =
+let impl_785316692: Core.Convert.t_TryFrom t_Alignment Core.Num.Nonzero.t_NonZeroUsize =
   {
-    error = Core.Num.Error.t_TryFromIntError;
-    try_from = fun (align: Core.Num.Nonzero.t_NonZeroUsize) -> ()
+    f_Error_under_impl_2 = Core.Num.Error.t_TryFromIntError;
+    f_try_from_under_impl_2 = fun (align: Core.Num.Nonzero.t_NonZeroUsize) -> ()
   }
 
-let impl: Core.Convert.t_TryFrom t_Alignment usize =
-  { error = Core.Num.Error.t_TryFromIntError; try_from = fun (align: usize) -> () }
-
-let impl: Core.Convert.t_From Core.Num.Nonzero.t_NonZeroUsize t_Alignment =
-  { from = fun (align: t_Alignment) -> () }
-
-let impl: Core.Convert.t_From usize t_Alignment = { from = fun (align: t_Alignment) -> () }
-
-let impl: Core.Cmp.t_Ord t_Alignment = { cmp = fun (self: t_Alignment) (other: t_Alignment) -> () }
-
-let impl: Core.Cmp.t_PartialOrd t_Alignment t_Alignment =
-  { partial_cmp = fun (self: t_Alignment) (other: t_Alignment) -> () }
-
-let impl: Core.Hash.t_Hash t_Alignment =
+let impl_311972970: Core.Convert.t_TryFrom t_Alignment usize =
   {
-    hash
+    f_Error_under_impl_3 = Core.Num.Error.t_TryFromIntError;
+    f_try_from_under_impl_3 = fun (align: usize) -> ()
+  }
+
+let impl_518530305: Core.Convert.t_From Core.Num.Nonzero.t_NonZeroUsize t_Alignment =
+  { f_from_under_impl_4 = fun (align: t_Alignment) -> () }
+
+let impl_401926523: Core.Convert.t_From usize t_Alignment =
+  { f_from_under_impl_5 = fun (align: t_Alignment) -> () }
+
+let impl_727781546: Core.Cmp.t_Ord t_Alignment =
+  { f_cmp_under_impl_6 = fun (self: t_Alignment) (other: t_Alignment) -> () }
+
+let impl_135520383: Core.Cmp.t_PartialOrd t_Alignment t_Alignment =
+  { f_partial_cmp_under_impl_7 = fun (self: t_Alignment) (other: t_Alignment) -> () }
+
+let impl_287478628: Core.Hash.t_Hash t_Alignment =
+  {
+    f_hash_under_impl_8
     =
     fun (self: t_Alignment) (state: h) ->
       let output:Prims.unit = () in
@@ -99,19 +105,20 @@ type t_AlignmentEnum16 =
   | AlignmentEnum16__Align1Shl14 : t_AlignmentEnum16
   | AlignmentEnum16__Align1Shl15 : t_AlignmentEnum16
 
-let impl: Core.Marker.t_Copy t_AlignmentEnum16 = {  }
+let impl_605612700: Core.Marker.t_Copy t_AlignmentEnum16 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_AlignmentEnum16 = { clone = fun (self: t_AlignmentEnum16) -> () }
+let impl_465264974: Core.Clone.t_Clone t_AlignmentEnum16 =
+  { f_clone_under_impl_16 = fun (self: t_AlignmentEnum16) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_AlignmentEnum16 = {  }
+let impl_979111193: Core.Marker.t_StructuralPartialEq t_AlignmentEnum16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_AlignmentEnum16 t_AlignmentEnum16 =
-  { eq = fun (self: t_AlignmentEnum16) (other: t_AlignmentEnum16) -> () }
+let impl_242248211: Core.Cmp.t_PartialEq t_AlignmentEnum16 t_AlignmentEnum16 =
+  { f_eq_under_impl_18 = fun (self: t_AlignmentEnum16) (other: t_AlignmentEnum16) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_AlignmentEnum16 = {  }
+let impl_741473460: Core.Marker.t_StructuralEq t_AlignmentEnum16 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_AlignmentEnum16 =
-  { assert_receiver_is_total_eq = fun (self: t_AlignmentEnum16) -> () }
+let impl_14429512: Core.Cmp.t_Eq t_AlignmentEnum16 =
+  { f_assert_receiver_is_total_eq_under_impl_20 = fun (self: t_AlignmentEnum16) -> () }
 
 type t_AlignmentEnum32 =
   | AlignmentEnum32__Align1Shl0 : t_AlignmentEnum32
@@ -147,19 +154,20 @@ type t_AlignmentEnum32 =
   | AlignmentEnum32__Align1Shl30 : t_AlignmentEnum32
   | AlignmentEnum32__Align1Shl31 : t_AlignmentEnum32
 
-let impl: Core.Marker.t_Copy t_AlignmentEnum32 = {  }
+let impl_472397892: Core.Marker.t_Copy t_AlignmentEnum32 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_AlignmentEnum32 = { clone = fun (self: t_AlignmentEnum32) -> () }
+let impl_830402419: Core.Clone.t_Clone t_AlignmentEnum32 =
+  { f_clone_under_impl_22 = fun (self: t_AlignmentEnum32) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_AlignmentEnum32 = {  }
+let impl_181737409: Core.Marker.t_StructuralPartialEq t_AlignmentEnum32 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_AlignmentEnum32 t_AlignmentEnum32 =
-  { eq = fun (self: t_AlignmentEnum32) (other: t_AlignmentEnum32) -> () }
+let impl_1053801681: Core.Cmp.t_PartialEq t_AlignmentEnum32 t_AlignmentEnum32 =
+  { f_eq_under_impl_24 = fun (self: t_AlignmentEnum32) (other: t_AlignmentEnum32) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_AlignmentEnum32 = {  }
+let impl_690203012: Core.Marker.t_StructuralEq t_AlignmentEnum32 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_AlignmentEnum32 =
-  { assert_receiver_is_total_eq = fun (self: t_AlignmentEnum32) -> () }
+let impl_361194379: Core.Cmp.t_Eq t_AlignmentEnum32 =
+  { f_assert_receiver_is_total_eq_under_impl_26 = fun (self: t_AlignmentEnum32) -> () }
 
 type t_AlignmentEnum64 =
   | AlignmentEnum64__Align1Shl0 : t_AlignmentEnum64
@@ -227,16 +235,17 @@ type t_AlignmentEnum64 =
   | AlignmentEnum64__Align1Shl62 : t_AlignmentEnum64
   | AlignmentEnum64__Align1Shl63 : t_AlignmentEnum64
 
-let impl: Core.Marker.t_Copy t_AlignmentEnum64 = {  }
+let impl_276958791: Core.Marker.t_Copy t_AlignmentEnum64 = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_AlignmentEnum64 = { clone = fun (self: t_AlignmentEnum64) -> () }
+let impl_334530202: Core.Clone.t_Clone t_AlignmentEnum64 =
+  { f_clone_under_impl_28 = fun (self: t_AlignmentEnum64) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_AlignmentEnum64 = {  }
+let impl_103279722: Core.Marker.t_StructuralPartialEq t_AlignmentEnum64 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_AlignmentEnum64 t_AlignmentEnum64 =
-  { eq = fun (self: t_AlignmentEnum64) (other: t_AlignmentEnum64) -> () }
+let impl_153176823: Core.Cmp.t_PartialEq t_AlignmentEnum64 t_AlignmentEnum64 =
+  { f_eq_under_impl_30 = fun (self: t_AlignmentEnum64) (other: t_AlignmentEnum64) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_AlignmentEnum64 = {  }
+let impl_362251339: Core.Marker.t_StructuralEq t_AlignmentEnum64 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_AlignmentEnum64 =
-  { assert_receiver_is_total_eq = fun (self: t_AlignmentEnum64) -> () }
+let impl_535644712: Core.Cmp.t_Eq t_AlignmentEnum64 =
+  { f_assert_receiver_is_total_eq_under_impl_32 = fun (self: t_AlignmentEnum64) -> () }

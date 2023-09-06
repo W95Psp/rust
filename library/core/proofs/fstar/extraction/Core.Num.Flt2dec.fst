@@ -31,21 +31,23 @@ type t_Sign =
   | Sign_Minus : t_Sign
   | Sign_MinusPlus : t_Sign
 
-let impl: Core.Marker.t_Copy t_Sign = {  }
+let impl_620272802: Core.Marker.t_Copy t_Sign = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Sign = { clone = fun (self: t_Sign) -> () }
+let impl_644814832: Core.Clone.t_Clone t_Sign = { f_clone_under_impl_1 = fun (self: t_Sign) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Sign = {  }
+let impl_923958169: Core.Marker.t_StructuralPartialEq t_Sign = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Sign t_Sign = { eq = fun (self: t_Sign) (other: t_Sign) -> () }
+let impl_20011804: Core.Cmp.t_PartialEq t_Sign t_Sign =
+  { f_eq_under_impl_3 = fun (self: t_Sign) (other: t_Sign) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_Sign = {  }
+let impl_231287061: Core.Marker.t_StructuralEq t_Sign = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Sign = { assert_receiver_is_total_eq = fun (self: t_Sign) -> () }
+let impl_363391058: Core.Cmp.t_Eq t_Sign =
+  { f_assert_receiver_is_total_eq_under_impl_5 = fun (self: t_Sign) -> () }
 
-let impl: Core.Fmt.t_Debug t_Sign =
+let impl_1072582685: Core.Fmt.t_Debug t_Sign =
   {
-    fmt
+    f_fmt_under_impl_6
     =
     fun (self: t_Sign) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

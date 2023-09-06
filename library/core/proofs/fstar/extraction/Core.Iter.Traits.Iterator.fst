@@ -31,29 +31,25 @@ let iter_compare
     : Core.Ops.Control_flow.t_ControlFlow t Core.Cmp.t_Ordering = ()
 
 let compare_under_iter_compare
-      (#b #x #t #impl fnmut(x, b::item) -> controlflow<t> + 'a: Type)
+      (#b #x #t #impl_670508355_: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized x)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized t)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __3:
-          Core.Marker.t_Sized impl fnmut(x, b::item) -> controlflow<t> + 'a)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Marker.t_Sized impl_670508355_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __4: t_Iterator b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __5:
-          Core.Ops.Function.t_FnMut impl fnmut(x, b::item) -> controlflow<t> + 'a (x & _))
+          Core.Ops.Function.t_FnMut impl_670508355_ (x & _))
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Marker.t_Sized b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized x)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __8: Core.Marker.t_Sized t)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()]
-          __9:
-          Core.Marker.t_Sized impl fnmut(x, b::item) -> controlflow<t> + 'a)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Marker.t_Sized impl_670508355_)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __10: t_Iterator b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()]
           __11:
-          Core.Ops.Function.t_FnMut impl fnmut(x, b::item) -> controlflow<t> + 'a (x & _))
+          Core.Ops.Function.t_FnMut impl_670508355_ (x & _))
       (b: b)
-      (f: impl fnmut(x, b::item) -> controlflow<t> + 'a)
+      (f: impl_670508355_)
     : (b &
       (x
           -> Core.Ops.Control_flow.t_ControlFlow

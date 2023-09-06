@@ -11,9 +11,10 @@ type t_Placeholder = {
   f_width:t_Count
 }
 
-let impl: Core.Marker.t_Copy t_Placeholder = {  }
+let impl_231035004: Core.Marker.t_Copy t_Placeholder = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Placeholder = { clone = fun (self: t_Placeholder) -> () }
+let impl_148287831: Core.Clone.t_Clone t_Placeholder =
+  { f_clone_under_impl_4 = fun (self: t_Placeholder) -> () }
 
 let new_under_impl
       (position: usize)
@@ -29,28 +30,30 @@ type t_Alignment =
   | Alignment_Center : t_Alignment
   | Alignment_Unknown : t_Alignment
 
-let impl: Core.Marker.t_Copy t_Alignment = {  }
+let impl_638466555: Core.Marker.t_Copy t_Alignment = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Alignment = { clone = fun (self: t_Alignment) -> () }
+let impl_176322650: Core.Clone.t_Clone t_Alignment =
+  { f_clone_under_impl_6 = fun (self: t_Alignment) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Alignment = {  }
+let impl_743555625: Core.Marker.t_StructuralPartialEq t_Alignment = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Alignment t_Alignment =
-  { eq = fun (self: t_Alignment) (other: t_Alignment) -> () }
+let impl_749326038: Core.Cmp.t_PartialEq t_Alignment t_Alignment =
+  { f_eq_under_impl_8 = fun (self: t_Alignment) (other: t_Alignment) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_Alignment = {  }
+let impl_1014805741: Core.Marker.t_StructuralEq t_Alignment = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Alignment =
-  { assert_receiver_is_total_eq = fun (self: t_Alignment) -> () }
+let impl_870769838: Core.Cmp.t_Eq t_Alignment =
+  { f_assert_receiver_is_total_eq_under_impl_10 = fun (self: t_Alignment) -> () }
 
 type t_Count =
   | Count_Is : usize -> t_Count
   | Count_Param : usize -> t_Count
   | Count_Implied : t_Count
 
-let impl: Core.Marker.t_Copy t_Count = {  }
+let impl_1059043507: Core.Marker.t_Copy t_Count = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Count = { clone = fun (self: t_Count) -> () }
+let impl_999650526: Core.Clone.t_Clone t_Count =
+  { f_clone_under_impl_12 = fun (self: t_Count) -> () }
 
 type t_Flag =
   | Flag_SignPlus : t_Flag
@@ -60,13 +63,14 @@ type t_Flag =
   | Flag_DebugLowerHex : t_Flag
   | Flag_DebugUpperHex : t_Flag
 
-let impl: Core.Marker.t_Copy t_Flag = {  }
+let impl_922566066: Core.Marker.t_Copy t_Flag = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Flag = { clone = fun (self: t_Flag) -> () }
+let impl_109856046: Core.Clone.t_Clone t_Flag = { f_clone_under_impl_14 = fun (self: t_Flag) -> () }
 
-let impl: Core.Marker.t_Copy t_Argument = {  }
+let impl_604769698: Core.Marker.t_Copy t_Argument = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Argument = { clone = fun (self: t_Argument) -> () }
+let impl_362968439: Core.Clone.t_Clone t_Argument =
+  { f_clone_under_impl_16 = fun (self: t_Argument) -> () }
 
 (* (RefMut) The mutation of this &mut is not allowed here.
 

@@ -8,7 +8,7 @@ type t_Intersperse = {
   f_needs_sep:bool
 }
 
-let impl
+let impl_525225444
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug i)
@@ -22,7 +22,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Fmt.t_Debug _)
     : Core.Fmt.t_Debug (t_Intersperse i) =
   {
-    fmt
+    f_fmt_under_impl_6
     =
     fun
       (#i: Type)
@@ -43,7 +43,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_410437279
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone i)
@@ -55,7 +55,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone _)
     : Core.Clone.t_Clone (t_Intersperse i) =
   {
-    clone
+    f_clone_under_impl_7
     =
     fun
       (#i: Type)
@@ -84,7 +84,7 @@ let new_under_impl
       (separator: _)
     : t_Intersperse i = ()
 
-let impl
+let impl_1072861379
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
@@ -94,8 +94,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Clone.t_Clone _)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Intersperse i) =
   {
-    item = _;
-    next
+    f_Item_under_impl_1 = _;
+    f_next_under_impl_1
     =
     (fun
         (#i: Type)
@@ -109,7 +109,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    fold
+    f_fold_under_impl_1
     =
     (fun
         (#i: Type)
@@ -124,7 +124,7 @@ let impl
         (f: f)
         ->
         ());
-    size_hint
+    f_size_hint_under_impl_1
     =
     fun
       (#i: Type)
@@ -145,7 +145,7 @@ type t_IntersperseWith = {
   f_needs_sep:bool
 }
 
-let impl
+let impl_691931348
       (#i #g: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized g)
@@ -167,7 +167,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __17: Core.Fmt.t_Debug g)
     : Core.Fmt.t_Debug (t_IntersperseWith i g) =
   {
-    fmt
+    f_fmt_under_impl_2
     =
     fun
       (#i: Type)
@@ -197,7 +197,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_995409666
       (#i #g: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized g)
@@ -219,7 +219,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __17: Core.Clone.t_Clone g)
     : Core.Clone.t_Clone (t_IntersperseWith i g) =
   {
-    clone
+    f_clone_under_impl_3
     =
     fun
       (#i: Type)
@@ -261,7 +261,7 @@ let new_under_impl_4
       (separator: g)
     : t_IntersperseWith i g = ()
 
-let impl
+let impl_627188227
       (#i #g: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized g)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
@@ -273,8 +273,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized i)
     : Core.Iter.Traits.Iterator.t_Iterator (t_IntersperseWith i g) =
   {
-    item = _;
-    next
+    f_Item_under_impl_5 = _;
+    f_next_under_impl_5
     =
     (fun
         (#i: Type)
@@ -291,7 +291,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    fold
+    f_fold_under_impl_5
     =
     (fun
         (#i: Type)
@@ -309,7 +309,7 @@ let impl
         (f: f)
         ->
         ());
-    size_hint
+    f_size_hint_under_impl_5
     =
     fun
       (#i: Type)

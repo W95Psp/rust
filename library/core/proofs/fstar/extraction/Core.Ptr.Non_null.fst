@@ -8,9 +8,9 @@ Last available AST for this item:
 
 struct t_NonNull<T>{f_pointer:raw_pointer!()} *)
 
-let impl (#t: Type) : Core.Marker.t_Send (t_NonNull t) = {  }
+let impl_161764778 (#t: Type) : Core.Marker.t_Send (t_NonNull t) = { __marker_trait = () }
 
-let impl (#t: Type) : Core.Marker.t_Sync (t_NonNull t) = {  }
+let impl_597747310 (#t: Type) : Core.Marker.t_Sync (t_NonNull t) = { __marker_trait = () }
 
 let dangling_under_impl_2
       (#t: Type)
@@ -52,11 +52,7 @@ let addr_under_impl_3 (#t: Type) (self: t_NonNull t) : Core.Num.Nonzero.t_NonZer
 let with_addr_under_impl_3 (#t: Type) (self: t_NonNull t) (addr: Core.Num.Nonzero.t_NonZeroUsize)
     : t_NonNull t = ()
 
-let map_addr_under_impl_3
-      (#t: Type)
-      (self: t_NonNull t)
-      (f: impl fnonce(nonzerousize) -> nonzerousize)
-    : t_NonNull t = ()
+let map_addr_under_impl_3 (#t: Type) (self: t_NonNull t) (f: impl_633184137_) : t_NonNull t = ()
 
 let as_ptr_under_impl_3 (#t: Type) (self: t_NonNull t) : Rust_primitives.Hax.t_failure =
   Rust_primitives.Hax.failure "(reject_RawOrMutPointer) ExplicitRejection { reason: \"unknown reason\" }\n"
@@ -105,63 +101,63 @@ let as_uninit_slice_mut_under_impl_4 (#t: Type) (self: t_NonNull (slice t))
 let get_unchecked_mut_under_impl_4 (#t: Type) (self: t_NonNull (slice t)) (index: i) : t_NonNull _ =
   ()
 
-let impl (#t: Type) : Core.Clone.t_Clone (t_NonNull t) =
-  { clone = fun (#t: Type) (self: t_NonNull t) -> () }
+let impl_643628620 (#t: Type) : Core.Clone.t_Clone (t_NonNull t) =
+  { f_clone_under_impl_5 = fun (#t: Type) (self: t_NonNull t) -> () }
 
-let impl (#t: Type) : Core.Marker.t_Copy (t_NonNull t) = {  }
+let impl_891307277 (#t: Type) : Core.Marker.t_Copy (t_NonNull t) = { __marker_trait = () }
 
-let impl
+let impl_468132603
       (#t #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Unsize t u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Unsize t u)
-    : Core.Ops.Unsize.t_CoerceUnsized (t_NonNull t) (t_NonNull u) = {  }
+    : Core.Ops.Unsize.t_CoerceUnsized (t_NonNull t) (t_NonNull u) = { __marker_trait = () }
 
-let impl
+let impl_737321956
       (#t #u: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Unsize t u)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Unsize t u)
-    : Core.Ops.Unsize.t_DispatchFromDyn (t_NonNull t) (t_NonNull u) = {  }
+    : Core.Ops.Unsize.t_DispatchFromDyn (t_NonNull t) (t_NonNull u) = { __marker_trait = () }
 
-let impl (#t: Type) : Core.Fmt.t_Debug (t_NonNull t) =
+let impl_703231287 (#t: Type) : Core.Fmt.t_Debug (t_NonNull t) =
   {
-    fmt
+    f_fmt_under_impl_9
     =
     fun (#t: Type) (self: t_NonNull t) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl (#t: Type) : Core.Fmt.t_Pointer (t_NonNull t) =
+let impl_216667867 (#t: Type) : Core.Fmt.t_Pointer (t_NonNull t) =
   {
-    fmt
+    f_fmt_under_impl_10
     =
     fun (#t: Type) (self: t_NonNull t) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl (#t: Type) : Core.Cmp.t_Eq (t_NonNull t) = {  }
+let impl_454164147 (#t: Type) : Core.Cmp.t_Eq (t_NonNull t) = { __marker_trait = () }
 
-let impl (#t: Type) : Core.Cmp.t_PartialEq (t_NonNull t) (t_NonNull t) =
-  { eq = fun (#t: Type) (self: t_NonNull t) (other: t_NonNull t) -> () }
+let impl_876783809 (#t: Type) : Core.Cmp.t_PartialEq (t_NonNull t) (t_NonNull t) =
+  { f_eq_under_impl_12 = fun (#t: Type) (self: t_NonNull t) (other: t_NonNull t) -> () }
 
-let impl (#t: Type) : Core.Cmp.t_Ord (t_NonNull t) =
-  { cmp = fun (#t: Type) (self: t_NonNull t) (other: t_NonNull t) -> () }
+let impl_622916691 (#t: Type) : Core.Cmp.t_Ord (t_NonNull t) =
+  { f_cmp_under_impl_13 = fun (#t: Type) (self: t_NonNull t) (other: t_NonNull t) -> () }
 
-let impl (#t: Type) : Core.Cmp.t_PartialOrd (t_NonNull t) (t_NonNull t) =
-  { partial_cmp = fun (#t: Type) (self: t_NonNull t) (other: t_NonNull t) -> () }
+let impl_875409557 (#t: Type) : Core.Cmp.t_PartialOrd (t_NonNull t) (t_NonNull t) =
+  { f_partial_cmp_under_impl_14 = fun (#t: Type) (self: t_NonNull t) (other: t_NonNull t) -> () }
 
-let impl (#t: Type) : Core.Hash.t_Hash (t_NonNull t) =
+let impl_450733227 (#t: Type) : Core.Hash.t_Hash (t_NonNull t) =
   {
-    hash
+    f_hash_under_impl_15
     =
     fun (#t: Type) (self: t_NonNull t) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl (#t: Type) : Core.Convert.t_From (t_NonNull t) (Core.Ptr.Unique.t_Unique t) =
-  { from = fun (#t: Type) (unique: Core.Ptr.Unique.t_Unique t) -> () }
+let impl_345650863 (#t: Type) : Core.Convert.t_From (t_NonNull t) (Core.Ptr.Unique.t_Unique t) =
+  { f_from_under_impl_16 = fun (#t: Type) (unique: Core.Ptr.Unique.t_Unique t) -> () }
 
 (* (RefMut) The mutation of this &mut is not allowed here.
 
@@ -169,5 +165,5 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl (#t: Type) : Core.Convert.t_From (t_NonNull t) t =
-  { from = fun (#t: Type) (reference: t) -> () }
+let impl_19660324 (#t: Type) : Core.Convert.t_From (t_NonNull t) t =
+  { f_from_under_impl_18 = fun (#t: Type) (reference: t) -> () }

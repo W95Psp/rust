@@ -9,29 +9,31 @@ type t_Assume = {
   f_validity:bool
 }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Assume = {  }
+let impl_116008935: Core.Marker.t_StructuralPartialEq t_Assume = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Assume t_Assume =
-  { eq = fun (self: t_Assume) (other: t_Assume) -> () }
+let impl_221871863: Core.Cmp.t_PartialEq t_Assume t_Assume =
+  { f_eq_under_impl_5 = fun (self: t_Assume) (other: t_Assume) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_Assume = {  }
+let impl_368609454: Core.Marker.t_StructuralEq t_Assume = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Assume = { assert_receiver_is_total_eq = fun (self: t_Assume) -> () }
+let impl_930665773: Core.Cmp.t_Eq t_Assume =
+  { f_assert_receiver_is_total_eq_under_impl_7 = fun (self: t_Assume) -> () }
 
-let impl: Core.Clone.t_Clone t_Assume = { clone = fun (self: t_Assume) -> () }
+let impl_461420202: Core.Clone.t_Clone t_Assume =
+  { f_clone_under_impl_8 = fun (self: t_Assume) -> () }
 
-let impl: Core.Marker.t_Copy t_Assume = {  }
+let impl_256684989: Core.Marker.t_Copy t_Assume = { __marker_trait = () }
 
-let impl: Core.Fmt.t_Debug t_Assume =
+let impl_448750256: Core.Fmt.t_Debug t_Assume =
   {
-    fmt
+    f_fmt_under_impl_10
     =
     fun (self: t_Assume) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_ConstParamTy t_Assume = {  }
+let impl_147929287: Core.Marker.t_ConstParamTy t_Assume = { __marker_trait = () }
 
 let v_NOTHING_under_impl_1: t_Assume = ()
 
@@ -47,8 +49,14 @@ let and_under_impl_1 (self other_assumptions: t_Assume) : t_Assume = ()
 
 let but_not_under_impl_1 (self other_assumptions: t_Assume) : t_Assume = ()
 
-let impl: Core.Ops.Arith.t_Add t_Assume t_Assume =
-  { output = t_Assume; add = fun (self: t_Assume) (other_assumptions: t_Assume) -> () }
+let impl_1036065409: Core.Ops.Arith.t_Add t_Assume t_Assume =
+  {
+    f_Output_under_impl_2 = t_Assume;
+    f_add_under_impl_2 = fun (self: t_Assume) (other_assumptions: t_Assume) -> ()
+  }
 
-let impl: Core.Ops.Arith.t_Sub t_Assume t_Assume =
-  { output = t_Assume; sub = fun (self: t_Assume) (other_assumptions: t_Assume) -> () }
+let impl_112958032: Core.Ops.Arith.t_Sub t_Assume t_Assume =
+  {
+    f_Output_under_impl_3 = t_Assume;
+    f_sub_under_impl_3 = fun (self: t_Assume) (other_assumptions: t_Assume) -> ()
+  }

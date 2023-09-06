@@ -8,9 +8,9 @@ Last available AST for this item:
 
 struct t_InsertionHole<T>{f_src:raw_pointer!(),f_dest:raw_pointer!()} *)
 
-let impl (#t: Type) : Core.Ops.Drop.t_Drop (t_InsertionHole t) =
+let impl_649067650 (#t: Type) : Core.Ops.Drop.t_Drop (t_InsertionHole t) =
   {
-    drop
+    f_drop_under_impl
     =
     fun (#t: Type) (self: t_InsertionHole t) ->
       let output:Prims.unit = () in
@@ -184,9 +184,9 @@ Last available AST for this item:
 
 struct t_MergeHole_under_merge<T>{f_start:raw_pointer!(),f_end:raw_pointer!(),f_dest:raw_pointer!()} *)
 
-let impl (#t: Type) : Core.Ops.Drop.t_Drop (t_MergeHole_under_merge t) =
+let impl_911912398 (#t: Type) : Core.Ops.Drop.t_Drop (t_MergeHole_under_merge t) =
   {
-    drop
+    f_drop_under_impl_under_merge
     =
     fun (#t: Type) (self: t_MergeHole_under_merge t) ->
       let output:Prims.unit = () in
@@ -283,13 +283,14 @@ type t_TimSortRun = {
   f_start:usize
 }
 
-let impl: Core.Clone.t_Clone t_TimSortRun = { clone = fun (self: t_TimSortRun) -> () }
+let impl_578828912: Core.Clone.t_Clone t_TimSortRun =
+  { f_clone_under_impl_1 = fun (self: t_TimSortRun) -> () }
 
-let impl: Core.Marker.t_Copy t_TimSortRun = {  }
+let impl_740412448: Core.Marker.t_Copy t_TimSortRun = { __marker_trait = () }
 
-let impl: Core.Fmt.t_Debug t_TimSortRun =
+let impl_476639915: Core.Fmt.t_Debug t_TimSortRun =
   {
-    fmt
+    f_fmt_under_impl_3
     =
     fun (self: t_TimSortRun) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

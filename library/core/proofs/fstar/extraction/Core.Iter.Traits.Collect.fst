@@ -2,26 +2,26 @@ module Core.Iter.Traits.Collect
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-class t_FromIterator (v_Self: Type) (v_A: Type) = { from_iter:t -> self }
+class t_FromIterator (v_Self: Type) (v_A: Type) = { f_from_iter:t -> self }
 
 class t_IntoIterator (v_Self: Type) = {
-  item:Type;
-  item_implements_t_Sized:Core.Marker.t_Sized _;
-  intoIter:Type;
-  intoIter_implements_t_Iterator:Core.Iter.Traits.Iterator.t_Iterator _;
-  intoIter_implements_t_Sized:Core.Marker.t_Sized _;
-  into_iter:self -> _
+  f_Item:Type;
+  f_Item:Core.Marker.t_Sized _;
+  f_IntoIter:Type;
+  f_IntoIter:Core.Iter.Traits.Iterator.t_Iterator _;
+  f_IntoIter:Core.Marker.t_Sized _;
+  f_into_iter:self -> _
 }
 
-let impl
+let impl_462871652
       (#i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized i)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
     : t_IntoIterator i =
   {
-    item = _;
-    intoIter = i;
-    into_iter
+    f_Item_under_impl = _;
+    f_IntoIter_under_impl = i;
+    f_into_iter_under_impl
     =
     fun
       (#i: Type)
@@ -32,21 +32,21 @@ let impl
       ()
   }
 
-let impl: t_Extend Prims.unit Prims.unit =
+let impl_584398028: t_Extend Prims.unit Prims.unit =
   {
-    extend
+    f_extend_under_impl_1
     =
     (fun (self: Prims.unit) (iter: t) ->
         let output:Prims.unit = () in
         self);
-    extend_one
+    f_extend_one_under_impl_1
     =
     fun (self: Prims.unit) (v__item: Prims.unit) ->
       let output:Prims.unit = () in
       self
   }
 
-let impl
+let impl_816833701
       (#a #b #extenda #extendb: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -62,7 +62,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __11: t_Extend extendb b)
     : t_Extend (extenda & extendb) (a & b) =
   {
-    extend
+    f_extend_under_impl_2
     =
     (fun
         (#a: Type)
@@ -86,7 +86,7 @@ let impl
         ->
         let output:Prims.unit = () in
         self);
-    extend_one
+    f_extend_one_under_impl_2
     =
     (fun
         (#a: Type)
@@ -110,7 +110,7 @@ let impl
         ->
         let output:Prims.unit = () in
         self);
-    extend_reserve
+    f_extend_reserve_under_impl_2
     =
     fun
       (#a: Type)
@@ -137,21 +137,21 @@ let impl
   }
 
 let extend_under_extend_under_impl_2
-      (#a #b #impl extend<a> #impl extend<b>: Type)
+      (#a #b #impl_228241212_ #impl_698766260_: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized impl extend<a>)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Marker.t_Sized impl extend<b>)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __4: t_Extend impl extend<a> a)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_Extend impl extend<b> b)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized impl_228241212_)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Marker.t_Sized impl_698766260_)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __4: t_Extend impl_228241212_ a)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: t_Extend impl_698766260_ b)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Marker.t_Sized a)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Sized b)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __8: Core.Marker.t_Sized impl extend<a>)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Marker.t_Sized impl extend<b>)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __10: t_Extend impl extend<a> a)
-      (#[FStar.Tactics.Typeclasses.tcresolve ()] __11: t_Extend impl extend<b> b)
-      (a: impl extend<a>)
-      (b: impl extend<b>)
-    : (impl extend<a> & impl extend<b> & (Prims.unit -> (a & b) -> Prims.unit)) =
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __8: Core.Marker.t_Sized impl_228241212_)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __9: Core.Marker.t_Sized impl_698766260_)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __10: t_Extend impl_228241212_ a)
+      (#[FStar.Tactics.Typeclasses.tcresolve ()] __11: t_Extend impl_698766260_ b)
+      (a: impl_228241212_)
+      (b: impl_698766260_)
+    : (impl_228241212_ & impl_698766260_ & (Prims.unit -> (a & b) -> Prims.unit)) =
   let output: Prims.unit -> (a & b) -> Prims.unit = () in
   a, b, output

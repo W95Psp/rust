@@ -60,21 +60,23 @@ let mul_inner_under_mul_digits_under_impl (ret: array u8 3sz) (aa bb: slice u8)
   let output:usize = () in
   ret, output
 
-let impl: Core.Cmp.t_PartialEq t_Big8x3 t_Big8x3 =
-  { eq = fun (self: t_Big8x3) (other: t_Big8x3) -> () }
+let impl_945259045: Core.Cmp.t_PartialEq t_Big8x3 t_Big8x3 =
+  { f_eq_under_impl_1 = fun (self: t_Big8x3) (other: t_Big8x3) -> () }
 
-let impl: Core.Cmp.t_Eq t_Big8x3 = {  }
+let impl_591459038: Core.Cmp.t_Eq t_Big8x3 = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialOrd t_Big8x3 t_Big8x3 =
-  { partial_cmp = fun (self: t_Big8x3) (other: t_Big8x3) -> () }
+let impl_276605291: Core.Cmp.t_PartialOrd t_Big8x3 t_Big8x3 =
+  { f_partial_cmp_under_impl_3 = fun (self: t_Big8x3) (other: t_Big8x3) -> () }
 
-let impl: Core.Cmp.t_Ord t_Big8x3 = { cmp = fun (self: t_Big8x3) (other: t_Big8x3) -> () }
+let impl_293546647: Core.Cmp.t_Ord t_Big8x3 =
+  { f_cmp_under_impl_4 = fun (self: t_Big8x3) (other: t_Big8x3) -> () }
 
-let impl: Core.Clone.t_Clone t_Big8x3 = { clone = fun (self: t_Big8x3) -> () }
+let impl_432827850: Core.Clone.t_Clone t_Big8x3 =
+  { f_clone_under_impl_5 = fun (self: t_Big8x3) -> () }
 
-let impl: Core.Fmt.t_Debug t_Big8x3 =
+let impl_10097170: Core.Fmt.t_Debug t_Big8x3 =
   {
-    fmt
+    f_fmt_under_impl_6
     =
     fun (self: t_Big8x3) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

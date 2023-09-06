@@ -47,7 +47,7 @@ let try_process
       (f: f)
     : _ = ()
 
-let impl
+let impl_931994263
       (#i #r: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized r)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Iter.Traits.Iterator.t_Iterator i)
@@ -55,8 +55,8 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __3: Core.Marker.t_Sized i)
     : Core.Iter.Traits.Iterator.t_Iterator (t_GenericShunt i r) =
   {
-    item = _;
-    next
+    f_Item_under_impl = _;
+    f_next_under_impl
     =
     (fun
         (#i: Type)
@@ -69,7 +69,7 @@ let impl
         ->
         let output:Core.Option.t_Option _ = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl
     =
     (fun
         (#i: Type)
@@ -81,7 +81,7 @@ let impl
         (self: t_GenericShunt i r)
         ->
         ());
-    try_fold
+    f_try_fold_under_impl
     =
     (fun
         (#i: Type)
@@ -96,7 +96,7 @@ let impl
         ->
         let output:t = () in
         self, output);
-    fold
+    f_fold_under_impl
     =
     fun
       (#i: Type)

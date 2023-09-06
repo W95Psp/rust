@@ -4,9 +4,9 @@ open Core
 
 type t_CStr = { f_inner:slice i8 }
 
-let impl: Core.Hash.t_Hash t_CStr =
+let impl_131336531: Core.Hash.t_Hash t_CStr =
   {
-    hash
+    f_hash_under_impl_13
     =
     fun (self: t_CStr) (state: v___h) ->
       let output:Prims.unit = () in
@@ -15,22 +15,25 @@ let impl: Core.Hash.t_Hash t_CStr =
 
 type t_FromBytesWithNulError = { f_kind:t_FromBytesWithNulErrorKind }
 
-let impl: Core.Clone.t_Clone t_FromBytesWithNulError =
-  { clone = fun (self: t_FromBytesWithNulError) -> () }
+let impl_454435361: Core.Clone.t_Clone t_FromBytesWithNulError =
+  { f_clone_under_impl_14 = fun (self: t_FromBytesWithNulError) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_FromBytesWithNulError = {  }
+let impl_312614693: Core.Marker.t_StructuralPartialEq t_FromBytesWithNulError =
+  { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_FromBytesWithNulError t_FromBytesWithNulError =
-  { eq = fun (self: t_FromBytesWithNulError) (other: t_FromBytesWithNulError) -> () }
-
-let impl: Core.Marker.t_StructuralEq t_FromBytesWithNulError = {  }
-
-let impl: Core.Cmp.t_Eq t_FromBytesWithNulError =
-  { assert_receiver_is_total_eq = fun (self: t_FromBytesWithNulError) -> () }
-
-let impl: Core.Fmt.t_Debug t_FromBytesWithNulError =
+let impl_733758569: Core.Cmp.t_PartialEq t_FromBytesWithNulError t_FromBytesWithNulError =
   {
-    fmt
+    f_eq_under_impl_16 = fun (self: t_FromBytesWithNulError) (other: t_FromBytesWithNulError) -> ()
+  }
+
+let impl_360101339: Core.Marker.t_StructuralEq t_FromBytesWithNulError = { __marker_trait = () }
+
+let impl_840285180: Core.Cmp.t_Eq t_FromBytesWithNulError =
+  { f_assert_receiver_is_total_eq_under_impl_18 = fun (self: t_FromBytesWithNulError) -> () }
+
+let impl_640007983: Core.Fmt.t_Debug t_FromBytesWithNulError =
+  {
+    f_fmt_under_impl_19
     =
     fun (self: t_FromBytesWithNulError) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -41,22 +44,27 @@ type t_FromBytesWithNulErrorKind =
   | FromBytesWithNulErrorKind_InteriorNul : usize -> t_FromBytesWithNulErrorKind
   | FromBytesWithNulErrorKind_NotNulTerminated : t_FromBytesWithNulErrorKind
 
-let impl: Core.Clone.t_Clone t_FromBytesWithNulErrorKind =
-  { clone = fun (self: t_FromBytesWithNulErrorKind) -> () }
+let impl_303119086: Core.Clone.t_Clone t_FromBytesWithNulErrorKind =
+  { f_clone_under_impl_20 = fun (self: t_FromBytesWithNulErrorKind) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_FromBytesWithNulErrorKind = {  }
+let impl_981700543: Core.Marker.t_StructuralPartialEq t_FromBytesWithNulErrorKind =
+  { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_FromBytesWithNulErrorKind t_FromBytesWithNulErrorKind =
-  { eq = fun (self: t_FromBytesWithNulErrorKind) (other: t_FromBytesWithNulErrorKind) -> () }
-
-let impl: Core.Marker.t_StructuralEq t_FromBytesWithNulErrorKind = {  }
-
-let impl: Core.Cmp.t_Eq t_FromBytesWithNulErrorKind =
-  { assert_receiver_is_total_eq = fun (self: t_FromBytesWithNulErrorKind) -> () }
-
-let impl: Core.Fmt.t_Debug t_FromBytesWithNulErrorKind =
+let impl_184174745: Core.Cmp.t_PartialEq t_FromBytesWithNulErrorKind t_FromBytesWithNulErrorKind =
   {
-    fmt
+    f_eq_under_impl_22
+    =
+    fun (self: t_FromBytesWithNulErrorKind) (other: t_FromBytesWithNulErrorKind) -> ()
+  }
+
+let impl_22701103: Core.Marker.t_StructuralEq t_FromBytesWithNulErrorKind = { __marker_trait = () }
+
+let impl_624570500: Core.Cmp.t_Eq t_FromBytesWithNulErrorKind =
+  { f_assert_receiver_is_total_eq_under_impl_24 = fun (self: t_FromBytesWithNulErrorKind) -> () }
+
+let impl_566079799: Core.Fmt.t_Debug t_FromBytesWithNulErrorKind =
+  {
+    f_fmt_under_impl_25
     =
     fun (self: t_FromBytesWithNulErrorKind) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -67,58 +75,63 @@ let interior_nul_under_impl (pos: usize) : t_FromBytesWithNulError = ()
 
 let not_nul_terminated_under_impl: t_FromBytesWithNulError = ()
 
-let impl: Core.Error.t_Error t_FromBytesWithNulError =
-  { description = fun (self: t_FromBytesWithNulError) -> () }
+let impl_794397596: Core.Error.t_Error t_FromBytesWithNulError =
+  { f_description_under_impl_1 = fun (self: t_FromBytesWithNulError) -> () }
 
 type t_FromBytesUntilNulError = | FromBytesUntilNulError : Prims.unit -> t_FromBytesUntilNulError
 
-let impl: Core.Clone.t_Clone t_FromBytesUntilNulError =
-  { clone = fun (self: t_FromBytesUntilNulError) -> () }
+let impl_738871373: Core.Clone.t_Clone t_FromBytesUntilNulError =
+  { f_clone_under_impl_26 = fun (self: t_FromBytesUntilNulError) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_FromBytesUntilNulError = {  }
+let impl_966908859: Core.Marker.t_StructuralPartialEq t_FromBytesUntilNulError =
+  { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_FromBytesUntilNulError t_FromBytesUntilNulError =
-  { eq = fun (self: t_FromBytesUntilNulError) (other: t_FromBytesUntilNulError) -> () }
-
-let impl: Core.Marker.t_StructuralEq t_FromBytesUntilNulError = {  }
-
-let impl: Core.Cmp.t_Eq t_FromBytesUntilNulError =
-  { assert_receiver_is_total_eq = fun (self: t_FromBytesUntilNulError) -> () }
-
-let impl: Core.Fmt.t_Debug t_FromBytesUntilNulError =
+let impl_824303501: Core.Cmp.t_PartialEq t_FromBytesUntilNulError t_FromBytesUntilNulError =
   {
-    fmt
+    f_eq_under_impl_28
+    =
+    fun (self: t_FromBytesUntilNulError) (other: t_FromBytesUntilNulError) -> ()
+  }
+
+let impl_147141482: Core.Marker.t_StructuralEq t_FromBytesUntilNulError = { __marker_trait = () }
+
+let impl_625176046: Core.Cmp.t_Eq t_FromBytesUntilNulError =
+  { f_assert_receiver_is_total_eq_under_impl_30 = fun (self: t_FromBytesUntilNulError) -> () }
+
+let impl_266908441: Core.Fmt.t_Debug t_FromBytesUntilNulError =
+  {
+    f_fmt_under_impl_31
     =
     fun (self: t_FromBytesUntilNulError) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Fmt.t_Display t_FromBytesUntilNulError =
+let impl_483066383: Core.Fmt.t_Display t_FromBytesUntilNulError =
   {
-    fmt
+    f_fmt_under_impl_2
     =
     fun (self: t_FromBytesUntilNulError) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Fmt.t_Debug t_CStr =
+let impl_259690660: Core.Fmt.t_Debug t_CStr =
   {
-    fmt
+    f_fmt_under_impl_3
     =
     fun (self: t_CStr) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Default.t_Default t_CStr = { default = fun  -> () }
+let impl_526140762: Core.Default.t_Default t_CStr = { f_default_under_impl_4 = () }
 
 let v_SLICE_under_default_under_impl_4: slice i8 = ()
 
-let impl: Core.Fmt.t_Display t_FromBytesWithNulError =
+let impl_611355391: Core.Fmt.t_Display t_FromBytesWithNulError =
   {
-    fmt
+    f_fmt_under_impl_5
     =
     fun (self: t_FromBytesWithNulError) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -167,16 +180,22 @@ let rt_impl_under_from_bytes_with_nul_unchecked_under_impl_6 (bytes: slice u8) :
 
 let const_impl_under_from_bytes_with_nul_unchecked_under_impl_6 (bytes: slice u8) : t_CStr = ()
 
-let impl: Core.Cmp.t_PartialEq t_CStr t_CStr = { eq = fun (self: t_CStr) (other: t_CStr) -> () }
+let impl_410616171: Core.Cmp.t_PartialEq t_CStr t_CStr =
+  { f_eq_under_impl_7 = fun (self: t_CStr) (other: t_CStr) -> () }
 
-let impl: Core.Cmp.t_Eq t_CStr = {  }
+let impl_1016178914: Core.Cmp.t_Eq t_CStr = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialOrd t_CStr t_CStr =
-  { partial_cmp = fun (self: t_CStr) (other: t_CStr) -> () }
+let impl_224737552: Core.Cmp.t_PartialOrd t_CStr t_CStr =
+  { f_partial_cmp_under_impl_9 = fun (self: t_CStr) (other: t_CStr) -> () }
 
-let impl: Core.Cmp.t_Ord t_CStr = { cmp = fun (self: t_CStr) (other: t_CStr) -> () }
+let impl_103805078: Core.Cmp.t_Ord t_CStr =
+  { f_cmp_under_impl_10 = fun (self: t_CStr) (other: t_CStr) -> () }
 
-let impl: Core.Ops.Index.t_Index t_CStr (Core.Ops.Range.t_RangeFrom usize) =
-  { output = t_CStr; index = fun (self: t_CStr) (index: Core.Ops.Range.t_RangeFrom usize) -> () }
+let impl_540083451: Core.Ops.Index.t_Index t_CStr (Core.Ops.Range.t_RangeFrom usize) =
+  {
+    f_Output_under_impl_11 = t_CStr;
+    f_index_under_impl_11 = fun (self: t_CStr) (index: Core.Ops.Range.t_RangeFrom usize) -> ()
+  }
 
-let impl: Core.Convert.t_AsRef t_CStr t_CStr = { as_ref = fun (self: t_CStr) -> () }
+let impl_1067293890: Core.Convert.t_AsRef t_CStr t_CStr =
+  { f_as_ref_under_impl_12 = fun (self: t_CStr) -> () }

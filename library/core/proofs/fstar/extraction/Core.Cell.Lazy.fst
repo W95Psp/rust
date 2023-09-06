@@ -43,15 +43,15 @@ let really_init_under_impl
 
 let get_under_impl_1 (#t #f: Type) (self: t_LazyCell t f) : Core.Option.t_Option t = ()
 
-let impl
+let impl_1073169761
       (#t #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Ops.Function.t_FnOnce f Prims.unit)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized t)
     : Core.Ops.Deref.t_Deref (t_LazyCell t f) =
   {
-    target = t;
-    deref
+    f_Target_under_impl_2 = t;
+    f_deref_under_impl_2
     =
     fun
       (#t: Type)
@@ -64,13 +64,13 @@ let impl
       ()
   }
 
-let impl
+let impl_817354008
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Default.t_Default t)
     : Core.Default.t_Default (t_LazyCell t (t)) =
   {
-    default
+    f_default_under_impl_3
     =
     fun
       (#t: Type)
@@ -80,14 +80,14 @@ let impl
       ()
   }
 
-let impl
+let impl_387216989
       (#t #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug t)
     : Core.Fmt.t_Debug (t_LazyCell t f) =
   {
-    fmt
+    f_fmt_under_impl_4
     =
     fun
       (#t: Type)

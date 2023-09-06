@@ -16,7 +16,7 @@ type t_Successors = {
   f_succ:f
 }
 
-let impl
+let impl_613868588
       (#t #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
@@ -28,7 +28,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone f)
     : Core.Clone.t_Clone (t_Successors t f) =
   {
-    clone
+    f_clone_under_impl_3
     =
     fun
       (#t: Type)
@@ -46,15 +46,15 @@ let impl
       ()
   }
 
-let impl
+let impl_758737154
       (#t #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Ops.Function.t_FnMut f t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized t)
     : Core.Iter.Traits.Iterator.t_Iterator (t_Successors t f) =
   {
-    item = t;
-    next
+    f_Item_under_impl = t;
+    f_next_under_impl
     =
     (fun
         (#t: Type)
@@ -66,7 +66,7 @@ let impl
         ->
         let output:Core.Option.t_Option t = () in
         self, output);
-    size_hint
+    f_size_hint_under_impl
     =
     fun
       (#t: Type)
@@ -79,21 +79,21 @@ let impl
       ()
   }
 
-let impl
+let impl_409075332
       (#t #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Ops.Function.t_FnMut f t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized t)
-    : Core.Iter.Traits.Marker.t_FusedIterator (t_Successors t f) = {  }
+    : Core.Iter.Traits.Marker.t_FusedIterator (t_Successors t f) = { __marker_trait = () }
 
-let impl
+let impl_628964451
       (#t #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Fmt.t_Debug t)
     : Core.Fmt.t_Debug (t_Successors t f) =
   {
-    fmt
+    f_fmt_under_impl_2
     =
     fun
       (#t: Type)

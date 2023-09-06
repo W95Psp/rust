@@ -2615,23 +2615,24 @@ type t_FpCategory =
   | FpCategory_Subnormal : t_FpCategory
   | FpCategory_Normal : t_FpCategory
 
-let impl: Core.Marker.t_Copy t_FpCategory = {  }
+let impl_156734440: Core.Marker.t_Copy t_FpCategory = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_FpCategory = { clone = fun (self: t_FpCategory) -> () }
+let impl_911190019: Core.Clone.t_Clone t_FpCategory =
+  { f_clone_under_impl_14 = fun (self: t_FpCategory) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_FpCategory = {  }
+let impl_1016764088: Core.Marker.t_StructuralPartialEq t_FpCategory = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_FpCategory t_FpCategory =
-  { eq = fun (self: t_FpCategory) (other: t_FpCategory) -> () }
+let impl_317285116: Core.Cmp.t_PartialEq t_FpCategory t_FpCategory =
+  { f_eq_under_impl_16 = fun (self: t_FpCategory) (other: t_FpCategory) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_FpCategory = {  }
+let impl_847306662: Core.Marker.t_StructuralEq t_FpCategory = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_FpCategory =
-  { assert_receiver_is_total_eq = fun (self: t_FpCategory) -> () }
+let impl_1054583499: Core.Cmp.t_Eq t_FpCategory =
+  { f_assert_receiver_is_total_eq_under_impl_18 = fun (self: t_FpCategory) -> () }
 
-let impl: Core.Fmt.t_Debug t_FpCategory =
+let impl_122762783: Core.Fmt.t_Debug t_FpCategory =
   {
-    fmt
+    f_fmt_under_impl_19
     =
     fun (self: t_FpCategory) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -2645,148 +2646,184 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl: Core.Str.Traits.t_FromStr isize =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr i8 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr i16 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr i32 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr i64 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr i128 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr usize =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr u8 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr u16 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr u32 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr u64 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: Core.Str.Traits.t_FromStr u128 =
-  { err = Core.Num.Error.t_ParseIntError; from_str = fun (src: string) -> () }
-
-let impl: t_FromStrRadixHelper i8 =
+let impl_527593829: Core.Str.Traits.t_FromStr isize =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: i8) (other: u32) -> ());
-    checked_sub = (fun (self: i8) (other: u32) -> ());
-    checked_add = fun (self: i8) (other: u32) -> ()
+    f_Err_under_impl_20 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_20 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper i16 =
+let impl_662938264: Core.Str.Traits.t_FromStr i8 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: i16) (other: u32) -> ());
-    checked_sub = (fun (self: i16) (other: u32) -> ());
-    checked_add = fun (self: i16) (other: u32) -> ()
+    f_Err_under_impl_21 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_21 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper i32 =
+let impl_48126065: Core.Str.Traits.t_FromStr i16 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: i32) (other: u32) -> ());
-    checked_sub = (fun (self: i32) (other: u32) -> ());
-    checked_add = fun (self: i32) (other: u32) -> ()
+    f_Err_under_impl_22 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_22 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper i64 =
+let impl_855985557: Core.Str.Traits.t_FromStr i32 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: i64) (other: u32) -> ());
-    checked_sub = (fun (self: i64) (other: u32) -> ());
-    checked_add = fun (self: i64) (other: u32) -> ()
+    f_Err_under_impl_23 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_23 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper i128 =
+let impl_946489203: Core.Str.Traits.t_FromStr i64 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: i128) (other: u32) -> ());
-    checked_sub = (fun (self: i128) (other: u32) -> ());
-    checked_add = fun (self: i128) (other: u32) -> ()
+    f_Err_under_impl_24 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_24 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper isize =
+let impl_410631151: Core.Str.Traits.t_FromStr i128 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: isize) (other: u32) -> ());
-    checked_sub = (fun (self: isize) (other: u32) -> ());
-    checked_add = fun (self: isize) (other: u32) -> ()
+    f_Err_under_impl_25 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_25 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper u8 =
+let impl_71481082: Core.Str.Traits.t_FromStr usize =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: u8) (other: u32) -> ());
-    checked_sub = (fun (self: u8) (other: u32) -> ());
-    checked_add = fun (self: u8) (other: u32) -> ()
+    f_Err_under_impl_26 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_26 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper u16 =
+let impl_465073907: Core.Str.Traits.t_FromStr u8 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: u16) (other: u32) -> ());
-    checked_sub = (fun (self: u16) (other: u32) -> ());
-    checked_add = fun (self: u16) (other: u32) -> ()
+    f_Err_under_impl_27 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_27 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper u32 =
+let impl_493934208: Core.Str.Traits.t_FromStr u16 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: u32) (other: u32) -> ());
-    checked_sub = (fun (self: u32) (other: u32) -> ());
-    checked_add = fun (self: u32) (other: u32) -> ()
+    f_Err_under_impl_28 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_28 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper u64 =
+let impl_1016063868: Core.Str.Traits.t_FromStr u32 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: u64) (other: u32) -> ());
-    checked_sub = (fun (self: u64) (other: u32) -> ());
-    checked_add = fun (self: u64) (other: u32) -> ()
+    f_Err_under_impl_29 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_29 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper u128 =
+let impl_167792917: Core.Str.Traits.t_FromStr u64 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: u128) (other: u32) -> ());
-    checked_sub = (fun (self: u128) (other: u32) -> ());
-    checked_add = fun (self: u128) (other: u32) -> ()
+    f_Err_under_impl_30 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_30 = fun (src: string) -> ()
   }
 
-let impl: t_FromStrRadixHelper usize =
+let impl_298492624: Core.Str.Traits.t_FromStr u128 =
   {
-    mIN = (fun  -> ());
-    from_u32 = (fun (u: u32) -> ());
-    checked_mul = (fun (self: usize) (other: u32) -> ());
-    checked_sub = (fun (self: usize) (other: u32) -> ());
-    checked_add = fun (self: usize) (other: u32) -> ()
+    f_Err_under_impl_31 = Core.Num.Error.t_ParseIntError;
+    f_from_str_under_impl_31 = fun (src: string) -> ()
+  }
+
+let impl_71868938: t_FromStrRadixHelper i8 =
+  {
+    f_MIN_under_impl_32 = ();
+    f_from_u32_under_impl_32 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_32 = (fun (self: i8) (other: u32) -> ());
+    f_checked_sub_under_impl_32 = (fun (self: i8) (other: u32) -> ());
+    f_checked_add_under_impl_32 = fun (self: i8) (other: u32) -> ()
+  }
+
+let impl_569669356: t_FromStrRadixHelper i16 =
+  {
+    f_MIN_under_impl_33 = ();
+    f_from_u32_under_impl_33 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_33 = (fun (self: i16) (other: u32) -> ());
+    f_checked_sub_under_impl_33 = (fun (self: i16) (other: u32) -> ());
+    f_checked_add_under_impl_33 = fun (self: i16) (other: u32) -> ()
+  }
+
+let impl_591380516: t_FromStrRadixHelper i32 =
+  {
+    f_MIN_under_impl_34 = ();
+    f_from_u32_under_impl_34 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_34 = (fun (self: i32) (other: u32) -> ());
+    f_checked_sub_under_impl_34 = (fun (self: i32) (other: u32) -> ());
+    f_checked_add_under_impl_34 = fun (self: i32) (other: u32) -> ()
+  }
+
+let impl_363767625: t_FromStrRadixHelper i64 =
+  {
+    f_MIN_under_impl_35 = ();
+    f_from_u32_under_impl_35 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_35 = (fun (self: i64) (other: u32) -> ());
+    f_checked_sub_under_impl_35 = (fun (self: i64) (other: u32) -> ());
+    f_checked_add_under_impl_35 = fun (self: i64) (other: u32) -> ()
+  }
+
+let impl_759965076: t_FromStrRadixHelper i128 =
+  {
+    f_MIN_under_impl_36 = ();
+    f_from_u32_under_impl_36 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_36 = (fun (self: i128) (other: u32) -> ());
+    f_checked_sub_under_impl_36 = (fun (self: i128) (other: u32) -> ());
+    f_checked_add_under_impl_36 = fun (self: i128) (other: u32) -> ()
+  }
+
+let impl_12516240: t_FromStrRadixHelper isize =
+  {
+    f_MIN_under_impl_37 = ();
+    f_from_u32_under_impl_37 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_37 = (fun (self: isize) (other: u32) -> ());
+    f_checked_sub_under_impl_37 = (fun (self: isize) (other: u32) -> ());
+    f_checked_add_under_impl_37 = fun (self: isize) (other: u32) -> ()
+  }
+
+let impl_358843049: t_FromStrRadixHelper u8 =
+  {
+    f_MIN_under_impl_38 = ();
+    f_from_u32_under_impl_38 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_38 = (fun (self: u8) (other: u32) -> ());
+    f_checked_sub_under_impl_38 = (fun (self: u8) (other: u32) -> ());
+    f_checked_add_under_impl_38 = fun (self: u8) (other: u32) -> ()
+  }
+
+let impl_322473994: t_FromStrRadixHelper u16 =
+  {
+    f_MIN_under_impl_39 = ();
+    f_from_u32_under_impl_39 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_39 = (fun (self: u16) (other: u32) -> ());
+    f_checked_sub_under_impl_39 = (fun (self: u16) (other: u32) -> ());
+    f_checked_add_under_impl_39 = fun (self: u16) (other: u32) -> ()
+  }
+
+let impl_935466672: t_FromStrRadixHelper u32 =
+  {
+    f_MIN_under_impl_40 = ();
+    f_from_u32_under_impl_40 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_40 = (fun (self: u32) (other: u32) -> ());
+    f_checked_sub_under_impl_40 = (fun (self: u32) (other: u32) -> ());
+    f_checked_add_under_impl_40 = fun (self: u32) (other: u32) -> ()
+  }
+
+let impl_317025603: t_FromStrRadixHelper u64 =
+  {
+    f_MIN_under_impl_41 = ();
+    f_from_u32_under_impl_41 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_41 = (fun (self: u64) (other: u32) -> ());
+    f_checked_sub_under_impl_41 = (fun (self: u64) (other: u32) -> ());
+    f_checked_add_under_impl_41 = fun (self: u64) (other: u32) -> ()
+  }
+
+let impl_432358363: t_FromStrRadixHelper u128 =
+  {
+    f_MIN_under_impl_42 = ();
+    f_from_u32_under_impl_42 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_42 = (fun (self: u128) (other: u32) -> ());
+    f_checked_sub_under_impl_42 = (fun (self: u128) (other: u32) -> ());
+    f_checked_add_under_impl_42 = fun (self: u128) (other: u32) -> ()
+  }
+
+let impl_705199625: t_FromStrRadixHelper usize =
+  {
+    f_MIN_under_impl_43 = ();
+    f_from_u32_under_impl_43 = (fun (u: u32) -> ());
+    f_checked_mul_under_impl_43 = (fun (self: usize) (other: u32) -> ());
+    f_checked_sub_under_impl_43 = (fun (self: usize) (other: u32) -> ());
+    f_checked_add_under_impl_43 = fun (self: usize) (other: u32) -> ()
   }
 
 let can_not_overflow (#t: Type) (radix: u32) (is_signed_ty: bool) (digits: slice u8) : bool = ()

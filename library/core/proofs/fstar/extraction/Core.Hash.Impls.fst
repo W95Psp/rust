@@ -2,195 +2,195 @@ module Core.Hash.Impls
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-let impl: Core.Hash.t_Hash u8 =
+let impl_171102199: Core.Hash.t_Hash u8 =
   {
-    hash
+    f_hash_under_impl_9
     =
     (fun (self: u8) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_9
     =
     fun (data: slice u8) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash u16 =
+let impl_292999048: Core.Hash.t_Hash u16 =
   {
-    hash
+    f_hash_under_impl_10
     =
     (fun (self: u16) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_10
     =
     fun (data: slice u16) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash u32 =
+let impl_1001448748: Core.Hash.t_Hash u32 =
   {
-    hash
+    f_hash_under_impl_11
     =
     (fun (self: u32) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_11
     =
     fun (data: slice u32) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash u64 =
+let impl_388524814: Core.Hash.t_Hash u64 =
   {
-    hash
+    f_hash_under_impl_12
     =
     (fun (self: u64) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_12
     =
     fun (data: slice u64) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash usize =
+let impl_910961858: Core.Hash.t_Hash usize =
   {
-    hash
+    f_hash_under_impl_13
     =
     (fun (self: usize) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_13
     =
     fun (data: slice usize) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash i8 =
+let impl_555797498: Core.Hash.t_Hash i8 =
   {
-    hash
+    f_hash_under_impl_14
     =
     (fun (self: i8) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_14
     =
     fun (data: slice i8) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash i16 =
+let impl_290504258: Core.Hash.t_Hash i16 =
   {
-    hash
+    f_hash_under_impl_15
     =
     (fun (self: i16) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_15
     =
     fun (data: slice i16) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash i32 =
+let impl_770455101: Core.Hash.t_Hash i32 =
   {
-    hash
+    f_hash_under_impl_16
     =
     (fun (self: i32) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_16
     =
     fun (data: slice i32) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash i64 =
+let impl_90650668: Core.Hash.t_Hash i64 =
   {
-    hash
+    f_hash_under_impl_17
     =
     (fun (self: i64) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_17
     =
     fun (data: slice i64) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash isize =
+let impl_1069042321: Core.Hash.t_Hash isize =
   {
-    hash
+    f_hash_under_impl_18
     =
     (fun (self: isize) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_18
     =
     fun (data: slice isize) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash u128 =
+let impl_994898057: Core.Hash.t_Hash u128 =
   {
-    hash
+    f_hash_under_impl_19
     =
     (fun (self: u128) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_19
     =
     fun (data: slice u128) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash i128 =
+let impl_945801011: Core.Hash.t_Hash i128 =
   {
-    hash
+    f_hash_under_impl_20
     =
     (fun (self: i128) (state: h) ->
         let output:Prims.unit = () in
         state);
-    hash_slice
+    f_hash_slice_under_impl_20
     =
     fun (data: slice i128) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash bool =
+let impl_680298144: Core.Hash.t_Hash bool =
   {
-    hash
+    f_hash_under_impl
     =
     fun (self: bool) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash char =
+let impl_816265507: Core.Hash.t_Hash char =
   {
-    hash
+    f_hash_under_impl_1
     =
     fun (self: char) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl: Core.Hash.t_Hash string =
+let impl_1048190368: Core.Hash.t_Hash string =
   {
-    hash
+    f_hash_under_impl_2
     =
     fun (self: string) (state: h) ->
       let output:Prims.unit = () in
@@ -204,19 +204,19 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl: Core.Hash.t_Hash Prims.unit =
+let impl_815015865: Core.Hash.t_Hash Prims.unit =
   {
-    hash
+    f_hash_under_impl_21
     =
     fun (self: Prims.unit) (v__state: h) ->
       let output:Prims.unit = () in
       v__state
   }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Hash.t_Hash t)
+let impl_398345383 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Hash.t_Hash t)
     : Core.Hash.t_Hash t =
   {
-    hash
+    f_hash_under_impl_22
     =
     fun
       (#t: Type)
@@ -228,7 +228,7 @@ let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Hash.t_
       state
   }
 
-let impl
+let impl_937946296
       (#t #b: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Hash.t_Hash t)
@@ -238,7 +238,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Hash.t_Hash b)
     : Core.Hash.t_Hash (t & b) =
   {
-    hash
+    f_hash_under_impl_23
     =
     fun
       (#t: Type)
@@ -256,7 +256,7 @@ let impl
       state
   }
 
-let impl
+let impl_706103082
       (#t #b #c: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -275,7 +275,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __14: Core.Hash.t_Hash c)
     : Core.Hash.t_Hash (t & b & c) =
   {
-    hash
+    f_hash_under_impl_24
     =
     fun
       (#t: Type)
@@ -303,7 +303,7 @@ let impl
       state
   }
 
-let impl
+let impl_927714516
       (#t #b #c #d: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -335,7 +335,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __27: Core.Hash.t_Hash d)
     : Core.Hash.t_Hash (t & b & c & d) =
   {
-    hash
+    f_hash_under_impl_25
     =
     fun
       (#t: Type)
@@ -377,7 +377,7 @@ let impl
       state
   }
 
-let impl
+let impl_814855179
       (#t #b #c #d #e: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -426,7 +426,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __44: Core.Hash.t_Hash e)
     : Core.Hash.t_Hash (t & b & c & d & e) =
   {
-    hash
+    f_hash_under_impl_26
     =
     fun
       (#t: Type)
@@ -486,7 +486,7 @@ let impl
       state
   }
 
-let impl
+let impl_1057905557
       (#t #b #c #d #e #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -556,7 +556,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __65: Core.Hash.t_Hash f)
     : Core.Hash.t_Hash (t & b & c & d & e & f) =
   {
-    hash
+    f_hash_under_impl_27
     =
     fun
       (#t: Type)
@@ -638,7 +638,7 @@ let impl
       state
   }
 
-let impl
+let impl_940852138
       (#t #b #c #d #e #f #g: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -733,7 +733,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __90: Core.Hash.t_Hash g)
     : Core.Hash.t_Hash (t & b & c & d & e & f & g) =
   {
-    hash
+    f_hash_under_impl_28
     =
     fun
       (#t: Type)
@@ -841,7 +841,7 @@ let impl
       state
   }
 
-let impl
+let impl_292582198
       (#t #b #c #d #e #f #g #h: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -965,7 +965,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __119: Core.Hash.t_Hash h)
     : Core.Hash.t_Hash (t & b & c & d & e & f & g & h) =
   {
-    hash
+    f_hash_under_impl_29
     =
     fun
       (#t: Type)
@@ -1103,7 +1103,7 @@ let impl
       state
   }
 
-let impl
+let impl_1021209462
       (#t #b #c #d #e #f #g #h #i: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -1260,7 +1260,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __152: Core.Hash.t_Hash i)
     : Core.Hash.t_Hash (t & b & c & d & e & f & g & h & i) =
   {
-    hash
+    f_hash_under_impl_30
     =
     fun
       (#t: Type)
@@ -1432,7 +1432,7 @@ let impl
       state
   }
 
-let impl
+let impl_177033259
       (#t #b #c #d #e #f #g #h #i #j: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -1626,7 +1626,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __189: Core.Hash.t_Hash j)
     : Core.Hash.t_Hash (t & b & c & d & e & f & g & h & i & j) =
   {
-    hash
+    f_hash_under_impl_31
     =
     fun
       (#t: Type)
@@ -1836,7 +1836,7 @@ let impl
       state
   }
 
-let impl
+let impl_797807073
       (#t #b #c #d #e #f #g #h #i #j #k: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -2071,7 +2071,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __230: Core.Hash.t_Hash k)
     : Core.Hash.t_Hash (t & b & c & d & e & f & g & h & i & j & k) =
   {
-    hash
+    f_hash_under_impl_32
     =
     fun
       (#t: Type)
@@ -2323,7 +2323,7 @@ let impl
       state
   }
 
-let impl
+let impl_876841954
       (#t #b #c #d #e #f #g #h #i #j #k #l: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized b)
@@ -2603,7 +2603,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __275: Core.Hash.t_Hash l)
     : Core.Hash.t_Hash (t & b & c & d & e & f & g & h & i & j & k & l) =
   {
-    hash
+    f_hash_under_impl_33
     =
     fun
       (#t: Type)
@@ -2901,13 +2901,13 @@ let impl
       state
   }
 
-let impl
+let impl_1040290155
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Hash.t_Hash t)
     : Core.Hash.t_Hash (slice t) =
   {
-    hash
+    f_hash_under_impl_4
     =
     fun
       (#t: Type)
@@ -2920,10 +2920,10 @@ let impl
       state
   }
 
-let impl (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Hash.t_Hash t)
+let impl_68145645 (#t: Type) (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Hash.t_Hash t)
     : Core.Hash.t_Hash t =
   {
-    hash
+    f_hash_under_impl_5
     =
     fun
       (#t: Type)

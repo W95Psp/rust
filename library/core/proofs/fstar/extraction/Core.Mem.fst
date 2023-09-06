@@ -70,28 +70,28 @@ let transmute_copy (#src #dst: Type) (src: src) : dst = ()
 
 type t_Discriminant = | Discriminant : _ -> t_Discriminant
 
-let impl (#t: Type) : Core.Marker.t_Copy (t_Discriminant t) = {  }
+let impl_179231571 (#t: Type) : Core.Marker.t_Copy (t_Discriminant t) = { __marker_trait = () }
 
-let impl (#t: Type) : Core.Clone.t_Clone (t_Discriminant t) =
-  { clone = fun (#t: Type) (self: t_Discriminant t) -> () }
+let impl_12802844 (#t: Type) : Core.Clone.t_Clone (t_Discriminant t) =
+  { f_clone_under_impl_1 = fun (#t: Type) (self: t_Discriminant t) -> () }
 
-let impl (#t: Type) : Core.Cmp.t_PartialEq (t_Discriminant t) (t_Discriminant t) =
-  { eq = fun (#t: Type) (self: t_Discriminant t) (rhs: t_Discriminant t) -> () }
+let impl_230941374 (#t: Type) : Core.Cmp.t_PartialEq (t_Discriminant t) (t_Discriminant t) =
+  { f_eq_under_impl_2 = fun (#t: Type) (self: t_Discriminant t) (rhs: t_Discriminant t) -> () }
 
-let impl (#t: Type) : Core.Cmp.t_Eq (t_Discriminant t) = {  }
+let impl_488273759 (#t: Type) : Core.Cmp.t_Eq (t_Discriminant t) = { __marker_trait = () }
 
-let impl (#t: Type) : Core.Hash.t_Hash (t_Discriminant t) =
+let impl_990361224 (#t: Type) : Core.Hash.t_Hash (t_Discriminant t) =
   {
-    hash
+    f_hash_under_impl_4
     =
     fun (#t: Type) (self: t_Discriminant t) (state: h) ->
       let output:Prims.unit = () in
       state
   }
 
-let impl (#t: Type) : Core.Fmt.t_Debug (t_Discriminant t) =
+let impl_470658468 (#t: Type) : Core.Fmt.t_Debug (t_Discriminant t) =
   {
-    fmt
+    f_fmt_under_impl_5
     =
     fun (#t: Type) (self: t_Discriminant t) (fmt: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -102,4 +102,4 @@ let discriminant (#t: Type) (v: t) : t_Discriminant t = ()
 
 let variant_count (#t: Type) : usize = ()
 
-let impl (#t: Type) : t_SizedTypeProperties t = {  }
+let impl_317584834 (#t: Type) : t_SizedTypeProperties t = { __marker_trait = () }

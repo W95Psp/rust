@@ -6,19 +6,19 @@ type t_Poll =
   | Poll_Ready : t -> t_Poll
   | Poll_Pending : t_Poll
 
-let impl
+let impl_1004960934
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Copy t)
-    : Core.Marker.t_Copy (t_Poll t) = {  }
+    : Core.Marker.t_Copy (t_Poll t) = { __marker_trait = () }
 
-let impl
+let impl_260386220
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone t)
     : Core.Clone.t_Clone (t_Poll t) =
   {
-    clone
+    f_clone_under_impl_9
     =
     fun
       (#t: Type)
@@ -29,13 +29,13 @@ let impl
       ()
   }
 
-let impl
+let impl_265367066
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug t)
     : Core.Fmt.t_Debug (t_Poll t) =
   {
-    fmt
+    f_fmt_under_impl_10
     =
     fun
       (#t: Type)
@@ -48,15 +48,15 @@ let impl
       f, output
   }
 
-let impl (#t: Type) : Core.Marker.t_StructuralEq (t_Poll t) = {  }
+let impl_708626575 (#t: Type) : Core.Marker.t_StructuralEq (t_Poll t) = { __marker_trait = () }
 
-let impl
+let impl_56410584
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_Eq t)
     : Core.Cmp.t_Eq (t_Poll t) =
   {
-    assert_receiver_is_total_eq
+    f_assert_receiver_is_total_eq_under_impl_12
     =
     fun
       (#t: Type)
@@ -67,15 +67,16 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Marker.t_StructuralPartialEq (t_Poll t) = {  }
+let impl_723342476 (#t: Type) : Core.Marker.t_StructuralPartialEq (t_Poll t) =
+  { __marker_trait = () }
 
-let impl
+let impl_625984479
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_PartialEq t t)
     : Core.Cmp.t_PartialEq (t_Poll t) (t_Poll t) =
   {
-    eq
+    f_eq_under_impl_14
     =
     fun
       (#t: Type)
@@ -87,13 +88,13 @@ let impl
       ()
   }
 
-let impl
+let impl_897780109
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_Ord t)
     : Core.Cmp.t_Ord (t_Poll t) =
   {
-    cmp
+    f_cmp_under_impl_15
     =
     fun
       (#t: Type)
@@ -105,13 +106,13 @@ let impl
       ()
   }
 
-let impl
+let impl_787412420
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Cmp.t_PartialOrd t t)
     : Core.Cmp.t_PartialOrd (t_Poll t) (t_Poll t) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_16
     =
     fun
       (#t: Type)
@@ -123,13 +124,13 @@ let impl
       ()
   }
 
-let impl
+let impl_380099019
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Hash.t_Hash t)
     : Core.Hash.t_Hash (t_Poll t) =
   {
-    hash
+    f_hash_under_impl_17
     =
     fun
       (#t: Type)
@@ -166,17 +167,20 @@ let map_err_under_impl_2
       (f: f)
     : t_Poll (Core.Option.t_Option (Core.Result.t_Result t u)) = ()
 
-let impl (#t: Type) : Core.Convert.t_From (t_Poll t) t = { from = fun (#t: Type) (t: t) -> () }
+let impl_530677933 (#t: Type) : Core.Convert.t_From (t_Poll t) t =
+  { f_from_under_impl_3 = fun (#t: Type) (t: t) -> () }
 
-let impl (#t #e: Type) : Core.Ops.Try_trait.t_Try (t_Poll (Core.Result.t_Result t e)) =
+let impl_1017564457 (#t #e: Type) : Core.Ops.Try_trait.t_Try (t_Poll (Core.Result.t_Result t e)) =
   {
-    output = t_Poll t;
-    residual = Core.Result.t_Result Core.Convert.t_Infallible e;
-    from_output = (fun (#t: Type) (#e: Type) (c: t_Poll t) -> ());
-    branch = fun (#t: Type) (#e: Type) (self: t_Poll (Core.Result.t_Result t e)) -> ()
+    f_Output_under_impl_4 = t_Poll t;
+    f_Residual_under_impl_4 = Core.Result.t_Result Core.Convert.t_Infallible e;
+    f_from_output_under_impl_4 = (fun (#t: Type) (#e: Type) (c: t_Poll t) -> ());
+    f_branch_under_impl_4
+    =
+    fun (#t: Type) (#e: Type) (self: t_Poll (Core.Result.t_Result t e)) -> ()
   }
 
-let impl
+let impl_965137368
       (#t #e #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized e)
@@ -185,7 +189,7 @@ let impl
     : Core.Ops.Try_trait.t_FromResidual (t_Poll (Core.Result.t_Result t f))
       (Core.Result.t_Result Core.Convert.t_Infallible e) =
   {
-    from_residual
+    f_from_residual_under_impl_5
     =
     fun
       (#t: Type)
@@ -200,18 +204,20 @@ let impl
       ()
   }
 
-let impl (#t #e: Type)
+let impl_61762821 (#t #e: Type)
     : Core.Ops.Try_trait.t_Try (t_Poll (Core.Option.t_Option (Core.Result.t_Result t e))) =
   {
-    output = t_Poll (Core.Option.t_Option t);
-    residual = Core.Result.t_Result Core.Convert.t_Infallible e;
-    from_output = (fun (#t: Type) (#e: Type) (c: t_Poll (Core.Option.t_Option t)) -> ());
-    branch
+    f_Output_under_impl_6 = t_Poll (Core.Option.t_Option t);
+    f_Residual_under_impl_6 = Core.Result.t_Result Core.Convert.t_Infallible e;
+    f_from_output_under_impl_6
+    =
+    (fun (#t: Type) (#e: Type) (c: t_Poll (Core.Option.t_Option t)) -> ());
+    f_branch_under_impl_6
     =
     fun (#t: Type) (#e: Type) (self: t_Poll (Core.Option.t_Option (Core.Result.t_Result t e))) -> ()
   }
 
-let impl
+let impl_268101338
       (#t #e #f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized e)
@@ -220,7 +226,7 @@ let impl
     : Core.Ops.Try_trait.t_FromResidual (t_Poll (Core.Option.t_Option (Core.Result.t_Result t f)))
       (Core.Result.t_Result Core.Convert.t_Infallible e) =
   {
-    from_residual
+    f_from_residual_under_impl_7
     =
     fun
       (#t: Type)

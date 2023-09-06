@@ -11,29 +11,31 @@ type t_Number = {
   f_many_digits:bool
 }
 
-let impl: Core.Clone.t_Clone t_Number = { clone = fun (self: t_Number) -> () }
+let impl_827874417: Core.Clone.t_Clone t_Number =
+  { f_clone_under_impl_1 = fun (self: t_Number) -> () }
 
-let impl: Core.Marker.t_Copy t_Number = {  }
+let impl_799609648: Core.Marker.t_Copy t_Number = { __marker_trait = () }
 
-let impl: Core.Fmt.t_Debug t_Number =
+let impl_568249242: Core.Fmt.t_Debug t_Number =
   {
-    fmt
+    f_fmt_under_impl_3
     =
     fun (self: t_Number) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Default.t_Default t_Number = { default = fun  -> () }
+let impl_743632690: Core.Default.t_Default t_Number = { f_default_under_impl_4 = () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Number = {  }
+let impl_114076697: Core.Marker.t_StructuralPartialEq t_Number = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Number t_Number =
-  { eq = fun (self: t_Number) (other: t_Number) -> () }
+let impl_851695652: Core.Cmp.t_PartialEq t_Number t_Number =
+  { f_eq_under_impl_6 = fun (self: t_Number) (other: t_Number) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_Number = {  }
+let impl_63348884: Core.Marker.t_StructuralEq t_Number = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Number = { assert_receiver_is_total_eq = fun (self: t_Number) -> () }
+let impl_611977410: Core.Cmp.t_Eq t_Number =
+  { f_assert_receiver_is_total_eq_under_impl_8 = fun (self: t_Number) -> () }
 
 let is_fast_path_under_impl (self: t_Number) : bool = ()
 

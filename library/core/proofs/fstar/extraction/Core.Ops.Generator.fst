@@ -6,7 +6,7 @@ type t_GeneratorState =
   | GeneratorState_Yielded : y -> t_GeneratorState
   | GeneratorState_Complete : r -> t_GeneratorState
 
-let impl
+let impl_661680996
       (#y #r: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized r)
@@ -18,7 +18,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Clone.t_Clone r)
     : Core.Clone.t_Clone (t_GeneratorState y r) =
   {
-    clone
+    f_clone_under_impl_2
     =
     fun
       (#y: Type)
@@ -36,7 +36,7 @@ let impl
       ()
   }
 
-let impl
+let impl_808340550
       (#y #r: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized r)
@@ -46,11 +46,12 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __5: Core.Marker.t_Sized r)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __6: Core.Marker.t_Copy y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Marker.t_Copy r)
-    : Core.Marker.t_Copy (t_GeneratorState y r) = {  }
+    : Core.Marker.t_Copy (t_GeneratorState y r) = { __marker_trait = () }
 
-let impl (#y #r: Type) : Core.Marker.t_StructuralPartialEq (t_GeneratorState y r) = {  }
+let impl_851762651 (#y #r: Type) : Core.Marker.t_StructuralPartialEq (t_GeneratorState y r) =
+  { __marker_trait = () }
 
-let impl
+let impl_748167903
       (#y #r: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized r)
@@ -62,7 +63,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Cmp.t_PartialEq r r)
     : Core.Cmp.t_PartialEq (t_GeneratorState y r) (t_GeneratorState y r) =
   {
-    eq
+    f_eq_under_impl_5
     =
     fun
       (#y: Type)
@@ -81,7 +82,7 @@ let impl
       ()
   }
 
-let impl
+let impl_909145800
       (#y #r: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized r)
@@ -93,7 +94,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Cmp.t_PartialOrd r r)
     : Core.Cmp.t_PartialOrd (t_GeneratorState y r) (t_GeneratorState y r) =
   {
-    partial_cmp
+    f_partial_cmp_under_impl_6
     =
     fun
       (#y: Type)
@@ -112,9 +113,10 @@ let impl
       ()
   }
 
-let impl (#y #r: Type) : Core.Marker.t_StructuralEq (t_GeneratorState y r) = {  }
+let impl_743654433 (#y #r: Type) : Core.Marker.t_StructuralEq (t_GeneratorState y r) =
+  { __marker_trait = () }
 
-let impl
+let impl_245653553
       (#y #r: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized r)
@@ -126,7 +128,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Cmp.t_Eq r)
     : Core.Cmp.t_Eq (t_GeneratorState y r) =
   {
-    assert_receiver_is_total_eq
+    f_assert_receiver_is_total_eq_under_impl_8
     =
     fun
       (#y: Type)
@@ -144,7 +146,7 @@ let impl
       ()
   }
 
-let impl
+let impl_934184634
       (#y #r: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized r)
@@ -156,7 +158,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Cmp.t_Ord r)
     : Core.Cmp.t_Ord (t_GeneratorState y r) =
   {
-    cmp
+    f_cmp_under_impl_9
     =
     fun
       (#y: Type)
@@ -175,7 +177,7 @@ let impl
       ()
   }
 
-let impl
+let impl_328086306
       (#y #r: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized r)
@@ -187,7 +189,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Fmt.t_Debug r)
     : Core.Fmt.t_Debug (t_GeneratorState y r) =
   {
-    fmt
+    f_fmt_under_impl_10
     =
     fun
       (#y: Type)
@@ -207,7 +209,7 @@ let impl
       f, output
   }
 
-let impl
+let impl_7219294
       (#y #r: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized y)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized r)
@@ -219,7 +221,7 @@ let impl
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __7: Core.Hash.t_Hash r)
     : Core.Hash.t_Hash (t_GeneratorState y r) =
   {
-    hash
+    f_hash_under_impl_11
     =
     fun
       (#y: Type)

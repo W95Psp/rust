@@ -7,30 +7,31 @@ type t_SearchStep =
   | SearchStep_Reject : usize -> usize -> t_SearchStep
   | SearchStep_Done : t_SearchStep
 
-let impl: Core.Marker.t_Copy t_SearchStep = {  }
+let impl_125810127: Core.Marker.t_Copy t_SearchStep = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_SearchStep = { clone = fun (self: t_SearchStep) -> () }
+let impl_833346544: Core.Clone.t_Clone t_SearchStep =
+  { f_clone_under_impl_36 = fun (self: t_SearchStep) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_SearchStep = {  }
+let impl_758015295: Core.Marker.t_StructuralEq t_SearchStep = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_SearchStep =
-  { assert_receiver_is_total_eq = fun (self: t_SearchStep) -> () }
+let impl_238743361: Core.Cmp.t_Eq t_SearchStep =
+  { f_assert_receiver_is_total_eq_under_impl_38 = fun (self: t_SearchStep) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_SearchStep = {  }
+let impl_903198330: Core.Marker.t_StructuralPartialEq t_SearchStep = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_SearchStep t_SearchStep =
-  { eq = fun (self: t_SearchStep) (other: t_SearchStep) -> () }
+let impl_97153900: Core.Cmp.t_PartialEq t_SearchStep t_SearchStep =
+  { f_eq_under_impl_40 = fun (self: t_SearchStep) (other: t_SearchStep) -> () }
 
-let impl: Core.Fmt.t_Debug t_SearchStep =
+let impl_432926472: Core.Fmt.t_Debug t_SearchStep =
   {
-    fmt
+    f_fmt_under_impl_41
     =
     fun (self: t_SearchStep) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-class t_DoubleEndedSearcher (v_Self: Type) = {  }
+class t_DoubleEndedSearcher (v_Self: Type) = { __marker_trait:Prims.unit }
 
 type t_CharSearcher = {
   f_haystack:string;
@@ -41,39 +42,40 @@ type t_CharSearcher = {
   f_utf8_encoded:array u8 4sz
 }
 
-let impl: Core.Clone.t_Clone t_CharSearcher = { clone = fun (self: t_CharSearcher) -> () }
+let impl_66973833: Core.Clone.t_Clone t_CharSearcher =
+  { f_clone_under_impl_42 = fun (self: t_CharSearcher) -> () }
 
-let impl: Core.Fmt.t_Debug t_CharSearcher =
+let impl_193103075: Core.Fmt.t_Debug t_CharSearcher =
   {
-    fmt
+    f_fmt_under_impl_43
     =
     fun (self: t_CharSearcher) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: t_DoubleEndedSearcher t_CharSearcher = {  }
+let impl_920616664: t_DoubleEndedSearcher t_CharSearcher = { __marker_trait = () }
 
-let impl: t_Pattern char =
+let impl_1005885898: t_Pattern char =
   {
-    searcher = t_CharSearcher;
-    into_searcher = (fun (self: char) (haystack: string) -> ());
-    is_contained_in = (fun (self: char) (haystack: string) -> ());
-    is_prefix_of = (fun (self: char) (haystack: string) -> ());
-    strip_prefix_of = (fun (self: char) (haystack: string) -> ());
-    is_suffix_of = (fun (self: char) (haystack: string) -> ());
-    strip_suffix_of = fun (self: char) (haystack: string) -> ()
+    f_Searcher_under_impl_3 = t_CharSearcher;
+    f_into_searcher_under_impl_3 = (fun (self: char) (haystack: string) -> ());
+    f_is_contained_in_under_impl_3 = (fun (self: char) (haystack: string) -> ());
+    f_is_prefix_of_under_impl_3 = (fun (self: char) (haystack: string) -> ());
+    f_strip_prefix_of_under_impl_3 = (fun (self: char) (haystack: string) -> ());
+    f_is_suffix_of_under_impl_3 = (fun (self: char) (haystack: string) -> ());
+    f_strip_suffix_of_under_impl_3 = fun (self: char) (haystack: string) -> ()
   }
 
-class t_MultiCharEq (v_Self: Type) = { matches:self -> char -> (self & bool) }
+class t_MultiCharEq (v_Self: Type) = { f_matches:self -> char -> (self & bool) }
 
-let impl
+let impl_915527402
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Ops.Function.t_FnMut f char)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
     : t_MultiCharEq f =
   {
-    matches
+    f_matches_under_impl_4
     =
     fun
       (#f: Type)
@@ -86,27 +88,27 @@ let impl
       self, output
   }
 
-let impl (#n: usize) : t_MultiCharEq (array char v_N) =
+let impl_573319561 (#n: usize) : t_MultiCharEq (array char v_N) =
   {
-    matches
+    f_matches_under_impl_5
     =
     fun (#n: usize) (self: array char v_N) (c: char) ->
       let output:bool = () in
       self, output
   }
 
-let impl (#n: usize) : t_MultiCharEq (array char v_N) =
+let impl_414434791 (#n: usize) : t_MultiCharEq (array char v_N) =
   {
-    matches
+    f_matches_under_impl_6
     =
     fun (#n: usize) (self: array char v_N) (c: char) ->
       let output:bool = () in
       self, output
   }
 
-let impl: t_MultiCharEq (slice char) =
+let impl_443814862: t_MultiCharEq (slice char) =
   {
-    matches
+    f_matches_under_impl_7
     =
     fun (self: slice char) (c: char) ->
       let output:bool = () in
@@ -121,14 +123,14 @@ type t_MultiCharEqSearcher = {
   f_char_indices:Core.Str.Iter.t_CharIndices
 }
 
-let impl
+let impl_201698166
       (#c: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Clone.t_Clone c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: t_MultiCharEq c)
     : Core.Clone.t_Clone (t_MultiCharEqSearcher c) =
   {
-    clone
+    f_clone_under_impl_44
     =
     fun
       (#c: Type)
@@ -140,14 +142,14 @@ let impl
       ()
   }
 
-let impl
+let impl_445773743
       (#c: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Fmt.t_Debug c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: t_MultiCharEq c)
     : Core.Fmt.t_Debug (t_MultiCharEqSearcher c) =
   {
-    fmt
+    f_fmt_under_impl_45
     =
     fun
       (#c: Type)
@@ -161,14 +163,14 @@ let impl
       f, output
   }
 
-let impl
+let impl_822791311
       (#c: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_MultiCharEq c)
     : t_Pattern (t_MultiCharEqPattern c) =
   {
-    searcher = t_MultiCharEqSearcher c;
-    into_searcher
+    f_Searcher_under_impl_8 = t_MultiCharEqSearcher c;
+    f_into_searcher_under_impl_8
     =
     fun
       (#c: Type)
@@ -180,20 +182,20 @@ let impl
       ()
   }
 
-let impl
+let impl_708321000
       (#c: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized c)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: t_MultiCharEq c)
-    : t_DoubleEndedSearcher (t_MultiCharEqSearcher c) = {  }
+    : t_DoubleEndedSearcher (t_MultiCharEqSearcher c) = { __marker_trait = () }
 
 type t_CharArraySearcher = | CharArraySearcher : _ -> t_CharArraySearcher
 
-let impl (#n: usize) : Core.Clone.t_Clone (t_CharArraySearcher v_N) =
-  { clone = fun (#n: usize) (self: t_CharArraySearcher v_N) -> () }
+let impl_228744200 (#n: usize) : Core.Clone.t_Clone (t_CharArraySearcher v_N) =
+  { f_clone_under_impl_46 = fun (#n: usize) (self: t_CharArraySearcher v_N) -> () }
 
-let impl (#n: usize) : Core.Fmt.t_Debug (t_CharArraySearcher v_N) =
+let impl_335006022 (#n: usize) : Core.Fmt.t_Debug (t_CharArraySearcher v_N) =
   {
-    fmt
+    f_fmt_under_impl_47
     =
     fun (#n: usize) (self: t_CharArraySearcher v_N) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -202,76 +204,93 @@ let impl (#n: usize) : Core.Fmt.t_Debug (t_CharArraySearcher v_N) =
 
 type t_CharArrayRefSearcher = | CharArrayRefSearcher : _ -> t_CharArrayRefSearcher
 
-let impl (#n: usize) : Core.Clone.t_Clone (t_CharArrayRefSearcher v_N) =
-  { clone = fun (#n: usize) (self: t_CharArrayRefSearcher v_N) -> () }
+let impl_753468957 (#n: usize) : Core.Clone.t_Clone (t_CharArrayRefSearcher v_N) =
+  { f_clone_under_impl_48 = fun (#n: usize) (self: t_CharArrayRefSearcher v_N) -> () }
 
-let impl (#n: usize) : Core.Fmt.t_Debug (t_CharArrayRefSearcher v_N) =
+let impl_1067840788 (#n: usize) : Core.Fmt.t_Debug (t_CharArrayRefSearcher v_N) =
   {
-    fmt
+    f_fmt_under_impl_49
     =
     fun (#n: usize) (self: t_CharArrayRefSearcher v_N) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl (#n: usize) : t_Pattern (array char v_N) =
+let impl_1038083852 (#n: usize) : t_Pattern (array char v_N) =
   {
-    searcher = t_CharArraySearcher v_N;
-    into_searcher = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    is_contained_in = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    is_prefix_of = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    strip_prefix_of = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    is_suffix_of = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    strip_suffix_of = fun (#n: usize) (self: array char v_N) (haystack: string) -> ()
+    f_Searcher_under_impl_12 = t_CharArraySearcher v_N;
+    f_into_searcher_under_impl_12
+    =
+    (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_is_contained_in_under_impl_12
+    =
+    (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_is_prefix_of_under_impl_12 = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_strip_prefix_of_under_impl_12
+    =
+    (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_is_suffix_of_under_impl_12 = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_strip_suffix_of_under_impl_12
+    =
+    fun (#n: usize) (self: array char v_N) (haystack: string) -> ()
   }
 
-let impl (#n: usize) : t_Pattern (array char v_N) =
+let impl_371021409 (#n: usize) : t_Pattern (array char v_N) =
   {
-    searcher = t_CharArrayRefSearcher v_N;
-    into_searcher = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    is_contained_in = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    is_prefix_of = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    strip_prefix_of = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    is_suffix_of = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
-    strip_suffix_of = fun (#n: usize) (self: array char v_N) (haystack: string) -> ()
+    f_Searcher_under_impl_15 = t_CharArrayRefSearcher v_N;
+    f_into_searcher_under_impl_15
+    =
+    (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_is_contained_in_under_impl_15
+    =
+    (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_is_prefix_of_under_impl_15 = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_strip_prefix_of_under_impl_15
+    =
+    (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_is_suffix_of_under_impl_15 = (fun (#n: usize) (self: array char v_N) (haystack: string) -> ());
+    f_strip_suffix_of_under_impl_15
+    =
+    fun (#n: usize) (self: array char v_N) (haystack: string) -> ()
   }
 
 type t_CharSliceSearcher = | CharSliceSearcher : _ -> t_CharSliceSearcher
 
-let impl: Core.Clone.t_Clone t_CharSliceSearcher = { clone = fun (self: t_CharSliceSearcher) -> () }
+let impl_1072040058: Core.Clone.t_Clone t_CharSliceSearcher =
+  { f_clone_under_impl_50 = fun (self: t_CharSliceSearcher) -> () }
 
-let impl: Core.Fmt.t_Debug t_CharSliceSearcher =
+let impl_340995338: Core.Fmt.t_Debug t_CharSliceSearcher =
   {
-    fmt
+    f_fmt_under_impl_51
     =
     fun (self: t_CharSliceSearcher) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: t_DoubleEndedSearcher t_CharSliceSearcher = {  }
+let impl_759966192: t_DoubleEndedSearcher t_CharSliceSearcher = { __marker_trait = () }
 
-let impl: t_Pattern (slice char) =
+let impl_268630477: t_Pattern (slice char) =
   {
-    searcher = t_CharSliceSearcher;
-    into_searcher = (fun (self: slice char) (haystack: string) -> ());
-    is_contained_in = (fun (self: slice char) (haystack: string) -> ());
-    is_prefix_of = (fun (self: slice char) (haystack: string) -> ());
-    strip_prefix_of = (fun (self: slice char) (haystack: string) -> ());
-    is_suffix_of = (fun (self: slice char) (haystack: string) -> ());
-    strip_suffix_of = fun (self: slice char) (haystack: string) -> ()
+    f_Searcher_under_impl_21 = t_CharSliceSearcher;
+    f_into_searcher_under_impl_21 = (fun (self: slice char) (haystack: string) -> ());
+    f_is_contained_in_under_impl_21 = (fun (self: slice char) (haystack: string) -> ());
+    f_is_prefix_of_under_impl_21 = (fun (self: slice char) (haystack: string) -> ());
+    f_strip_prefix_of_under_impl_21 = (fun (self: slice char) (haystack: string) -> ());
+    f_is_suffix_of_under_impl_21 = (fun (self: slice char) (haystack: string) -> ());
+    f_strip_suffix_of_under_impl_21 = fun (self: slice char) (haystack: string) -> ()
   }
 
 type t_CharPredicateSearcher = | CharPredicateSearcher : _ -> t_CharPredicateSearcher
 
-let impl
+let impl_121061263
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Clone.t_Clone f)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Ops.Function.t_FnMut f char)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __2: Core.Marker.t_Sized f)
     : Core.Clone.t_Clone (t_CharPredicateSearcher f) =
   {
-    clone
+    f_clone_under_impl_52
     =
     fun
       (#f: Type)
@@ -283,13 +302,13 @@ let impl
       ()
   }
 
-let impl
+let impl_1057052776
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Ops.Function.t_FnMut f char)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
     : Core.Fmt.t_Debug (t_CharPredicateSearcher f) =
   {
-    fmt
+    f_fmt_under_impl_22
     =
     fun
       (#f: Type)
@@ -302,20 +321,20 @@ let impl
       f, output
   }
 
-let impl
+let impl_449555972
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Ops.Function.t_FnMut f char)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
-    : t_DoubleEndedSearcher (t_CharPredicateSearcher f) = {  }
+    : t_DoubleEndedSearcher (t_CharPredicateSearcher f) = { __marker_trait = () }
 
-let impl
+let impl_150792614
       (#f: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Ops.Function.t_FnMut f char)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Sized f)
     : t_Pattern f =
   {
-    searcher = t_CharPredicateSearcher f;
-    into_searcher
+    f_Searcher_under_impl_26 = t_CharPredicateSearcher f;
+    f_into_searcher_under_impl_26
     =
     (fun
         (#f: Type)
@@ -325,7 +344,7 @@ let impl
         (haystack: string)
         ->
         ());
-    is_contained_in
+    f_is_contained_in_under_impl_26
     =
     (fun
         (#f: Type)
@@ -335,7 +354,7 @@ let impl
         (haystack: string)
         ->
         ());
-    is_prefix_of
+    f_is_prefix_of_under_impl_26
     =
     (fun
         (#f: Type)
@@ -345,7 +364,7 @@ let impl
         (haystack: string)
         ->
         ());
-    strip_prefix_of
+    f_strip_prefix_of_under_impl_26
     =
     (fun
         (#f: Type)
@@ -355,7 +374,7 @@ let impl
         (haystack: string)
         ->
         ());
-    is_suffix_of
+    f_is_suffix_of_under_impl_26
     =
     (fun
         (#f: Type)
@@ -365,7 +384,7 @@ let impl
         (haystack: string)
         ->
         ());
-    strip_suffix_of
+    f_strip_suffix_of_under_impl_26
     =
     fun
       (#f: Type)
@@ -377,26 +396,26 @@ let impl
       ()
   }
 
-let impl: t_Pattern string =
+let impl_615056822: t_Pattern string =
   {
-    searcher = t_StrSearcher;
-    into_searcher = (fun (self: string) (haystack: string) -> ());
-    is_contained_in = (fun (self: string) (haystack: string) -> ());
-    is_prefix_of = (fun (self: string) (haystack: string) -> ());
-    strip_prefix_of = (fun (self: string) (haystack: string) -> ());
-    is_suffix_of = (fun (self: string) (haystack: string) -> ());
-    strip_suffix_of = fun (self: string) (haystack: string) -> ()
+    f_Searcher_under_impl_27 = t_StrSearcher;
+    f_into_searcher_under_impl_27 = (fun (self: string) (haystack: string) -> ());
+    f_is_contained_in_under_impl_27 = (fun (self: string) (haystack: string) -> ());
+    f_is_prefix_of_under_impl_27 = (fun (self: string) (haystack: string) -> ());
+    f_strip_prefix_of_under_impl_27 = (fun (self: string) (haystack: string) -> ());
+    f_is_suffix_of_under_impl_27 = (fun (self: string) (haystack: string) -> ());
+    f_strip_suffix_of_under_impl_27 = fun (self: string) (haystack: string) -> ()
   }
 
-let impl: t_Pattern string =
+let impl_641920982: t_Pattern string =
   {
-    searcher = t_StrSearcher;
-    into_searcher = (fun (self: string) (haystack: string) -> ());
-    is_prefix_of = (fun (self: string) (haystack: string) -> ());
-    is_contained_in = (fun (self: string) (haystack: string) -> ());
-    strip_prefix_of = (fun (self: string) (haystack: string) -> ());
-    is_suffix_of = (fun (self: string) (haystack: string) -> ());
-    strip_suffix_of = fun (self: string) (haystack: string) -> ()
+    f_Searcher_under_impl_28 = t_StrSearcher;
+    f_into_searcher_under_impl_28 = (fun (self: string) (haystack: string) -> ());
+    f_is_prefix_of_under_impl_28 = (fun (self: string) (haystack: string) -> ());
+    f_is_contained_in_under_impl_28 = (fun (self: string) (haystack: string) -> ());
+    f_strip_prefix_of_under_impl_28 = (fun (self: string) (haystack: string) -> ());
+    f_is_suffix_of_under_impl_28 = (fun (self: string) (haystack: string) -> ());
+    f_strip_suffix_of_under_impl_28 = fun (self: string) (haystack: string) -> ()
   }
 
 type t_StrSearcher = {
@@ -405,11 +424,12 @@ type t_StrSearcher = {
   f_searcher:t_StrSearcherImpl
 }
 
-let impl: Core.Clone.t_Clone t_StrSearcher = { clone = fun (self: t_StrSearcher) -> () }
+let impl_759410420: Core.Clone.t_Clone t_StrSearcher =
+  { f_clone_under_impl_53 = fun (self: t_StrSearcher) -> () }
 
-let impl: Core.Fmt.t_Debug t_StrSearcher =
+let impl_386628778: Core.Fmt.t_Debug t_StrSearcher =
   {
-    fmt
+    f_fmt_under_impl_54
     =
     fun (self: t_StrSearcher) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -420,11 +440,12 @@ type t_StrSearcherImpl =
   | StrSearcherImpl_Empty : t_EmptyNeedle -> t_StrSearcherImpl
   | StrSearcherImpl_TwoWay : t_TwoWaySearcher -> t_StrSearcherImpl
 
-let impl: Core.Clone.t_Clone t_StrSearcherImpl = { clone = fun (self: t_StrSearcherImpl) -> () }
+let impl_311039003: Core.Clone.t_Clone t_StrSearcherImpl =
+  { f_clone_under_impl_55 = fun (self: t_StrSearcherImpl) -> () }
 
-let impl: Core.Fmt.t_Debug t_StrSearcherImpl =
+let impl_8332348: Core.Fmt.t_Debug t_StrSearcherImpl =
   {
-    fmt
+    f_fmt_under_impl_56
     =
     fun (self: t_StrSearcherImpl) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -439,11 +460,12 @@ type t_EmptyNeedle = {
   f_is_finished:bool
 }
 
-let impl: Core.Clone.t_Clone t_EmptyNeedle = { clone = fun (self: t_EmptyNeedle) -> () }
+let impl_311769161: Core.Clone.t_Clone t_EmptyNeedle =
+  { f_clone_under_impl_57 = fun (self: t_EmptyNeedle) -> () }
 
-let impl: Core.Fmt.t_Debug t_EmptyNeedle =
+let impl_761181990: Core.Fmt.t_Debug t_EmptyNeedle =
   {
-    fmt
+    f_fmt_under_impl_58
     =
     fun (self: t_EmptyNeedle) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -463,11 +485,12 @@ type t_TwoWaySearcher = {
   f_memory_back:usize
 }
 
-let impl: Core.Clone.t_Clone t_TwoWaySearcher = { clone = fun (self: t_TwoWaySearcher) -> () }
+let impl_845136192: Core.Clone.t_Clone t_TwoWaySearcher =
+  { f_clone_under_impl_59 = fun (self: t_TwoWaySearcher) -> () }
 
-let impl: Core.Fmt.t_Debug t_TwoWaySearcher =
+let impl_921351302: Core.Fmt.t_Debug t_TwoWaySearcher =
   {
-    fmt
+    f_fmt_under_impl_60
     =
     fun (self: t_TwoWaySearcher) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -496,31 +519,31 @@ let reverse_maximal_suffix_under_impl_32 (arr: slice u8) (known_period: usize) (
     : usize = ()
 
 class t_TwoWayStrategy (v_Self: Type) = {
-  output:Type;
-  output_implements_t_Sized:Core.Marker.t_Sized _;
-  use_early_reject:bool;
-  rejecting:usize -> usize -> _;
-  matching:usize -> usize -> _
+  f_Output:Type;
+  f_Output:Core.Marker.t_Sized _;
+  f_use_early_reject:bool;
+  f_rejecting:usize -> usize -> _;
+  f_matching:usize -> usize -> _
 }
 
 type t_MatchOnly =
 
-let impl: t_TwoWayStrategy t_MatchOnly =
+let impl_637331976: t_TwoWayStrategy t_MatchOnly =
   {
-    output = Core.Option.t_Option (usize & usize);
-    use_early_reject = (fun  -> ());
-    rejecting = (fun (v__a: usize) (v__b: usize) -> ());
-    matching = fun (a: usize) (b: usize) -> ()
+    f_Output_under_impl_33 = Core.Option.t_Option (usize & usize);
+    f_use_early_reject_under_impl_33 = ();
+    f_rejecting_under_impl_33 = (fun (v__a: usize) (v__b: usize) -> ());
+    f_matching_under_impl_33 = fun (a: usize) (b: usize) -> ()
   }
 
 type t_RejectAndMatch =
 
-let impl: t_TwoWayStrategy t_RejectAndMatch =
+let impl_435373317: t_TwoWayStrategy t_RejectAndMatch =
   {
-    output = t_SearchStep;
-    use_early_reject = (fun  -> ());
-    rejecting = (fun (a: usize) (b: usize) -> ());
-    matching = fun (a: usize) (b: usize) -> ()
+    f_Output_under_impl_34 = t_SearchStep;
+    f_use_early_reject_under_impl_34 = ();
+    f_rejecting_under_impl_34 = (fun (a: usize) (b: usize) -> ());
+    f_matching_under_impl_34 = fun (a: usize) (b: usize) -> ()
   }
 
 let simd_contains (needle haystack: string) : Core.Option.t_Option bool = ()

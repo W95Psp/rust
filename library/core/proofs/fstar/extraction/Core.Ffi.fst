@@ -60,9 +60,9 @@ type t_c_void =
   | C_c_void___variant1 : t_c_void
   | C_c_void___variant2 : t_c_void
 
-let impl: Core.Fmt.t_Debug t_c_void =
+let impl_203090659: Core.Fmt.t_Debug t_c_void =
   {
-    fmt
+    f_fmt_under_impl
     =
     fun (self: t_c_void) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -75,9 +75,9 @@ Last available AST for this item:
 
 struct t_VaListImpl<'f: 'unk>{f_gp_offset:int,f_fp_offset:int,f_overflow_arg_area:raw_pointer!(),f_reg_save_area:raw_pointer!(),f__marker:core::marker::t_PhantomData<&mut &core::ffi::t_c_void>} *)
 
-let impl: Core.Fmt.t_Debug t_VaListImpl =
+let impl_720471524: Core.Fmt.t_Debug t_VaListImpl =
   {
-    fmt
+    f_fmt_under_impl_9
     =
     fun (self: t_VaListImpl) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -88,25 +88,25 @@ let as_va_list_under_impl_1 (self: t_VaListImpl) : (t_VaListImpl & t_VaList) =
   let output:t_VaList = () in
   self, output
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe i8 = {  }
+let impl_65460653: Core.Ffi.Sealed_trait.t_VaArgSafe i8 = { __marker_trait = () }
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe i16 = {  }
+let impl_148806972: Core.Ffi.Sealed_trait.t_VaArgSafe i16 = { __marker_trait = () }
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe i32 = {  }
+let impl_84246196: Core.Ffi.Sealed_trait.t_VaArgSafe i32 = { __marker_trait = () }
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe i64 = {  }
+let impl_723225865: Core.Ffi.Sealed_trait.t_VaArgSafe i64 = { __marker_trait = () }
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe usize = {  }
+let impl_404534889: Core.Ffi.Sealed_trait.t_VaArgSafe usize = { __marker_trait = () }
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe u8 = {  }
+let impl_53595880: Core.Ffi.Sealed_trait.t_VaArgSafe u8 = { __marker_trait = () }
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe u16 = {  }
+let impl_512914116: Core.Ffi.Sealed_trait.t_VaArgSafe u16 = { __marker_trait = () }
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe u32 = {  }
+let impl_859868477: Core.Ffi.Sealed_trait.t_VaArgSafe u32 = { __marker_trait = () }
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe u64 = {  }
+let impl_805848668: Core.Ffi.Sealed_trait.t_VaArgSafe u64 = { __marker_trait = () }
 
-let impl: Core.Ffi.Sealed_trait.t_VaArgSafe isize = {  }
+let impl_761279413: Core.Ffi.Sealed_trait.t_VaArgSafe isize = { __marker_trait = () }
 
 (* item error backend *)
 
@@ -128,11 +128,12 @@ let arg_under_impl_6 (self: t_VaListImpl) : (t_VaListImpl & t) =
 
 let with_copy_under_impl_6 (self: t_VaListImpl) (f: f) : r = ()
 
-let impl: Core.Clone.t_Clone t_VaListImpl = { clone = fun (self: t_VaListImpl) -> () }
+let impl_500338292: Core.Clone.t_Clone t_VaListImpl =
+  { f_clone_under_impl_7 = fun (self: t_VaListImpl) -> () }
 
-let impl: Core.Ops.Drop.t_Drop t_VaListImpl =
+let impl_118072430: Core.Ops.Drop.t_Drop t_VaListImpl =
   {
-    drop
+    f_drop_under_impl_8
     =
     fun (self: t_VaListImpl) ->
       let output:Prims.unit = () in

@@ -9,25 +9,25 @@ Last available AST for this item:
 
 /* print_rust: pitem: not implemented */ *)
 
-let impl: t_ReadNumberHelper u8 =
+let impl_975121449: t_ReadNumberHelper u8 =
   {
-    zERO = (fun  -> ());
-    checked_mul = (fun (self: u8) (other: u32) -> ());
-    checked_add = fun (self: u8) (other: u32) -> ()
+    f_ZERO_under_impl_15 = ();
+    f_checked_mul_under_impl_15 = (fun (self: u8) (other: u32) -> ());
+    f_checked_add_under_impl_15 = fun (self: u8) (other: u32) -> ()
   }
 
-let impl: t_ReadNumberHelper u16 =
+let impl_898316527: t_ReadNumberHelper u16 =
   {
-    zERO = (fun  -> ());
-    checked_mul = (fun (self: u16) (other: u32) -> ());
-    checked_add = fun (self: u16) (other: u32) -> ()
+    f_ZERO_under_impl_16 = ();
+    f_checked_mul_under_impl_16 = (fun (self: u16) (other: u32) -> ());
+    f_checked_add_under_impl_16 = fun (self: u16) (other: u32) -> ()
   }
 
-let impl: t_ReadNumberHelper u32 =
+let impl_1068259870: t_ReadNumberHelper u32 =
   {
-    zERO = (fun  -> ());
-    checked_mul = (fun (self: u32) (other: u32) -> ());
-    checked_add = fun (self: u32) (other: u32) -> ()
+    f_ZERO_under_impl_17 = ();
+    f_checked_mul_under_impl_17 = (fun (self: u32) (other: u32) -> ());
+    f_checked_add_under_impl_17 = fun (self: u32) (other: u32) -> ()
   }
 
 type t_Parser = { f_state:slice u8 }
@@ -114,38 +114,38 @@ let read_groups_under_read_ipv6_addr_under_impl (p: t_Parser) (groups: slice u16
 let parse_ascii_under_impl_1 (b: slice u8)
     : Core.Result.t_Result Core.Net.Ip_addr.t_IpAddr t_AddrParseError = ()
 
-let impl: Core.Str.Traits.t_FromStr Core.Net.Ip_addr.t_IpAddr =
-  { err = t_AddrParseError; from_str = fun (s: string) -> () }
+let impl_1064081950: Core.Str.Traits.t_FromStr Core.Net.Ip_addr.t_IpAddr =
+  { f_Err_under_impl_2 = t_AddrParseError; f_from_str_under_impl_2 = fun (s: string) -> () }
 
 let parse_ascii_under_impl_3 (b: slice u8)
     : Core.Result.t_Result Core.Net.Ip_addr.t_Ipv4Addr t_AddrParseError = ()
 
-let impl: Core.Str.Traits.t_FromStr Core.Net.Ip_addr.t_Ipv4Addr =
-  { err = t_AddrParseError; from_str = fun (s: string) -> () }
+let impl_946733562: Core.Str.Traits.t_FromStr Core.Net.Ip_addr.t_Ipv4Addr =
+  { f_Err_under_impl_4 = t_AddrParseError; f_from_str_under_impl_4 = fun (s: string) -> () }
 
 let parse_ascii_under_impl_5 (b: slice u8)
     : Core.Result.t_Result Core.Net.Ip_addr.t_Ipv6Addr t_AddrParseError = ()
 
-let impl: Core.Str.Traits.t_FromStr Core.Net.Ip_addr.t_Ipv6Addr =
-  { err = t_AddrParseError; from_str = fun (s: string) -> () }
+let impl_1067510799: Core.Str.Traits.t_FromStr Core.Net.Ip_addr.t_Ipv6Addr =
+  { f_Err_under_impl_6 = t_AddrParseError; f_from_str_under_impl_6 = fun (s: string) -> () }
 
 let parse_ascii_under_impl_7 (b: slice u8)
     : Core.Result.t_Result Core.Net.Socket_addr.t_SocketAddrV4 t_AddrParseError = ()
 
-let impl: Core.Str.Traits.t_FromStr Core.Net.Socket_addr.t_SocketAddrV4 =
-  { err = t_AddrParseError; from_str = fun (s: string) -> () }
+let impl_639419680: Core.Str.Traits.t_FromStr Core.Net.Socket_addr.t_SocketAddrV4 =
+  { f_Err_under_impl_8 = t_AddrParseError; f_from_str_under_impl_8 = fun (s: string) -> () }
 
 let parse_ascii_under_impl_9 (b: slice u8)
     : Core.Result.t_Result Core.Net.Socket_addr.t_SocketAddrV6 t_AddrParseError = ()
 
-let impl: Core.Str.Traits.t_FromStr Core.Net.Socket_addr.t_SocketAddrV6 =
-  { err = t_AddrParseError; from_str = fun (s: string) -> () }
+let impl_1037703758: Core.Str.Traits.t_FromStr Core.Net.Socket_addr.t_SocketAddrV6 =
+  { f_Err_under_impl_10 = t_AddrParseError; f_from_str_under_impl_10 = fun (s: string) -> () }
 
 let parse_ascii_under_impl_11 (b: slice u8)
     : Core.Result.t_Result Core.Net.Socket_addr.t_SocketAddr t_AddrParseError = ()
 
-let impl: Core.Str.Traits.t_FromStr Core.Net.Socket_addr.t_SocketAddr =
-  { err = t_AddrParseError; from_str = fun (s: string) -> () }
+let impl_817368557: Core.Str.Traits.t_FromStr Core.Net.Socket_addr.t_SocketAddr =
+  { f_Err_under_impl_12 = t_AddrParseError; f_from_str_under_impl_12 = fun (s: string) -> () }
 
 type t_AddrKind =
   | AddrKind_Ip : t_AddrKind
@@ -155,56 +155,60 @@ type t_AddrKind =
   | AddrKind_SocketV4 : t_AddrKind
   | AddrKind_SocketV6 : t_AddrKind
 
-let impl: Core.Fmt.t_Debug t_AddrKind =
+let impl_65124383: Core.Fmt.t_Debug t_AddrKind =
   {
-    fmt
+    f_fmt_under_impl_18
     =
     fun (self: t_AddrKind) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Clone.t_Clone t_AddrKind = { clone = fun (self: t_AddrKind) -> () }
+let impl_12477276: Core.Clone.t_Clone t_AddrKind =
+  { f_clone_under_impl_19 = fun (self: t_AddrKind) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_AddrKind = {  }
+let impl_307048051: Core.Marker.t_StructuralPartialEq t_AddrKind = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_AddrKind t_AddrKind =
-  { eq = fun (self: t_AddrKind) (other: t_AddrKind) -> () }
+let impl_593387250: Core.Cmp.t_PartialEq t_AddrKind t_AddrKind =
+  { f_eq_under_impl_21 = fun (self: t_AddrKind) (other: t_AddrKind) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_AddrKind = {  }
+let impl_25652416: Core.Marker.t_StructuralEq t_AddrKind = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_AddrKind = { assert_receiver_is_total_eq = fun (self: t_AddrKind) -> () }
+let impl_258687798: Core.Cmp.t_Eq t_AddrKind =
+  { f_assert_receiver_is_total_eq_under_impl_23 = fun (self: t_AddrKind) -> () }
 
 type t_AddrParseError = | AddrParseError : t_AddrKind -> t_AddrParseError
 
-let impl: Core.Fmt.t_Debug t_AddrParseError =
+let impl_781334775: Core.Fmt.t_Debug t_AddrParseError =
   {
-    fmt
+    f_fmt_under_impl_24
     =
     fun (self: t_AddrParseError) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Clone.t_Clone t_AddrParseError = { clone = fun (self: t_AddrParseError) -> () }
+let impl_827640449: Core.Clone.t_Clone t_AddrParseError =
+  { f_clone_under_impl_25 = fun (self: t_AddrParseError) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_AddrParseError = {  }
+let impl_230891198: Core.Marker.t_StructuralPartialEq t_AddrParseError = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_AddrParseError t_AddrParseError =
-  { eq = fun (self: t_AddrParseError) (other: t_AddrParseError) -> () }
+let impl_993510297: Core.Cmp.t_PartialEq t_AddrParseError t_AddrParseError =
+  { f_eq_under_impl_27 = fun (self: t_AddrParseError) (other: t_AddrParseError) -> () }
 
-let impl: Core.Marker.t_StructuralEq t_AddrParseError = {  }
+let impl_381579844: Core.Marker.t_StructuralEq t_AddrParseError = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_AddrParseError =
-  { assert_receiver_is_total_eq = fun (self: t_AddrParseError) -> () }
+let impl_908180941: Core.Cmp.t_Eq t_AddrParseError =
+  { f_assert_receiver_is_total_eq_under_impl_29 = fun (self: t_AddrParseError) -> () }
 
-let impl: Core.Fmt.t_Display t_AddrParseError =
+let impl_279794998: Core.Fmt.t_Display t_AddrParseError =
   {
-    fmt
+    f_fmt_under_impl_13
     =
     fun (self: t_AddrParseError) (fmt: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       fmt, output
   }
 
-let impl: Core.Error.t_Error t_AddrParseError = { description = fun (self: t_AddrParseError) -> () }
+let impl_538329683: Core.Error.t_Error t_AddrParseError =
+  { f_description_under_impl_14 = fun (self: t_AddrParseError) -> () }

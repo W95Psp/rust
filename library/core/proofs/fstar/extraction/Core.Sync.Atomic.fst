@@ -4,7 +4,7 @@ open Core
 
 type t_AtomicBool = { f_v:Core.Cell.t_UnsafeCell u8 }
 
-let impl: Core.Default.t_Default t_AtomicBool = { default = fun  -> () }
+let impl_797071763: Core.Default.t_Default t_AtomicBool = { f_default_under_impl = () }
 
 (* (reject_RawOrMutPointer) ExplicitRejection { reason: "unknown reason" }
 
@@ -12,7 +12,8 @@ Last available AST for this item:
 
 struct t_AtomicPtr<T>{f_p:core::cell::t_UnsafeCell<raw_pointer!()>} *)
 
-let impl (#t: Type) : Core.Default.t_Default (t_AtomicPtr t) = { default = fun (#t: Type) -> () }
+let impl_181824 (#t: Type) : Core.Default.t_Default (t_AtomicPtr t) =
+  { f_default_under_impl_2 = fun (#t: Type) -> () }
 
 type t_Ordering =
   | Ordering_Relaxed : t_Ordering
@@ -21,31 +22,33 @@ type t_Ordering =
   | Ordering_AcqRel : t_Ordering
   | Ordering_SeqCst : t_Ordering
 
-let impl: Core.Marker.t_Copy t_Ordering = {  }
+let impl_393206419: Core.Marker.t_Copy t_Ordering = { __marker_trait = () }
 
-let impl: Core.Clone.t_Clone t_Ordering = { clone = fun (self: t_Ordering) -> () }
+let impl_780755410: Core.Clone.t_Clone t_Ordering =
+  { f_clone_under_impl_13 = fun (self: t_Ordering) -> () }
 
-let impl: Core.Fmt.t_Debug t_Ordering =
+let impl_387533096: Core.Fmt.t_Debug t_Ordering =
   {
-    fmt
+    f_fmt_under_impl_14
     =
     fun (self: t_Ordering) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl: Core.Marker.t_StructuralEq t_Ordering = {  }
+let impl_65448280: Core.Marker.t_StructuralEq t_Ordering = { __marker_trait = () }
 
-let impl: Core.Cmp.t_Eq t_Ordering = { assert_receiver_is_total_eq = fun (self: t_Ordering) -> () }
+let impl_67091450: Core.Cmp.t_Eq t_Ordering =
+  { f_assert_receiver_is_total_eq_under_impl_16 = fun (self: t_Ordering) -> () }
 
-let impl: Core.Marker.t_StructuralPartialEq t_Ordering = {  }
+let impl_110388088: Core.Marker.t_StructuralPartialEq t_Ordering = { __marker_trait = () }
 
-let impl: Core.Cmp.t_PartialEq t_Ordering t_Ordering =
-  { eq = fun (self: t_Ordering) (other: t_Ordering) -> () }
+let impl_17699622: Core.Cmp.t_PartialEq t_Ordering t_Ordering =
+  { f_eq_under_impl_18 = fun (self: t_Ordering) (other: t_Ordering) -> () }
 
-let impl: Core.Hash.t_Hash t_Ordering =
+let impl_512424325: Core.Hash.t_Hash t_Ordering =
   {
-    hash
+    f_hash_under_impl_19
     =
     fun (self: t_Ordering) (state: v___h) ->
       let output:Prims.unit = () in
@@ -245,7 +248,8 @@ let as_ptr_under_impl_6 (#t: Type) (self: t_AtomicPtr t) : Rust_primitives.Hax.t
   Rust_primitives.Hax.failure "(reject_RawOrMutPointer) ExplicitRejection { reason: \"unknown reason\" }\n"
     "Tuple0()"
 
-let impl: Core.Convert.t_From t_AtomicBool bool = { from = fun (b: bool) -> () }
+let impl_261877154: Core.Convert.t_From t_AtomicBool bool =
+  { f_from_under_impl_7 = fun (b: bool) -> () }
 
 (* (reject_RawOrMutPointer) ExplicitRejection { reason: "unknown reason" }
 
@@ -257,13 +261,13 @@ type t_AtomicI8 = { f_v:Core.Cell.t_UnsafeCell i8 }
 
 let v_ATOMIC_I8_INIT: t_AtomicI8 = ()
 
-let impl: Core.Default.t_Default t_AtomicI8 = { default = fun  -> () }
+let impl_949555096: Core.Default.t_Default t_AtomicI8 = { f_default_under_impl_20 = () }
 
-let impl: Core.Convert.t_From t_AtomicI8 i8 = { from = fun (v: i8) -> () }
+let impl_252742352: Core.Convert.t_From t_AtomicI8 i8 = { f_from_under_impl_21 = fun (v: i8) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicI8 =
+let impl_255735209: Core.Fmt.t_Debug t_AtomicI8 =
   {
-    fmt
+    f_fmt_under_impl_22
     =
     fun (self: t_AtomicI8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -344,13 +348,13 @@ type t_AtomicU8 = { f_v:Core.Cell.t_UnsafeCell u8 }
 
 let v_ATOMIC_U8_INIT: t_AtomicU8 = ()
 
-let impl: Core.Default.t_Default t_AtomicU8 = { default = fun  -> () }
+let impl_397854152: Core.Default.t_Default t_AtomicU8 = { f_default_under_impl_25 = () }
 
-let impl: Core.Convert.t_From t_AtomicU8 u8 = { from = fun (v: u8) -> () }
+let impl_872082907: Core.Convert.t_From t_AtomicU8 u8 = { f_from_under_impl_26 = fun (v: u8) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicU8 =
+let impl_744752947: Core.Fmt.t_Debug t_AtomicU8 =
   {
-    fmt
+    f_fmt_under_impl_27
     =
     fun (self: t_AtomicU8) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -431,13 +435,14 @@ type t_AtomicI16 = { f_v:Core.Cell.t_UnsafeCell i16 }
 
 let v_ATOMIC_I16_INIT: t_AtomicI16 = ()
 
-let impl: Core.Default.t_Default t_AtomicI16 = { default = fun  -> () }
+let impl_401213527: Core.Default.t_Default t_AtomicI16 = { f_default_under_impl_30 = () }
 
-let impl: Core.Convert.t_From t_AtomicI16 i16 = { from = fun (v: i16) -> () }
+let impl_1873418: Core.Convert.t_From t_AtomicI16 i16 =
+  { f_from_under_impl_31 = fun (v: i16) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicI16 =
+let impl_662361975: Core.Fmt.t_Debug t_AtomicI16 =
   {
-    fmt
+    f_fmt_under_impl_32
     =
     fun (self: t_AtomicI16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -518,13 +523,14 @@ type t_AtomicU16 = { f_v:Core.Cell.t_UnsafeCell u16 }
 
 let v_ATOMIC_U16_INIT: t_AtomicU16 = ()
 
-let impl: Core.Default.t_Default t_AtomicU16 = { default = fun  -> () }
+let impl_736321110: Core.Default.t_Default t_AtomicU16 = { f_default_under_impl_35 = () }
 
-let impl: Core.Convert.t_From t_AtomicU16 u16 = { from = fun (v: u16) -> () }
+let impl_751430928: Core.Convert.t_From t_AtomicU16 u16 =
+  { f_from_under_impl_36 = fun (v: u16) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicU16 =
+let impl_431644276: Core.Fmt.t_Debug t_AtomicU16 =
   {
-    fmt
+    f_fmt_under_impl_37
     =
     fun (self: t_AtomicU16) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -605,13 +611,14 @@ type t_AtomicI32 = { f_v:Core.Cell.t_UnsafeCell i32 }
 
 let v_ATOMIC_I32_INIT: t_AtomicI32 = ()
 
-let impl: Core.Default.t_Default t_AtomicI32 = { default = fun  -> () }
+let impl_364707883: Core.Default.t_Default t_AtomicI32 = { f_default_under_impl_40 = () }
 
-let impl: Core.Convert.t_From t_AtomicI32 i32 = { from = fun (v: i32) -> () }
+let impl_642571098: Core.Convert.t_From t_AtomicI32 i32 =
+  { f_from_under_impl_41 = fun (v: i32) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicI32 =
+let impl_247436251: Core.Fmt.t_Debug t_AtomicI32 =
   {
-    fmt
+    f_fmt_under_impl_42
     =
     fun (self: t_AtomicI32) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -692,13 +699,14 @@ type t_AtomicU32 = { f_v:Core.Cell.t_UnsafeCell u32 }
 
 let v_ATOMIC_U32_INIT: t_AtomicU32 = ()
 
-let impl: Core.Default.t_Default t_AtomicU32 = { default = fun  -> () }
+let impl_374447495: Core.Default.t_Default t_AtomicU32 = { f_default_under_impl_45 = () }
 
-let impl: Core.Convert.t_From t_AtomicU32 u32 = { from = fun (v: u32) -> () }
+let impl_254796880: Core.Convert.t_From t_AtomicU32 u32 =
+  { f_from_under_impl_46 = fun (v: u32) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicU32 =
+let impl_327873844: Core.Fmt.t_Debug t_AtomicU32 =
   {
-    fmt
+    f_fmt_under_impl_47
     =
     fun (self: t_AtomicU32) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -779,13 +787,14 @@ type t_AtomicI64 = { f_v:Core.Cell.t_UnsafeCell i64 }
 
 let v_ATOMIC_I64_INIT: t_AtomicI64 = ()
 
-let impl: Core.Default.t_Default t_AtomicI64 = { default = fun  -> () }
+let impl_495789486: Core.Default.t_Default t_AtomicI64 = { f_default_under_impl_50 = () }
 
-let impl: Core.Convert.t_From t_AtomicI64 i64 = { from = fun (v: i64) -> () }
+let impl_14491142: Core.Convert.t_From t_AtomicI64 i64 =
+  { f_from_under_impl_51 = fun (v: i64) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicI64 =
+let impl_410495086: Core.Fmt.t_Debug t_AtomicI64 =
   {
-    fmt
+    f_fmt_under_impl_52
     =
     fun (self: t_AtomicI64) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -866,13 +875,14 @@ type t_AtomicU64 = { f_v:Core.Cell.t_UnsafeCell u64 }
 
 let v_ATOMIC_U64_INIT: t_AtomicU64 = ()
 
-let impl: Core.Default.t_Default t_AtomicU64 = { default = fun  -> () }
+let impl_1051442726: Core.Default.t_Default t_AtomicU64 = { f_default_under_impl_55 = () }
 
-let impl: Core.Convert.t_From t_AtomicU64 u64 = { from = fun (v: u64) -> () }
+let impl_178939626: Core.Convert.t_From t_AtomicU64 u64 =
+  { f_from_under_impl_56 = fun (v: u64) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicU64 =
+let impl_369139962: Core.Fmt.t_Debug t_AtomicU64 =
   {
-    fmt
+    f_fmt_under_impl_57
     =
     fun (self: t_AtomicU64) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -953,13 +963,14 @@ type t_AtomicIsize = { f_v:Core.Cell.t_UnsafeCell isize }
 
 let v_ATOMIC_ISIZE_INIT: t_AtomicIsize = ()
 
-let impl: Core.Default.t_Default t_AtomicIsize = { default = fun  -> () }
+let impl_289864443: Core.Default.t_Default t_AtomicIsize = { f_default_under_impl_60 = () }
 
-let impl: Core.Convert.t_From t_AtomicIsize isize = { from = fun (v: isize) -> () }
+let impl_176949529: Core.Convert.t_From t_AtomicIsize isize =
+  { f_from_under_impl_61 = fun (v: isize) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicIsize =
+let impl_357839541: Core.Fmt.t_Debug t_AtomicIsize =
   {
-    fmt
+    f_fmt_under_impl_62
     =
     fun (self: t_AtomicIsize) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -1040,13 +1051,14 @@ type t_AtomicUsize = { f_v:Core.Cell.t_UnsafeCell usize }
 
 let v_ATOMIC_USIZE_INIT: t_AtomicUsize = ()
 
-let impl: Core.Default.t_Default t_AtomicUsize = { default = fun  -> () }
+let impl_1011542260: Core.Default.t_Default t_AtomicUsize = { f_default_under_impl_65 = () }
 
-let impl: Core.Convert.t_From t_AtomicUsize usize = { from = fun (v: usize) -> () }
+let impl_241092370: Core.Convert.t_From t_AtomicUsize usize =
+  { f_from_under_impl_66 = fun (v: usize) -> () }
 
-let impl: Core.Fmt.t_Debug t_AtomicUsize =
+let impl_43663307: Core.Fmt.t_Debug t_AtomicUsize =
   {
-    fmt
+    f_fmt_under_impl_67
     =
     fun (self: t_AtomicUsize) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -1219,27 +1231,27 @@ let fence (order: t_Ordering) : Prims.unit = ()
 
 let compiler_fence (order: t_Ordering) : Prims.unit = ()
 
-let impl: Core.Fmt.t_Debug t_AtomicBool =
+let impl_929673066: Core.Fmt.t_Debug t_AtomicBool =
   {
-    fmt
+    f_fmt_under_impl_9
     =
     fun (self: t_AtomicBool) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl (#t: Type) : Core.Fmt.t_Debug (t_AtomicPtr t) =
+let impl_1004270096 (#t: Type) : Core.Fmt.t_Debug (t_AtomicPtr t) =
   {
-    fmt
+    f_fmt_under_impl_10
     =
     fun (#t: Type) (self: t_AtomicPtr t) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
       f, output
   }
 
-let impl (#t: Type) : Core.Fmt.t_Pointer (t_AtomicPtr t) =
+let impl_219636407 (#t: Type) : Core.Fmt.t_Pointer (t_AtomicPtr t) =
   {
-    fmt
+    f_fmt_under_impl_11
     =
     fun (#t: Type) (self: t_AtomicPtr t) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in

@@ -2,19 +2,19 @@ module Core.Mem.Maybe_uninit
 #set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
 open Core
 
-let impl
+let impl_184517195
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Copy t)
-    : Core.Marker.t_Copy (t_MaybeUninit t) = {  }
+    : Core.Marker.t_Copy (t_MaybeUninit t) = { __marker_trait = () }
 
-let impl
+let impl_335333404
       (#t: Type)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __0: Core.Marker.t_Sized t)
       (#[FStar.Tactics.Typeclasses.tcresolve ()] __1: Core.Marker.t_Copy t)
     : Core.Clone.t_Clone (t_MaybeUninit t) =
   {
-    clone
+    f_clone_under_impl
     =
     fun
       (#t: Type)
@@ -25,9 +25,9 @@ let impl
       ()
   }
 
-let impl (#t: Type) : Core.Fmt.t_Debug (t_MaybeUninit t) =
+let impl_1012362080 (#t: Type) : Core.Fmt.t_Debug (t_MaybeUninit t) =
   {
-    fmt
+    f_fmt_under_impl_1
     =
     fun (#t: Type) (self: t_MaybeUninit t) (f: Core.Fmt.t_Formatter) ->
       let output:Core.Result.t_Result Prims.unit Core.Fmt.t_Error = () in
@@ -125,9 +125,10 @@ Last available AST for this item:
 
 struct t_Guard_under_write_slice_cloned_under_impl_2<'a: 'unk, T>{f_slice:&mut [core::mem::maybe_uninit::t_MaybeUninit<T>],f_initialized:int} *)
 
-let impl (#t: Type) : Core.Ops.Drop.t_Drop (t_Guard_under_write_slice_cloned_under_impl_2 t) =
+let impl_368053560 (#t: Type)
+    : Core.Ops.Drop.t_Drop (t_Guard_under_write_slice_cloned_under_impl_2 t) =
   {
-    drop
+    f_drop_under_impl_under_write_slice_cloned_under_impl_2
     =
     fun (#t: Type) (self: t_Guard_under_write_slice_cloned_under_impl_2 t) ->
       let output:Prims.unit = () in
