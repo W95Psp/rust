@@ -1,0 +1,14 @@
+module Core.Ops.Index
+#set-options "--fuel 0 --ifuel 1 --z3rlimit 15"
+open Core
+
+class t_Index (v_Self: Type) (v_Idx: Type) (t_Index self idx) = {
+  output:Type;
+  index:self -> idx -> _
+}
+
+(* (RefMut) The mutation of this &mut is not allowed here.
+
+Last available AST for this item:
+
+/* print_rust: pitem: not implemented */ *)
